@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 public enum RibossomeState{
     Sinthetizing,
@@ -32,11 +32,11 @@ namespace PhasePart.AMN{
 
         private bool removeRb; //simply because Async doesn't allow ref
 
-        public async Task MoveNewRibossome(bool moveOthers, RibossomeLetter rb,
+        public async UniTask MoveNewRibossome(bool moveOthers, RibossomeLetter rb,
             Vector3 rotation, float scaleMultiplier,
             float animationTime, AnimationCurve animationCurve){
             
-            List<Task> toMove = new List<Task>();
+            List<UniTask> toMove = new List<UniTask>();
 
             toMove.Add(MoveRibossome(rb, rotation, scaleMultiplier, 
                 animationTime, animationCurve));
@@ -46,17 +46,17 @@ namespace PhasePart.AMN{
                     animationTime, animationCurve));
             }
 
-            await Task.WhenAll(toMove);
+            await UniTask.WhenAll(toMove);
 
             inRibossomeQueue.Add(rb);
         }
 
-        public async Task MoveAllRibossome( Vector3 rotation, 
+        public async UniTask MoveAllRibossome( Vector3 rotation, 
             float animationTime, AnimationCurve animationCurve){
 
             if(inRibossomeQueue.Count == 0) return;
 
-            List<Task> toMove = new List<Task>();
+            List<UniTask> toMove = new List<UniTask>();
             int i;
 
             removeRb = false;
@@ -66,7 +66,7 @@ namespace PhasePart.AMN{
                     animationTime, animationCurve));
             }
 
-            await Task.WhenAll(toMove);
+            await UniTask.WhenAll(toMove);
 
             if(removeRb){
                 inRibossomeQueue[0].SetStateRib(0);
@@ -74,7 +74,7 @@ namespace PhasePart.AMN{
             }
         }
 
-        private async Task MoveRibossome(RibossomeLetter rb, 
+        private async UniTask MoveRibossome(RibossomeLetter rb, 
             Vector3 rotation, float scaleMultiplier, 
             float animationTime, AnimationCurve animationCurve){
             
@@ -97,7 +97,7 @@ namespace PhasePart.AMN{
             rb.IncreaceState();
         }
 
-        private async Task MoveTowardState(Transform moveObject, Transform target,
+        private async UniTask MoveTowardState(Transform moveObject, Transform target,
             Transform newParent, 
             Vector3 rotation,float scaleMultiplier, 
             float time, AnimationCurve animationCurve){
@@ -109,7 +109,7 @@ namespace PhasePart.AMN{
             LeanTween.scale(moveO.GetComponent<RectTransform>(), 
                 moveO.GetComponent<RectTransform>().localScale*scaleMultiplier, time - 0.2f);
             
-            await Task.Delay(Util.ConvertToMili(time));
+            await UniTask.Delay(Util.ConvertToMili(time));
             
             //Different from the last commit we don't need to set the sibling index
             //Because when its move his sibling index don't change

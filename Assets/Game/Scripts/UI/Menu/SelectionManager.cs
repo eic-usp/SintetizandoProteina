@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using GameUserInterface.Animation;
 using UnityEngine;
 
@@ -99,13 +99,13 @@ namespace Game.Scripts.UI.Menu{
         public async void ChangePartitionByIndex(int index){
             GameObject hold = partitionsFather.GetChild(index).gameObject;
 
-            await Task.Delay(PlayTransitionIn());
+            await UniTask.Delay(PlayTransitionIn());
 
             father.SetActive(!father.activeSelf);
             hold.SetActive(!hold.activeSelf);
 
-            await Task.Delay(GetBetweenTransitionTime());
-            await Task.Delay(PlayTransitionOut());
+            await UniTask.Delay(GetBetweenTransitionTime());
+            await UniTask.Delay(PlayTransitionOut());
 
             actualSelected = index; //Just to be sure
             

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 /*
     When there were letters there was the possibility of more them one wait manager
@@ -22,7 +22,7 @@ namespace PhasePart.Wait{
             this.gameplayManager = gameplayManager;
         }
 
-        protected async Task<bool> WaitCheck(){
+        protected async UniTask<bool> WaitCheck(){
             bool number = (bool) await gameplayManager.Check(numberPhase);
             return number;
         }

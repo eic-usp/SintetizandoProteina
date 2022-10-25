@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using GameUserInterface.Animation;
 using ProteinPart.InfoProtein;
@@ -22,7 +22,7 @@ namespace ProteinPart{
         private VideoPlayer videoPlayer;
         private int actualVideoClip;
 
-        //private Task videoTask;
+        //private UniTask videoUniTask;
         bool pause;
 
         private void Start(){
@@ -54,11 +54,11 @@ namespace ProteinPart{
             await PlayTransitionIn(); //Don't get finished in SetActive(false)
         }
 
-        private async Task PlayTransitionIn(){
+        private async UniTask PlayTransitionIn(){
             myTransition.EnableTransition();
 
             screens.GetChild(actualVideoClip).gameObject.SetActive(true);
-            await Task.Delay(myTransition.PlayTransitionFadeIn());
+            await UniTask.Delay(myTransition.PlayTransitionFadeIn());
             
             myTransition.DisableTransition(); //Just to be sure, not needed
         }   
@@ -77,7 +77,7 @@ namespace ProteinPart{
 
             videoPlayer.Play();
             StartCoroutine(FinishCheck());
-            //videoTask.Start();
+            //videoUniTask.Start();
         }
 
         public void SkipVideo(){

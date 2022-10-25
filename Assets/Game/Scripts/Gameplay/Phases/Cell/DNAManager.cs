@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 
@@ -36,7 +36,7 @@ namespace PhasePart.RNA.DNA{
         }
 
         private async void RNAEscapeAnimation(){
-            await Task.Delay(Util.ConvertToMili(cellReference.RNAEscapeNucleus()));
+            await UniTask.Delay(Util.ConvertToMili(cellReference.RNAEscapeNucleus()));
             cellReference.SetAnimatorStatus(false);
             base.EndPhase();
         }
@@ -94,7 +94,7 @@ namespace PhasePart.RNA.DNA{
 
 
         //Animations
-        public async Task RNAVisibility(){
+        public async UniTask RNAVisibility(){
             GameObject dnaRna = dnaSetupReference.GetRNADNA();
             
             dnaRna.SetActive(true);
@@ -102,16 +102,16 @@ namespace PhasePart.RNA.DNA{
             Util.ChangeAlphaCanvasImageAnimation(dnaRna.GetComponent<CanvasGroup>(),
                 1f, 1f);
 
-            await Task.Delay(Util.ConvertToMili(1f));
+            await UniTask.Delay(Util.ConvertToMili(1f));
         }
 
-        public async Task DNASeparation(){
+        public async UniTask DNASeparation(){
             GameObject dnaSecond = dnaSetupReference.GetSecondHalf();
 
             Util.ChangeAlphaCanvasImageAnimation(dnaSecond.GetComponent<CanvasGroup>(),
                 0f, 1f);
             
-            await Task.Delay(Util.ConvertToMili(1f));
+            await UniTask.Delay(Util.ConvertToMili(1f));
 
             dnaSecond.SetActive(false);
 
@@ -119,13 +119,13 @@ namespace PhasePart.RNA.DNA{
                 1f, 0f);
         }
 
-        public async Task DNANucleusVisibility(bool state){
+        public async UniTask DNANucleusVisibility(bool state){
             if(state){
-                await Task.Delay(Util.ConvertToMili(cellReference.ExpandCellNucleus()));
+                await UniTask.Delay(Util.ConvertToMili(cellReference.ExpandCellNucleus()));
                 return;
             }
 
-            await Task.Delay(Util.ConvertToMili(cellReference.ShrinkCellNucleus()));
+            await UniTask.Delay(Util.ConvertToMili(cellReference.ShrinkCellNucleus()));
             return;
         }
 

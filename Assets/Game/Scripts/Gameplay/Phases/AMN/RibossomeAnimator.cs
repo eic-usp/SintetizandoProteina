@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 
@@ -67,12 +67,12 @@ namespace PhasePart.AMN{
 
         private async void Tests(){
             Color firstColor = Util.RandomSolidColor();
-            Func<int, Task> actionOnItem = async item => {
+            Func<int, UniTask> actionOnItem = async item => {
                 await amnQueue.GetComponent<AMNQueue>().PushNewAMN(GetSinthetizingFromQueue(), "Gly");
             };
 
-            Func<int, Task> nullAMN = async item => {
-                await Task.Yield();
+            Func<int, UniTask> nullAMN = async item => {
+                await UniTask.Yield();
             };
 
             childPrefab = amnPrefab;
@@ -118,9 +118,9 @@ namespace PhasePart.AMN{
         //Every object in the queue has a AMN (except the last one)
         //So we need to animate this too
         //Waste destination is the AMN queue
-        public async Task RibossomeExit(bool newAMN, 
+        public async UniTask RibossomeExit(bool newAMN, 
             Color newRibossomeColor, int numberAMN, 
-            Func<int,Task> externalActions){
+            Func<int,UniTask> externalActions){
 
             await RibossomeExit(externalActions, ribossomeQueue.GetRibossomeSinthetizing());
 
@@ -128,23 +128,23 @@ namespace PhasePart.AMN{
                 await RibossomeEnter(newRibossomeColor, numberAMN.ToString(), false);
             }
 
-            await Task.Yield();
+            await UniTask.Yield();
         }
 
-        private async Task RibossomeExit(Func<int,Task> externalActions, RibossomeLetter rlSint){
-            Task[] taskAnimation = new Task[2];
+        private async UniTask RibossomeExit(Func<int,UniTask> externalActions, RibossomeLetter rlSint){
+            UniTask[] UniTaskAnimation = new UniTask[2];
 
-            taskAnimation[0] = ribossomeQueue.MoveAllRibossome(new Vector3(0, 0, 0), animationsTime, animationCurve);
+            UniTaskAnimation[0] = ribossomeQueue.MoveAllRibossome(new Vector3(0, 0, 0), animationsTime, animationCurve);
 
             saveColor = rlSint.GetRibossomeColor();
             rlSint.SetAMNPresence(false);
 
-            taskAnimation[1] = externalActions(0);
+            UniTaskAnimation[1] = externalActions(0);
 
-            await Task.WhenAll(taskAnimation);
+            await UniTask.WhenAll(UniTaskAnimation);
         }
 
-        public async Task RibossomeEnter(Color newRibossomeColor, string numberAMN, bool move){
+        public async UniTask RibossomeEnter(Color newRibossomeColor, string numberAMN, bool move){
             GameObject hold = pool.Dequeue();
             RibossomeLetter rl = hold.GetComponent<RibossomeLetter>();
             AMNLetter moveObjectAmn;
@@ -168,7 +168,7 @@ namespace PhasePart.AMN{
             
             await ribossomeQueue.MoveNewRibossome(move, rl, 
                 new Vector3(0, 0, 0), 2.5f, animationsTime, animationCurve);
-            await Task.Delay(500);
+            await UniTask.Delay(500);
         }
 
         private void RibossomeSetup(RibossomeLetter rl, Color newRibossomeColor, string numberAMN){
