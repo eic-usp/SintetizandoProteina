@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 //Use Pooling
@@ -82,15 +82,15 @@ namespace PhasePart.Bow{
             EndPhase();
         }
 
-        private async Task ShootingStance(){
+        private async UniTask ShootingStance(){
             print("Entered");
             while(!Input.GetButtonDown("Fire1")){
-                await Task.Yield();
+                await UniTask.Yield();
             }
             print("Exit");
         }
 
-        private async Task OnDragAiming(){
+        private async UniTask OnDragAiming(){
             //play animatiom
             Quaternion myRotation = Quaternion.identity;
             Quaternion copyRotation;
@@ -110,15 +110,15 @@ namespace PhasePart.Bow{
 
                 bow.transform.rotation = myRotation;
 
-                await Task.Yield();
+                await UniTask.Yield();
             }
 
             //if(!animation.isPlaying) ShootArow();
             ShootArrow();
         }
-        private async Task<bool> WaitForArrow(){
+        private async UniTask<bool> WaitForArrow(){
             while(arrowFlying){
-                await Task.Yield();
+                await UniTask.Yield();
             }
             
             return !endPhase;

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 
@@ -119,7 +119,7 @@ namespace PhasePart.AMN{
             return false;
         }
 
-        public async Task PushNewAMN(string AMN){
+        public async UniTask PushNewAMN(string AMN){
             await WaitAnimationFlow();
 
             actualCompleted++;
@@ -128,30 +128,30 @@ namespace PhasePart.AMN{
             EndPhase();
         }
 
-        private async Task QueueNewAMN(string amnName){
+        private async UniTask QueueNewAMN(string amnName){
             animationPause = true;
-            Task[] taskAnimation = new Task[2]; //All animation of the object
+            UniTask[] UniTaskAnimation = new UniTask[2]; //All animation of the object
 
-            taskAnimation[0] = completedAMNQueue.NewAMNInLine(
+            UniTaskAnimation[0] = completedAMNQueue.NewAMNInLine(
                 (actualCompleted) >= (numberOfAMN), 
                 (actualCompleted) < (numberOfAMN + 1),
                 (actualCompleted + ribossomeMaxNumber - 1).ToString(), amnName);
             
             //Move the string to the left
             if(actualCompleted <= numberOfAMN){
-                taskAnimation[1] = Task.Delay(Util.ConvertToMili(SetAMN(actualCompleted == numberOfAMN)));
+                UniTaskAnimation[1] = UniTask.Delay(Util.ConvertToMili(SetAMN(actualCompleted == numberOfAMN)));
             }else{
-                taskAnimation[1] = Task.Delay(0);
+                UniTaskAnimation[1] = UniTask.Delay(0);
             }
 
-            await Task.WhenAll(taskAnimation);
+            await UniTask.WhenAll(UniTaskAnimation);
 
             animationPause = false;
         }
 
-        private async Task WaitAnimationFlow(){
+        private async UniTask WaitAnimationFlow(){
             while(animationPause){
-                await Task.Yield();
+                await UniTask.Yield();
             }
         }
 

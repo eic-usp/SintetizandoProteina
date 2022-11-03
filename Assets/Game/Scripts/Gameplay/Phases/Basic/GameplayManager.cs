@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 
@@ -76,7 +76,7 @@ public sealed class GameplayManager : MonoBehaviour{
             await Check(actualPhase);
         }
 
-        await Task.Yield();
+        await UniTask.Yield();
     }
 
     private void ManagerWait(){
@@ -102,7 +102,7 @@ public sealed class GameplayManager : MonoBehaviour{
         }
     }
 
-    public async Task<bool> Check(int numberPhase){
+    public async UniTask<bool> Check(int numberPhase){
         if(onAwait && numberPhase == actualPhase){
             PhaseManagerMono hold = gamePhases[actualPhase].manager;
             //Make the WaitManager invisible
@@ -132,9 +132,9 @@ public sealed class GameplayManager : MonoBehaviour{
         return false;
     }
 
-    private async Task WaitFirstCloseInstruction(){
+    private async UniTask WaitFirstCloseInstruction(){
         while(onInstruction == true){
-            await Task.Yield();
+            await UniTask.Yield();
         }
 
         PoolObject(objRef); //Makes one of the PhaseManagers to be active
@@ -143,7 +143,7 @@ public sealed class GameplayManager : MonoBehaviour{
     //Invisible to black
     public async void ShowInstruction(){
         if(gamePhases[actualPhase].manager.GetInstructions() == null){
-            await Task.Yield();
+            await UniTask.Yield();
             return;
         }
 
@@ -156,14 +156,14 @@ public sealed class GameplayManager : MonoBehaviour{
         Util.ChangeAlphaCanvasImageAnimation(iM.gameObject.GetComponent<CanvasGroup>(),
             1f, iM.GetFadeTime());
 
-        await Task.Delay(Util.ConvertToMili(time));
+        await UniTask.Delay(Util.ConvertToMili(time));
 
         gamePhases[actualPhase].manager.StartAnimation();
     }
 
     //Same as the above, but with a diferrent name to be more readable
     //And less acess to the gamePhases
-    private async Task ShowInstruction(PhaseManagerMono hold){
+    private async UniTask ShowInstruction(PhaseManagerMono hold){
         onInstruction = true;
         float time = iM.GetFadeTime();
 
@@ -174,7 +174,7 @@ public sealed class GameplayManager : MonoBehaviour{
             1f, iM.GetFadeTime());
 
         hold.StartAnimation();
-        await Task.Delay(Util.ConvertToMili(time));
+        await UniTask.Delay(Util.ConvertToMili(time));
     }
 
     //Used in all the instructions "Close Buttons", not a script though
@@ -186,7 +186,7 @@ public sealed class GameplayManager : MonoBehaviour{
         Util.ChangeAlphaCanvasImageAnimation(iM.gameObject.GetComponent<CanvasGroup>(),
             0f, time);
 
-        await Task.Delay(Util.ConvertToMili(time));
+        await UniTask.Delay(Util.ConvertToMili(time));
         onInstruction = false;
 
         iM.gameObject.SetActive(false);

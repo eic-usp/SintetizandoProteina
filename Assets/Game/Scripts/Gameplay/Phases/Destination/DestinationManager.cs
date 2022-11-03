@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,7 +22,7 @@ namespace PhasePart.Destination{
         private async void PlayAMNQueueTransformation(){
             float time = cellReference.AMNTransformation();
 
-            await Task.Delay(Util.ConvertToMili(time/ 0.5f));
+            await UniTask.Delay(Util.ConvertToMili(time/ 0.5f));
 
             endDestinationButton.onClick.AddListener(delegate {destinationDescriptionObject.SetActive(false);});
             endDestinationButton.onClick.AddListener(delegate {EndPhase();});
