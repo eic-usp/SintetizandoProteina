@@ -3,9 +3,9 @@ using UnityEngine;
 using System.Collections.Generic;
 
 using GameUserInterface.Text;
-using PhasePart.AMN;
+using Phases.AMN;
 
-namespace PhasePart.RNA.DNA{
+namespace Phases.RNA.DNA{
     public class DNAStructureWithRNA : MonoBehaviour{
         [SerializeField] Letter prefabDisplay; 
         [SerializeField] GameObject DNAHold = default;

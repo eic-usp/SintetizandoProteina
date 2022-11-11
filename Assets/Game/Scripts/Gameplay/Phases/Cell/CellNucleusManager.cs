@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-
-using PhasePart.AMN;
-using PhasePart.RNA.DNA;
+using Phases.AMN;
+using Phases.RNA.DNA;
 
 /*
     Script responsible for all the actions in the nucleus, as: spawn of the RNA, animation of the RNA
@@ -15,7 +14,7 @@ using PhasePart.RNA.DNA;
     The cellNucleus is a refatoration of the code present in the RNASpawner
 */
 
-namespace PhasePart.RNA{
+namespace Phases.RNA{
     public class CellNucleusManager : PhaseManagerMono{
         //[SerializeField] GameObject visualDNA = default; //Prototype
         [SerializeField] RNASpawner rnaReference; //Sets the RNA and the RNA sets it

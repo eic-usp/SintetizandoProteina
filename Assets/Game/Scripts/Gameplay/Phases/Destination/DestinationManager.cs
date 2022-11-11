@@ -2,30 +2,30 @@ using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 using UnityEngine.UI;
+using Phases.RNA.DNA;
 
-using PhasePart.RNA.DNA;
-
-namespace PhasePart.Destination{
+namespace Phases.Destination
+{
     public class DestinationManager : PhaseManagerMono
     {
         [Space] [Header("Destination Manager Variables")] [Space]
-        [SerializeField] CellAnimator cellReference = default; //Used for the single purpose of animation
+        [SerializeField] private CellAnimator cellReference; //Used for the single purpose of animation
         
-        [SerializeField] GameObject destinationDescriptionObject = default; 
-        [SerializeField] Button endDestinationButton = default;
+        [SerializeField] private GameObject destinationDescriptionObject; 
+        [SerializeField] private Button endDestinationButton;
 
-        void Start(){
+        private void Start()
+        {
             cellReference.SetAnimatorStatus(true);
             PlayAMNQueueTransformation();
         }
 
-        private async void PlayAMNQueueTransformation(){
-            float time = cellReference.AMNTransformation();
-
-            await UniTask.Delay(Util.ConvertToMili(time/ 0.5f));
-
+        private async void PlayAMNQueueTransformation()
+        {
+            var time = cellReference.AMNTransformation();
+            await UniTask.Delay(Util.ConvertToMili(time / 0.5f));
             endDestinationButton.onClick.AddListener(delegate {destinationDescriptionObject.SetActive(false);});
-            endDestinationButton.onClick.AddListener(delegate {EndPhase();});
+            endDestinationButton.onClick.AddListener(EndPhase);
         }
 
         public new void EndPhase()

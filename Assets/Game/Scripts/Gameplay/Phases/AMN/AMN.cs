@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     [System.Serializable]
     public class AMN{
         [SerializeField] string value;

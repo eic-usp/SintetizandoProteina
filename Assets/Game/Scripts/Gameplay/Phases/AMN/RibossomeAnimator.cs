@@ -14,7 +14,7 @@ using GameUserInterface.Animation;
 
 //https://stackoverflow.com/questions/14015319/where-do-i-mark-a-lambda-expression-async
 //https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/lambda-expressions
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     /*
         Control all the animations of the Ribossome, self explanatory
 

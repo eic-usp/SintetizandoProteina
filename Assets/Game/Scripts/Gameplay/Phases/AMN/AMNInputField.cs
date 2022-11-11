@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class AMNInputField : MonoBehaviour{
         [SerializeField] AMNManager amnM;
         private TMP_InputField thisInput;

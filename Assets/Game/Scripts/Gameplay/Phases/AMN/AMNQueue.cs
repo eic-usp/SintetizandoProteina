@@ -11,7 +11,7 @@ using GameUserInterface.Text;
     Changes the Action depending on the actual stage of the cell
 */
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class AMNQueue : MonoBehaviour{
         private Color actualColor = new Color(0f, 0f, 0f);
         [SerializeField] Letter amnPrefab = default;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 using GameUserInterface.Animation;
 
-namespace PhasePart.RNA.DNA{
+namespace Phases.RNA.DNA{
 
     /*
         Control all the animations of the Cell, self explanatory

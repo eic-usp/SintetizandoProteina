@@ -3,8 +3,8 @@ using Cysharp.Threading.Tasks;
 
 using UnityEngine;
 
-using PhasePart;
-using PhasePart.Wait;
+using Phases;
+using Phases.Wait;
 using GameUserInterface.Text;
 
 /*

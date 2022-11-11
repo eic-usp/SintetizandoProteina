@@ -8,7 +8,7 @@ using GameUserInterface.Text;
     See SendInput function in this class
 */
 
-namespace PhasePart{
+namespace Phases{
     public class TextWithInput : Letter{
         protected int originalPosition; //Works fine, can be useful later
         [SerializeField] TMP_InputField mainInputField; //Used in the prefabs

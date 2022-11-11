@@ -9,7 +9,7 @@ using Cysharp.Threading.Tasks;
     Now it just the base class, and it might be used some day 
 */
 
-namespace PhasePart.Wait{
+namespace Phases.Wait{
     public class WaitManager : MonoBehaviour{
         private int numberPhase;
         private GameplayManager gameplayManager;

@@ -2,8 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using System.Linq;
-
-using PhasePart.AMN;
+using Phases.AMN;
 
 /*
     Spawn all the RNA, based on the original DNA string of the protein
@@ -17,7 +16,7 @@ using PhasePart.AMN;
         sub = DNA + DNAtranscriptionEnd[Random.Range(0 , DNAtranscriptionEnd.Length)];
 */
 
-namespace PhasePart.RNA{
+namespace Phases.RNA{
     public class RNASpawner : InputPhase{
         [Space]
         [Header("RNA Manager Atributes")]

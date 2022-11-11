@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-using PhasePart;
+using Phases;
 
 /*
     It seems a little strange or useless, but it's a lot useful

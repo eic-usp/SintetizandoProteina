@@ -5,7 +5,7 @@ using TMPro;
 
 /*Appear between phases of the Gameplay*/
 
-namespace PhasePart.Wait{
+namespace Phases.Wait{
     public class MissionManager : WaitManager{
         [SerializeField] string mission;
         [SerializeField] TextMeshProUGUI missionName;

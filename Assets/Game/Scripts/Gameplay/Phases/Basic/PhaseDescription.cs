@@ -5,7 +5,7 @@ using UnityEngine;
     See Wait->WaitManager or Wait->MissionManager
 */
 
-namespace PhasePart{
+namespace Phases{
 
     [System.Serializable]
     public class PhaseDescription{

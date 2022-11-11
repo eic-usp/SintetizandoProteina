@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
     
-namespace PhasePart{
+namespace Phases{
     /*
         Fade with Canvas Group
         https://forum.unity.com/threads/how-can-i-fade-in-out-a-canvas-group-alpha-color-with-duration-time.969864/

@@ -8,7 +8,7 @@ using UnityEngine.UI;
     There is a significant interaction with the Close Button
 */
 
-namespace PhasePart.Wait{
+namespace Phases.Wait{
     public class InstructionWait : MonoBehaviour{
         [SerializeField] Transform childInstruction = default;
         [SerializeField] Button closeButton = default;

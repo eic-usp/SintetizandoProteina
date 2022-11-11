@@ -10,7 +10,7 @@ using UnityEngine;
     It has the responsability of controlling the animation of the DNA/RNA
 */
 
-namespace PhasePart.RNA.DNA{
+namespace Phases.RNA.DNA{
     public class DNAManager : PhaseManagerMono{
         [Space]
         [Header("DNA Manager Atributes")]

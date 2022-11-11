@@ -1,6 +1,6 @@
 using UnityEngine;
 
-using PhasePart.Bow;
+using Phases.Bow;
 
 /*
     Bow projectile for the minigame

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace PhasePart{
+namespace Phases{
     public class InputPhase : PhaseManagerMono{
         private int actualInput = -1;
 

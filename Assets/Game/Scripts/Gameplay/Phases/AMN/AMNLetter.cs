@@ -7,7 +7,7 @@ using GameUserInterface.Text;
 
 //Colocar nome aminoácidos
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class AMNLetter : Letter{
         [SerializeField] Image AMNcolor = default;
         [SerializeField] TextMeshProUGUI amnName = default;

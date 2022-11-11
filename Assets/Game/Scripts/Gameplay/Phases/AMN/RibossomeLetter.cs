@@ -9,7 +9,7 @@ using GameUserInterface.Text;
     No matter what change, Ball = childCount -1. If that is correct them everything will work fine
 */
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class RibossomeLetter : Letter{
         private int stateRib = 0;
         private bool withAMN = true;

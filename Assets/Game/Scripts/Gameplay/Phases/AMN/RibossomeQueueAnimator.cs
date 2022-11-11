@@ -18,7 +18,7 @@ public enum RibossomeState{
 
     Leave: endTarget before in ribossomeAnimator
 */
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class RibossomeQueueAnimator : MonoBehaviour{
         [SerializeField] List<Transform> ribossomeStatePosition = default;
 

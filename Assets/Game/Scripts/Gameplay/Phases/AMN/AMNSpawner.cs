@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 using GameUserInterface.Text;
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     public class AMNSpawner : MonoBehaviour{
         [SerializeField] float animationsTime = 1f;
  

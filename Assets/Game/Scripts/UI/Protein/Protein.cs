@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-using PhasePart.RNA;
+using Phases.RNA;
 using GameGeneralScripts.Player;
 
 /*

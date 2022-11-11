@@ -6,7 +6,7 @@ using UnityEngine;
 
 //Unity Lerp
 
-namespace PhasePart.AMN{
+namespace Phases.AMN{
     //Before it was part of the InputPhase sons, but its not needed anymore
     public class AMNManager : PhaseManagerMono{
         [System.Serializable]

@@ -6,7 +6,7 @@ using UnityEngine;
     And all the phaseMono use the EndPhase when they meet certain objective
 */
 
-namespace PhasePart{
+namespace Phases{
     public class PhaseManagerMono : MonoBehaviour , PhaseManager{
         [Space]
         [Header("Basic Manager Atributes")]

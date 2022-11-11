@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PhasePart.RNA{
+namespace Phases.RNA{
     public class RNA : TextWithInput{ 
         [SerializeField] Image lightConfirm = default; 
         private bool valueInput = false;

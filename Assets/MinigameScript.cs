@@ -12,7 +12,7 @@ using UnityEngine;
     Here there will be some pooling
     The rotation of the bow will be realized in the Y and Z, always
 */
-namespace PhasePart.Bow{
+namespace Phases.Bow{
     public class MinigameScript : PhaseManagerMono{
         [SerializeField] GameObject originalScene; //It will make the original scene active or inactive
 
