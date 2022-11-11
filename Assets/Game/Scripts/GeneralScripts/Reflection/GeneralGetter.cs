@@ -11,15 +11,18 @@ using System.Reflection;
     Avoiding GetComponent<> or FindObject<>
 */
 
-namespace GameGeneralScripts.Reflection{
-    public class GeneralGetter : AbstractGetter{
+namespace GeneralScripts.Reflection
+{
+    public class GeneralGetter : AbstractGetter
+    {
         private string nameField;
         private string nameProperty;
 
         public void PropertyName(string name) { nameProperty = name; }
         public void FieldName(string name){ nameField = name; } //Just to be used in the inspector
 
-        public override void SetReceptorField(object receptor, string nameFieldReceptor){
+        public override void SetReceptorField(object receptor, string nameFieldReceptor)
+        {
             Type typeThisClass = this.GetType();
             Type typeReceptor = receptor.GetType();
 
@@ -29,7 +32,8 @@ namespace GameGeneralScripts.Reflection{
             receptorField.SetValue(receptor, thisField.GetValue(this));
         }
 
-        public override void SetReceptorProperty(object receptor, string namePropertyReceptor){
+        public override void SetReceptorProperty(object receptor, string namePropertyReceptor)
+        {
             Type typeThisClass = this.GetType();
             Type typeReceptor = receptor.GetType();
 
@@ -39,8 +43,6 @@ namespace GameGeneralScripts.Reflection{
             receptorProperty.SetValue(receptor, thisProperty.GetValue(this, null));
         }
 
-        public override object SetFunctionCall(object receptor, string nameFunction){
-            return null;
-        }
+        public override object SetFunctionCall(object receptor, string nameFunction) => null;
     }
 }

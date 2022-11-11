@@ -10,15 +10,16 @@ using UnityEngine;
     It has the responsability of controlling the animation of the DNA/RNA
 */
 
-namespace Phases.RNA.DNA{
-    public class DNAManager : PhaseManagerMono{
-        [Space]
-        [Header("DNA Manager Atributes")]
-        [Space]
+namespace Phases.Cell.DNA
+{
+    public class DNAManager : PhaseManagerMono
+    {
+        [Space] [Header("DNA Manager Atributes")] [Space]
         [SerializeField] DNAStructureWithRNA dnaSetupReference = default; //Visual part of the DNA
         [SerializeField] CellAnimator cellReference = default; //Call all the animations
 
-        private Dictionary<string, string> validationDNADNA = new Dictionary<string, string>(){
+        private Dictionary<string, string> validationDNADNA = new Dictionary<string, string>()
+        {
             {"A", "T"},
             {"T", "A"},
             {"C", "G"},
@@ -27,7 +28,8 @@ namespace Phases.RNA.DNA{
 
         private string finiteDNAString; //Gets it from the RNASpawner
 
-        private void Start() {
+        private void Start()
+        {
             ChangeSecondHalf();
             dnaSetupReference.ChangeVisibilitySecondHalfDNA(true);
 
@@ -35,57 +37,69 @@ namespace Phases.RNA.DNA{
             RNAEscapeAnimation();
         }
 
-        private async void RNAEscapeAnimation(){
+        private async void RNAEscapeAnimation()
+        {
             await UniTask.Delay(Util.ConvertToMili(cellReference.RNAEscapeNucleus()));
             cellReference.SetAnimatorStatus(false);
             base.EndPhase();
         }
 
-        public void TurnDNAOn(){
+        public void TurnDNAOn()
+        {
             this.dnaSetupReference.GetHolderOfStructure().SetActive(true);
         }
         
-        public void SetFiniteDNAString(string finiteDNAString){
+        public void SetFiniteDNAString(string finiteDNAString)
+        {
             this.finiteDNAString = finiteDNAString;
         }
 
         //Dna setup settings
-        public void SetupStructure(int quantity, string firstCut, bool add){
+        public void SetupStructure(int quantity, string firstCut, bool add)
+        {
             dnaSetupReference.SetupStructure(quantity, firstCut, add);
         }
 
-        public void ChangeFirstHalf(string cut){
+        public void ChangeFirstHalf(string cut)
+        {
             SetFiniteDNAString(cut);
             dnaSetupReference.ChangeAllFirstHalf(cut);
         }
 
-        public void ChangeSecondHalf(){
+        public void ChangeSecondHalf()
+        {
             //Create the complement of the DNA
             dnaSetupReference.ChangeAllSecondHalf(CreateComplementaryDNA()); 
         }
 
-        public void ChangeSecondHalf(int index, string text){
+        public void ChangeSecondHalf(int index, string text)
+        {
             dnaSetupReference.ChangeSecondHalf(index, text);
         }
 
-        public void ChangeRNAinDNAStructureByChildPosition(int index, string text){
+        public void ChangeRNAinDNAStructureByChildPosition(int index, string text)
+        {
             dnaSetupReference.ChangeRNAinDNAStructureByChildPosition(index, text);
         }
 
-        public void ChangeRNAinDNAStructure(int index, string text){
+        public void ChangeRNAinDNAStructure(int index, string text)
+        {
             dnaSetupReference.ChangeRNAinDNAStructure(index, text);
         }
 
         //Uses the Validation table
-        private string CreateComplementaryDNA(){
+        private string CreateComplementaryDNA()
+        {
             return CreateComplementaryDNA(finiteDNAString);
         }
 
-        private string CreateComplementaryDNA(string textDNA){
+        private string CreateComplementaryDNA(string textDNA)
+        {
             string complement = "";
             int i;
 
-            for(i = 0; i < textDNA.Length; i++){
+            for (i = 0; i < textDNA.Length; i++)
+            {
                 complement += validationDNADNA[textDNA[i].ToString()];
             }
 
@@ -94,33 +108,29 @@ namespace Phases.RNA.DNA{
 
 
         //Animations
-        public async UniTask RNAVisibility(){
+        public async UniTask RNAVisibility()
+        {
             GameObject dnaRna = dnaSetupReference.GetRNADNA();
-            
             dnaRna.SetActive(true);
-
-            Util.ChangeAlphaCanvasImageAnimation(dnaRna.GetComponent<CanvasGroup>(),
-                1f, 1f);
-
+            Util.ChangeAlphaCanvasImageAnimation(dnaRna.GetComponent<CanvasGroup>(), 1f, 1f);
             await UniTask.Delay(Util.ConvertToMili(1f));
         }
 
-        public async UniTask DNASeparation(){
+        public async UniTask DNASeparation()
+        {
             GameObject dnaSecond = dnaSetupReference.GetSecondHalf();
+            Util.ChangeAlphaCanvasImageAnimation(dnaSecond.GetComponent<CanvasGroup>(), 0f, 1f);
 
-            Util.ChangeAlphaCanvasImageAnimation(dnaSecond.GetComponent<CanvasGroup>(),
-                0f, 1f);
-            
             await UniTask.Delay(Util.ConvertToMili(1f));
 
             dnaSecond.SetActive(false);
-
-            Util.ChangeAlphaCanvasImageAnimation(dnaSecond.GetComponent<CanvasGroup>(),
-                1f, 0f);
+            Util.ChangeAlphaCanvasImageAnimation(dnaSecond.GetComponent<CanvasGroup>(), 1f, 0f);
         }
 
-        public async UniTask DNANucleusVisibility(bool state){
-            if(state){
+        public async UniTask DNANucleusVisibility(bool state)
+        {
+            if (state)
+            {
                 await UniTask.Delay(Util.ConvertToMili(cellReference.ExpandCellNucleus()));
                 return;
             }
@@ -129,11 +139,13 @@ namespace Phases.RNA.DNA{
             return;
         }
 
-        public void SetSeparationInDNAStructure(int separation){
+        public void SetSeparationInDNAStructure(int separation)
+        {
             dnaSetupReference.SetSeparation(separation);
         }
 
-        public void SetQuantity(int quantity){
+        public void SetQuantity(int quantity)
+        {
             dnaSetupReference.SetQuantity(quantity);
         }
     }

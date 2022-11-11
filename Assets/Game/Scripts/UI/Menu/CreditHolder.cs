@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Game.Scripts.UI.Menu
+namespace UI.Menu
 {
     public class CreditHolder : MonoBehaviour
     {

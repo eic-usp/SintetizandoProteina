@@ -16,7 +16,8 @@ using Phases.AMN;
         sub = DNA + DNAtranscriptionEnd[Random.Range(0 , DNAtranscriptionEnd.Length)];
 */
 
-namespace Phases.RNA{
+namespace Phases.Cell
+{
     public class RNASpawner : InputPhase{
         [Space]
         [Header("RNA Manager Atributes")]
@@ -38,7 +39,8 @@ namespace Phases.RNA{
         [SerializeField] Color defColor = default;
         [SerializeField] Color whenRight = default;
         [SerializeField] Color whenWrong = default;
-        private Dictionary<string, string> validationDNARNA = new Dictionary<string, string>(){
+        private Dictionary<string, string> validationDNARNA = new Dictionary<string, string>()
+        {
             {"A", "U"},
             {"T", "A"},
             {"C", "G"},
@@ -48,28 +50,33 @@ namespace Phases.RNA{
         private string[] answers; //Save of the answers of the RNA given by the player
         private int nextPhase = 0;
 
-        private void Start(){
+        private void Start()
+        {
             answers = new string[quantity];
             SetInputOperation();
         }
 
-        private void InstantiateRNAUsingString(int actualNumber, string dataString,TextWithInput prefabT){
+        private void InstantiateRNAUsingString(int actualNumber, string dataString,TextWithInput prefabT)
+        {
             int i;
             TextWithInput hold;
 
-            for(i = 0 ; i < dataString.Length ; i++){
+            for (i = 0 ; i < dataString.Length ; i++)
+            {
                 hold = Instantiate<TextWithInput>(prefabT, RNASpawn);
                 hold.SetPosition(actualNumber + i); //Puts its original position, so i can build the "replic" vector
                 hold.Setup(dataString[i].ToString());
             }
         }
 
-        private string InstantiateAllRNABasedOnDNA(){
+        private string InstantiateAllRNABasedOnDNA()
+        {
             return InstantiateAllRNABasedOnDNA(originalPlace.CutDNAString());
         }
 
         //Get the additional information
-        public string InstantiateAllRNABasedOnDNA(string sub){
+        public string InstantiateAllRNABasedOnDNA(string sub)
+        {
             string ending = originalPlace.GetAEndingString();
             string beginning = originalPlace.GetBeginningString();
 
@@ -96,30 +103,38 @@ namespace Phases.RNA{
             return ending;
         }
 
-        private void DestroyAllRNA(){
-            foreach(Transform child in RNASpawn){
+        private void DestroyAllRNA()
+        {
+            foreach (Transform child in RNASpawn)
+            {
                 Destroy(child.gameObject);
             }
         }
 
-        public void ResetActualValuesInRNA(){
+        public void ResetActualValuesInRNA()
+        {
             RNA hold;
-            foreach(Transform child in RNASpawn){
+            foreach (Transform child in RNASpawn)
+            {
                 hold = child.GetComponent<RNA>();
-                if(GetValueValidation(hold.GetValue()) == hold.GetValueInputText()){
+                if (GetValueValidation(hold.GetValue()) == hold.GetValueInputText())
+                {
                     hold.SetValue("", defColor);
                     nextPhase--;
                 }
             }
         }
 
-        public void ChangeQuantityToNextPhase(int increase){
+        public void ChangeQuantityToNextPhase(int increase)
+        {
             nextPhase += increase;  
             EndPhase(); //To end the game when the player filled everything
         }
 
-        public new void EndPhase(){
-            if(nextPhase == quantity){
+        public new void EndPhase()
+        {
+            if (nextPhase == quantity)
+            {
                 //Here its change phases
                 AMNManager.SetRNAtoAMNString(Util.ConvertToString(answers));
                 base.EndPhase();
@@ -128,46 +143,61 @@ namespace Phases.RNA{
             return;
         }
 
-        public void SetCorrespondentValidation(int index, string value){
+        public void SetCorrespondentValidation(int index, string value)
+        {
             answers[index] = value; //Look RNA original position
-
             originalPlace.ChangeRNAinDNAStructure(index, value);
         }
 
 
-        public void SetQuantity(int quantity){
+        public void SetQuantity(int quantity)
+        {
             this.quantity = quantity;
         }
-        public Color GetColorDef(){
+
+        public Color GetColorDef()
+        {
             return defColor;
         }
-        public Color GetColorRight(){
+
+        public Color GetColorRight()
+        {
             return whenRight;
         }
-        public Color GetColorWrong(){
+
+        public Color GetColorWrong()
+        {
             return whenWrong;
         }
-        public string GetValueValidation(string keyPas){
+
+        public string GetValueValidation(string keyPas)
+        {
             return validationDNARNA[keyPas];
         }
-        public int GetValidationCount(){
+
+        public int GetValidationCount()
+        {
             return validationDNARNA.Count;
-        }       
-        public string GetKeyByIndex(int index){
+        }
+
+        public string GetKeyByIndex(int index)
+        {
             return validationDNARNA.Keys.ElementAt(index);
         }
 
-        public string[] GetDictionaryKeys(){
+        public string[] GetDictionaryKeys()
+        {
             return validationDNARNA.Keys.ToArray();
         }
 
-        public int GetDictionaryKeysCount(){
+        public int GetDictionaryKeysCount()
+        {
             return validationDNARNA.Keys.Count;
         }
 
-        public string GetNonUsableCharacter(){
+        public string GetNonUsableCharacter()
+        {
             return this.nonUsableCharacter;
         }
-
     }
 }

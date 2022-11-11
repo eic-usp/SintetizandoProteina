@@ -1,5 +1,7 @@
-namespace Phases{
-    public interface PhaseManager{
+namespace Phases
+{
+    public interface PhaseManager
+    {
         void EndPhase();
     }
 }

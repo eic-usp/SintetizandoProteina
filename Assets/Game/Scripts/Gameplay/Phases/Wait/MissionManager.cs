@@ -5,19 +5,23 @@ using TMPro;
 
 /*Appear between phases of the Gameplay*/
 
-namespace Phases.Wait{
-    public class MissionManager : WaitManager{
+namespace Phases.Wait
+{
+    public class MissionManager : WaitManager
+    {
         [SerializeField] string mission;
         [SerializeField] TextMeshProUGUI missionName;
         [SerializeField] TextMeshProUGUI missionDescription;
         [SerializeField] Transform additionalInformation;
 
-        public void Setup(int numberPhase, string missionName, string missionDescription, GameObject information){
+        public void Setup(int numberPhase, string missionName, string missionDescription, GameObject information)
+        {
             this.missionName.text = mission + "  " + (numberPhase + 1) + "  (" + missionName + ") ";
             this.missionDescription.text = missionDescription;
             SetNumberPhase(numberPhase);
 
-            if(information == null || additionalInformation == null){
+            if (information == null || additionalInformation == null)
+            {
                 return;
             }
 
@@ -25,7 +29,8 @@ namespace Phases.Wait{
         }
 
         //Ok not to be async
-        public void OnClickUnBlock(){
+        public void OnClickUnBlock()
+        {
             WaitCheck(); //Protected function
         }
     }

@@ -1,8 +1,10 @@
 using UnityEngine;
 
-namespace ProteinPart.InfoProtein{
-[CreateAssetMenu(fileName = "Data", menuName = "ProteinDescription")]
-    public class ProteinDescription : ScriptableObject{
+namespace UI.Protein.Info
+{
+    [CreateAssetMenu(fileName = "Data", menuName = "ProteinDescription")]
+    public class ProteinDescription : ScriptableObject
+    {
         [TextArea(15,20)]
         public string proteinDNA;
         public SynthesizingProtein sp;

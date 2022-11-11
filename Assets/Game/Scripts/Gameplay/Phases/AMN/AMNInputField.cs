@@ -1,22 +1,29 @@
 using UnityEngine;
 using TMPro;
 
-namespace Phases.AMN{
-    public class AMNInputField : MonoBehaviour{
+namespace Phases.AMN
+{
+    public class AMNInputField : MonoBehaviour
+    {
         [SerializeField] AMNManager amnM;
         private TMP_InputField thisInput;
 
         private bool wait = false;
 
-        private void Start() {
+        private void Start()
+        {
             thisInput = this.GetComponent<TMP_InputField>(); 
-            thisInput.onValueChanged.AddListener(delegate {ValueChangeCheck(); });
+            thisInput.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
         }
         
-        private async void OnSubmit(){ //When there is enough characters
+        private async void OnSubmit()
+        {
+            //When there is enough characters
             //print("That it");
             print(wait + " O K " + thisInput.text);
-            if(!wait && amnM.VerifyAMN(thisInput.text)){
+
+            if (!wait && amnM.VerifyAMN(thisInput.text))
+            {
                 string auxTextAMN = thisInput.text;
                 thisInput.text = "";
 
@@ -28,20 +35,25 @@ namespace Phases.AMN{
             }
         }
 
-        private void ValueChangeCheck(){
-            if(thisInput.text.Length == 0){
+        private void ValueChangeCheck()
+        {
+            if (thisInput.text.Length == 0)
+            {
                 return;
             }
 
             thisInput.text = FormatText();
 
-            if(thisInput.text.Length == AMNManager.GetSizeAMN()){
+            if (thisInput.text.Length == AMNManager.GetSizeAMN())
+            {
                 OnSubmit();
             }
         }
 
-        private string FormatText(){
-            if(thisInput.text.Length == 1){
+        private string FormatText()
+        {
+            if (thisInput.text.Length == 1)
+            {
                 return thisInput.text.ToUpper();
             }
 

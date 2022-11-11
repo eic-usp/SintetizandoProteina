@@ -1,23 +1,20 @@
 using System.Collections.Generic;
-using System;
+using UnityEngine;
 using Cysharp.Threading.Tasks;
 
-using UnityEngine;
-
-//Unity Lerp
-
-namespace Phases.AMN{
-    //Before it was part of the InputPhase sons, but its not needed anymore
-    public class AMNManager : PhaseManagerMono{
+namespace Phases.AMN
+{
+    //Before it was part of the InputPhase childs, but its not needed anymore
+    public class AMNManager : PhaseManagerMono
+    {
         [System.Serializable]
-        private class AMNDescriber{
+        private class AMNDescriber
+        {
             public AMN value; //A,G,U,C
             public Sprite table = null; //One quarter of the amino acids circle
         }
 
-        [Space]
-        [Header("AMN Manager Atributes")]
-        [Space]
+        [Space] [Header("AMN Manager Atributes")] [Space]
 
         [SerializeField] List<AMNDescriber> basics; //The "tables" and their answers
         [SerializeField] AMNTableHolder tableHolder = null;
@@ -35,11 +32,11 @@ namespace Phases.AMN{
         private string nameAMN; //Change in every input
         
         [SerializeField] GameObject visualAMN = default; //Where all the tables, the ribosome and the transporter will be
-        
         [SerializeField] AMNQueue completedAMNQueue = default; //Push a AMN when its ends
         [SerializeField] AMNSpawner amnLetterQueue = default;
 
-        private void Start() {
+        private void Start()
+        {
             visualAMN.SetActive(true);
             Util.ChangeAlphaCanvasImageAnimation(visualAMN.GetComponent<CanvasGroup>(), 1f, 1f);
             SetAllRibossome();
@@ -48,21 +45,24 @@ namespace Phases.AMN{
             SetSearchAMN();
         }
 
-        private void SpawnAMN(){
+        private void SpawnAMN()
+        {
             amnLetterQueue.SpawnAMN(RNAtoAMN);
         }
 
-        private float SetAMN(bool lastOne){
+        private float SetAMN(bool lastOne)
+        {
             SetSearchAMN();
-
             return amnLetterQueue.NextAMN(lastOne);
         }
 
-        private void SetSearchAMN(){
+        private void SetSearchAMN()
+        {
             int i;
             string RNAstring = "";
 
-            for(i = 0; i < sizeAMN; i++){
+            for (i = 0; i < sizeAMN; i++)
+            {
                 RNAstring += RNAtoAMN[indexOfRNA];
                 indexOfRNA++;
             }
@@ -70,38 +70,40 @@ namespace Phases.AMN{
             SearchAMN(RNAstring);
         }
 
-        private async void SetAllRibossome(){
+        private async void SetAllRibossome()
+        {
             animationPause = true;
             await completedAMNQueue.SetAllRibossomeEnter(ribossomeMaxNumber);
             animationPause = false;
         }
 
-        public static void SetRNAtoAMNString(string RNA){
+        public static void SetRNAtoAMNString(string RNA)
+        {
             AMNManager.RNAtoAMN = RNA;
         }
 
-        private void SearchAMN(string RNAstring){
+        private void SearchAMN(string RNAstring)
+        {
             int i = 0;
             AMN perc;
             AMNDescriber hold;
             
-            hold = basics.Find(x => {
-                return x.value.GetValue() == RNAstring[i].ToString();
-            }); 
+            hold = basics.Find(x => x.value.GetValue() == RNAstring[i].ToString()); 
 
             perc = hold.value;
 
-            if(hold == null || hold.table == null){
+            if (hold == null || !hold.table)
+            {
                 print("WTF AMN " + hold.value.GetValue());
                 return;
             }
 
             tableHolder.ChangeTable(hold.table);
 
-            for(i = 1; i < sizeAMN; i++){
-
+            for (i = 1; i < sizeAMN; i++)
+            {
                 perc = perc.GetNexts().Find(x => {
-                    return Array.Find(x.GetValue().Split(','), y => {
+                    return System.Array.Find(x.GetValue().Split(','), y => {
                         return y == RNAstring[i].ToString();
                     }) != null;
                 });
@@ -112,14 +114,10 @@ namespace Phases.AMN{
             print(nameAMN);
         }
 
-        public bool VerifyAMN(string AMN){
-            if(AMN.ToUpper() == nameAMN.ToUpper()){
-                return true;
-            }
-            return false;
-        }
+        public bool VerifyAMN(string AMN) => (AMN.ToUpper() == nameAMN.ToUpper());
 
-        public async UniTask PushNewAMN(string AMN){
+        public async UniTask PushNewAMN(string AMN)
+        {
             await WaitAnimationFlow();
 
             actualCompleted++;
@@ -128,7 +126,8 @@ namespace Phases.AMN{
             EndPhase();
         }
 
-        private async UniTask QueueNewAMN(string amnName){
+        private async UniTask QueueNewAMN(string amnName)
+        {
             animationPause = true;
             UniTask[] UniTaskAnimation = new UniTask[2]; //All animation of the object
 
@@ -138,9 +137,12 @@ namespace Phases.AMN{
                 (actualCompleted + ribossomeMaxNumber - 1).ToString(), amnName);
             
             //Move the string to the left
-            if(actualCompleted <= numberOfAMN){
+            if (actualCompleted <= numberOfAMN)
+            {
                 UniTaskAnimation[1] = UniTask.Delay(Util.ConvertToMili(SetAMN(actualCompleted == numberOfAMN)));
-            }else{
+            }
+            else
+            {
                 UniTaskAnimation[1] = UniTask.Delay(0);
             }
 
@@ -149,14 +151,18 @@ namespace Phases.AMN{
             animationPause = false;
         }
 
-        private async UniTask WaitAnimationFlow(){
-            while(animationPause){
+        private async UniTask WaitAnimationFlow()
+        {
+            while (animationPause)
+            {
                 await UniTask.Yield();
             }
         }
 
-        public new bool EndPhase(){
-            if(actualCompleted == numberOfAMN + 1){
+        public new bool EndPhase()
+        {
+            if (actualCompleted == numberOfAMN + 1)
+            {
                 ThrownLastRibossome();
                 base.EndPhase();
                 return true;
@@ -165,57 +171,28 @@ namespace Phases.AMN{
             return false;
         }
 
-        private async void ThrownLastRibossome(){
+        private async void ThrownLastRibossome()
+        {
             await completedAMNQueue.NewAMNInLine(
                 (actualCompleted) >= (numberOfAMN), 
                 (actualCompleted) < (numberOfAMN + 1),
                 (actualCompleted + ribossomeMaxNumber - 1).ToString(), "None");
         }
 
-        public static int GetSizeAMN(){
+        public static int GetSizeAMN()
+        {
             return sizeAMN;
         }
 
-        public static int GetNumberOfAMN(){
+        public static int GetNumberOfAMN()
+        {
             return numberOfAMN;
         }
 
-        public static void SetNumberOfAMN(int newNumberOfAMN){
+        public static void SetNumberOfAMN(int newNumberOfAMN)
+        {
             numberOfAMN = newNumberOfAMN;
         }
 
     }
 }
-
-
-        /*
-        private void ShowAMN(string phrase){
-            int i = 0;
-
-            foreach(Transform child in letterSpawn){
-                child.GetComponent<Letter>().Setup(phrase[i].ToString());
-                i++;
-            }
-        }*/
-
-/*
-    private void SetLetterAMN(){ //Not used anymore
-        int i;
-
-        actualDesc = UnityEngine.Random.Range(0, basics.Count);
-
-        string structure = basics[actualDesc].value.GetValue();
-        string[] hold;
-
-        AMN perc = basics[actualDesc].value;
-
-        for(i = 1; i < sizeAMN; i++){
-            perc = perc.GetAMN(UnityEngine.Random.Range(0, perc.GetNextsCount()));
-            hold = perc.GetValue().Split(','); //Can be more than one value
-            structure += hold[UnityEngine.Random.Range(0, hold.Length)];
-        }
-
-        nameAMN = perc.GetAMN(0).GetValue(); //Aminoacid
-        ShowAMN(structure);
-    }
-*/

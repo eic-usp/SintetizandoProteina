@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.UI;
 
 /*
     There is a significant interaction with the Close Button
 */
 
-namespace Phases.Wait{
-    public class InstructionWait : MonoBehaviour{
+namespace Phases.Wait
+{
+    public class InstructionWait : MonoBehaviour
+    {
         [SerializeField] Transform childInstruction = default;
         [SerializeField] Button closeButton = default;
 
         private int actualChildInstruction = 0;
         private int childCnt;
 
-        private void Start() {
+        private void Start()
+        {
             childCnt = childInstruction.childCount;
         }
 
-        public void IncreaceChildInstruction(){
-            if(actualChildInstruction == childCnt - 1){
+        public void IncreaceChildInstruction()
+        {
+            if (actualChildInstruction == childCnt - 1)
+            {
                 closeButton.onClick.Invoke();
                 return;
             }
@@ -31,8 +35,10 @@ namespace Phases.Wait{
             childInstruction.GetChild(actualChildInstruction).gameObject.SetActive(true);
         }
 
-        public void DecreaceChildInstruction(){
-            if(actualChildInstruction == 0){
+        public void DecreaceChildInstruction()
+        {
+            if (actualChildInstruction == 0)
+            {
                 return;
             }
 
@@ -41,7 +47,9 @@ namespace Phases.Wait{
             childInstruction.GetChild(actualChildInstruction).gameObject.SetActive(true);
         }
 
-        public void CloseGame(){ //The button has this method
+        //The button has this method
+        public void CloseGame()
+        {
             Destroy(this.gameObject);
         }
     }

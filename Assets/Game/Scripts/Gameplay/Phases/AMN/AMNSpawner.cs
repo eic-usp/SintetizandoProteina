@@ -1,12 +1,12 @@
 using System.Collections;
-
 using UnityEngine;
 using UnityEngine.UI;
+using UI.Text;
 
-using GameUserInterface.Text;
-
-namespace Phases.AMN{
-    public class AMNSpawner : MonoBehaviour{
+namespace Phases.AMN
+{
+    public class AMNSpawner : MonoBehaviour
+    {
         [SerializeField] float animationsTime = 1f;
  
         [SerializeField] Letter letterPrefab = default;
@@ -14,28 +14,32 @@ namespace Phases.AMN{
         
         [SerializeField] float AMNPrefabWidth = 65f; 
         private float spaceBetween;
-
-        
-        private void Start() {
+    
+        private void Start()
+        {
             spaceBetween = letterSpawn.GetComponent<HorizontalLayoutGroup>().spacing;
         }
 
-        public void SpawnAMN(string RNAString){
+        public void SpawnAMN(string RNAString)
+        {
             int i;
             Letter hold;
 
-            for(i = 0; i < RNAString.Length; i++){
+            for (i = 0; i < RNAString.Length; i++)
+            {
                 hold = Instantiate<Letter>(letterPrefab, letterSpawn);
                 hold.Setup(RNAString[i].ToString());        
             }
 
         }
 
-        public float NextAMN(bool lastOne){
+        public float NextAMN(bool lastOne)
+        {
             RectTransform rT = letterSpawn.GetComponent<RectTransform>();
             float moveDistance = (AMNPrefabWidth + spaceBetween) * 3;
 
-            if(lastOne){
+            if (lastOne)
+            {
                 moveDistance -= AMNPrefabWidth / 2;
             }
 
@@ -46,8 +50,8 @@ namespace Phases.AMN{
             return animationsTime;
         }
 
-        private IEnumerator MoveTowardsPosition(Vector3 target){
-
+        private IEnumerator MoveTowardsPosition(Vector3 target)
+        {
             yield return null;
         }
     }

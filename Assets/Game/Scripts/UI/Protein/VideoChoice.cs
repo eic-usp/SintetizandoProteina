@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.Video;
 using Cysharp.Threading.Tasks;
 
-using GameUserInterface.Animation;
-using ProteinPart.InfoProtein;
+using UI.Animation;
 
 /*
     This code pick one VideoChoice and set a videoPlayer, its also set some video options
     Like pause, play and skip.
     The video is linked with a subtitle
 */
-namespace ProteinPart{
-    public class VideoChoice : MonoBehaviour{
+namespace UI.Protein
+{
+    using Protein = UI.Protein.Info.Protein;
+
+    public class VideoChoice : MonoBehaviour
+    {
         [SerializeField] List<VideoClip> videoClips = new List<VideoClip>();
         [SerializeField] Transform screens;
 
@@ -25,36 +28,42 @@ namespace ProteinPart{
         //private UniTask videoUniTask;
         bool pause;
 
-        private void Start(){
+        private void Start()
+        {
             Protein.Setup(this);
             videoPlayer = GetComponent<VideoPlayer>();
         }
 
-        public void ChooseProtein(int index){
+        public void ChooseProtein(int index)
+        {
             videoPlayer.clip = videoClips[index];
             actualVideoClip = index;
             this.transform.GetChild(0).gameObject.SetActive(true); //The buttons
             PlayVideo();
         }
 
-        private IEnumerator FinishCheck(){
-            while(videoPlayer.isPlaying){
+        private IEnumerator FinishCheck()
+        {
+            while (videoPlayer.isPlaying)
+            {
                 yield return null;
             }
 
-            if(!pause){
+            if (!pause)
+            {
                 ShowScreen();
             }
         }
 
-        private async void ShowScreen(){
+        private async void ShowScreen()
+        {
             print("Entrou aqui Show Screen");
             this.gameObject.SetActive(false); //Instanteneous stop all coroutine
-
             await PlayTransitionIn(); //Don't get finished in SetActive(false)
         }
 
-        private async UniTask PlayTransitionIn(){
+        private async UniTask PlayTransitionIn()
+        {
             myTransition.EnableTransition();
 
             screens.GetChild(actualVideoClip).gameObject.SetActive(true);
@@ -63,16 +72,18 @@ namespace ProteinPart{
             myTransition.DisableTransition(); //Just to be sure, not needed
         }   
 
-        public void StopVideo(){
-            if(!videoPlayer.isPlaying) return;
+        public void StopVideo()
+        {
+            if (!videoPlayer.isPlaying) return;
             pause = true;
 
             StopCoroutine(FinishCheck());
             videoPlayer.Pause();
         }
 
-        public void PlayVideo(){
-            if(videoPlayer.isPlaying) return;
+        public void PlayVideo()
+        {
+            if (videoPlayer.isPlaying) return;
             pause = false;
 
             videoPlayer.Play();
@@ -80,7 +91,8 @@ namespace ProteinPart{
             //videoUniTask.Start();
         }
 
-        public void SkipVideo(){
+        public void SkipVideo()
+        {
             ShowScreen();
         }
     }

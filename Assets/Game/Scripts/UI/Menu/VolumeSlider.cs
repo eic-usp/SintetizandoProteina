@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scripts.UI.Menu{
-    public class VolumeSlider : MonoBehaviour{
-        [SerializeField] SettingMenu sm = default;
+namespace UI.Menu
+{
+    public class VolumeSlider : MonoBehaviour
+    {
+        [SerializeField] SettingsMenu sm = default;
 
         private Slider slider;
 
-        void Start(){
+        private void Start()
+        {
             slider = this.transform.GetComponent<Slider>();
             slider.value = sm.GetVolume();
         }

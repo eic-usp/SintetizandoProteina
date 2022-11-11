@@ -1,18 +1,17 @@
-using Cysharp.Threading.Tasks;
-
 using UnityEngine;
 using UnityEngine.UI;
-using Phases.RNA.DNA;
+using Cysharp.Threading.Tasks;
 
-namespace Phases.Destination
+using Phases.Cell;
+
+namespace Phases.Processing
 {
-    public class DestinationManager : PhaseManagerMono
+    public class ProcessingManager : PhaseManagerMono
     {
         [Space] [Header("Destination Manager Variables")] [Space]
         [SerializeField] private CellAnimator cellReference; //Used for the single purpose of animation
-        
-        [SerializeField] private GameObject destinationDescriptionObject; 
-        [SerializeField] private Button endDestinationButton;
+        [SerializeField] private GameObject processingDescriptionObject; 
+        [SerializeField] private Button endProcessingButton;
 
         private void Start()
         {
@@ -24,14 +23,13 @@ namespace Phases.Destination
         {
             var time = cellReference.AMNTransformation();
             await UniTask.Delay(Util.ConvertToMili(time / 0.5f));
-            endDestinationButton.onClick.AddListener(delegate {destinationDescriptionObject.SetActive(false);});
-            endDestinationButton.onClick.AddListener(EndPhase);
+            endProcessingButton.onClick.AddListener(delegate {processingDescriptionObject.SetActive(false);});
+            endProcessingButton.onClick.AddListener(EndPhase);
         }
 
         public new void EndPhase()
         {
             base.EndPhase();
         }
-
     }
 }

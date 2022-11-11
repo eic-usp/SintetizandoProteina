@@ -6,90 +6,106 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.Events;
 
-public static class Util{
+public static class Util
+{
     //Coroutines for all classes
-    public static IEnumerator WaitForFrames(int frameCount){
-        while (frameCount > 0){
+
+    public static IEnumerator WaitForFrames(int frameCount)
+    {
+        while (frameCount > 0)
+        {
             frameCount--;
             yield return null; //returning 0 or null will make it wait 1 frame
         }
     }
 
     //Array work
-    public static void SequencialFeed(int[] arrayN, int tam){  
-        int i;
 
-        for(i = 0; i < tam; i++){
+    public static void SequencialFeed(int[] arrayN, int tam)
+    {
+        for (int i = 0; i < tam; i++)
+        {
             arrayN[i] = i;
         }
     }
 
-    public static void ShuffleArray(int[] arrayN){
+    public static void ShuffleArray(int[] arrayN)
+    {
         System.Random random = new System.Random();
         arrayN = arrayN.OrderBy(x => random.Next()).ToArray();
     }
 
-    public static void RandomVectorFill(int[] arrayN, int startIndex, int min,int max){
-        int i;
-
-        for(i = startIndex; i < arrayN.Length ; i++){
+    public static void RandomVectorFill(int[] arrayN, int startIndex, int min, int max)
+    {
+        for (int i = startIndex; i < arrayN.Length ; i++)
+        {
             //Range(int minInclusive, int maxExclusive);
             arrayN[i] = UnityEngine.Random.Range(min , max); //This actually helps us being exclusive
         }
     }
 
-    public static void PrintVector(int[] arrayN){
-        int i;
-
-        for(i = 0 ; i < arrayN.Length; i++){
+    public static void PrintVector(int[] arrayN)
+    {
+        for (int i = 0 ; i < arrayN.Length; i++)
+        {
             Debug.Log(i + ": " + arrayN[i]);
         }
     }
 
-    public static bool FindOcorrence(string origin, string[] search){ //Better version if you not the same size
-        int i;
+    //Better version if you not the same size
+
+    public static bool FindOcorrence(string origin, string[] search)
+    {
         bool index = false;
 
-        for(i = 0 ; i < search.Length; i++){
-            if(origin.IndexOf(search[i]) != -1){
+        for (int i = 0 ; i < search.Length; i++)
+        {
+            if (origin.IndexOf(search[i]) != -1)
+            {
                 index = true;
                 break;
             }
         }
 
-
         return index;
     }
 
     //String
-    public static string RandomSubString(string origin, int lenghtCUT, int min, int max){
+
+    public static string RandomSubString(string origin, int lenghtCUT, int min, int max)
+    {
         int position = UnityEngine.Random.Range(0, max);
         //return DNAString.Substring(position, quantity - (2 *  AMNManager.GetSizeAMN()));
         return origin.Substring(position, lenghtCUT);
     }
     
-    public static string ConvertToString(string[] phrase){
+    public static string ConvertToString(string[] phrase)
+    {
         string res = ""; 
         int i;
         
-        for(i = 0; i < phrase.Length ; i++){
+        for (i = 0; i < phrase.Length ; i++)
+        {
             res += phrase[i];
         }
 
         return res;
     }
 
-    public static bool FindOcorrence(string origin, string[] search, int lenghtOfSearch){ //See above if needed
-        int i, j;
+    //See above if needed
+
+    public static bool FindOccurrence(string origin, string[] search, int lenghtOfSearch)
+    {
         string hold;
 
-        for(i = 0; i < origin.Length; i+= lenghtOfSearch){
-            
+        for (int i = 0; i < origin.Length; i += lenghtOfSearch)
+        {
             hold = origin.Substring(i , lenghtOfSearch);
             
-            for(j = 0; j < search.Length; j++){
-
-                if(hold.Equals(search[j])){
+            for (int j = 0; j < search.Length; j++)
+            {
+                if (hold.Equals(search[j]))
+                {
                     return true;
                 }
             }
@@ -100,15 +116,16 @@ public static class Util{
 
     //Unity Events
 
-    public static void UnityEventInvokeAllListenersTheSame(UnityEvent m_MyEvent, object[] parameter, Type[] argumentType){
-        int i;
-
-        for(i = 0; i < m_MyEvent.GetPersistentEventCount(); i++){
+    public static void UnityEventInvokeAllListenersTheSame(UnityEvent m_MyEvent, object[] parameter, Type[] argumentType)
+    {
+        for (int i = 0; i < m_MyEvent.GetPersistentEventCount(); i++)
+        {
             UnityEventInvokeListenerByIndex(m_MyEvent, i, parameter, argumentType);
         } 
     }
 
-    public static void UnityEventInvokeListenerByIndex(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType){
+    public static void UnityEventInvokeListenerByIndex(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType)
+    {
         object myObj;
 
         myObj = m_myEvent.GetPersistentTarget(eventIndex);
@@ -117,19 +134,21 @@ public static class Util{
         another.Invoke(myObj, parameter);
     }
 
-    public static void UnityEventInvokeListenerByIndexObj(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType, object obj){
+    public static void UnityEventInvokeListenerByIndexObj(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType, object obj)
+    {
         MethodInfo another = UnityEventGetMethodInfo(m_myEvent, eventIndex, parameter, argumentType, obj);
-        
         another.Invoke(obj, parameter);
     }
 
-    public static MethodInfo UnityEventGetMethodInfo(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType, object obj){
-        return UnityEvent.GetValidMethodInfo(obj, 
-            m_myEvent.GetPersistentMethodName(eventIndex), argumentType);
+    public static MethodInfo UnityEventGetMethodInfo(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType, object obj)
+    {
+        return UnityEvent.GetValidMethodInfo(obj, m_myEvent.GetPersistentMethodName(eventIndex), argumentType);
     }
 
     //Color
-    public static Color RandomSolidColor(){
+
+    public static Color RandomSolidColor()
+    {
         int count = 1;
         int i = 0;
         float[] tableTruthFillet = new float[3];
@@ -137,15 +156,18 @@ public static class Util{
 
         tableTruthFillet[rand.Next(0,3)] = 1f;
 
-        while(i < 3 && count < 2){
-            if(tableTruthFillet[i] != 0){
+        while (i < 3 && count < 2)
+        {
+            if (tableTruthFillet[i] != 0)
+            {
                 i++;
                 continue;
             }
             
             tableTruthFillet[i] = (float) rand.NextDouble(); 
 
-            if(tableTruthFillet[i] != 0){
+            if (tableTruthFillet[i] != 0)
+            {
                 count++;
             }
 
@@ -155,12 +177,16 @@ public static class Util{
         return new Color(tableTruthFillet[0], tableTruthFillet[1], tableTruthFillet[2]);
     }
 
-    public static Color CreateNewDifferentColor(Color actualColor){
+    public static Color CreateNewDifferentColor(Color actualColor)
+    {
         Color newColor;
 
-        do{
+        //Generates a new color
+
+        do
+        {
             newColor = RandomSolidColor();
-        }while(newColor == actualColor);//Generates a new color
+        } while(newColor == actualColor);
 
         return newColor;
     }
@@ -168,13 +194,17 @@ public static class Util{
 
     //Tasks
 
-    public static int ConvertToMili(double seconds){
+    public static int ConvertToMili(double seconds)
+    {
         return (int) TimeSpan.FromSeconds(seconds).TotalMilliseconds;
     }
 
     //Animations
-    public static float ChangeScaleAnimation(RectTransform rt, Vector3 finalScale, float time){
-        if(rt.localScale == finalScale){
+
+    public static float ChangeScaleAnimation(RectTransform rt, Vector3 finalScale, float time)
+    {
+        if (rt.localScale == finalScale)
+        {
             return 0f;
         } 
 
@@ -182,19 +212,22 @@ public static class Util{
         return time;
     }
 
-    public static float ChangeAlphaImageAnimation(RectTransform rt, float finalAlpha, float time){
+    public static float ChangeAlphaImageAnimation(RectTransform rt, float finalAlpha, float time)
+    {
         LeanTween.alpha(rt, finalAlpha, time); 
         return time;
     }
 
-    public static float ChangeAlphaCanvasImageAnimation(CanvasGroup rt, float finalAlpha, float time){
+    public static float ChangeAlphaCanvasImageAnimation(CanvasGroup rt, float finalAlpha, float time)
+    {
         LeanTween.alphaCanvas(rt, finalAlpha, time); 
         return time;
     }
 
     //Rect Transform 
 
-    public static void CopyRectTransform(RectTransform destiny, RectTransform origin){
+    public static void CopyRectTransform(RectTransform destiny, RectTransform origin)
+    {
         destiny.anchorMin = origin.anchorMin;
         destiny.anchorMax = origin.anchorMax;
         destiny.anchoredPosition = origin.anchoredPosition;

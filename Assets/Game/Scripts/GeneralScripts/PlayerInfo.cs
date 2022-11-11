@@ -1,12 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
+using GeneralScripts.Reflection;
 
-/*Name is self explanatory*/
-
-using GameGeneralScripts.Reflection;
-
-namespace GameGeneralScripts.Player{
-    public class PlayerInfo : GeneralGetter{
+namespace GeneralScripts.Player
+{
+    public class PlayerInfo : GeneralGetter
+    {
 
         private string actualProtein;
         private string namePlayer;
@@ -24,9 +23,11 @@ namespace GameGeneralScripts.Player{
         public static PlayerInfo Instance;
 
 
-        private void Awake() { 
-        // If there is an instance, do nothing 
-            if (Instance == null) { 
+        private void Awake()
+        {
+            // If there is an instance, do nothing 
+            if (Instance == null)
+            { 
                 Instance = this;  
                 DontDestroyOnLoad(Instance);
             }
@@ -39,7 +40,7 @@ namespace GameGeneralScripts.Player{
         public void SetNamePlayer(){this.namePlayer = Instance.namePlayer;}
         public void SetProteinName(){this.actualProtein = Instance.actualProtein;}
 
-        public string GetNamePlayer(){return Instance.namePlayer;}
-        public string GetActualProtein(){return Instance.actualProtein;}
+        public string GetNamePlayer() => Instance.namePlayer;
+        public string GetActualProtein() => Instance.actualProtein;
     }
 }

@@ -1,26 +1,23 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Scripts.UI.Menu
+namespace UI.Menu
 {
     public class CreditDefinition : MonoBehaviour
     {
         [SerializeField] private CreditHolder creditInformationHolder;
         [SerializeField] private CreditInformation creditPrefab;
-
         [SerializeField] private Transform spawnGroups;
-
         [SerializeField] private List<CreditGroups> groups;
 
-        [Serializable]
+        [System.Serializable]
         private class CreditGroups
         {
             public string groupName;
             public List<CreditGroupInformation> creditGroupInformation;
         }
 
-        [Serializable]
+        [System.Serializable]
         private class CreditGroupInformation
         {
             public string nameCredit;

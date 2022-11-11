@@ -1,14 +1,16 @@
-using Menu.Settings;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
-namespace Game.Scripts.UI.Menu{
-    public class QualityOption : MonoBehaviour{
-        [SerializeField] SettingMenu sm = default;
+namespace UI.Menu
+{
+    public class QualityOption : MonoBehaviour
+    {
+        [SerializeField] SettingsMenu sm = default;
 
         private TMP_Dropdown dropdown;
 
-        void Start(){
+        private void Start()
+        {
             dropdown = this.transform.GetComponentInChildren<TMP_Dropdown>(true);
             dropdown.value = sm.GetQuality();
         }

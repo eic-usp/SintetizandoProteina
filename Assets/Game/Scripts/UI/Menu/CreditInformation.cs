@@ -1,8 +1,8 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-namespace Game.Scripts.UI.Menu
+namespace UI.Menu
 {
     public class CreditInformation : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Phases.AMN;
-using Phases.RNA.DNA;
+using Phases.Cell.DNA;
 
 /*
     Script responsible for all the actions in the nucleus, as: spawn of the RNA, animation of the RNA
@@ -14,14 +14,16 @@ using Phases.RNA.DNA;
     The cellNucleus is a refatoration of the code present in the RNASpawner
 */
 
-namespace Phases.RNA{
-    public class CellNucleusManager : PhaseManagerMono{
+namespace Phases.Cell
+{
+    public class CellNucleusManager : PhaseManagerMono
+    {
         //[SerializeField] GameObject visualDNA = default; //Prototype
         [SerializeField] RNASpawner rnaReference; //Sets the RNA and the RNA sets it
         [SerializeField] DNAManager dnaReference; // The original DNA
 
         private const string DNAtranscriptionBeg = "TAC"; //Always the beg of the DNA
-        private string[] DNAtranscriptionEnd = {"ATT", "ATC", "ACT"}; //The end of the DNA
+        private string[] DNAtranscriptionEnd = { "ATT", "ATC", "ACT" }; //The end of the DNA
 
         private static int separationCharacters = 1;
 
@@ -31,12 +33,14 @@ namespace Phases.RNA{
 
         private int quantity;
 
-        private void Start(){
+        private void Start()
+        {
             //Separate the DNA and Expand the nucleus 
             DNAAnimations();
         }
 
-        private async void DNAAnimations(){
+        private async void DNAAnimations()
+        {
             dnaReference.ChangeSecondHalf(); //Puts the initial correspondence of DNA
             
             await dnaReference.RNAVisibility(); 
@@ -47,7 +51,8 @@ namespace Phases.RNA{
             EndPhase();
         }
 
-        public void SetStructure(){
+        public void SetStructure()
+        {
             quantity = AMNManager.GetNumberOfAMN() * AMNManager.GetSizeAMN();
 
             dnaReference.SetQuantity(quantity);
@@ -73,68 +78,81 @@ namespace Phases.RNA{
             AMNManager.SetNumberOfAMN(AMNManager.GetNumberOfAMN() + 1);
         }
 
-        private void SpawnDot(int start, string nonUsableCharacter){
-            int i;
-
+        private void SpawnDot(int start, string nonUsableCharacter)
+        {
             dnaReference.SetupStructure(separationCharacters, nonUsableCharacter, false);
 
-            for(i = 0; i < separationCharacters; i++){ //Dots
+            for (int i = 0; i < separationCharacters; i++)
+            {
+                //Dots
                 dnaReference.ChangeRNAinDNAStructureByChildPosition(start + i, nonUsableCharacter);
                 dnaReference.ChangeSecondHalf(start + i, nonUsableCharacter);
             }
         }
         
-        public void ChangeRNAinDNAStructure(int index, string text){
+        public void ChangeRNAinDNAStructure(int index, string text)
+        {
             dnaReference.ChangeRNAinDNAStructure(index, text);
         }
 
-        public static int GetNumberOfCharacterInBeginning(){
+        public static int GetNumberOfCharacterInBeginning()
+        {
             return separationCharacters;
         }
 
-        public static int GetNumberOfCharacterToEnd(){
+        public static int GetNumberOfCharacterToEnd()
+        {
             return separationCharacters;
         }
 
-        public void ChangeDNAStructure(string cut){
+        public void ChangeDNAStructure(string cut)
+        {
             dnaReference.ChangeFirstHalf(cut);
         }
 
         //Need to do all the animation of the game
-        public new void EndPhase(){
+        public new void EndPhase()
+        {
             base.EndPhase();
         }
 
-        public string CutDNAString(){
+        public string CutDNAString()
+        {
             string sub;
 
-            do{
-                do{
+            do {
+                do {
                     //Cuts a part of the DNA to make the substring
                     sub = Util.RandomSubString(DNAString, quantity, 0, (DNAString.Length - quantity));
-                }while(Util.FindOcorrence(sub, DNAtranscriptionEnd, AMNManager.GetSizeAMN()));
-            }while(!DNAWithAllBases(sub, rnaReference.GetDictionaryKeysCount())); 
+                } while(Util.FindOccurrence(sub, DNAtranscriptionEnd, AMNManager.GetSizeAMN()));
+            } while (!DNAWithAllBases(sub, rnaReference.GetDictionaryKeysCount()));
             //Tests if it have at least one of all the bases (A,T,C,G)
 
             return sub;
         }
 
-        public string GetAEndingString(){
+        public string GetAEndingString()
+        {
             return DNAtranscriptionEnd[UnityEngine.Random.Range(0, DNAtranscriptionBeg.Length)];
         }
 
-        public string GetBeginningString(){
+        public string GetBeginningString()
+        {
             return DNAtranscriptionBeg;
         }
 
-        private bool DNAWithAllBases(string cut, int number){
+        private bool DNAWithAllBases(string cut, int number)
+        {
             int i;
             List<char> bases = new List<char>();
 
-            for(i = 0; i < cut.Length; i++){
-                if(!bases.Contains(cut[i])){
+            for (i = 0; i < cut.Length; i++)
+            {
+                if (!bases.Contains(cut[i]))
+                {
                     bases.Add(cut[i]);
-                    if(bases.Count == number){
+                    if (bases.Count == number)
+                    {
                         return true;
                     }
                 }
@@ -143,11 +161,13 @@ namespace Phases.RNA{
             return false;
         }
 
-        public void SetRandom(bool state){
+        public void SetRandom(bool state)
+        {
             random = state;
         }
 
-        public static void SetDNAString(string proteinDNA){
+        public static void SetDNAString(string proteinDNA)
+        {
             DNAString = proteinDNA;
         }
     }

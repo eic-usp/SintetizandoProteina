@@ -1,8 +1,5 @@
-using System;
-
 using UnityEngine;
 using UnityEngine.Events;
-
 using TMPro;
 
 /*
@@ -12,8 +9,10 @@ using TMPro;
     Used for SetNamePlayer
 */
 
-namespace GameUserInterface.Input{
-    public class InputSend : MonoBehaviour{
+namespace UI.Input
+{
+    public class InputSend : MonoBehaviour
+    {
         [SerializeField] TMP_InputField thisInput;
         [SerializeField] UnityEvent m_MyEvent;
 
@@ -21,32 +20,37 @@ namespace GameUserInterface.Input{
         [SerializeField] UnityEvent changeValueDependence;
         [SerializeField] UnityEvent noTextAnwser;
 
-        void Start(){
-
-            if(changeValueDependence != null){
-                thisInput.onValueChanged.AddListener(delegate {ValueChangeCheck(); });
+        void Start()
+        {
+            if (changeValueDependence != null)
+            {
+                thisInput.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
             }
 
         }
 
-        public void SendSubmitToObject(){
-            if(m_MyEvent == null) return;
+        public void SendSubmitToObject()
+        {
+            if (m_MyEvent == null) return;
             
-            if(thisInput.text.Length == 0){
+            if (thisInput.text.Length == 0)
+            {
                 noTextAnwser.Invoke();
                 return;
             }  
 
             //print("texto = " + this.thisInput.text + " " + thisInput.text.Length);
 
-            Util.UnityEventInvokeAllListenersTheSame
-                (m_MyEvent, new object[] {this.thisInput.text}, new Type [] {typeof(string)});
+            Util.UnityEventInvokeAllListenersTheSame(m_MyEvent, new object[] { this.thisInput.text },
+                new System.Type[] { typeof(string) });
 
             submitDependence.Invoke();
         }
 
-        private void ValueChangeCheck(){
-            if(thisInput.text.Length == 0){
+        private void ValueChangeCheck()
+        {
+            if (thisInput.text.Length == 0)
+            {
                 noTextAnwser.Invoke();
                 return;
             }
