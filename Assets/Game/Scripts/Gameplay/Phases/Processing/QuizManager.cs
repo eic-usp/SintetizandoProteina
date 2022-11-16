@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuizManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class QuizManager : MonoBehaviour
     private int _correctAnswersTotal;
     private int _correctAnswers;
     private CanvasGroup _canvasGroup;
+    public UnityAction OnComplete;
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class QuizManager : MonoBehaviour
         if (_correctAnswers == _correctAnswersTotal)
         {
             Debug.Log("Clear!");
+            OnComplete.Invoke();
             _canvasGroup.interactable = false;
         }
     }
