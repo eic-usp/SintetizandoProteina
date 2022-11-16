@@ -1,11 +1,7 @@
-using System;
 using System.Collections.Generic;
-using Cysharp.Threading.Tasks;
-
 using UnityEngine;
-
-using GameUserInterface.Animation;
-
+using Cysharp.Threading.Tasks;
+using UI.Animation;
 
 //http://dentedpixel.com/LeanTweenDocumentation/classes/LeanTween.html
 //https://learn.unity.com/tutorial/waypoints?uv=2019.4&projectId=5e0b6dd4edbc2a00200e3641#
@@ -14,36 +10,30 @@ using GameUserInterface.Animation;
 
 //https://stackoverflow.com/questions/14015319/where-do-i-mark-a-lambda-expression-async
 //https://docs.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/lambda-expressions
-namespace Phases.AMN{
+
+namespace Phases.AMN
+{
     /*
         Control all the animations of the Ribossome, self explanatory
 
         Use pooling
         
-        
         AMNQueue values
-        
         //[SerializeField] Transform amnQueue = default;
         //[SerializeField] GameObject amnPrefab = default;
 
     */
+
     public class RibossomeAnimator : AnimatorUser{
 
-        [Space]
-        [Header("Animation-Transform Atributes")]
-        [Space]
+        [Space] [Header("Animation-Transform Atributes")] [Space]
 
         [SerializeField] RibossomeQueueAnimator ribossomeQueue = default;
-
         [SerializeField] Transform holdRibossome = default; //Used on enter
-
         [SerializeField] AnimationCurve animationCurve = default;
         [SerializeField] float animationsTime = default; 
 
-
-        [Space]
-        [Header("Ribossome Atributes")]
-        [Space]
+        [Space] [Header("Ribossome Atributes")] [Space]
 
         [SerializeField] GameObject ribossomePrefab = default;
 
@@ -95,10 +85,9 @@ namespace Phases.AMN{
         }*/
 
         //Second part of pooling, the reset of a pooled object
-        private void PoolObjectReset(Transform newElement, GameObject childZero){
-            Util.CopyRectTransform(newElement.GetComponent<RectTransform>(),
-                rectTransformValuesReference);
-            
+        private void PoolObjectReset(Transform newElement, GameObject childZero)
+        {
+            Util.CopyRectTransform(newElement.GetComponent<RectTransform>(), rectTransformValuesReference);
             GameObject child = Instantiate<GameObject>(childZero, newElement);
             child.transform.SetAsLastSibling();
             newElement.gameObject.SetActive(false);
@@ -108,7 +97,8 @@ namespace Phases.AMN{
             int i;
             GameObject hold;
 
-            for(i = 0; i < poolCapacity; i++){
+            for (i = 0; i < poolCapacity; i++)
+            {
                 hold = Instantiate<GameObject>(ribossomePrefab, holdRibossome);
                 hold.SetActive(false);
                 pool.Enqueue(hold);
@@ -118,20 +108,22 @@ namespace Phases.AMN{
         //Every object in the queue has a AMN (except the last one)
         //So we need to animate this too
         //Waste destination is the AMN queue
-        public async UniTask RibossomeExit(bool newAMN, 
-            Color newRibossomeColor, int numberAMN, 
-            Func<int,UniTask> externalActions){
+        public async UniTask RibossomeExit(bool newAMN, Color newRibossomeColor, int numberAMN,
+            System.Func<int, UniTask> externalActions)
+        {
 
             await RibossomeExit(externalActions, ribossomeQueue.GetRibossomeSinthetizing());
 
-            if(newAMN){
+            if (newAMN)
+            {
                 await RibossomeEnter(newRibossomeColor, numberAMN.ToString(), false);
             }
 
             await UniTask.Yield();
         }
 
-        private async UniTask RibossomeExit(Func<int,UniTask> externalActions, RibossomeLetter rlSint){
+        private async UniTask RibossomeExit(System.Func<int, UniTask> externalActions, RibossomeLetter rlSint)
+        {
             UniTask[] UniTaskAnimation = new UniTask[2];
 
             UniTaskAnimation[0] = ribossomeQueue.MoveAllRibossome(new Vector3(0, 0, 0), animationsTime, animationCurve);
@@ -144,7 +136,8 @@ namespace Phases.AMN{
             await UniTask.WhenAll(UniTaskAnimation);
         }
 
-        public async UniTask RibossomeEnter(Color newRibossomeColor, string numberAMN, bool move){
+        public async UniTask RibossomeEnter(Color newRibossomeColor, string numberAMN, bool move)
+        {
             GameObject hold = pool.Dequeue();
             RibossomeLetter rl = hold.GetComponent<RibossomeLetter>();
             AMNLetter moveObjectAmn;
@@ -153,51 +146,57 @@ namespace Phases.AMN{
 
             RibossomeSetup(rl, newRibossomeColor, numberAMN);
             
-            if(!rl.GetAMNPresence()){
+            if (!rl.GetAMNPresence())
+            {
                 PoolObjectReset(hold.transform, childPrefab);
                 rl.SetAMNPresence();
             }
 
-            moveObjectAmn = hold.transform.
-                GetChild(hold.transform.childCount - 1).GetComponent<AMNLetter>();
+            moveObjectAmn = hold.transform. GetChild(hold.transform.childCount - 1).GetComponent<AMNLetter>();
 
             moveObjectAmn.SetAMNColor(newRibossomeColor);
             moveObjectAmn.Setup(numberAMN);
 
             hold.SetActive(true);
             
-            await ribossomeQueue.MoveNewRibossome(move, rl, 
-                new Vector3(0, 0, 0), 2.5f, animationsTime, animationCurve);
+            await ribossomeQueue.MoveNewRibossome(move, rl, new Vector3(0, 0, 0), 2.5f, animationsTime, animationCurve);
             await UniTask.Delay(500);
         }
 
-        private void RibossomeSetup(RibossomeLetter rl, Color newRibossomeColor, string numberAMN){
+        private void RibossomeSetup(RibossomeLetter rl, Color newRibossomeColor, string numberAMN)
+        {
             rl.SetRibossomeColor(newRibossomeColor);
             rl.Setup(numberAMN);
             rl.SetStateRib(0);
         }
 
-        public void SetChildPrefab(GameObject childPrefab){
+        public void SetChildPrefab(GameObject childPrefab)
+        {
             this.childPrefab = childPrefab;
         }
 
-        public float GetAnimationsTime(){
+        public float GetAnimationsTime()
+        {
             return this.animationsTime;
         }
 
-        public AnimationCurve GetAnimationCurve(){
+        public AnimationCurve GetAnimationCurve()
+        {
             return this.animationCurve;
         }
 
-        public Transform GetSinthetizingFromQueue(){
+        public Transform GetSinthetizingFromQueue()
+        {
             return ribossomeQueue.GetRibossomeSinthetizing().transform;
         }
 
-        public Transform GetAMNBallFromQueue(){
+        public Transform GetAMNBallFromQueue()
+        {
             return ribossomeQueue.GetBallRibossomeSinthetizing();
         }
 
-        public Color GetColorOfSinthetizingRibossome(){
+        public Color GetColorOfSinthetizingRibossome()
+        {
             return ribossomeQueue.GetRibossomeSinthetizing().GetRibossomeColor();
         }
     }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using Cysharp.Threading.Tasks;
 
 /*
@@ -9,20 +8,25 @@ using Cysharp.Threading.Tasks;
     Now it just the base class, and it might be used some day 
 */
 
-namespace Phases.Wait{
-    public class WaitManager : MonoBehaviour{
+namespace Phases.Wait
+{
+    public class WaitManager : MonoBehaviour
+    {
         private int numberPhase;
         private GameplayManager gameplayManager;
 
-        protected void SetNumberPhase(int numberPhase){
+        protected void SetNumberPhase(int numberPhase)
+        {
             this.numberPhase = numberPhase;
         }
 
-        public void Setup(GameplayManager gameplayManager){
+        public void Setup(GameplayManager gameplayManager)
+        {
             this.gameplayManager = gameplayManager;
         }
 
-        protected async UniTask<bool> WaitCheck(){
+        protected async UniTask<bool> WaitCheck()
+        {
             bool number = (bool) await gameplayManager.Check(numberPhase);
             return number;
         }

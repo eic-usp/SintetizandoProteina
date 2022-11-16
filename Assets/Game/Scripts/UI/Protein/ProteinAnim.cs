@@ -4,8 +4,10 @@ using UnityEngine;
     Control the Protein so it don't rotate at the start of the game
 */
 
-namespace ProteinPart.InfoProtein{
-    public class ProteinAnim : MonoBehaviour{
+namespace UI.Protein.Info
+{
+    public class ProteinAnim : MonoBehaviour
+    {
         Animator anim;
 
         int rotationHash = Animator.StringToHash("Rotation");

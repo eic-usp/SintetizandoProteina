@@ -1,6 +1,5 @@
 using UnityEngine;
-
-using GameUserInterface.Animation;
+using UI.Animation;
 
 public class AMNTableHolder : MonoBehaviour
 {
@@ -11,7 +10,8 @@ public class AMNTableHolder : MonoBehaviour
         tableAnimator = transform.GetComponentInChildren<FlipAnimation>();
     }
 
-    public void ChangeTable(Sprite table){
+    public void ChangeTable(Sprite table)
+    {
         tableAnimator.DoSpriteChangeAnimation(table);
     }
 }

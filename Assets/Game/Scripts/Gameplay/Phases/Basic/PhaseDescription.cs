@@ -5,23 +5,27 @@ using UnityEngine;
     See Wait->WaitManager or Wait->MissionManager
 */
 
-namespace Phases{
-
+namespace Phases
+{
     [System.Serializable]
-    public class PhaseDescription{
+    public class PhaseDescription
+    {
         [SerializeField] string namePhase;
         [SerializeField] string descriptionPhase;
         [SerializeField] GameObject additionalInfo;
 
-        public string GetName(){
+        public string GetName()
+        {
             return this.namePhase;
         }
 
-        public string GetDescription(){
+        public string GetDescription()
+        {
             return this.descriptionPhase;
         }
 
-        public GameObject GetAdditionalInfo(){
+        public GameObject GetAdditionalInfo()
+        {
             return this.additionalInfo;
         }
     }  

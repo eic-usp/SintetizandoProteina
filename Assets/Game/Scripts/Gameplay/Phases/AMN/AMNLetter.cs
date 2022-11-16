@@ -1,31 +1,35 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 using TMPro;
-
-using GameUserInterface.Text;
+using UI.Text;
 
 //Colocar nome aminoácidos
 
-namespace Phases.AMN{
-    public class AMNLetter : Letter{
+namespace Phases.AMN
+{
+    public class AMNLetter : Letter
+    {
         [SerializeField] Image AMNcolor = default;
         [SerializeField] TextMeshProUGUI amnName = default;
         [SerializeField] CanvasGroup cg = default;
         
-        public void SetAMNColor(Color newColor){
+        public void SetAMNColor(Color newColor)
+        {
             AMNcolor.color = newColor;
         }
 
-        public Image ReturnAMNLetterImage(){
+        public Image ReturnAMNLetterImage()
+        {
             return AMNcolor;
         }
 
-        public void SetupAMNName(string nameAMN){
+        public void SetupAMNName(string nameAMN)
+        {
             amnName.text = nameAMN;
         }
 
-        public CanvasGroup GetAMNGroupName(){
+        public CanvasGroup GetAMNGroupName()
+        {
             return cg;
         }
     }

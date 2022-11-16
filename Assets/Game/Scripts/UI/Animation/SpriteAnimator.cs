@@ -1,5 +1,7 @@
 using UnityEngine;
-namespace GameUserInterface.Animation{
+
+namespace UI.Animation
+{
     public interface SpriteAnimator
     {
         public void DoSpriteChangeAnimation(Sprite sprite);

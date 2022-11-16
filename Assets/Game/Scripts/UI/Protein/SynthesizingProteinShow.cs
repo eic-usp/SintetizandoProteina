@@ -1,9 +1,10 @@
 using UnityEngine;
-
 using TMPro;
 
-namespace ProteinPart.InfoProtein{
-    public class SynthesizingProteinShow : MonoBehaviour{
+namespace UI.Protein.Info
+{
+    public class SynthesizingProteinShow : MonoBehaviour
+    {
         private static ProteinDescription toShow = default;
         
         //SynthesizingProtein
@@ -25,19 +26,23 @@ namespace ProteinPart.InfoProtein{
         
         private Transform positionOfTransformedProtein;
 
-        private void Start(){
+        private void Start()
+        {
             descriptionProtein.text = toShow.sp.GetDescriptionProtein();
             Instantiate<GameObject>(toShow.transformedProtein, positionOfTransformedProtein);
         }
 
-        public static void SetProtein(ProteinDescription sint){
+        public static void SetProtein(ProteinDescription sint)
+        {
             toShow = sint;
         }
 
-        public void ShowDescriptionExtraData(int index){
-            if(index < 0 || index > toShow.sp.GetQtdOfExtras() - 1) return;
+        public void ShowDescriptionExtraData(int index)
+        {
+            if (index < 0 || index > toShow.sp.GetQtdOfExtras() - 1) return;
 
-            if(index == lastExtra && boxTextExtraDescription.activeSelf){
+            if (index == lastExtra && boxTextExtraDescription.activeSelf)
+            {
                 lastExtra = -1;
                 boxTextExtraDescription.SetActive(false);
                 return;
@@ -50,9 +55,6 @@ namespace ProteinPart.InfoProtein{
             textDescriptionExtraData.text = toShow.sp.GetDescriptionTextExtra(index);
         }
 
-        public TextMeshProUGUI GetDescriptionProtein()
-        {
-            return descriptionProtein;
-        }
+        public TextMeshProUGUI GetDescriptionProtein() => descriptionProtein;
     }
 }
