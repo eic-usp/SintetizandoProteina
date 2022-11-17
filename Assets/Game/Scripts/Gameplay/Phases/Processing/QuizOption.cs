@@ -5,8 +5,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class QuizOption : MonoBehaviour
 {
-    [SerializeField] private bool correct;
-    public bool Correct => correct;
+    //[SerializeField] private bool correct;
+    public bool Correct { get; set; }
     private Button _button;
     private TextMeshProUGUI _text;
     private Image _image;
@@ -23,8 +23,8 @@ public class QuizOption : MonoBehaviour
 
     private void Choose()
     {
-        _quizManager.Choose(correct);
-        _image.color = (correct ? Color.green : Color.red);
+        _quizManager.Choose(Correct);
+        _image.color = (Correct ? Color.green : Color.red);
         _button.interactable = false;
     }
 }

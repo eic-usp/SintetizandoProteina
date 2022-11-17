@@ -10,6 +10,30 @@ public class QuizManager : MonoBehaviour
     private CanvasGroup _canvasGroup;
     public UnityAction OnComplete;
 
+    private List<QuizOption> _options;
+
+    [System.Serializable]
+    public struct QuizDataStruct
+    {
+        public string name;
+        public QuizDataItem item;
+    }
+
+    [System.Serializable]
+    public struct QuizDataItem
+    {
+        public string name;
+        public string question;
+        public QuizDataOption[] options;
+    }
+
+    [System.Serializable]
+    public struct QuizDataOption
+    {
+        public string question;
+        public bool correct;
+    }
+
     private void Start()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
@@ -20,7 +44,18 @@ public class QuizManager : MonoBehaviour
             return;
         }
         
-        _correctAnswersTotal = new List<QuizOption>(GetComponentsInChildren<QuizOption>()).FindAll(o => o.Correct).Count;
+        _options = new List<QuizOption>(GetComponentsInChildren<QuizOption>());
+        
+        var protein = FindObjectOfType<GeneralScripts.Player.PlayerInfo>().GetActualProtein();
+        var json = Resources.Load<TextAsset>("QuizData");
+        var qd = JsonUtility.FromJson<QuizDataStruct>(json.text);
+
+        foreach (var o in _options)
+        {
+
+        }
+
+        _correctAnswersTotal = _options.FindAll(o => o.Correct).Count;
     }
     
     public void Choose(bool value)

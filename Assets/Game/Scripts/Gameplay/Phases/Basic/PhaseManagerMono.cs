@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Phases
 {
-    public class PhaseManagerMono : MonoBehaviour , PhaseManager
+    public class PhaseManagerMono : MonoBehaviour, PhaseManager
     {
         [Space] [Header("Basic Manager Atributes")] [Space]
         [SerializeField] PhaseDescription phaseDescription; //Used in the mission
