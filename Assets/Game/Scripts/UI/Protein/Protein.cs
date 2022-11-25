@@ -17,14 +17,14 @@ namespace UI.Protein.Info
     public class Protein : MonoBehaviour
     {
 
-        [SerializeField] Transform maxParent = default;
+        [SerializeField] private Transform maxParent = default;
 
         private static VideoChoice videoChoice;
 
-        [SerializeField] ProteinDescription proteinDescription; //Using it instead of JSON
+        [SerializeField] private ProteinDescription proteinDescription; //Using it instead of JSON
 
-        [SerializeField] string proteinName; //Could use the name of the gameObject, used in json
-        [SerializeField] string synthesizedProteinName; //Different from the protein name
+        [SerializeField] private string proteinName; //Could use the name of the gameObject, used in json
+        [SerializeField] private string synthesizedProteinName; //Different from the protein name
 
         [System.Serializable]
         public class ProteinDeclaration
@@ -48,7 +48,8 @@ namespace UI.Protein.Info
         {
             videoChoice.ChooseProtein(maxParent.GetSiblingIndex());
             CellNucleusManager.SetDNAString(proteinDescription.proteinDNA); //Sends the protein to the gameplay
-            FindObjectOfType<PlayerInfo>().SetProteinName(synthesizedProteinName); 
+            FindObjectOfType<PlayerInfo>().SetProteinDisplayName(synthesizedProteinName);
+            FindObjectOfType<PlayerInfo>().SetProteinName(proteinName);
             SynthesizingProteinShow.SetProtein(proteinDescription); //Send the info to be seen in the gameplay
         }
     }

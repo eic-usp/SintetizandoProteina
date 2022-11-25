@@ -8,7 +8,7 @@ using Phases.Wait;
 using UI.Text;
 
 /*
-    Component responsable for the Gameplay, it organize the flow, but not the interactions
+    Component responsible for the Gameplay, it organize the flow, but not the interactions
 
     There's no need to do a complete pooling in this object, because i don't want to instantiate all the objects
     The objects will be in the original scene already, so i just "activate them"
@@ -49,10 +49,10 @@ public sealed class GameplayManager : MonoBehaviour
     public void StartGame()
     {
         actualPhase = -1;
-        IncreacePhase(); //actualPhase always just increace, so starting with -1 is correct
+        IncreasePhase(); //actualPhase always just increase, so starting with -1 is correct
     }
 
-    public void IncreacePhase()
+    public void IncreasePhase()
     {
         actualPhase++;
         print("actualPhase = " + actualPhase);
@@ -63,7 +63,7 @@ public sealed class GameplayManager : MonoBehaviour
             return;
         }
 
-        //In the beggining it has no instance
+        //In the beginning it has no instance
         PoolObject(objRef); //Just setting the object to true or false, not actually a entire poll
         
         ManagerWait(); //This will make something that wait for the player interaction
@@ -96,8 +96,7 @@ public sealed class GameplayManager : MonoBehaviour
         InputCloseWaitManager();
 
         PhaseDescription aux = gamePhases[actualPhase].manager.GetPhaseDescription();
-        objRef.GetComponent<MissionManager>().Setup(actualPhase, aux.GetName(), 
-            aux.GetDescription(), aux.GetAdditionalInfo());
+        objRef.GetComponent<MissionManager>().Setup(actualPhase, aux.GetName(), aux.GetDescription(), aux.GetAdditionalInfo());
     }
 
     private void SpawnAllGoals()
@@ -219,8 +218,7 @@ public sealed class GameplayManager : MonoBehaviour
     public void SetDescriptionPhase()
     {
         PhaseDescription pdSetup = gamePhases[actualPhase].manager.GetPhaseDescription(); //Used in the Mission Manager
-        objRef.GetComponent<MissionManager>().Setup(actualPhase, 
-            pdSetup.GetName(), pdSetup.GetDescription(), pdSetup.GetAdditionalInfo());
+        objRef.GetComponent<MissionManager>().Setup(actualPhase, pdSetup.GetName(), pdSetup.GetDescription(), pdSetup.GetAdditionalInfo());
     }
 
     public void DestroyAllInstantiated()

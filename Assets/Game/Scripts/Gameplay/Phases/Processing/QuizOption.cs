@@ -2,29 +2,35 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class QuizOption : MonoBehaviour
+namespace Phases.Processing
 {
-    //[SerializeField] private bool correct;
-    public bool Correct { get; set; }
-    private Button _button;
-    private TextMeshProUGUI _text;
-    private Image _image;
-    private QuizManager _quizManager;
-
-    private void Start()
+    [RequireComponent(typeof(Button))]
+    public class QuizOption : MonoBehaviour
     {
-        _button = GetComponent<Button>();
-        _image = GetComponent<Image>();
-        _text = GetComponentInChildren<TextMeshProUGUI>();
-        _quizManager = GetComponentInParent<QuizManager>();
-        _button.onClick.AddListener(Choose);
-    }
+        public bool Correct { get; set; }
+        public string Answer { get; set; }
 
-    private void Choose()
-    {
-        _quizManager.Choose(Correct);
-        _image.color = (Correct ? Color.green : Color.red);
-        _button.interactable = false;
+        private TextMeshProUGUI _text;
+        private Button _button;
+        private Image _image;
+        private QuizManager _quizManager;
+
+        private void Start()
+        {
+            _button = GetComponent<Button>();
+            _image = GetComponent<Image>();
+            _text = GetComponentInChildren<TextMeshProUGUI>();
+            _quizManager = GetComponentInParent<QuizManager>();
+            _button.onClick.AddListener(Choose);
+            _text.text = Answer;
+        }
+
+        private void Choose()
+        {
+            // _quizManager.Choose(Correct);
+            // _image.color = (Correct ? Color.green : Color.red);
+            _image.color = _quizManager.Choose(Correct);
+            _button.interactable = false;
+        }
     }
 }
