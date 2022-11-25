@@ -34,7 +34,7 @@ namespace Phases.Processing
             var json = Resources.Load<TextAsset>("QuizData");
             var qd = JsonUtility.FromJson<QuizData>(json.text);
             
-            Debug.Log($"Protein: {protein}");
+            // Debug.Log($"Protein: {protein}");
 
             var qdiList = protein switch
             {
@@ -65,6 +65,7 @@ namespace Phases.Processing
             if (correct)
             {
                 _correctAnswers++;
+                
                 if (!multiple || _correctAnswers == _correctAnswersTotal)
                 {
                     // Debug.Log("Clear!");

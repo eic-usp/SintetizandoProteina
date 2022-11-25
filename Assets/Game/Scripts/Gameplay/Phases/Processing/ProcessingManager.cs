@@ -1,17 +1,16 @@
 using UnityEngine;
-using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
-
-using Phases.Cell;
+using TMPro;
 
 namespace Phases.Processing
 {
     public class ProcessingManager : PhaseManagerMono
     {
         [Space] [Header("Destination Manager Variables")] [Space]
-        [SerializeField] private CellAnimator cellReference; //Used for the single purpose of animation
+        [SerializeField] private Cell.CellAnimator cellReference; //Used for the single purpose of animation
         [SerializeField] private GameObject processingDescriptionObject; 
         // [SerializeField] private Button endProcessingButton;
+        [SerializeField] private TextMeshProUGUI processingDescriptionText;
         [SerializeField] private QuizManager quizManager;
 
         private void OnEnable()
@@ -26,9 +25,16 @@ namespace Phases.Processing
 
         private void Start()
         {
+            Setup();
             processingDescriptionObject.SetActive(true);
             cellReference.SetAnimatorStatus(true);
             PlayAMNQueueTransformation();
+        }
+
+        private void Setup()
+        {
+            var protein = FindObjectOfType<GeneralScripts.Player.PlayerInfo>().ProteinName;
+            processingDescriptionText.text = Resources.Load<TextAsset>("ProcessingDescription/" + protein).text;
         }
 
         private async void PlayAMNQueueTransformation()
