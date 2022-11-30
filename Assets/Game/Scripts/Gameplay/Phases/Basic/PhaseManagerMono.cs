@@ -8,12 +8,12 @@ using UnityEngine;
 
 namespace Phases
 {
-    public class PhaseManagerMono : MonoBehaviour , PhaseManager
+    public class PhaseManagerMono : MonoBehaviour, PhaseManager
     {
-        [Space] [Header("Basic Manager Atributes")] [Space]
-        [SerializeField] PhaseDescription phaseDescription; //Used in the mission
-        [SerializeField] List<string> textInstructions = default; //Used in the Marking
-        [SerializeField] GameObject instructions; //More complex information, visual probably
+        [Space] [Header("Basic Manager Attributes")] [Space]
+        [SerializeField] private PhaseDescription phaseDescription; //Used in the mission
+        [SerializeField] private List<string> textInstructions = default; //Used in the Marking
+        [SerializeField] private GameObject instructions; //More complex information, visual probably
 
         public void SpawnInstructions(Transform spawn)
         {
@@ -39,7 +39,7 @@ namespace Phases
 
         public void EndPhase()
         {
-            FindObjectOfType<GameplayManager>(true).IncreacePhase();
+            FindObjectOfType<GameplayManager>(true).IncreasePhase();
         }
 
         public PhaseDescription GetPhaseDescription()
