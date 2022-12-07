@@ -56,6 +56,8 @@ MonoBehaviour:
   textInstructions:
   - "Encontre o n\xFAcleo"
   instructions: {fileID: 0}
+  gameplayManager: {fileID: 7295050311995265380}
+  missionManager: {fileID: 7551402958393808104}
 --- !u!1 &7295050311995265382
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +614,17 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7551402958393808104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7551402957522627126, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+  m_PrefabInstance: {fileID: 1545469662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170385564319291578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23435481e1efff44acdcd1e69542480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &545324924284298383
 PrefabInstance:
   m_ObjectHideFlags: 0

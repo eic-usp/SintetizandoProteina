@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -14,8 +12,11 @@ namespace Phases.Wait
         [SerializeField] TextMeshProUGUI missionDescription;
         [SerializeField] Transform additionalInformation;
 
+        public bool FinishedInstructions { get; set; }
+
         public void Setup(int numberPhase, string missionName, string missionDescription, GameObject information)
         {
+            FinishedInstructions = false;
             this.missionName.text = mission + "  " + (numberPhase + 1) + "  (" + missionName + ") ";
             this.missionDescription.text = missionDescription;
             SetNumberPhase(numberPhase);
@@ -31,6 +32,7 @@ namespace Phases.Wait
         //Ok not to be async
         public void OnClickUnBlock()
         {
+            FinishedInstructions = true;
             WaitCheck(); //Protected function
         }
     }
