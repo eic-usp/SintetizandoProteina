@@ -7,6 +7,7 @@ namespace UI.Menu
         private static bool isPaused = false;
 
         [SerializeField] GameObject optionMenuRef = default;
+        [SerializeField] GameObject tutorialPrefab;
 
         public void PauseGame()
         {
@@ -32,9 +33,15 @@ namespace UI.Menu
             optionMenuRef.SetActive(true);
         }
 
+        public void OpenTutorial()
+        {
+            Instantiate(tutorialPrefab, transform);
+        }
+
         public void QuitGame()
         {
-            Application.Quit();
+            //Application.Quit();
+            GameSceneManagement.Loader.Load(GameSceneManagement.Loader.Scene.UIBeg);
         }
 
         public bool GetIsPaused()

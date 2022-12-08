@@ -11,22 +11,47 @@ namespace Phases.Wait
 {
     public class InstructionWait : MonoBehaviour
     {
-        [SerializeField] Transform childInstruction = default;
-        [SerializeField] Button closeButton = default;
+        [SerializeField] Transform childInstruction = default; 
 
         private int actualChildInstruction = 0;
         private int childCnt;
+        private GameplayManager _gameplayManager;
+        private bool _onStartup = true;
+        private bool _skipTutorialOnStartUp = true;
 
         private void Start()
         {
+            _skipTutorialOnStartUp = (PlayerPrefs.GetInt("SkipTutorialOnStartUp") == 1);
+            _gameplayManager = FindObjectOfType<GameplayManager>();
+
+            Reset();
+
+            if (_skipTutorialOnStartUp)
+            {
+                _gameplayManager.StartGame();
+                gameObject.SetActive(false);
+            }
+        }
+
+        public void Reset()
+        {
             childCnt = childInstruction.childCount;
+
+            childInstruction.GetChild(0).gameObject.SetActive(true);
+
+            for (var i = 1; i < childCnt; i++)
+            {
+                childInstruction.GetChild(i).gameObject.SetActive(false);
+            }
+
+            actualChildInstruction = 0;
         }
 
         public void IncreaceChildInstruction()
         {
             if (actualChildInstruction == childCnt - 1)
             {
-                closeButton.onClick.Invoke();
+                Close();
                 return;
             }
 
@@ -47,10 +72,19 @@ namespace Phases.Wait
             childInstruction.GetChild(actualChildInstruction).gameObject.SetActive(true);
         }
 
+        public void SetOnStartup(bool set) => _onStartup = set;
+
         //The button has this method
-        public void CloseGame()
+        public void Close()
         {
-            Destroy(this.gameObject);
+            if (_onStartup)
+            {
+                _gameplayManager.StartGame();
+                _skipTutorialOnStartUp = true;
+                PlayerPrefs.SetInt("SkipTutorialOnStartUp", 1);
+            }
+
+            gameObject.SetActive(false);
         }
     }
 }
