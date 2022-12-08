@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Phases.Processing
+namespace Phases.Destination
 {
     [System.Serializable]
     public struct QuizData

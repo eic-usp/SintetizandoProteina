@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Phases.Processing
+namespace Phases.Destination
 {
     [RequireComponent(typeof(Button))]
     public class QuizOption : MonoBehaviour
