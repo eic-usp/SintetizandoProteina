@@ -18,7 +18,8 @@ using Phases.AMN;
 
 namespace Phases.Cell
 {
-    public class RNASpawner : InputPhase{
+    public class RNASpawner : InputPhase
+    {
         [Space]
         [Header("RNA Manager Atributes")]
         [Space]
@@ -148,7 +149,6 @@ namespace Phases.Cell
             answers[index] = value; //Look RNA original position
             originalPlace.ChangeRNAinDNAStructure(index, value);
         }
-
 
         public void SetQuantity(int quantity)
         {

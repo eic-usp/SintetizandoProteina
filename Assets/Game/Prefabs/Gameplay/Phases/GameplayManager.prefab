@@ -58,6 +58,7 @@ MonoBehaviour:
   instructions: {fileID: 0}
   gameplayManager: {fileID: 7295050311995265380}
   missionManager: {fileID: 7551402958393808104}
+  dnaManager: {fileID: 9218020533221470915}
 --- !u!1 &7295050311995265382
 GameObject:
   m_ObjectHideFlags: 0
