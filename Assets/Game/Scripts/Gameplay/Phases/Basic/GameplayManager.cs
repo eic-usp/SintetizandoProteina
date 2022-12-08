@@ -232,4 +232,6 @@ public sealed class GameplayManager : MonoBehaviour
         if(!pool) return;
         pool.SetActive(!pool.activeSelf); //Will change to pool
     }
+
+    public int GetCurrentPhase() => actualPhase;
 }
