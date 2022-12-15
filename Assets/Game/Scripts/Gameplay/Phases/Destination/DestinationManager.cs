@@ -1,6 +1,4 @@
 using UnityEngine;
-using Cysharp.Threading.Tasks;
-using TMPro;
 
 namespace Phases.Destination
 {
@@ -8,7 +6,22 @@ namespace Phases.Destination
     {
         [Space] [Header("Destination Manager Variables")] [Space]
         [SerializeField] private QuizManager quizManager;
+        [SerializeField] private Wait.MissionManager missionManager;
+        [SerializeField] private GameObject destinationQuiz;
+        [SerializeField] private GameObject destinationPanel;
 
+        private void Start()
+        {
+            destinationPanel.SetActive(false);
+        }
+        
+        private void Update()
+        {
+            if (!missionManager.FinishedInstructions) return;
+            destinationPanel.SetActive(true);
+            destinationQuiz.SetActive(true);
+        }
+        
         private void OnEnable()
         {
             quizManager.OnComplete += EndPhase;

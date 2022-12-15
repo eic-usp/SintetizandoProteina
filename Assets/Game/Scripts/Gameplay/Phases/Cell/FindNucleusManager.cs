@@ -7,7 +7,7 @@ namespace Phases.Cell
         [Space] [Header("Find Nucleus Manager Attributes")] [Space]
         [SerializeField] private GameplayManager gameplayManager;
         [SerializeField] private Wait.MissionManager missionManager;
-        [SerializeField] DNA.DNAManager dnaManager;
+        [SerializeField] private DNA.DNAManager dnaManager;
 
         public async void SetFound()
         {
