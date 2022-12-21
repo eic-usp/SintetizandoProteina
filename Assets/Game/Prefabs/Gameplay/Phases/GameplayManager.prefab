@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1299191737
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58,6 +58,7 @@ MonoBehaviour:
   instructions: {fileID: 0}
   gameplayManager: {fileID: 7295050311995265380}
   missionManager: {fileID: 7551402958393808104}
+  dnaManager: {fileID: 9218020533221470915}
 --- !u!1 &7295050311995265382
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +98,7 @@ RectTransform:
   - {fileID: 1159113994}
   - {fileID: 7170385564319291577}
   - {fileID: 7524598499529824716}
+  - {fileID: 2949134303255318800}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -161,7 +163,7 @@ MonoBehaviour:
     - "O n\xFAcleo deve ser aquele neg\xF3cio redondo..."
   - manager: {fileID: 7160620728225733283}
     messages:
-    - CELULA
+    - Cell Nucleus
   - manager: {fileID: 5572511312914652307}
     messages:
     - AAAAE
@@ -177,6 +179,9 @@ MonoBehaviour:
     - "PROCESSAMENTO, VOU COLOCAR UMA MENSAGEM BEM GRANDE PARA TESTAR A RESPONSABILIDADE
       DESSA ATRIBUTO NA WEB, ENT\xC3O ESSE TEXTO EST\xC1 FICANDO MAIOR POR MOTIVOS
       DE TESTES"
+  - manager: {fileID: 0}
+    messages:
+    - "Destina\xE7\xE3ooooo"
   marking: {fileID: 0}
   info: {fileID: 0}
   iM: {fileID: 0}
@@ -211,7 +216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7524598499529824716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -254,7 +259,67 @@ MonoBehaviour:
   cellReference: {fileID: 0}
   processingDescriptionObject: {fileID: 0}
   processingDescriptionText: {fileID: 0}
+  continueButton: {fileID: 0}
+--- !u!1 &8304107072656149666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2949134303255318800}
+  - component: {fileID: 1091288319802513963}
+  m_Layer: 5
+  m_Name: DestinationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2949134303255318800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304107072656149666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7295050311995265381}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1091288319802513963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304107072656149666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecda8fa467fac547b3f69f045a7fb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phaseDescription:
+    namePhase: "Destina\xE7\xE3o"
+    descriptionPhase: "Fase de destina\xE7\xE3o"
+    additionalInfo: {fileID: 0}
+  textInstructions:
+  - "Acerta l\xE1"
+  instructions: {fileID: 0}
   quizManager: {fileID: 0}
+  missionManager: {fileID: 7551402958393808104}
+  destinationQuiz: {fileID: 0}
+  destinationPanel: {fileID: 0}
 --- !u!1001 &1545469662
 PrefabInstance:
   m_ObjectHideFlags: 0

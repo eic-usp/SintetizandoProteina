@@ -405,7 +405,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2562771915578363785, guid: 70a6a4b135e614f4db86df5ae29a2616, type: 3}
       propertyPath: m_text
-      value: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      value: "Esse \xE9 um exemplo de <color=blue>texto</color> comum. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et <color=blue>dolore</color> magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       objectReference: {fileID: 0}
     - target: {fileID: 2649197152431576957, guid: 70a6a4b135e614f4db86df5ae29a2616, type: 3}
       propertyPath: click.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -41,13 +41,9 @@ namespace Phases.Cell
 
         private async void DNAAnimations()
         {
-            dnaReference.ChangeSecondHalf(); //Puts the initial correspondence of DNA
-            
-            await dnaReference.RNAVisibility(); 
-            await dnaReference.DNASeparation(); 
-
-            await dnaReference.DNANucleusVisibility(true);
-            
+            dnaReference.ChangeSecondHalf();
+            await dnaReference.RNAVisibility();
+            await dnaReference.DNASeparation();
             EndPhase();
         }
 

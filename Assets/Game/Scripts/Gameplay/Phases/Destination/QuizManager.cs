@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Phases.Processing
+namespace Phases.Destination
 {
     public class QuizManager : MonoBehaviour
     {
