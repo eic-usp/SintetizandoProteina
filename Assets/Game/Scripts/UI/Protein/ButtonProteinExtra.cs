@@ -11,7 +11,7 @@ namespace UI.Protein.Info
 
         public void OnClick()
         {
-            owner.ShowDescriptionExtraData(index);
+            owner.ShowDescriptionExtraData("", 0);
         }
         
         public void Setup(SynthesizingProteinShow owner, string name, int index)

@@ -676,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   synthesizingProteinShow: {fileID: 0}
+  subject: 
 --- !u!1 &8931381958878945849
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,10 +51,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseDescription:
     namePhase: "Encontrar o n\xFAcleo"
-    descriptionPhase: "Encontrar o n\xFAcleo"
+    descriptionPhase: "O processo de s\xEDntese proteica \xE9 respons\xE1vel pela
+      forma\xE7\xE3o de prote\xEDnas e \xE9 realizado nos ribossomos, presentes no
+      citoplasma. Para que ele ocorra, \xE9 necess\xE1rio transcrever (copiar) a
+      informa\xE7\xE3o que caracteriza a prote\xEDna de interesse que est\xE1 presente
+      em uma sequ\xEAncia espec\xEDfica do DNA (gene).  A transcri\xE7\xE3o da informa\xE7\xE3o
+      ocorre no n\xFAcleo, a partir do DNA e forma uma mol\xE9cula intermedi\xE1ria
+      denominada RNA mensageiro.  Encontre o n\xFAcleo da c\xE9lula para iniciar
+      o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1."
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Encontre o n\xFAcleo"
+  - "Encontre o n\xFAcleo da c\xE9lula eucarionte para iniciar o processo de transcri\xE7\xE3o
+    e realizar a primeira etapa da s\xEDntese proteica!"
   instructions: {fileID: 0}
   gameplayManager: {fileID: 7295050311995265380}
   missionManager: {fileID: 7551402958393808104}
@@ -251,10 +259,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseDescription:
     namePhase: Processamento
-    descriptionPhase: Fase de processamento
+    descriptionPhase: "Ap\xF3s a forma\xE7\xE3o da cadeia de amino\xE1cidos, a prote\xEDna
+      ainda precisa passar por algumas modifica\xE7\xF5es estruturais para se tornar
+      ativa e exercer suas fun\xE7\xF5es no metabolismo dos organismos. Essas modifica\xE7\xF5es
+      s\xE3o o enrolamento da cadeia de amino\xE1cidos, podendo adquirir 4 n\xEDveis
+      - prim\xE1rio, secund\xE1rio, terci\xE1rio e quatern\xE1rio; e modifica\xE7\xF5es
+      retirando sequ\xEAncias de amino\xE1cidos ou adicionado carboidratos, lip\xEDdeos,
+      metais, ferro, etc. Depois desse processamento, a enzima fica ativa ou pronta
+      para ser armazenada e utilizada quando necess\xE1rio. Clique em \u201Ccontinuar\u201D
+      para concluir a miss\xE3o 4. "
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Instru\xE7\xE3o da fase de processamento"
+  - "Nessa etapa voc\xEA saber\xE1 mais sobre o processamento de prote\xEDnas ap\xF3s
+    a sua s\xEDntese na tradu\xE7\xE3o. Esse processo \xE9 importante para ativa\xE7\xE3o
+    e habilita\xE7\xE3o da prote\xEDna para exercer suas fun\xE7\xF5es. Clique em
+    \u201Ccontinuar\u201D para a pr\xF3xima miss\xE3o. "
   instructions: {fileID: 0}
   cellReference: {fileID: 0}
   processingDescriptionObject: {fileID: 0}
@@ -311,10 +330,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseDescription:
     namePhase: "Destina\xE7\xE3o"
-    descriptionPhase: "Fase de destina\xE7\xE3o"
+    descriptionPhase: "Ap\xF3s a s\xEDntese e processamento das prote\xEDnas, muitas
+      s\xE3o armazenadas como pr\xF3-prote\xEDnas inativas em gr\xE2nulos ou estruturas
+      como o lisossomo, at\xE9 serem secretadas e ativadas quando o corpo precisar
+      da a\xE7\xE3o dessas prote\xEDnas, em seus locais - alvo. Esses locais podem
+      ser organelas, estruturas celulares (como o lisossomo, atuando na fagocitose),
+      \xF3rg\xE3os (como o f\xEDgado), tecidos, c\xE9lulas (como os melan\xF3citos),
+      etc. Elas podem ser liberadas diretamente na corrente sangu\xEDnea, atuando
+      ali ou sendo transportadas para locais espec\xEDficos. Responda o quiz sobre
+      a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima miss\xE3o
+      da sua jornada! "
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Acerta l\xE1"
+  - "Leia o texto sobre a destina\xE7\xE3o das prote\xEDnas ap\xF3s sua s\xEDntese
+    e processamento e responda o quiz para finalizar a sua jornada!"
   instructions: {fileID: 0}
   quizManager: {fileID: 0}
   missionManager: {fileID: 7551402958393808104}
