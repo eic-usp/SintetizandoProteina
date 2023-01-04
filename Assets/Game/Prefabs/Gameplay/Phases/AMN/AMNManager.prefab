@@ -246,28 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c221b510ccdbbf4289d1b91017dbda8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phaseDescription:
-    namePhase: AMNManager
-    descriptionPhase: "O processo de tradu\xE7\xE3o \xE9 respons\xE1vel pela produ\xE7\xE3o
-      da cadeia de amino\xE1cidos que formar\xE1 a prote\xEDna de interesse para
-      a c\xE9lula. Esse processo ocorre quando o RNAm sai do n\xFAcleo pelos poros
-      e se dirige aos ribossomos, que se encontram no citoplasma das c\xE9lulas eucariontes.
-      O ribossomo ir\xE1 ler o RNAm e traduzir sua informa\xE7\xE3o. A cada 3 bases
-      nitrogenadas do RNAm, ele acrescenta um amino\xE1cido correspondente, que \xE9
-      trazido por um outro tipo de RNA, o transportador. Essa correspond\xEAncia
-      entre as 3 bases nitrogenadas (c\xF3dons) e os amino\xE1cidos pode ser conferida
-      a partir do disco do C\xF3digo Gen\xE9tico, que \xE9 lido do centro para fora,
-      formando um caminho at\xE9 chegar no amino\xE1cido correto. Identifique os
-      amino\xE1cidos correspondentes com os c\xF3dons (cada 3 bases nitrogenadas)
-      do RNAm e insira o nome correto do amino\xE1cido. Ap\xF3s completar a fita
-      de RNAm, clique em \u201Cprocessar a prote\xEDna\u201D para concluir a miss\xE3o
-      3! "
-    additionalInfo: {fileID: 0}
-  textInstructions:
-  - "Identifique os amino\xE1cidos correspondentes aos c\xF3dons na fita de RNAm
-    e insira o nome correto do amino\xE1cido no campo abaixo. Para completar a miss\xE3o,
-    clique em \u201Cprocessar prote\xEDna\u201D."
-  instructions: {fileID: 0}
   basics:
   - value:
       value: A
