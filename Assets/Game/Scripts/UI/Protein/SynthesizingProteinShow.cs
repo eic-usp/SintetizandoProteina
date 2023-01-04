@@ -39,20 +39,26 @@ namespace UI.Protein.Info
 
         public void ShowDescriptionExtraData(int index)
         {
-            if (index < 0 || index > toShow.sp.GetQtdOfExtras() - 1) return;
-
+            ShowDescriptionExtraData("general", index);
+        }
+        
+        public void ShowDescriptionExtraData(string key, int index)
+        {
+            if (key == "") return;
+            if (index < 0 || index > toShow.sp.GetQtdOfExtras(key) - 1) return;
+            
             if (index == lastExtra && boxTextExtraDescription.activeSelf)
             {
                 lastExtra = -1;
                 boxTextExtraDescription.SetActive(false);
                 return;
             }
-
+            
             lastExtra = index;
             boxTextExtraDescription.SetActive(true);
-
-            nameExtraData.text = toShow.sp.GetNameExtra(index);
-            textDescriptionExtraData.text = toShow.sp.GetDescriptionTextExtra(index);
+            
+            nameExtraData.text = toShow.sp.GetNameExtra(key, index);
+            textDescriptionExtraData.text = toShow.sp.GetDescriptionTextExtra(key, index);
         }
 
         public TextMeshProUGUI GetDescriptionProtein() => descriptionProtein;
