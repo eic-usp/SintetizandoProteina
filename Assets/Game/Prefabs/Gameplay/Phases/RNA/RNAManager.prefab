@@ -762,29 +762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: RNA
-    descriptionPhase: "Voc\xEA identificou corretamente o n\xFAcleo e a transcri\xE7\xE3o
-      poder\xE1 ter in\xEDcio. O DNA e o RNA s\xE3o mol\xE9culas formadas por nucleot\xEDdeos.
-      Os nucleot\xEDdeos s\xE3o compostos de um a\xE7\xFAcar, um fosfato e uma base
-      nitrogenada, entretanto existem diferen\xE7as entre a mol\xE9cula de a\xE7\xFAcar
-      e uma das bases nitrogenadas para a forma\xE7\xE3o da mol\xE9cula de RNA. As
-      seguintes bases nitrogenadas comp\xF5em os nucleot\xEDdeos que formam a mol\xE9cula
-      de RNA: adenina (A), uracila (U), encontrada exclusivamente na mol\xE9cula
-      de RNA, citosina (C) e guanina (G). O RNA \xE9 formado por uma fita \xFAnica,
-      a partir de uma fita molde de DNA. A enzima RNA polimerase \xE9 a respons\xE1vel
-      por selecionar de forma complementar os nucleot\xEDdeos, ou seja, realiza a
-      leitura da fita de DNA e seleciona o nucleot\xEDdeo de RNA que se liga de forma
-      complementar.  Uma vez que todo o gene \xE9 transcrito, a fita de RNA \xE9
-      liberada da mol\xE9cula de DNA, saindo pelos poros nucleares, se deslocando
-      em dire\xE7\xE3o ao ribossomo no citoplasma.   Adicione corretamente as bases
-      que se complementam com a fita molde de DNA para formar uma fita de RNAm e
-      encaminhe a mol\xE9cula para o ribossomo (citoplasma) para concluir a miss\xE3o
-      2! "
+    namePhase: 
+    descriptionPhase: 
     additionalInfo: {fileID: 0}
-  textInstructions:
-  - "Preencha a fita de RNA com os nucleot\xEDdeos complementares para formar a mol\xE9cula
-    de RNA mensageiro. Quando formada, direcione a mol\xE9cula para fora do n\xFAcleo
-    atrav\xE9s dos poros!"
+  textInstructions: []
   instructions: {fileID: 0}
   originalPlace: {fileID: 0}
   prefab: {fileID: 863831602246113298, guid: fe8069c0b0885d54092c65e91480e9de, type: 3}
