@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: RNA0
+    namePhase: "Transcri\xE7\xE3o"
     descriptionPhase: "Voc\xEA identificou corretamente o n\xFAcleo e a transcri\xE7\xE3o
       poder\xE1 ter in\xEDcio. O DNA e o RNA s\xE3o mol\xE9culas formadas por nucleot\xEDdeos.
       Os nucleot\xEDdeos s\xE3o compostos de um a\xE7\xFAcar, um fosfato e uma base

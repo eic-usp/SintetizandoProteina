@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Phases
 {
-    public class InputPhase : PhaseManagerMono
+    public class InputPhase : MonoBehaviour
     {
         private int actualInput = -1;
 

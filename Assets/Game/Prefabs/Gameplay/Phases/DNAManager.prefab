@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: DNAMANAGER
+    namePhase: "Tradu\xE7\xE3o"
     descriptionPhase: "O processo de tradu\xE7\xE3o \xE9 respons\xE1vel pela produ\xE7\xE3o
       da cadeia de amino\xE1cidos que formar\xE1 a prote\xEDna de interesse para
       a c\xE9lula. Esse processo ocorre quando o RNAm sai do n\xFAcleo pelos poros
@@ -75,6 +75,7 @@ MonoBehaviour:
   dnaSetupReference: {fileID: 0}
   cellReference: {fileID: 0}
   amnManager: {fileID: 0}
+  amnMockup: {fileID: 0}
 --- !u!225 &569274660651924530
 CanvasGroup:
   m_ObjectHideFlags: 0

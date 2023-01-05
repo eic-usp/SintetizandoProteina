@@ -39,6 +39,7 @@ namespace Phases.AMN
 
         private void Start()
         {
+            // FindObjectOfType<GameplayManager>().ShowInstructionReminder();
             visualAMN.SetActive(true);
             Util.ChangeAlphaCanvasImageAnimation(visualAMN.GetComponent<CanvasGroup>(), 1f, 1f);
             SetAllRibossome();
