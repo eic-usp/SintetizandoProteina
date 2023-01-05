@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-
+using Phases.AMN;
 using UnityEngine;
 
 /*
@@ -17,6 +17,7 @@ namespace Phases.Cell.DNA
         [Space] [Header("DNA Manager Atributes")] [Space]
         [SerializeField] DNAStructureWithRNA dnaSetupReference = default; //Visual part of the DNA
         [SerializeField] CellAnimator cellReference = default; //Call all the animations
+        [SerializeField] private AMNManager amnManager;
 
         private Dictionary<string, string> validationDNADNA = new Dictionary<string, string>()
         {
@@ -30,6 +31,8 @@ namespace Phases.Cell.DNA
 
         private void Start()
         {
+            amnManager.OnComplete = EndPhase;
+            
             ChangeSecondHalf();
             dnaSetupReference.ChangeVisibilitySecondHalfDNA(true);
 
@@ -41,7 +44,7 @@ namespace Phases.Cell.DNA
         {
             await UniTask.Delay(Util.ConvertToMili(cellReference.RNAEscapeNucleus()));
             cellReference.SetAnimatorStatus(false);
-            base.EndPhase();
+            amnManager.gameObject.SetActive(true);
         }
 
         public void TurnDNAOn()

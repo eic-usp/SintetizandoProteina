@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Phases.AMN;
 using Phases.Cell.DNA;
@@ -37,6 +38,7 @@ namespace Phases.Cell
         {
             //Separate the DNA and Expand the nucleus 
             DNAAnimations();
+            rnaReference.OnComplete = EndPhase;
         }
 
         private async void DNAAnimations()
@@ -44,7 +46,7 @@ namespace Phases.Cell
             dnaReference.ChangeSecondHalf();
             await dnaReference.RNAVisibility();
             await dnaReference.DNASeparation();
-            EndPhase();
+            rnaReference.gameObject.SetActive(true);
         }
 
         public void SetStructure()

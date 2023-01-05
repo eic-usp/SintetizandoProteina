@@ -20,6 +20,8 @@ namespace Phases.Cell
 {
     public class RNASpawner : InputPhase
     {
+        public System.Action OnComplete { set; get; }
+
         [Space]
         [Header("RNA Manager Atributes")]
         [Space]
@@ -128,20 +130,15 @@ namespace Phases.Cell
 
         public void ChangeQuantityToNextPhase(int increase)
         {
-            nextPhase += increase;  
-            EndPhase(); //To end the game when the player filled everything
-        }
+            nextPhase += increase;
+            
+            //To end the game when the player filled everything
+            if (nextPhase < quantity) return;
 
-        public new void EndPhase()
-        {
-            if (nextPhase == quantity)
-            {
-                //Here its change phases
-                AMNManager.SetRNAtoAMNString(Util.ConvertToString(answers));
-                base.EndPhase();
-            }
-
-            return;
+            //Here its change phases
+            AMNManager.SetRNAtoAMNString(Util.ConvertToString(answers));
+            OnComplete?.Invoke();
+            gameObject.SetActive(false);
         }
 
         public void SetCorrespondentValidation(int index, string value)

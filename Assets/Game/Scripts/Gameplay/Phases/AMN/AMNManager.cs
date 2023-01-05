@@ -5,8 +5,10 @@ using Cysharp.Threading.Tasks;
 namespace Phases.AMN
 {
     //Before it was part of the InputPhase childs, but its not needed anymore
-    public class AMNManager : PhaseManagerMono
+    public class AMNManager : MonoBehaviour
     {
+        public System.Action OnComplete { set; get; }
+        
         [System.Serializable]
         private class AMNDescriber
         {
@@ -123,7 +125,11 @@ namespace Phases.AMN
             actualCompleted++;
             await QueueNewAMN(AMN); //Push AMN to queue and Ribossome animation
 
-            EndPhase();
+            if (actualCompleted < numberOfAMN + 1) return;
+            
+            ThrownLastRibossome();
+            OnComplete?.Invoke();
+            gameObject.SetActive(false);
         }
 
         private async UniTask QueueNewAMN(string amnName)
@@ -157,18 +163,6 @@ namespace Phases.AMN
             {
                 await UniTask.Yield();
             }
-        }
-
-        public new bool EndPhase()
-        {
-            if (actualCompleted == numberOfAMN + 1)
-            {
-                ThrownLastRibossome();
-                base.EndPhase();
-                return true;
-            }
-
-            return false;
         }
 
         private async void ThrownLastRibossome()

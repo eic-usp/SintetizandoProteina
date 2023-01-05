@@ -168,28 +168,32 @@ MonoBehaviour:
   gamePhases:
   - manager: {fileID: 1299191738}
     messages:
-    - "O n\xFAcleo deve ser aquele neg\xF3cio redondo..."
+    - "Na imagem ao lado voc\xEA observa uma c\xE9lula eucarionte, com as suas estruturas.
+      O n\xFAcleo \xE9 uma estrutura encontrada apenas nessas c\xE9lulas, e \xE9
+      o centro de controle das atividades metab\xF3licas, tendo formato arredondado,
+      com v\xE1rios poros."
   - manager: {fileID: 7160620728225733283}
     messages:
-    - Cell Nucleus
-  - manager: {fileID: 5572511312914652307}
-    messages:
-    - AAAAE
-    - ACIDO
+    - "No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases nitrogenadas
+      complementares, observando as bases do DNA: Guanina com Citosina, e Adenina
+      com Timina ou Uracila. ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA
+      e \xE9 complementar \xE0 Adenina."
   - manager: {fileID: 9218020533221470915}
     messages:
-    - "Visual, sem instru\xE7\xF5es, sei l\xE1"
-  - manager: {fileID: 1159113995}
-    messages:
-    - AMINO
+    - "Fa\xE7a a leitura do disco do centro para a periferia e encontre o amino\xE1cido
+      correspondente a trinca de bases do RNAm, por exemplo: AUG=Met."
   - manager: {fileID: 1788816084}
     messages:
-    - "PROCESSAMENTO, VOU COLOCAR UMA MENSAGEM BEM GRANDE PARA TESTAR A RESPONSABILIDADE
-      DESSA ATRIBUTO NA WEB, ENT\xC3O ESSE TEXTO EST\xC1 FICANDO MAIOR POR MOTIVOS
-      DE TESTES"
-  - manager: {fileID: 0}
+    - "Leia atentamente o texto ao lado para entender melhor sobre o processamento
+      da prote\xEDna escolhida. Se atente a fun\xE7\xE3o dela, pois ser\xE1 importante
+      na pr\xF3xima miss\xE3o!"
+  - manager: {fileID: 1091288319802513963}
     messages:
-    - "Destina\xE7\xE3ooooo"
+    - "Responda a quest\xE3o ao lado de acordo com a destina\xE7\xE3o correta da
+      prote\xEDna que voc\xEA escolheu, ou seja, indique se ela atua na corrente
+      sangu\xEDnea, ou em \xF3rg\xE3os, ou em c\xE9lulas espec\xEDficas, estruturas
+      das c\xE9lulas, etc. Se precisar de ajuda, clique no bot\xE3o com o nome da
+      prote\xEDna e fa\xE7a a associa\xE7\xE3o correta.  "
   marking: {fileID: 0}
   info: {fileID: 0}
   iM: {fileID: 0}
@@ -821,17 +825,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 545324925275556229, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
   m_PrefabInstance: {fileID: 545324924284298383}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1159113995 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 545324925275556228, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
-  m_PrefabInstance: {fileID: 545324924284298383}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c221b510ccdbbf4289d1b91017dbda8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &807698542620150924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,10 +936,6 @@ PrefabInstance:
       propertyPath: rnaReference
       value: 
       objectReference: {fileID: 5572511312914652307}
-    - target: {fileID: 7523869105389573679, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
-      propertyPath: phaseDescription.descriptionPhase
-      value: "Voc\xEA encontrou o n\xFAcleo! Agora, AAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
-      objectReference: {fileID: 0}
     - target: {fileID: 9115644990207987630, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
       propertyPath: m_Alpha
       value: 1

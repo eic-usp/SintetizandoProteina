@@ -1270,6 +1270,10 @@ PrefabInstance:
       propertyPath: dnaReference
       value: 
       objectReference: {fileID: 778141221}
+    - target: {fileID: 5572511312914652307, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
+      propertyPath: cellNucleusManager
+      value: 
+      objectReference: {fileID: 778141220}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: iM
       value: 
@@ -1283,77 +1287,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1003129660}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[1].manager
-      value: 
-      objectReference: {fileID: 778141220}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[2].manager
-      value: 
-      objectReference: {fileID: 778141224}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[3].manager
-      value: 
-      objectReference: {fileID: 778141221}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[4].manager
-      value: 
-      objectReference: {fileID: 778141223}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[6].manager
       value: 
       objectReference: {fileID: 2036688602}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[1].messages.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[2].messages.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[6].messages.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[0].messages.Array.data[0]
-      value: "Na imagem ao lado voc\xEA observa uma c\xE9lula eucarionte, com as
-        suas estruturas. O n\xFAcleo \xE9 uma estrutura encontrada apenas nessas
-        c\xE9lulas, e \xE9 o centro de controle das atividades metab\xF3licas, tendo
-        formato arredondado, com v\xE1rios poros."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[1].messages.Array.data[0]
-      value: Cell Nucleus
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[1].messages.Array.data[1]
       value: ACIDO
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[2].messages.Array.data[0]
-      value: "No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases
-        nitrogenadas complementares, observando as bases do DNA: Guanina com Citosina,
-        e Adenina com Timina ou Uracila. ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas
-        no RNA e \xE9 complementar \xE0 Adenina."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[3].messages.Array.data[0]
-      value: "Visual, sem instru\xE7\xF5es, sei l\xE1"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[4].messages.Array.data[0]
-      value: "Fa\xE7a a leitura do disco do centro para a periferia e encontre o
-        amino\xE1cido correspondente a trinca de bases do RNAm, por exemplo: AUG=Met."
-      objectReference: {fileID: 0}
-    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-      propertyPath: gamePhases.Array.data[5].messages.Array.data[0]
-      value: "Leia atentamente o texto ao lado para entender melhor sobre o processamento
-        da prote\xEDna escolhida. Se atente a fun\xE7\xE3o dela, pois ser\xE1 importante
-        na pr\xF3xima miss\xE3o!"
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[6].messages.Array.data[0]
@@ -1456,6 +1399,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9218020533221470915, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
+      propertyPath: amnManager
+      value: 
+      objectReference: {fileID: 778141222}
+    - target: {fileID: 9218020533221470915, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: cellReference
       value: 
       objectReference: {fileID: 1990912255}
@@ -1498,7 +1445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ab6b75e048b0945944f7a2ef669ecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &778141223 stripped
+--- !u!114 &778141222 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1159113995, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
   m_PrefabInstance: {fileID: 778141218}
@@ -1507,17 +1454,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c221b510ccdbbf4289d1b91017dbda8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &778141224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5572511312914652307, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
-  m_PrefabInstance: {fileID: 778141218}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06659948f788b44983325dd61daa5e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &823984116 stripped
