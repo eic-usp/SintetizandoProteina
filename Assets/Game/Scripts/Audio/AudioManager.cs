@@ -1,23 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Video;
 
 namespace Audio
 {
-    [System.Serializable]
-    internal struct SoundEffect
-    {
-        [SerializeField] internal AudioClip audioClip;
-        [SerializeField] internal SoundEffectTrack soundEffectTrack;
-    }
-        
-    [System.Serializable]
-    internal struct Music
-    {
-        [SerializeField] internal AudioClip audioClip;
-        [SerializeField] internal MusicTrack musicTrack;
-        [SerializeField] internal bool loop;
-    }
-    
     public class AudioManager : MonoBehaviour
     {
         [Space] [Header("Mixer settings")] [Space]
@@ -26,11 +12,30 @@ namespace Audio
         [SerializeField] private AudioMixerGroup masterMixerGroup;
         [SerializeField] private AudioMixerGroup musicMixerGroup;
         [SerializeField] private AudioMixerGroup sfxMixerGroup;
+
+        [Space] [Header("Video player settings")] [Space]
+        
+        [SerializeField] private VideoPlayer videoPlayer;
         
         [Space] [Header("Audio tracks")] [Space]
         
         [SerializeField] private Music[] musics;
         [SerializeField] private SoundEffect[] soundEffects;
+        
+        [System.Serializable]
+        private struct SoundEffect
+        {
+            [field:SerializeField] public AudioClip AudioClip { get; set; }
+            [field:SerializeField] public SoundEffectTrack SoundEffectTrack { get; set; }
+        }
+        
+        [System.Serializable]
+        private struct Music
+        {
+            [field:SerializeField] public AudioClip AudioClip { get; set; }
+            [field:SerializeField] public MusicTrack MusicTrack { get; set; }
+            [field:SerializeField] public bool Loop { get; set; }
+        }
 
         public static AudioManager Instance;
         
@@ -50,19 +55,23 @@ namespace Audio
 
             _sfxSource = gameObject.AddComponent<AudioSource>();
             _sfxSource.outputAudioMixerGroup = sfxMixerGroup;
+            _sfxSource.playOnAwake = false;
 
             _musicSource = gameObject.AddComponent<AudioSource>();
             _musicSource.outputAudioMixerGroup = musicMixerGroup;
+            _sfxSource.playOnAwake = false;
+            
+            videoPlayer.SetTargetAudioSource(0, _musicSource);
             
             // Play(MusicTrack.MainMenu);
         }
 
         public void Play(SoundEffectTrack soundEffectTrack)
         {
-            var sfx = System.Array.Find(soundEffects, fx => fx.soundEffectTrack == soundEffectTrack);
-            _sfxSource.clip = sfx.audioClip;
+            var sfx = System.Array.Find(soundEffects, fx => fx.SoundEffectTrack == soundEffectTrack);
+            _sfxSource.clip = sfx.AudioClip;
             
-            if (sfx.audioClip == null)
+            if (sfx.AudioClip == null)
             {
                 Debug.LogError($"Could not find SFX for {soundEffectTrack}");
                 return;
@@ -73,11 +82,11 @@ namespace Audio
 
         public void Play(MusicTrack musicTrack)
         {
-            var music = System.Array.Find(musics, m => m.musicTrack == musicTrack);
-            _musicSource.clip = music.audioClip;
-            _musicSource.loop = music.loop;
+            var music = System.Array.Find(musics, m => m.MusicTrack == musicTrack);
+            _musicSource.clip = music.AudioClip;
+            _musicSource.loop = music.Loop;
             
-            if (music.audioClip == null)
+            if (music.AudioClip == null)
             {
                 Debug.LogError($"Could not find music for {musicTrack}");
                 return;

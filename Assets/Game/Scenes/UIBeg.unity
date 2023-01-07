@@ -1077,7 +1077,7 @@ VideoPlayer:
   m_AspectRatio: 5
   m_DataSource: 0
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
   m_Url: 
@@ -8487,6 +8487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8595019413871170899, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
+      propertyPath: videoPlayer
+      value: 
+      objectReference: {fileID: 291269050}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
 --- !u!1001 &9021148153605194273

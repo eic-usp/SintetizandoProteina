@@ -48,10 +48,11 @@ MonoBehaviour:
   masterMixerGroup: {fileID: 24300002, guid: 6e53ed82aa2a6764c9060e4b8f241edf, type: 2}
   musicMixerGroup: {fileID: 4764791427659205619, guid: 6e53ed82aa2a6764c9060e4b8f241edf, type: 2}
   sfxMixerGroup: {fileID: 7094637842253586876, guid: 6e53ed82aa2a6764c9060e4b8f241edf, type: 2}
+  videoPlayer: {fileID: 0}
   musics:
-  - audioClip: {fileID: 8300000, guid: 6e833526ba5d100489262448c693e55d, type: 3}
-    musicTrack: 0
-    loop: 1
+  - <AudioClip>k__BackingField: {fileID: 8300000, guid: 6e833526ba5d100489262448c693e55d, type: 3}
+    <MusicTrack>k__BackingField: 0
+    <Loop>k__BackingField: 1
   soundEffects:
-  - audioClip: {fileID: 8300000, guid: c4e4c000cdfbb954aaba0d6933e6cb68, type: 3}
-    soundEffectTrack: 1
+  - <AudioClip>k__BackingField: {fileID: 8300000, guid: c4e4c000cdfbb954aaba0d6933e6cb68, type: 3}
+    <SoundEffectTrack>k__BackingField: 1
