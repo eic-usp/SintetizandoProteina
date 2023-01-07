@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414b2b59975649b4798cc3ac6f4760d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMixer: {fileID: 24100000, guid: 4a24e996542461547a1509254889afc3, type: 2}
+  mainMixer: {fileID: 24100000, guid: 6e53ed82aa2a6764c9060e4b8f241edf, type: 2}
   pauseMenuRef: {fileID: 7421573539492296925, guid: e99efe4149d2cda4d8bd302e4461fadd, type: 3}
 --- !u!1 &6122126002118218185
 GameObject:

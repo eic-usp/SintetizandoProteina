@@ -6,13 +6,14 @@ namespace UI.Menu
     public class SettingsMenu : MonoBehaviour
     {
         [SerializeField] AudioMixer mainMixer = default;
-        [SerializeField] GameObject pauseMenuRef = default;   
+        [SerializeField] GameObject pauseMenuRef = default;
 
+        private const string MasterVolume = "MasterVolume";
         private float actualVolume;
 
         private void Awake()
         {
-            mainMixer.GetFloat("VolumeMixer", out actualVolume);
+            mainMixer.GetFloat(MasterVolume, out actualVolume);
         }     
         
         public void ChangeFullScreen(bool screenMode)
@@ -29,7 +30,7 @@ namespace UI.Menu
 
         public void ChangeVolume(float volumeLevel)
         {
-            mainMixer.SetFloat("VolumeMixer", volumeLevel);
+            mainMixer.SetFloat(MasterVolume, volumeLevel);
             actualVolume = volumeLevel;
         }
 
