@@ -46,6 +46,7 @@ namespace UI.Protein.Info
         
         public void OnClickSendVideo()
         {
+            Audio.AudioManager.Instance.StopMusic();
             videoChoice.ChooseProtein(maxParent.GetSiblingIndex());
             CellNucleusManager.SetDNAString(proteinDescription.proteinDNA); //Sends the protein to the gameplay
             FindObjectOfType<PlayerInfo>().SetProteinDisplayName(synthesizedProteinName);

@@ -52,6 +52,11 @@ MonoBehaviour:
   musics:
   - <AudioClip>k__BackingField: {fileID: 8300000, guid: 6e833526ba5d100489262448c693e55d, type: 3}
     <MusicTrack>k__BackingField: 0
+    <Scene>k__BackingField: 0
+    <Loop>k__BackingField: 1
+  - <AudioClip>k__BackingField: {fileID: 8300000, guid: 118d7899ade5cdf40bdd1af1c8bbfb2f, type: 3}
+    <MusicTrack>k__BackingField: 1
+    <Scene>k__BackingField: 2
     <Loop>k__BackingField: 1
   soundEffects:
   - <AudioClip>k__BackingField: {fileID: 8300000, guid: c4e4c000cdfbb954aaba0d6933e6cb68, type: 3}

@@ -7,6 +7,7 @@ namespace GameSceneManagement
     {
         public enum Scene
         {
+            None = -1,
             UIBeg,
             Loading,
             Gameplay
@@ -16,7 +17,9 @@ namespace GameSceneManagement
 
         public static void Load(Scene scene)
         {
+            if (scene == Scene.None) return;
             onLoadCallback = () => SceneManager.LoadScene(scene.ToString());
+            Audio.AudioManager.Instance.Play(scene);
             SceneManager.LoadScene(Scene.Loading.ToString());
         }
 

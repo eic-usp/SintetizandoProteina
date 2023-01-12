@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 namespace Audio
@@ -34,8 +36,11 @@ namespace Audio
         {
             [field:SerializeField] public AudioClip AudioClip { get; set; }
             [field:SerializeField] public MusicTrack MusicTrack { get; set; }
+            [field:SerializeField] public GameSceneManagement.Loader.Scene Scene { get; set; }
             [field:SerializeField] public bool Loop { get; set; }
         }
+
+        private Dictionary<GameSceneManagement.Loader.Scene, MusicTrack> _sceneMusics;
 
         public static AudioManager Instance;
         
@@ -59,11 +64,24 @@ namespace Audio
 
             _musicSource = gameObject.AddComponent<AudioSource>();
             _musicSource.outputAudioMixerGroup = musicMixerGroup;
-            _sfxSource.playOnAwake = false;
+            _musicSource.playOnAwake = false;
             
             videoPlayer.SetTargetAudioSource(0, _musicSource);
-            
-            // Play(MusicTrack.MainMenu);
+
+            SetupSceneMusics();
+            Play((GameSceneManagement.Loader.Scene) SceneManager.GetActiveScene().buildIndex);
+        }
+
+        private void SetupSceneMusics()
+        {
+            _sceneMusics = new Dictionary<GameSceneManagement.Loader.Scene, MusicTrack>();
+
+            foreach (var m in musics)
+            {
+                if (m.Scene == GameSceneManagement.Loader.Scene.None) continue;
+                _sceneMusics[m.Scene] = m.MusicTrack;
+                // Debug.Log($"Adding {m.MusicTrack} as music track for scene {m.Scene}");
+            }
         }
 
         public void Play(SoundEffectTrack soundEffectTrack)
@@ -93,6 +111,17 @@ namespace Audio
             }
             
             _musicSource.Play();
+        }
+
+        public void Play(GameSceneManagement.Loader.Scene scene)
+        {
+            if (_sceneMusics.TryGetValue(scene, out var musicTrack))
+            {
+                Play(musicTrack);
+                return;
+            }
+            
+            Debug.LogError($"Could not find music track for scene {scene}");
         }
 
         public void ToggleMuteSoundEffects() => _sfxSource.mute = !_sfxSource.mute;
