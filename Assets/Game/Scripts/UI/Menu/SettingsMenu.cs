@@ -48,7 +48,7 @@ namespace UI.Menu
         //Or in a button
         public void ReleaseBasicAudioToConfirmation()
         {
-            //Sound when this function is called
+            Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.AudioVolumeSliderRelease);
         }
 
         public void ChangeToPause()

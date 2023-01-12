@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 7988238202470238661}
   - component: {fileID: 2285911647034033184}
   - component: {fileID: 6768072293479057824}
+  - component: {fileID: 712990267109531825}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -328,6 +329,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &712990267109531825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713165198504756375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e6addd97814ae3ae2964c8af2b150e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hover: 1
+  click: 1
 --- !u!1 &4976846204325941018
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 650, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874965997906626013

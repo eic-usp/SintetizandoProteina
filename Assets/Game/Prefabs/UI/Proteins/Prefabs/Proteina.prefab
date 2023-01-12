@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 8338889227322347240}
   - component: {fileID: 1533530821535976082}
   - component: {fileID: 2419849989867989271}
+  - component: {fileID: 1285775377623510725}
   m_Layer: 5
   m_Name: Proteina
   m_TagString: Untagged
@@ -517,8 +518,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxParent: {fileID: 7144544509969050855}
+  proteinDescription: {fileID: 0}
   proteinName: 
   synthesizedProteinName: 
+--- !u!114 &1285775377623510725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408280116514934983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e6addd97814ae3ae2964c8af2b150e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hover: 1
+  click: 1
 --- !u!1001 &3965758663199230180
 PrefabInstance:
   m_ObjectHideFlags: 0

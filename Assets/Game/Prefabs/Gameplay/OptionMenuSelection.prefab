@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414b2b59975649b4798cc3ac6f4760d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMixer: {fileID: 24100000, guid: 4a24e996542461547a1509254889afc3, type: 2}
+  mainMixer: {fileID: 24100000, guid: 6e53ed82aa2a6764c9060e4b8f241edf, type: 2}
   pauseMenuRef: {fileID: 0}
 --- !u!1 &833991557717247818
 GameObject:
@@ -3429,6 +3429,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3156845229412220377, guid: 54dfdd234da7d44f9be950ba9fe9bd54, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8462534278771302726}
+    - target: {fileID: 3156845229412220377, guid: 54dfdd234da7d44f9be950ba9fe9bd54, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4691966134685315535}
     - target: {fileID: 3226057725699160689, guid: 54dfdd234da7d44f9be950ba9fe9bd54, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -3794,6 +3802,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7188238550125518195, guid: d094bde5016c5442d9852c4a851f9d82, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8462534278771302726}
+    - target: {fileID: 7188238550125518195, guid: d094bde5016c5442d9852c4a851f9d82, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 575065697745342203}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d094bde5016c5442d9852c4a851f9d82, type: 3}
 --- !u!224 &4691966134685315528 stripped

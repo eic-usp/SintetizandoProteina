@@ -4252,7 +4252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705582438772242028, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 92.21758
       objectReference: {fileID: 0}
     - target: {fileID: 5705582438772242028, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4328,7 +4328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7494921517377739543, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 109.5375
       objectReference: {fileID: 0}
     - target: {fileID: 7494921517377739543, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7635,6 +7635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 801392976}
     m_Modifications:
+    - target: {fileID: 303737689414896038, guid: 5de05b4c9c393fb459de7ae6ef5b55d6, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3324310050713284593, guid: 5de05b4c9c393fb459de7ae6ef5b55d6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8491,6 +8495,14 @@ PrefabInstance:
       propertyPath: videoPlayer
       value: 
       objectReference: {fileID: 291269050}
+    - target: {fileID: 8595019413871170899, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
+      propertyPath: soundEffects.Array.data[4].<AudioClip>k__BackingField
+      value: 
+      objectReference: {fileID: 8300000, guid: 09a8f4704898dee429b195289b9df286, type: 3}
+    - target: {fileID: 8595019413871170899, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
+      propertyPath: soundEffects.Array.data[4].<SoundEffectTrack>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
 --- !u!1001 &9021148153605194273
