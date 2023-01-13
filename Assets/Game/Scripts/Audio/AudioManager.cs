@@ -84,9 +84,16 @@ namespace Audio
             }
         }
 
-        public void Play(SoundEffectTrack soundEffectTrack)
+        public void Play(SoundEffectTrack soundEffectTrack, bool oneShot = false, float oneShotVolumeScale = 1f)
         {
             var sfx = System.Array.Find(soundEffects, fx => fx.SoundEffectTrack == soundEffectTrack);
+
+            if (oneShot)
+            {
+                _sfxSource.PlayOneShot(sfx.AudioClip, oneShotVolumeScale);
+                return;
+            }
+            
             _sfxSource.clip = sfx.AudioClip;
             
             if (sfx.AudioClip == null)

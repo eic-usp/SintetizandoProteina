@@ -56,7 +56,12 @@ public sealed class GameplayManager : MonoBehaviour
     {
         actualPhase++;
         print("actualPhase = " + actualPhase);
-        
+
+        if (actualPhase > 0)
+        {
+            Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.MissionCompleted, oneShot: true, oneShotVolumeScale: 0.5f);
+        }
+
         if (actualPhase == gamePhases.Count)
         {
             print("Jogo acabou");

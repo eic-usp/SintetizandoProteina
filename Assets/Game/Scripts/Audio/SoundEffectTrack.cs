@@ -7,6 +7,7 @@
         ButtonDisabled,
         AudioVolumeSliderRelease,
         RightAnswer,
-        WrongAnswer
+        WrongAnswer,
+        MissionCompleted
     }
 }
