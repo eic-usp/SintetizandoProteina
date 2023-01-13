@@ -119,9 +119,9 @@ MonoBehaviour:
           (degrada\xE7\xE3o de subst\xE2ncias estranhas no corpo e microrganismos). "
     - key: destination
       meta:
-      - nameExtra: melanin
+      - nameExtra: Melanina
         descriptionExtra: "Informa\xE7\xE3o sobre melanina"
-      - nameExtra: phagocytosis
+      - nameExtra: Fagocitose
         descriptionExtra: "Informa\xE7\xE3o sobre fagocitose"
   destinationOrganelle: 0
   transformedProtein: {fileID: 8601743136619411814, guid: 1502d94798dceb84cb7d8eb6ea31574d, type: 3}
