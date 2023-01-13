@@ -22,16 +22,27 @@ namespace Phases.AMN
             //print("That it");
             print(wait + " O K " + thisInput.text);
 
-            if (!wait && amnM.VerifyAMN(thisInput.text))
+            if (wait) return;
+
+            if (amnM.VerifyAMN(thisInput.text))
             {
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.RightAnswer);
+                
                 string auxTextAMN = thisInput.text;
                 thisInput.text = "";
 
                 wait = true;
+                thisInput.DeactivateInputField();
                 await amnM.PushNewAMN(auxTextAMN);
+                thisInput.ActivateInputField();
+                thisInput.Select();
                 wait = false;
 
                 ValueChangeCheck();
+            }
+            else
+            {
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.WrongAnswer);
             }
         }
 

@@ -73,8 +73,12 @@ namespace Phases.Destination
                     OnComplete?.Invoke();
                 }
                 
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.RightAnswer);
+                
                 return rightAnswerColor;
             }
+            
+            Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.WrongAnswer);
             
             return wrongAnswerColor;
         }
