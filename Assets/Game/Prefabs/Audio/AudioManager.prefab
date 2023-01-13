@@ -67,3 +67,7 @@ MonoBehaviour:
     <SoundEffectTrack>k__BackingField: 2
   - <AudioClip>k__BackingField: {fileID: 8300000, guid: 09a8f4704898dee429b195289b9df286, type: 3}
     <SoundEffectTrack>k__BackingField: 3
+  - <AudioClip>k__BackingField: {fileID: 8300000, guid: de90fa042a24c0845b9b5ddbea674b66, type: 3}
+    <SoundEffectTrack>k__BackingField: 4
+  - <AudioClip>k__BackingField: {fileID: 8300000, guid: 5a6220176b86aa74aa7eeb97e32668d7, type: 3}
+    <SoundEffectTrack>k__BackingField: 5

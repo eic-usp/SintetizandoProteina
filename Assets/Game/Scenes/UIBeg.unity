@@ -8495,14 +8495,6 @@ PrefabInstance:
       propertyPath: videoPlayer
       value: 
       objectReference: {fileID: 291269050}
-    - target: {fileID: 8595019413871170899, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
-      propertyPath: soundEffects.Array.data[4].<AudioClip>k__BackingField
-      value: 
-      objectReference: {fileID: 8300000, guid: 09a8f4704898dee429b195289b9df286, type: 3}
-    - target: {fileID: 8595019413871170899, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
-      propertyPath: soundEffects.Array.data[4].<SoundEffectTrack>k__BackingField
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f9160716fa9d64d8d4348fdfff9bbd, type: 3}
 --- !u!1001 &9021148153605194273

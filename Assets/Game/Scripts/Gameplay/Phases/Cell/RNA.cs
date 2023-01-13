@@ -1,5 +1,4 @@
 using System;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -65,9 +64,13 @@ namespace Phases.Cell
                 SetValue(val, RNAonwer.GetColorRight());
                 valueInput = true; //Now its true, so if it's wrong it gonna put -1 and if right it's gonna put 0
                 singletonInput = false;
+                
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.RightAnswer);
 
                 return;
             }
+            
+            Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.WrongAnswer);
 
             //0 or -1
             //-1 if to true to false, or to empty

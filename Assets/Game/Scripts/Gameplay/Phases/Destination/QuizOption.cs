@@ -27,8 +27,6 @@ namespace Phases.Destination
 
         private void Choose()
         {
-            // _quizManager.Choose(Correct);
-            // _image.color = (Correct ? Color.green : Color.red);
             _image.color = _quizManager.Choose(Correct);
             _button.interactable = false;
         }

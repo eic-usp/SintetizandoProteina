@@ -5,6 +5,8 @@
         ButtonHover,
         ButtonClick,
         ButtonDisabled,
-        AudioVolumeSliderRelease
+        AudioVolumeSliderRelease,
+        RightAnswer,
+        WrongAnswer
     }
 }

@@ -5800,7 +5800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hover: 1
-  click: 1
+  click: 0
 --- !u!1 &8546075774141100297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,7 +5950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hover: 1
-  click: 1
+  click: 0
 --- !u!1 &8546075774241120316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6235,7 +6235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hover: 1
-  click: 1
+  click: 0
 --- !u!1 &8546075774479146186
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,7 +6761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hover: 1
-  click: 1
+  click: 0
 --- !u!1 &8767168873174243931
 GameObject:
   m_ObjectHideFlags: 0
