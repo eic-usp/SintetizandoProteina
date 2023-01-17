@@ -21,7 +21,7 @@ namespace Phases.Destination
 
         private List<QuizOption> _options;
 
-        private void Start()
+        private void Awake()
         {
             _canvasGroup = GetComponent<CanvasGroup>();
             _options = new List<QuizOption>(GetComponentsInChildren<QuizOption>());
