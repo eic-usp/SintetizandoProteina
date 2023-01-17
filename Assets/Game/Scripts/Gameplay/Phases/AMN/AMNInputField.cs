@@ -32,10 +32,10 @@ namespace Phases.AMN
                 thisInput.text = "";
 
                 wait = true;
-                thisInput.DeactivateInputField();
+                // thisInput.DeactivateInputField();
                 await amnM.PushNewAMN(auxTextAMN);
-                thisInput.ActivateInputField();
-                thisInput.Select();
+                // thisInput.ActivateInputField();
+                // thisInput.Select();
                 wait = false;
 
                 ValueChangeCheck();
