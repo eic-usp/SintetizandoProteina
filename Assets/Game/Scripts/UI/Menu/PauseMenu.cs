@@ -4,32 +4,32 @@ namespace UI.Menu
 {
     public class PauseMenu : MonoBehaviour
     {
-        private static bool isPaused = false;
+        public bool IsPaused { get; private set; }
 
-        [SerializeField] GameObject optionMenuRef = default;
-        [SerializeField] GameObject tutorialPrefab;
+        [SerializeField] private GameObject optionMenuRef;
+        [SerializeField] private GameObject tutorialPrefab;
 
         public void PauseGame()
         {
-            if (isPaused) return;
+            if (IsPaused) return;
 
-            this.gameObject.SetActive(true);
+            gameObject.SetActive(true);
             Time.timeScale = 0f;
-            isPaused = true;
+            IsPaused = true;
         }
 
         public void ResumeGame()
         {
-            if (!isPaused) return;
+            if (!IsPaused) return;
 
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
             Time.timeScale = 1f;
-            isPaused = false;
+            IsPaused = false;
         }
 
         public void OptionMenu()
         {
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
             optionMenuRef.SetActive(true);
         }
 
@@ -40,13 +40,8 @@ namespace UI.Menu
 
         public void QuitGame()
         {
-            //Application.Quit();
+            Time.timeScale = 1f;
             GameSceneManagement.Loader.Load(GameSceneManagement.Loader.Scene.UIBeg);
-        }
-
-        public bool GetIsPaused()
-        {
-            return isPaused;
         }
     }
 }

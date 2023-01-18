@@ -15,10 +15,6 @@ namespace Audio
         [SerializeField] private AudioMixerGroup musicMixerGroup;
         [SerializeField] private AudioMixerGroup sfxMixerGroup;
 
-        [Space] [Header("Video player settings")] [Space]
-        
-        [SerializeField] private VideoPlayer videoPlayer;
-        
         [Space] [Header("Audio tracks")] [Space]
         
         [SerializeField] private Music[] musics;
@@ -40,12 +36,29 @@ namespace Audio
             [field:SerializeField] public bool Loop { get; set; }
         }
 
-        private Dictionary<GameSceneManagement.Loader.Scene, MusicTrack> _sceneMusics;
-
         public static AudioManager Instance;
         
+        private Dictionary<GameSceneManagement.Loader.Scene, MusicTrack> _sceneMusics;
         private AudioSource _musicSource;
         private AudioSource _sfxSource;
+        private VideoPlayer _videoPlayer;
+
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += OnLoadMenu;
+        }
+
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnLoadMenu;
+        }
+
+        private void OnLoadMenu(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            if (scene.buildIndex != (int) GameSceneManagement.Loader.Scene.UIBeg) return;
+            _videoPlayer = FindObjectOfType<VideoPlayer>();
+            _videoPlayer.SetTargetAudioSource(0, _musicSource);
+        }
 
         private void Awake()
         {
@@ -65,8 +78,6 @@ namespace Audio
             _musicSource = gameObject.AddComponent<AudioSource>();
             _musicSource.outputAudioMixerGroup = musicMixerGroup;
             _musicSource.playOnAwake = false;
-            
-            videoPlayer.SetTargetAudioSource(0, _musicSource);
 
             SetupSceneMusics();
             Play((GameSceneManagement.Loader.Scene) SceneManager.GetActiveScene().buildIndex);

@@ -26,7 +26,7 @@ namespace GeneralScripts.Player
                 DontDestroyOnLoad(Instance);
             }
 
-            onAwakeEvents.Invoke();
+            onAwakeEvents?.Invoke();
         }
 
         public void SetNamePlayer(string namePlayer)

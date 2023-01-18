@@ -131,7 +131,7 @@ public static class Util
         myObj = m_myEvent.GetPersistentTarget(eventIndex);
         MethodInfo another = UnityEventGetMethodInfo(m_myEvent, eventIndex, parameter, argumentType, myObj);
         
-        another.Invoke(myObj, parameter);
+        another?.Invoke(myObj, parameter);
     }
 
     public static void UnityEventInvokeListenerByIndexObj(UnityEvent m_myEvent, int eventIndex, object[] parameter, Type[] argumentType, object obj)
