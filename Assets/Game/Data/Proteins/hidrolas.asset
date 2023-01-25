@@ -126,4 +126,4 @@ MonoBehaviour:
       - nameExtra: Fagocitose
         descriptionExtra: "Informa\xE7\xE3o sobre fagocitose"
   destinationOrganelle: 0
-  transformedProtein: {fileID: 8790640005254243481, guid: ba2271f3c4dd18642895f117b68cb437, type: 3}
+  transformedProtein: {fileID: 7031768403391485764, guid: ac129f805bd22a64bb196953d4e095d5, type: 3}

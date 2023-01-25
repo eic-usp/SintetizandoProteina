@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3243881932807703040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520701045468620682, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: proteinName
+      value: insulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 520701045468620682, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: proteinDescription
+      value: 
+      objectReference: {fileID: 11400000, guid: 28651c51949b5e74bb3c77e8a77632c8, type: 2}
+    - target: {fileID: 520701045468620682, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: synthesizedProteinName
+      value: Proinsulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152747441243247673, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 43f50cdb14074f24eb1afda8a5407f9a, type: 2}
+    - target: {fileID: 2419849989867989271, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: proteinName
+      value: insulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419849989867989271, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: synthesizedProteinName
+      value: Proinsulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658401133865417463, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 618782767, guid: 4421163112c960d46ae8423a2cccd09b, type: 3}
+    - target: {fileID: 3154548484301503032, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154548484301503032, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154548484301503032, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154548484301503032, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130763142125369657, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 618782767, guid: 4421163112c960d46ae8423a2cccd09b, type: 3}
+    - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350496798024186850, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350496798024186850, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350496798024186850, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350496798024186850, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780151286180308750, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 43f50cdb14074f24eb1afda8a5407f9a, type: 2}
+    - target: {fileID: 6883663935314085332, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883663935314085332, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883663935314085332, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883663935314085332, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937598692062861454, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937598692062861454, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937598692062861454, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937598692062861454, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050854, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Name
+      value: InsulinProteinVariant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407047725457501566, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407047725457501566, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407047725457501566, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407047725457501566, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264373057330623339, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: maxParent
+      value: 
+      objectReference: {fileID: 5630080138711639783}
+    - target: {fileID: 8264373057330623339, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: proteinName
+      value: insulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 8264373057330623339, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: proteinDescription
+      value: 
+      objectReference: {fileID: 11400000, guid: 28651c51949b5e74bb3c77e8a77632c8, type: 2}
+    - target: {fileID: 8264373057330623339, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: synthesizedProteinName
+      value: Proinsulina
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528134211169582791, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528134211169582791, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528134211169582791, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528134211169582791, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138961894725156303, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_text
+      value: Insulina
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+--- !u!224 &5630080138711639783 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+  m_PrefabInstance: {fileID: 3243881932807703040}
+  m_PrefabAsset: {fileID: 0}

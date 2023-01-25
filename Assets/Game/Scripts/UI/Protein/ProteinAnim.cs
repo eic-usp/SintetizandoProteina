@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /*
     Control the Protein so it don't rotate at the start of the game
@@ -6,7 +7,7 @@ using UnityEngine;
 
 namespace UI.Protein.Info
 {
-    public class ProteinAnim : MonoBehaviour
+    public class ProteinAnim : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         Animator anim;
 
@@ -17,12 +18,13 @@ namespace UI.Protein.Info
             anim.enabled = false;
         }
 
-        public void OnMouseEnter(){
+        public void OnPointerEnter(PointerEventData pointerEventData)
+        {
             anim.enabled = true;
-            //anim.SetTrigger(rotationHash);
         }
 
-        public void OnMouseExit(){
+        public void OnPointerExit(PointerEventData pointerEventData)
+        {
             anim.enabled = false;
         }
     }
