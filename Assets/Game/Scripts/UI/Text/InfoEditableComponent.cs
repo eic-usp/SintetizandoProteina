@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 /*
     Used in the marking of the game
@@ -10,13 +11,15 @@ namespace UI.Text
 {
     public class InfoEditableComponent : InfoComponent
     {
-        [SerializeField] List<TextMeshProUGUI> texts = default; //All the texts we need to start 
+        [SerializeField] private List<TextMeshProUGUI> texts = default; //All the texts we need to start 
+        [SerializeField] private TextMeshProUGUI labelText;
 
-        private List<string> saveTexts = new List<string>();
+        private List<string> saveTexts = new();
 
-        public void Setup(List<string> textsMessage)
+        public void Setup(List<string> textsMessage, int phaseCount)
         {
             saveTexts = textsMessage;
+            labelText.text = phaseCount.ToString();
         }
 
         public void Setup(List<TextMeshProUGUI> markingText)

@@ -23,22 +23,22 @@ namespace UI.Text
         {
             for (int i = 0; i < quantity; i++)
             {
-                Instantiate<GameObject>(goal , spawnField);
+                Instantiate(goal , spawnField);
             }
 
             currentGoal = 0;
         }
 
-        public void SpawnGoal(List<string> texts)
+        public void SpawnGoal(List<string> texts, int phaseCount)
         {
-            InfoEditableComponent hold = Instantiate<GameObject>(goal , spawnField).GetComponent<InfoEditableComponent>();
+            InfoEditableComponent hold = Instantiate(goal , spawnField).GetComponent<InfoEditableComponent>();
 
             if (textMarking != null)
             {
                 hold.Setup(textMarking);
             }
 
-            hold.Setup(texts);
+            hold.Setup(texts, phaseCount);
         }
 
         //Just a prototype

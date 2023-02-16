@@ -890,11 +890,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5480233119312092060, guid: f46ab7a5f0d28644d98767e7ef726c11, type: 3}
       propertyPath: m_text
-      value: "Insira o nome do amino\xE1cido\n"
+      value: "Insira aqui o nome do amino\xE1cido\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5480233119312092060, guid: f46ab7a5f0d28644d98767e7ef726c11, type: 3}
       propertyPath: m_fontSize
-      value: 28
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5480233119312092060, guid: f46ab7a5f0d28644d98767e7ef726c11, type: 3}
       propertyPath: m_fontAsset

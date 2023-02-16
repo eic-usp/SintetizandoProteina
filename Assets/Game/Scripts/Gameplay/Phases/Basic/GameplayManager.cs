@@ -108,7 +108,7 @@ public sealed class GameplayManager : MonoBehaviour
     {
         for (int i = 0; i < gamePhases.Count; i++)
         {
-            marking.SpawnGoal(gamePhases[i].manager.GetTextInstructions());
+            marking.SpawnGoal(gamePhases[i].manager.GetTextInstructions(), i + 1);
         }
     }
 
