@@ -1,4 +1,5 @@
 using UnityEngine;
+using EIC.Quiz;
 
 namespace Phases.Destination
 {
@@ -6,30 +7,36 @@ namespace Phases.Destination
     {
         [Space] [Header("Destination Manager Variables")] [Space]
         [SerializeField] private QuizManager quizManager;
-        [SerializeField] private Wait.MissionManager missionManager;
         [SerializeField] private GameObject destinationQuiz;
         [SerializeField] private GameObject destinationPanel;
 
         private void Start()
         {
-            destinationPanel.SetActive(false);
-        }
-        
-        private void Update()
-        {
-            if (!missionManager.FinishedInstructions) return;
             destinationPanel.SetActive(true);
             destinationQuiz.SetActive(true);
+            
+            var protein = FindObjectOfType<GeneralScripts.Player.PlayerInfo>().ProteinName;
+            quizManager.Setup("QuizData" + protein[0].ToString().ToUpper() + protein[1..]);
         }
-        
+
         private void OnEnable()
         {
-            quizManager.OnComplete += EndPhase;
+            quizManager.OnChoose += OnChoose;
         }
         
         private void OnDisable()
         {
-            quizManager.OnComplete -= EndPhase;
+            quizManager.OnChoose -= OnChoose;
+        }
+
+        private void OnChoose(bool correct, QuizResult quizResult)
+        {
+            Audio.AudioManager.Instance.Play(correct ? Audio.SoundEffectTrack.RightAnswer : Audio.SoundEffectTrack.WrongAnswer);
+            
+            if (quizResult.complete)
+            {
+                EndPhase();
+            }
         }
 
         public new void EndPhase()

@@ -7,12 +7,12 @@ namespace Phases.Wait
 {
     public class MissionManager : WaitManager
     {
-        [SerializeField] string mission;
-        [SerializeField] TextMeshProUGUI missionName;
-        [SerializeField] TextMeshProUGUI missionDescription;
-        [SerializeField] Transform additionalInformation;
+        [SerializeField] private string mission;
+        [SerializeField] private TextMeshProUGUI missionName;
+        [SerializeField] private TextMeshProUGUI missionDescription;
+        [SerializeField] private Transform additionalInformation;
 
-        public bool FinishedInstructions { get; set; }
+        public bool FinishedInstructions { get; private set; }
 
         public void Setup(int numberPhase, string missionName, string missionDescription, GameObject information)
         {
@@ -26,7 +26,7 @@ namespace Phases.Wait
                 return;
             }
 
-            Instantiate<GameObject>(information, this.additionalInformation);
+            Instantiate(information, additionalInformation);
         }
 
         //Ok not to be async

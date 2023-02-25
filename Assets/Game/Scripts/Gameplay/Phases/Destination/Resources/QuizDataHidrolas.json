@@ -1,0 +1,24 @@
+{
+    "questions": [
+        {
+            "question": "Pergunta A sobre a destinação da hidrolase",
+            "correctOption": 2,
+            "options": [
+                "Resposta 1",
+                "Resposta 2",
+                "Resposta 3",
+                "Resposta 4"
+            ]
+        },
+        {
+            "question": "Pergunta B sobre a destinação da hidrolase",
+            "correctOption": 1,
+            "options": [
+                "Resposta 1",
+                "Resposta 2",
+                "Resposta 3",
+                "Resposta 4"
+            ]
+        }
+    ]
+}
