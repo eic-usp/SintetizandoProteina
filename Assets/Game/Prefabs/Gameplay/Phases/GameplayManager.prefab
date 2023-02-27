@@ -51,18 +51,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseDescription:
     namePhase: "Encontrar o n\xFAcleo"
-    descriptionPhase: "O processo de s\xEDntese proteica \xE9 respons\xE1vel pela
-      forma\xE7\xE3o de prote\xEDnas e \xE9 realizado nos ribossomos, presentes no
-      citoplasma. Para que ele ocorra, \xE9 necess\xE1rio transcrever (copiar) a
-      informa\xE7\xE3o que caracteriza a prote\xEDna de interesse que est\xE1 presente
-      em uma sequ\xEAncia espec\xEDfica do DNA (gene).  A transcri\xE7\xE3o da informa\xE7\xE3o
-      ocorre no n\xFAcleo, a partir do DNA e forma uma mol\xE9cula intermedi\xE1ria
-      denominada RNA mensageiro.  Encontre o n\xFAcleo da c\xE9lula para iniciar
-      o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1."
+    descriptionPhase: "O processo de s\xEDntese de prote\xEDnas \xE9 realizado no
+      citoplasma pelos  ribossomos, que se encontram livres ou ligados ao Ret\xEDculo
+      Endoplasm\xE1tico Rugoso (RER), nas c\xE9lulas eucari\xF3ticas, enquanto em
+      procariotos eles est\xE3o livres no citoplasma.. Como a informa\xE7\xE3o est\xE1
+      nos genes (dentro do n\xFAcleo) elas precisam ser  copiadas e levadas at\xE9
+      os ribossomas, num processo chamado de transcri\xE7\xE3o.  Os genes que correspondem
+      a uma determinada prote\xEDna  est\xE3o presentes em uma sequ\xEAncia espec\xEDfica
+      do DNA.   Assim, a transcri\xE7\xE3o da informa\xE7\xE3o ocorre no n\xFAcleo,
+      ou seja um gene ser\xE1 copiado,a partir do DNA, formando uma  mol\xE9cula
+      intermedi\xE1ria: o  RNA mensageiro (RNAm). Encontre o n\xFAcleo da c\xE9lula
+      para iniciar o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1."
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Encontre o n\xFAcleo da c\xE9lula eucarionte para iniciar o processo de transcri\xE7\xE3o
-    e realizar a primeira etapa da s\xEDntese proteica!"
+  - "Encontre o n\xFAcleo da c\xE9lula  para iniciar o processo de transcri\xE7\xE3o
+    e realizar a primeira etapa da s\xEDntese proteica (miss\xE3o 1)!"
   instructions: {fileID: 0}
   gameplayManager: {fileID: 7295050311995265380}
   missionManager: {fileID: 7551402958393808104}
@@ -169,19 +172,19 @@ MonoBehaviour:
   - manager: {fileID: 1299191738}
     messages:
     - "Na imagem ao lado voc\xEA observa uma c\xE9lula eucarionte, com as suas estruturas.
-      O n\xFAcleo \xE9 uma estrutura encontrada apenas nessas c\xE9lulas, e \xE9
-      o centro de controle das atividades metab\xF3licas, tendo formato arredondado,
-      com v\xE1rios poros."
+      O n\xFAcleo \xE9 o centro de controle das atividades celulares, tem formato
+      arredondado, com v\xE1rios poros."
   - manager: {fileID: 7160620728225733283}
     messages:
-    - "No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases nitrogenadas
+    - " No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases nitrogenadas
       complementares, observando as bases do DNA: Guanina com Citosina, e Adenina
-      com Timina ou Uracila. ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA
-      e \xE9 complementar \xE0 Adenina."
+      com Timina ou Uracila."
+    - " ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA e \xE9 complementar
+      \xE0 Adenina."
   - manager: {fileID: 9218020533221470915}
     messages:
     - "Fa\xE7a a leitura do disco do centro para a periferia e encontre o amino\xE1cido
-      correspondente a trinca de bases do RNAm, por exemplo: AUG=Met."
+      correspondente a trinca de bases do RNAm, por exemplo: AUG=Met"
   - manager: {fileID: 1788816084}
     messages:
     - "Leia atentamente o texto ao lado para entender melhor sobre o processamento
@@ -192,8 +195,7 @@ MonoBehaviour:
     - "Responda a quest\xE3o ao lado de acordo com a destina\xE7\xE3o correta da
       prote\xEDna que voc\xEA escolheu, ou seja, indique se ela atua na corrente
       sangu\xEDnea, ou em \xF3rg\xE3os, ou em c\xE9lulas espec\xEDficas, estruturas
-      das c\xE9lulas, etc. Se precisar de ajuda, clique no bot\xE3o com o nome da
-      prote\xEDna e fa\xE7a a associa\xE7\xE3o correta.  "
+      das c\xE9lulas, etc."
   marking: {fileID: 0}
   info: {fileID: 0}
   iM: {fileID: 0}
@@ -271,13 +273,13 @@ MonoBehaviour:
       retirando sequ\xEAncias de amino\xE1cidos ou adicionado carboidratos, lip\xEDdeos,
       metais, ferro, etc. Depois desse processamento, a enzima fica ativa ou pronta
       para ser armazenada e utilizada quando necess\xE1rio. Clique em \u201Ccontinuar\u201D
-      para concluir a miss\xE3o 4. "
+      para concluir a miss\xE3o 4."
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Nessa etapa voc\xEA saber\xE1 mais sobre o processamento de prote\xEDnas ap\xF3s
     a sua s\xEDntese na tradu\xE7\xE3o. Esse processo \xE9 importante para ativa\xE7\xE3o
     e habilita\xE7\xE3o da prote\xEDna para exercer suas fun\xE7\xF5es. Clique em
-    \u201Ccontinuar\u201D para a pr\xF3xima miss\xE3o. "
+    \u201Ccontinuar\u201D para a pr\xF3xima miss\xE3o."
   instructions: {fileID: 0}
   cellReference: {fileID: 0}
   processingDescriptionObject: {fileID: 0}
@@ -343,14 +345,13 @@ MonoBehaviour:
       etc. Elas podem ser liberadas diretamente na corrente sangu\xEDnea, atuando
       ali ou sendo transportadas para locais espec\xEDficos. Responda o quiz sobre
       a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima miss\xE3o
-      da sua jornada! "
+      da sua jornada!"
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Leia o texto sobre a destina\xE7\xE3o das prote\xEDnas ap\xF3s sua s\xEDntese
     e processamento e responda o quiz para finalizar a sua jornada!"
   instructions: {fileID: 0}
   quizManager: {fileID: 0}
-  missionManager: {fileID: 7551402958393808104}
   destinationQuiz: {fileID: 0}
   destinationPanel: {fileID: 0}
 --- !u!1001 &1545469662

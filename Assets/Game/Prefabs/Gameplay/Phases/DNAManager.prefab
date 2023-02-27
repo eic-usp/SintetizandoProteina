@@ -65,7 +65,7 @@ MonoBehaviour:
       amino\xE1cidos correspondentes com os c\xF3dons (cada 3 bases nitrogenadas)
       do RNAm e insira o nome correto do amino\xE1cido. Ap\xF3s completar a fita
       de RNAm, clique em \u201Cprocessar a prote\xEDna\u201D para concluir a miss\xE3o
-      3! "
+      3!"
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Identifique os amino\xE1cidos correspondentes aos c\xF3dons na fita de RNAm
@@ -75,7 +75,6 @@ MonoBehaviour:
   dnaSetupReference: {fileID: 0}
   cellReference: {fileID: 0}
   amnManager: {fileID: 0}
-  amnMockup: {fileID: 0}
 --- !u!225 &569274660651924530
 CanvasGroup:
   m_ObjectHideFlags: 0

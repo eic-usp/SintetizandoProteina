@@ -14,111 +14,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   proteinDNA: AGCCCTCCAGGACAGGCTGCATCAGAAGAGGCCATCAAGCAGGTCTGTTCCAAGGGCCTTTGCGTCAGGTGGGCTCAGGATTCCAGGGTGGCTGGACCCCAGGCCCCAGCTCTGCAGCAGGGAGGACGTGGCTGGGCTCGTGAAGCATGTGGGGGTGAGCCCAGGGGCCCCAAGGCAGGGCACCTGGCCTTCAGCCTGCCTCAGCCCTGCCTGTCTCCCAGATCACTGTCCTTCTGCCATGGCCCTGTGGATGCGCCTCCTGCCCCTGCTGGCGCTGCTGGCCCTCTGGGGACCTGACCCAGCCGCAGCCTTTGTGAACCAACACCTGTGCGGCTCACACCTGGTGGAAGCTCTCTACCTAGTGTGCGGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCAGAGGACCTGCAGGGTGAGCCAACTGCCCATTGCTGCCCCTGGCCGCCCCCAGCCACCCCCTGCTCCTGGCGCTCCCACCCAGCATGGGCAGAAGGGGGCAGGAGGCTGCCACCCAGCAGGGGGTCAGGTGCACTTTTTTAAAAAGAAGTTCTCTTGGTCACGTCCTAAAAGTGACCAGCTCCCTGTGGCCCAGTCAGAATCTCAGCCTGAGGACGGTGTTGGCTTCGGCAGCCCCGAGATACATCAGAGGGTGGGCACGCTCCTCCCTCCACTCGCCCCTCAAACAAATGCCCCGCAGCCCATTTCTCCACCCTCATTTGATGACCGCAGATTCAAGTGTTTTGTTAAGTAAAGTCCTGGGTGACCTGGGGTCACAGGGTGCCCCACGCTGCCTGCCTCTGGGCGAACACCCCATCACGCCCGGAGGAGGGCGTGGCTGCCTGCCTGAGTGGGCCAGACCCCTGTCGCCAGGCCTCACGGCAGCTCCATAGTCAGGAGATGGGGAAGATGCTGGGGACAGGCCCTGGGGAGAAGTACTGGGATCACCTGTTCAGGCTCCCACTGTGACGCTGCCCCGGGGCGGGGGAAGGAGGTGGGACATGTGGGCGTTGGGGCCTGTAGGTCCACACCCAGTGTGGGTGACCCTCCCTCTAACCTGGGTCCAGCCCGGCTGGAGATGGGTGGGAGTGCGACCTAGGGCTGGCGGGCAGGCGGGCACTGTGTCTCCCTGACTGTGTCCTCCTGTGTCCCTCTGCCTCGCCGCTGTTCCGGAACCTGCTCTGCGCGGCACGTCCTGGCAGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAGCCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGTGGCATTGTGGAACAATGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAACTAGACGCAGCCCGCAGGCAGCCCCACACCCGCCGCCTCCTGCACCGAGAGAGATGGAATAAAGCCCTTGAACCAGC
   sp:
-    descriptionProtein: "A digest\xE3o converte a maior parte da grande quantidade
-      de carboidratos presentes na nossa dieta em glicose, um tipo de a\xE7\xFAcar
-      que \xE9 a principal fonte energ\xE9tica para o metabolismo celular. Entretanto,
-      a glicose livre na circula\xE7\xE3o sangu\xEDnea n\xE3o consegue por si s\xF3
-      entrar em algumas c\xE9lulas, e necessita, para isso, do horm\xF4nio insulina.
-      Este horm\xF4nio, produzido pelo p\xE2ncreas, ser\xE1 o respons\xE1vel pela
-      entrada de glicose nas c\xE9lulas. O precursor da insulina \xE9 a prote\xEDna
-      proinsulina, constantemente produzida e armazenada em gr\xE2nulos de certas
-      c\xE9lulas do p\xE2ncreas. Momentos ap\xF3s as refei\xE7\xF5es, as mol\xE9culas
-      de proinsulina s\xE3o convertidas em insulina, secretadas para o sangue e distribu\xEDdas
-      para grande parte das c\xE9lulas do corpo atrav\xE9s da circula\xE7\xE3o."
+    descriptionProtein: "No processo digest\xF3rio, a maior parte  dos carboidratos
+      presentes na nossa dieta \xE9 convertido em glicose, um a\xE7\xFAcar simples
+      que \xE9 a principal fonte de energia a ser utilizada em todos os processos
+      celulares. Entretanto, a glicose que foi absorvida na digest\xE3o e encontra-se
+      livre na circula\xE7\xE3o sangu\xEDnea n\xE3o consegue penetrar dentro das
+      c\xE9lulas. Para que isso ocorra, a c\xE9lula necessita do horm\xF4nio insulina,
+      que \xE9 produzido pelo p\xE2ncreas, por\xE9m na forma de um precursor da insulina,
+      chamado de pr\xF3 insulina, que fica armazenado em c\xE9lulas espec\xEDficas.
+      Momentos ap\xF3s as refei\xE7\xF5es, as mol\xE9culas de pr\xF3 insulina s\xE3o
+      convertidas em insulina, liberadas para a corrente sangu\xEDnea e distribu\xEDdas
+      para as c\xE9lulas de todo corpo."
     data:
     - key: general
       meta:
       - nameExtra: "Transcri\xE7\xE3o"
-        descriptionExtra: "Para que a s\xEDntese proteica ocorra, \xE9 necess\xE1rio
-          que a informa\xE7\xE3o correspondente \xE0 prote\xEDna que ser\xE1 formada,
-          seja transcrita, a partir de um trecho da mol\xE9cula de DNA (\xC1cido
-          Desoxirribonucleico). No DNA,  localizado no n\xFAcleo das c\xE9lulas eucariontes,
-          est\xE1 contida toda a informa\xE7\xE3o gen\xE9tica dos organismos. Esse
-          processo denominado de transcri\xE7\xE3o consiste na c\xF3pia de uma regi\xE3o
-          do DNA que cont\xE9m as informa\xE7\xF5es da prote\xEDna (um gene) e sua
-          transmiss\xE3o na forma de uma mol\xE9cula chamada de RNA mensageiro. A
-          transcri\xE7\xE3o \xE9 realizada atrav\xE9s da liga\xE7\xE3o de nucleot\xEDdeos
-          formando uma fita simples de RNAm, utilizando um trecho de uma das fitas
-          de DNA (gene) como molde. Os nucleot\xEDdeos s\xE3o compostos de um a\xE7\xFAcar,
-          um fosfato e uma base nitrogenada. As seguintes bases nitrogenadas comp\xF5em
-          os nucleot\xEDdeos que formam a mol\xE9cula de RNA: adenina (A) que reconhece
-          a timina (T), encontrada exclusivamente na mol\xE9cula de DNA), uracila
-          (U), encontrada exclusivamente na mol\xE9cula de RNA, que reconhece a (A)
-          na mol\xE9cula de DNA, citosina (C) e guanina (G), que reconhecem a (G)
-          e a (C), respectivamente na mol\xE9cula de DNA. Nesse processo acontece
-          o pareamento de nucleot\xEDdeos, ou seja, as bases dos nucleot\xEDdeos
-          do DNA devem ficar lado-a-lado com as bases complementares dos nucleot\xEDdeos
-          do RNA. A enzima respons\xE1vel por selecionar corretamente os nucleot\xEDdeos
-          e ligar uns aos outros \xE9 chamada de RNA polimerase. Quando a sess\xE3o
-          do DNA correspondente ao gene for lida inteiramente pela RNA polimerase,
-          formando uma mol\xE9cula de RNA mensageiro, essa mol\xE9cula se solta do
-          DNA e atravessa os poros do n\xFAcleo das c\xE9lulas, se direcionando para
-          os ribossomos no citoplasma."
+        descriptionExtra: "A s\xEDntese proteica \xE9 iniciada dentro do n\xFAcleo,
+          onde um gene que correspondente \xE0 prote\xEDna que ser\xE1 formada for
+          transcrito. Os genes est\xE3o localizados em trechos  das mol\xE9culas
+          de DNA. Esse processo, denominado de transcri\xE7\xE3o, consiste na c\xF3pia
+          de um  gene, formando  uma mol\xE9cula chamada de RNA mensageiro (RNAm)
+          ). A transcri\xE7\xE3o do gene ocorre atrav\xE9s da liga\xE7\xE3o de nucleot\xEDdeos,
+          espec\xEDficos do RNA (os ribonucleot\xEDdeos), formando uma fita simples
+          utilizando como molde a sequ\xEAncia do gene a ser transcrito. Os nucleot\xEDdeos
+          s\xE3o compostos de um a\xE7\xFAcar, (ribose, no RNA e desoxirribose, no
+          DNA), um fosfato e uma base nitrogenada. As  bases nitrogenadas que comp\xF5em
+          os ribonucleot\xEDdeos que formam a mol\xE9cula de RNA s\xE3o: adenina
+          (A) que pareia com  a timina (T), encontrada exclusivamente na mol\xE9cula
+          de DNA), uracila (U), encontrada exclusivamente na mol\xE9cula de RNA,
+          que reconhece a A na mol\xE9cula de DNA, citosina (C) e guanina (G), que
+          reconhecem a G e C, respectivamente nas duas mol\xE9culas... Nesse processo
+          acontece o pareamento dos ribonucleot\xEDdeos  com os  nucleot\xEDdeos
+          do DNA. H\xE1 uma sequ\xEAncia de nucleot\xEDdeos no DNA onde o processo
+          de transcri\xE7\xE3o \xE9 iniciado: TAC, assim no in\xEDcio do RNAm haver\xE1
+          uma sequ\xEAncia de AUG, chamado de sequ\xEAncia inicial. A Enzima RNA
+          polimerase ir\xE1 ligar um ribonucleot\xEDdeo ao outro, formando o RNAm.
+          O RNAm \xE9 ent\xE3o desligado da sequ\xEAncia g\xEAnica do DNA, quando
+          encontra sequ\xEAncias no DNA chamadas de \u201CFIM\u201D: ATT, ATC, ACT,
+          ou seja c\xF3digos de parada da transcri\xE7\xE3o. Um complexo de prote\xEDnas,
+          existentes no n\xFAcleo, ter\xE3o a fun\xE7\xE3o de transportar o RNAm,
+          atrav\xE9s dos poros da membrana nuclear   at\xE9 os do ribossomos no citoplasma."
       - nameExtra: "Tradu\xE7\xE3o"
-        descriptionExtra: "Ap\xF3s a transcri\xE7\xE3o estar completa e a mol\xE9cula
-          de RNA mensageiro sair dos poros do n\xFAcleo, ela se dirige para a pr\xF3xima
-          etapa do processo de s\xEDntese de prote\xEDnas, chamada de tradu\xE7\xE3o.
-          A estrutura em que ocorre a tradu\xE7\xE3o \xE9 o ribossomo, e ele apresenta
-          duas subunidades, uma grande e outra menor, que se juntam com o RNAm no
-          meio (como um sandu\xEDche) para dar in\xEDcio \xE0 tradu\xE7\xE3o. A tradu\xE7\xE3o
-          ocorre quando a sequ\xEAncia de bases do RNAm \xE9 traduzida, ou seja,
-          transformada em uma sequ\xEAncia de amino\xE1cidos de uma prote\xEDna.
-          Cada sequ\xEAncia de tr\xEAs nucleot\xEDdeos (chamada de c\xF3don) do RNAm
-          \xE9 traduzida, com a ajuda de uma outra mol\xE9cula de RNA, chamada de
-          RNA transportador (tRNA), para um amino\xE1cido. Por exemplo, um mRNA de
-          6 nucleot\xEDdeos com a seguinte sequ\xEAncia de bases: Citosina (C) \u2013
-          Adenina (A) \u2013 Guanina (G) \u2013 Uracila (U) \u2013 Guanina (G) \u2013Guanina
-          (G), formariam ent\xE3o duas trincas com as seguintes bases CAG e UGG,
-          que dariam origem aos amino\xE1cidos arginina e triptofano da cadeia de
-          prote\xEDna. O ribossomo ir\xE1 ler toda a mol\xE9cula de RNAm, iniciando
-          numa sequ\xEAncia espec\xEDfica (AUG), que \xE9 um sinal do in\xEDcio da
-          tradu\xE7\xE3o. Ao adicionar os amino\xE1cidos, eles se ligam formando
-          uma cadeia polipept\xEDdica, at\xE9 atingir uma sequ\xEAncia de parada
-          no RNAm, terminando a tradu\xE7\xE3o. "
+        descriptionExtra: "Ap\xF3s os RNAm chegarem nos ribossomas, e se ligarem
+          a eles, \xE9 iniciada outra  etapa, a do processo de tradu\xE7\xE3o, que
+          \xE9 quando as mol\xE9culas de prote\xEDnas s\xE3o formadas. Os ribossomos
+          s\xE3o constitu\xEDdos de duas subunidades, uma maior e outra menor, onde
+          o RNAm ir\xE1 se ligar, para dar in\xEDcio \xE0 tradu\xE7\xE3o, ou seja,
+          ao processo de s\xEDntese de uma prote\xEDnas. Cada sequ\xEAncia de tr\xEAs
+          nucleot\xEDdeos (chamada de c\xF3dons) do RNAm \xE9 traduzida, com a ajuda
+          de uma outra mol\xE9cula de RNA, chamada de RNA transportador (tRNA), sendo
+          que cada amino\xE1cido term seu tRNA (tRNA-AA). Por exemplo, um RNAm de
+          12 nucleot\xEDdeos com a seguinte sequ\xEAncia de bases: AUG-CAG-UGG-UCA-GCA-UAA,
+          correspondem aos amino\xE1cidos metionina, arginina, triptofano, serina,
+          alanina. O c\xF3don inicial AUG \xE9 o iniciador, enquanto  que os c\xF3dons
+          UAA, UAG, UGA s\xE3o os finalizadores, ou seja, o ribossomo ir\xE1 ler
+          toda a mol\xE9cula de RNAm, iniciando na sequ\xEAncia espec\xEDfica (AUG),
+          at\xE9 o \xFAltimo, que \xE9 a sequ\xEAncia de t\xE9rmino (FIM). A cada
+          amino\xE1cido adicionado, eles se ligam formando uma liga\xE7\xE3o pept\xEDdica
+          (que liga um amino\xE1cido ao outro), assim uma prote\xEDna tamb\xE9m \xE9
+          chamada de cadeia polipept\xEDdica. Quando chegar no c\xF3don de FIM a
+          cadeia polipept\xEDdica se desliga do ribossomo e estar\xE1 terminada a
+          tradu\xE7\xE3o."
       - nameExtra: Processamento
-        descriptionExtra: "Nessa pr\xF3xima etapa da s\xEDntese proteica, ocorre
-          o processamento das prote\xEDnas, em que ser\xE3o realizadas algumas modifica\xE7\xF5es
-          na cadeia de amino\xE1cidos para tornar a prote\xEDna ativa, ou para criar
-          uma pr\xF3-prote\xEDna, que se encontra inativa e ser\xE1 armazenada e
-          ativada quando o metabolismo precisar dela para sua fun\xE7\xE3o espec\xEDfica. 
-          Essas modifica\xE7\xF5es s\xE3o: estruturais, que se referem ao enrolamento
-          da cadeia de amino\xE1cidos. Esse enrolamento pode atingir 4 n\xEDveis,
-          a prim\xE1ria, secund\xE1ria, terci\xE1ria e quatern\xE1ria, em que o grau
-          de complexidade da prote\xEDna aumenta progressivamente. Elas adquirem
-          uma estrutura tridimensional composta pelas estruturas secund\xE1rias (representado
-          pelas chamadas h\xE9lices alfa, fitas e folhas beta e voltas, que unem
-          estas estruturas entre si) e terci\xE1rias (que \xE9 o arranjo tridimensional
-          das estruturas secund\xE1rias). Quando as prote\xEDnas s\xE3o constitu\xEDdas
-          por mais de uma cadeia (subunidades), elas adquirem o que \xE9 chamado
-          de estrutura quatern\xE1ria, que \xE9 o arranjo espacial das cadeias que
-          a constituem.  Al\xE9m dessas modifica\xE7\xF5es, as prote\xEDnas tamb\xE9m
-          podem sofrer altera\xE7\xF5es nas suas sequ\xEAncias de amino\xE1cidos,
-          como a retirada de uma sequ\xEAncia ou a incorpora\xE7\xE3o de carboidratos
-          (formando glicoprote\xEDnas), lip\xEDdeos (formando as lipoprote\xEDnas),
-          metais, como ferro (metaloprote\xEDnas), ou outros \xEDons, como c\xE1lcio.
-          Estes processos s\xE3o realizados por diferentes enzimas e s\xE3o imprescind\xEDveis
-          para a fun\xE7\xE3o fisiol\xF3gica que a prote\xEDna ir\xE1 exercer. O
-          processamento de prote\xEDnas \xE9 um fen\xF4meno que ocorre ao n\xEDvel
-          do ret\xEDculo endoplasm\xE1tico e/ou complexo de Golgi."
+        descriptionExtra: "Nessa pr\xF3xima etapa pode ocorrer o processamento das
+          prote\xEDnas, ou seja, ainda poder\xE3o sofrer algumas modifica\xE7\xF5es,
+          sendo ligadas a elas outros tipos de mol\xE9culas como os carboidratos,
+          formando as glicoprote\xEDnas; os lip\xEDdios, formando as lipoprote\xEDnas,
+          ou ainda metais, como ferro, cobre, formando as metaloprote\xEDnas. Podem
+          ainda sofrer  quebras em sua cadeia, para se tornarem ativas. A cadeia
+          polipept\xEDdica formada \xE9 chamada de estrutura prim\xE1ria que ainda
+          ser\xE1 reorganizada em estruturas tridimensionais que se referem ao seu
+          enrolamento espacial, que \xE9 necess\xE1rio para exercerem suas atividades
+          biol\xF3gicas. As estruturas secund\xE1rias s\xE3o representadas pelas
+          h\xE9lices alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria
+          \xE9 o arranjo espacial que as estruturas secund\xE1rias adquirem ao se
+          \u201Cenrolarem\u201D entre si. Nesta forma s\xE3o ativas e exercem suas
+          fun\xE7\xF5es biol\xF3gicas e s\xE3o chamadas de mon\xF4meros. Elas tamb\xE9m
+          podem ser constitu\xEDdas de dois ou mais mon\xF4meros, formando d\xEDmeros,
+          tr\xEDmeros, tetr\xE2meros, e outras formas polim\xE9ricas, que s\xE3o
+          denominadas de estrutura quatern\xE1ria. Al\xE9m dessas modifica\xE7\xF5es,
+          as prote\xEDnas tamb\xE9m podem sofrer altera\xE7\xF5es nas suas sequ\xEAncias
+          de amino\xE1cidos, como a retirada de uma sequ\xEAncia ou a incorpora\xE7\xE3o
+          de carboidratos (formando glicoprote\xEDnas), lip\xEDdeos (formando as
+          lipoprote\xEDnas), metais, como ferro (metaloprote\xEDnas), ou outros \xEDons,
+          como c\xE1lcio. Estes processos s\xE3o realizados por diferentes enzimas
+          e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica que a prote\xEDna
+          ir\xE1 exercer. O processamento de prote\xEDnas \xE9 um fen\xF4meno que
+          ocorre ao n\xEDvel do ret\xEDculo endoplasm\xE1tico e/ou no complexo de
+          Golgi."
       - nameExtra: "Destina\xE7\xE3o"
-        descriptionExtra: "Quando a prote\xEDna \xE9 sintetizada e processada, ela
-          ainda pode passar por mais uma etapa. Cada prote\xEDna \xE9 produzida para
-          exercer uma fun\xE7\xE3o espec\xEDfica, e para que isso ocorra ela precisa
-          se deslocar at\xE9 seu local alvo. Esse local pode ser dentro da pr\xF3pria
-          c\xE9lula, em outras organelas e estruturas, ou fora das c\xE9lulas, como
-          nos \xF3rg\xE3os, etc. Mas antes mesmo dela ser levada at\xE9 seu local
-          espec\xEDfico, muitas prote\xEDnas s\xE3o armazenadas na forma de pr\xF3-prote\xEDnas
-          em gr\xE2nulos ou estruturas como o lisossomo, que servir\xE3o como \u201Ccaixas\u201D
-          de reservat\xF3rios de prote\xEDnas. Quando o corpo necessitar da a\xE7\xE3o
-          daquela prote\xEDna, ela ser\xE1 convertida em uma prote\xEDna ativa e
-          sair\xE1 destes locais de armazenamento, se dirigindo ao local alvo da
-          sua a\xE7\xE3o. Uma vez que essas prote\xEDnas s\xE3o liberadas, elas podem
-          atuar em v\xE1rios locais do corpo: passando pela corrente sangu\xEDnea,
-          podendo atuar em c\xE9lulas de \xF3rg\xE3os, como o f\xEDgado, ou em c\xE9lulas
-          como os melan\xF3citos <color=\"blue\"><link=\"1\">(respons\xE1veis pela
-          produ\xE7\xE3o de melanina)</link></color>, e ainda podem atuar no pr\xF3prio
-          lisossomo em que est\xE1 armazenada, ajudando em processos como o da <color=\"blue\"><link=\"1\">fagocitose</link></color>
-          (degrada\xE7\xE3o de subst\xE2ncias estranhas no corpo e microrganismos). "
+        descriptionExtra: "Cada prote\xEDna \xE9 produzida para exercer uma fun\xE7\xE3o
+          espec\xEDfica, e para que isso ocorra ela precisa ser deslocada at\xE9
+          seu local alvo. Esse local pode ser dentro da pr\xF3pria c\xE9lula, em
+          outras estruturas como o n\xFAcleo, a mitoc\xF4ndria, o lisossoma, ou fora
+          das c\xE9lulas, indo exercer suas atividades em outros locais do organismo,
+          sendo levadas pelas correntes sangu\xEDneas e linf\xE1ticas. Muitas ainda
+          s\xE3o armazenadas na forma de pr\xE9-prote\xEDnas, em gr\xE2nulos, que
+          servir\xE3o como \u201Cdep\xF3sitos\u201D destas prote\xEDnas. Quando o
+          corpo necessita da a\xE7\xE3o daquela prote\xEDna, ela ser\xE1 convertida
+          em uma prote\xEDna ativa e sair\xE1 destes locais de armazenamento, sendo 
+          levadas aos seus locais de a\xE7\xE3o."
     - key: destination
       meta:
       - nameExtra: Melanina
