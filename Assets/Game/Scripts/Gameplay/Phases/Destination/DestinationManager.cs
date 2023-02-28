@@ -9,7 +9,8 @@ namespace Phases.Destination
         [SerializeField] private QuizManager quizManager;
         [SerializeField] private GameObject destinationQuiz;
         [SerializeField] private GameObject destinationPanel;
-
+        [SerializeField] private GameObject gameOverPanel;
+        
         private void Start()
         {
             destinationPanel.SetActive(true);
@@ -33,7 +34,7 @@ namespace Phases.Destination
         {
             Audio.AudioManager.Instance.Play(correct ? Audio.SoundEffectTrack.RightAnswer : Audio.SoundEffectTrack.WrongAnswer);
             
-            if (quizResult.complete)
+            if (correct)
             {
                 EndPhase();
             }
@@ -41,6 +42,7 @@ namespace Phases.Destination
 
         public new void EndPhase()
         {
+            gameOverPanel.SetActive(true);
             base.EndPhase();
         }
     }
