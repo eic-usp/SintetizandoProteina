@@ -1595,6 +1595,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SelectionMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2173820534877254035, guid: ff16dcb4ca468ce4c81ffd1ae73f55e9, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173820534877254035, guid: ff16dcb4ca468ce4c81ffd1ae73f55e9, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI.Menu.MenuComponent, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2933139687866319304, guid: ff16dcb4ca468ce4c81ffd1ae73f55e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
