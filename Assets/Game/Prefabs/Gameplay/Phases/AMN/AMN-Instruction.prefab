@@ -965,8 +965,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Para o c\xF3don GCA este \xE9 o caminho que voc\xEA deve observar na tabela
-    para sintetizar seu respectivo amino\xE1cido : Ala - (Alanina)"
+  m_text: "Para o c\xF3don GCC, este \xE9 o caminho que voc\xEA deve observar na
+    tabela para sintetizar seu respectivo amino\xE1cido: Ala - (Alanina)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9844632d790894e85a0b85fdefbfe1e5, type: 2}
   m_sharedMaterial: {fileID: 7746803525459343344, guid: 9844632d790894e85a0b85fdefbfe1e5, type: 2}

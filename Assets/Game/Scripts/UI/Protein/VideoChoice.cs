@@ -57,8 +57,7 @@ namespace UI.Protein
 
         private async void ShowScreen()
         {
-            print("Entrou aqui Show Screen");
-            this.gameObject.SetActive(false); //Instanteneous stop all coroutine
+            gameObject.SetActive(false); //Instanteneous stop all coroutine
             await PlayTransitionIn(); //Don't get finished in SetActive(false)
         }
 
