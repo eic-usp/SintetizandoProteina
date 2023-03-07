@@ -8,10 +8,13 @@ namespace Phases.Cell
         [SerializeField] private GameplayManager gameplayManager;
         [SerializeField] private Wait.MissionManager missionManager;
         [SerializeField] private DNA.DNAManager dnaManager;
+        
+        private bool _found;
 
         public async void SetFound()
         {
-            if (gameplayManager.GetCurrentPhase() > 0 || !missionManager.FinishedInstructions) return;
+            if (gameplayManager.GetCurrentPhase() > 0 || !missionManager.FinishedInstructions || _found) return;
+            _found = true;
             await dnaManager.DNANucleusVisibility(true);
             EndPhase();
         }
