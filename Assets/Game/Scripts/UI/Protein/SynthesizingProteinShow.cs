@@ -1,24 +1,25 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace UI.Protein.Info
 {
     public class SynthesizingProteinShow : MonoBehaviour
     {
-        private static ProteinDescription toShow = default;
+        private static ProteinDescription toShow;
         
         //SynthesizingProtein
         
         [Space] [Header("Box Description of the actual synthesizing protein")] [Space]
 
-        [SerializeField] TextMeshProUGUI descriptionProtein = default;
+        [SerializeField] private TextMeshProUGUI descriptionProtein;
 
         [Space] [Header("Box Description of Extra")] [Space]
 
-        [SerializeField] GameObject boxTextExtraDescription = default;
-
-        [SerializeField] TextMeshProUGUI nameExtraData = default;
-        [SerializeField] TextMeshProUGUI textDescriptionExtraData = default;
+        [SerializeField] private GameObject boxTextExtraDescription;
+        [SerializeField] private TextMeshProUGUI nameExtraData;
+        [SerializeField] private TextMeshProUGUI textDescriptionExtraData;
+        [SerializeField] private ScrollRect scrollRectExtraData;
 
         private int lastExtra = -1;
         
@@ -29,7 +30,7 @@ namespace UI.Protein.Info
         private void Start()
         {
             descriptionProtein.text = toShow.sp.GetDescriptionProtein();
-            Instantiate<GameObject>(toShow.transformedProtein, positionOfTransformedProtein);
+            Instantiate(toShow.transformedProtein, positionOfTransformedProtein);
         }
 
         public static void SetProtein(ProteinDescription sint)
@@ -59,6 +60,7 @@ namespace UI.Protein.Info
             
             nameExtraData.text = toShow.sp.GetNameExtra(key, index);
             textDescriptionExtraData.text = toShow.sp.GetDescriptionTextExtra(key, index);
+            scrollRectExtraData.verticalNormalizedPosition = 1f;
         }
 
         public TextMeshProUGUI GetDescriptionProtein() => descriptionProtein;
