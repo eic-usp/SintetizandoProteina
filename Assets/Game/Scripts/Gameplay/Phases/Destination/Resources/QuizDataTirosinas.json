@@ -1,23 +1,33 @@
 {
     "questions": [
         {
-            "question": "Pergunta A sobre a destinação da tirosinas",
-            "correctOption": 2,
+            "question": "Após a síntese e processamento da melanina, essa proteína irá exercer sua função em qual parte do corpo?",
+            "correctOption": 4,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Fígado",
+                "Estômago",
+                "Corrente sanguínea",
+                "Células e estruturas da pele"
             ]
         },
         {
-            "question": "Pergunta B sobre a destinação da tirosinas",
-            "correctOption": 1,
+            "question": "A melanina é um pigmento produzido pela ação da enzima tirosinase sobre o aminoácido tirosina,  que  protege o organismo das radiações solares. Para que esse pigmento efetue sua função, ele precisa ser transportado para tecidos específicos do organismo como:",
+            "correctOption": 2,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Somente as células da pele",
+                "Células da pele (epitélio) e folículos pilosos",
+                "Células do sangue",
+                "Células das unhas"
+            ]
+        },
+        {
+            "question": "Em qual estrutura das células da pele a melanina é acumulada?",
+            "correctOption": 3,
+            "options": [
+                "Nos lisossomos",
+                "Nas mitocôndrias",
+                "Nos melanócitos",
+                "Nos ribossomos"
             ]
         }
     ]

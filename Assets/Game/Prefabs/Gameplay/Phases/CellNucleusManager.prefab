@@ -55,21 +55,22 @@ MonoBehaviour:
   phaseDescription:
     namePhase: "Transcri\xE7\xE3o"
     descriptionPhase: "Voc\xEA identificou corretamente o n\xFAcleo e a transcri\xE7\xE3o
-      poder\xE1 ter in\xEDcio. O DNA e o RNA s\xE3o mol\xE9culas formadas por nucleot\xEDdeos.
-      Os nucleot\xEDdeos s\xE3o compostos de um a\xE7\xFAcar, um fosfato e uma base
-      nitrogenada, entretanto existem diferen\xE7as entre a mol\xE9cula de a\xE7\xFAcar
-      e uma das bases nitrogenadas para a forma\xE7\xE3o da mol\xE9cula de RNA. As
-      seguintes bases nitrogenadas comp\xF5em os nucleot\xEDdeos que formam a mol\xE9cula
-      de RNA: adenina (A), uracila (U), encontrada exclusivamente na mol\xE9cula
-      de RNA, citosina (C) e guanina (G). O RNA \xE9 formado por uma fita \xFAnica,
-      a partir de uma fita molde de DNA. A enzima RNA polimerase \xE9 a respons\xE1vel
-      por selecionar de forma complementar os nucleot\xEDdeos, ou seja, realiza a
-      leitura da fita de DNA e seleciona o nucleot\xEDdeo de RNA que se liga de forma
-      complementar. Uma vez que todo o gene \xE9 transcrito, a fita de RNA \xE9 liberada
-      da mol\xE9cula de DNA, saindo pelos poros nucleares, se deslocando em dire\xE7\xE3o
-      ao ribossomo no citoplasma. Adicione corretamente as bases que se complementam
-      com a fita molde de DNA para formar uma fita de RNAm e encaminhe a mol\xE9cula
-      para o ribossomo (citoplasma) para concluir a miss\xE3o 2!"
+      poder\xE1 ter in\xEDcio. O RNA \xE9 formado por uma fita \xFAnica, a partir
+      de uma fita molde de DNA. Nesse processo acontece o pareamento dos ribonucleot\xEDdeos 
+      com os  nucleot\xEDdeos do DNA. H\xE1 uma sequ\xEAncia de nucleot\xEDdeos no
+      DNA onde o processo de transcri\xE7\xE3o \xE9 iniciado: TAC, assim no in\xEDcio
+      do RNAm haver\xE1 uma sequ\xEAncia de AUG, chamado de sequ\xEAncia inicial.
+      A Enzima RNA polimerase ir\xE1 ligar um ribonucleot\xEDdeo ao outro, formando
+      o RNAm. Uma vez que todo o gene \xE9 transcrito, a fita de RNA \xE9 liberada
+      da mol\xE9cula de DNA. O RNAm \xE9 ent\xE3o desligado da sequ\xEAncia g\xEAnica
+      do DNA, quando encontra uma das sequ\xEAncias no DNA chamadas de \u201CFIM\u201D:
+      ATT, ATC, ACT, ou seja c\xF3digos de parada da transcri\xE7\xE3o. Um complexo
+      de prote\xEDnas, existentes no n\xFAcleo, ter\xE3o a fun\xE7\xE3o de transportar
+      o RNAm, atrav\xE9s dos poros da membrana nuclear at\xE9 o Ret\xEDculo Endoplasm\xE1tico
+      Rugoso (RER), no citoplasma onde os ribossomas est\xE3o ligados. Adicione corretamente
+      as bases que se complementam com a fita molde de DNA para formar uma fita de
+      RNAm e encaminhe a mol\xE9cula para o ribossomo (citoplasma) para concluir
+      a miss\xE3o 2! "
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Preencha a fita de RNA com os nucleot\xEDdeos complementares para formar a mol\xE9cula

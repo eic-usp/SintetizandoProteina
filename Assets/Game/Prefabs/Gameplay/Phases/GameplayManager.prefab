@@ -52,16 +52,24 @@ MonoBehaviour:
   phaseDescription:
     namePhase: "Encontrar o n\xFAcleo"
     descriptionPhase: "O processo de s\xEDntese de prote\xEDnas \xE9 realizado no
-      citoplasma pelos  ribossomos, que se encontram livres ou ligados ao Ret\xEDculo
+      citoplasma pelos ribossomos, que se encontram livres ou ligados ao Ret\xEDculo
       Endoplasm\xE1tico Rugoso (RER), nas c\xE9lulas eucari\xF3ticas, enquanto em
-      procariotos eles est\xE3o livres no citoplasma.. Como a informa\xE7\xE3o est\xE1
+      procariotos eles est\xE3o livres no citoplasma. Como a informa\xE7\xE3o est\xE1
       nos genes (dentro do n\xFAcleo) elas precisam ser  copiadas e levadas at\xE9
-      os ribossomas, num processo chamado de transcri\xE7\xE3o.  Os genes que correspondem
+      os ribossomos, num processo chamado de transcri\xE7\xE3o.  Os genes que correspondem
       a uma determinada prote\xEDna  est\xE3o presentes em uma sequ\xEAncia espec\xEDfica
-      do DNA.   Assim, a transcri\xE7\xE3o da informa\xE7\xE3o ocorre no n\xFAcleo,
-      ou seja um gene ser\xE1 copiado,a partir do DNA, formando uma  mol\xE9cula
-      intermedi\xE1ria: o  RNA mensageiro (RNAm). Encontre o n\xFAcleo da c\xE9lula
-      para iniciar o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1."
+      do DNA.   Assim, a transcri\xE7\xE3o da informa\xE7\xE3o, em eucariotos, ocorre
+      no n\xFAcleo, ou seja um gene ser\xE1 copiado, a partir do DNA, formando uma 
+      mol\xE9cula intermedi\xE1ria: o  RNA mensageiro (RNAm).  O DNA e o RNA s\xE3o
+      mol\xE9culas formadas por nucleot\xEDdeos. Os nucleot\xEDdeos s\xE3o compostos
+      de um a\xE7\xFAcar, ribose no RNA, por isso chamados de ribonucleot\xEDdeos
+      e desoxirribose no DNA, por isso chamados desoxirribonucleot\xEDdeos, um fosfato
+      e uma base nitrogenada. As seguintes bases nitrogenadas comp\xF5em os ribonucleot\xEDdeos:
+      adenina (A), uracila (U), encontrada exclusivamente na mol\xE9cula de RNA,
+      citosina (C) e guanina (G), enquanto os desoxirribonucleot\xEDdeos s\xE3o formados
+      pela adenina (A), timina (T), encontrada exclusivamente na mol\xE9cula de DNA,
+      citosina (C) e guanina (G).  Encontre o n\xFAcleo da c\xE9lula para iniciar
+      o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1. "
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Encontre o n\xFAcleo da c\xE9lula  para iniciar o processo de transcri\xE7\xE3o
@@ -172,30 +180,32 @@ MonoBehaviour:
   - manager: {fileID: 1299191738}
     messages:
     - "Na imagem ao lado voc\xEA observa uma c\xE9lula eucarionte, com as suas estruturas.
-      O n\xFAcleo \xE9 o centro de controle das atividades celulares, tem formato
+      O n\xFAcleo  \xE9 o centro de controle das atividades celulares, tem formato
       arredondado, com v\xE1rios poros."
   - manager: {fileID: 7160620728225733283}
     messages:
-    - " No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases nitrogenadas
+    - "No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as bases nitrogenadas
       complementares, observando as bases do DNA: Guanina com Citosina, e Adenina
       com Timina ou Uracila."
-    - " ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA e \xE9 complementar
-      \xE0 Adenina."
+    - "ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA e \xE9 complementar \xE0
+      Adenina."
   - manager: {fileID: 9218020533221470915}
     messages:
     - "Fa\xE7a a leitura do disco do centro para a periferia e encontre o amino\xE1cido
-      correspondente a trinca de bases do RNAm, por exemplo: AUG=Met"
+      correspondente a trinca de bases do RNAm, por exemplo: AUG=Met."
   - manager: {fileID: 1788816084}
     messages:
     - "Leia atentamente o texto ao lado para entender melhor sobre o processamento
-      da prote\xEDna escolhida. Se atente a fun\xE7\xE3o dela, pois ser\xE1 importante
+      da prote\xEDna escolhida. Se atente \xE0 fun\xE7\xE3o dela, pois ser\xE1 importante
       na pr\xF3xima miss\xE3o!"
   - manager: {fileID: 1091288319802513963}
     messages:
     - "Responda a quest\xE3o ao lado de acordo com a destina\xE7\xE3o correta da
-      prote\xEDna que voc\xEA escolheu, ou seja, indique se ela atua na corrente
-      sangu\xEDnea, ou em \xF3rg\xE3os, ou em c\xE9lulas espec\xEDficas, estruturas
-      das c\xE9lulas, etc."
+      prote\xEDna que voc\xEA escolheu, ou seja, indique se ela atua  dentro da pr\xF3pria
+      c\xE9lula, se \xE9 liberada na corrente sangu\xEDnea e ir\xE1 atuar em \xF3rg\xE3os,
+      ou em outras c\xE9lulas espec\xEDficas."
+    - "Se precisar de ajuda, clique no bot\xE3o com o nome da prote\xEDna e fa\xE7a
+      a associa\xE7\xE3o correta."
   marking: {fileID: 0}
   info: {fileID: 0}
   iM: {fileID: 0}
@@ -265,15 +275,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phaseDescription:
     namePhase: Processamento
-    descriptionPhase: "Ap\xF3s a forma\xE7\xE3o da cadeia de amino\xE1cidos, a prote\xEDna
-      ainda precisa passar por algumas modifica\xE7\xF5es estruturais para se tornar
-      ativa e exercer suas fun\xE7\xF5es no metabolismo dos organismos. Essas modifica\xE7\xF5es
-      s\xE3o o enrolamento da cadeia de amino\xE1cidos, podendo adquirir 4 n\xEDveis
-      - prim\xE1rio, secund\xE1rio, terci\xE1rio e quatern\xE1rio; e modifica\xE7\xF5es
-      retirando sequ\xEAncias de amino\xE1cidos ou adicionado carboidratos, lip\xEDdeos,
-      metais, ferro, etc. Depois desse processamento, a enzima fica ativa ou pronta
-      para ser armazenada e utilizada quando necess\xE1rio. Clique em \u201Ccontinuar\u201D
-      para concluir a miss\xE3o 4."
+    descriptionPhase: "Ap\xF3s a forma\xE7\xE3o da cadeia de amino\xE1cidos, chamada
+      de cadeia polipept\xEDdica ou estrutura prim\xE1ria da prote\xEDna, ela ainda
+      ser\xE1 reorganizada em estruturas tridimensionais que se referem ao seu enrolamento
+      espacial, necess\xE1rio para exercerem suas atividades biol\xF3gicas. Algumas
+      prote\xEDnas ainda sofrem outras modifica\xE7\xF5es estruturais para se tornarem
+      ativas. Podem ser ligadas a elas outros tipos de mol\xE9culas como os carboidratos,
+      formando as glicoprote\xEDnas; os lip\xEDdios, formando as lipoprote\xEDnas,
+      ou ainda metais, como ferro, cobre, formando as metaloprote\xEDnas. A estrutura
+      espacial compreende as estruturas secund\xE1rias, representadas pelas h\xE9lices
+      alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria que \xE9 o
+      arranjo espacial que as estruturas secund\xE1rias adquirem quando se \u201Cenrolam\u201D
+      entre si. Nesta forma, muitas s\xE3o ativas e exercem suas fun\xE7\xF5es biol\xF3gicas
+      sendo chamadas de mon\xF4meros. Elas tamb\xE9m podem ser constitu\xEDdas de
+      dois ou mais mon\xF4meros, formando d\xEDmeros, tr\xEDmeros, tetr\xE2meros,
+      e outras formas polim\xE9ricas, que s\xE3o denominadas de estrutura quatern\xE1ria.
+      Estes processos s\xE3o realizados por diferentes enzimas e/ou complexos prot\xE9icos
+      presentes no citoplasma e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica
+      que a prote\xEDna ir\xE1 exercer. Depois de todo esse processamento, a prote\xEDna
+      fica ativa ou pronta para ser armazenada e utilizada quando necess\xE1rio.
+      Clique em \u201Ccontinuar\u201D para concluir a miss\xE3o 4. "
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Nessa etapa voc\xEA saber\xE1 mais sobre o processamento de prote\xEDnas ap\xF3s
@@ -337,15 +358,15 @@ MonoBehaviour:
   phaseDescription:
     namePhase: "Destina\xE7\xE3o"
     descriptionPhase: "Ap\xF3s a s\xEDntese e processamento das prote\xEDnas, muitas
-      s\xE3o armazenadas como pr\xF3-prote\xEDnas inativas em gr\xE2nulos ou estruturas
-      como o lisossomo, at\xE9 serem secretadas e ativadas quando o corpo precisar
-      da a\xE7\xE3o dessas prote\xEDnas, em seus locais - alvo. Esses locais podem
-      ser organelas, estruturas celulares (como o lisossomo, atuando na fagocitose),
-      \xF3rg\xE3os (como o f\xEDgado), tecidos, c\xE9lulas (como os melan\xF3citos),
-      etc. Elas podem ser liberadas diretamente na corrente sangu\xEDnea, atuando
-      ali ou sendo transportadas para locais espec\xEDficos. Responda o quiz sobre
-      a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima miss\xE3o
-      da sua jornada!"
+      s\xE3o armazenadas como pr\xF3-prote\xEDnas inativas em gr\xE2nulos  at\xE9
+      serem secretadas e/ou ativadas quando o corpo precisar de suas a\xE7\xF5es,
+      em seus tecidos ou locais alvo. Esses locais podem ser  as estruturas celulares
+      (como o lisossomo, n\xFAcleo, mitoc\xF4ndrias) \xF3rg\xE3os (como o f\xEDgado,
+      rins), tecidos, c\xE9lulas (como os melan\xF3citos), etc. Estas prote\xEDnas
+      podem atuar dentro da pr\xF3pria c\xE9lula ou serem liberadas diretamente na
+      corrente sangu\xEDnea para  atuarem em locais espec\xEDficos. Responda o quiz
+      sobre a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima
+      miss\xE3o da sua jornada! "
     additionalInfo: {fileID: 0}
   textInstructions:
   - "Leia o texto sobre a destina\xE7\xE3o das prote\xEDnas ap\xF3s sua s\xEDntese
@@ -354,6 +375,7 @@ MonoBehaviour:
   quizManager: {fileID: 0}
   destinationQuiz: {fileID: 0}
   destinationPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
 --- !u!1001 &1545469662
 PrefabInstance:
   m_ObjectHideFlags: 0

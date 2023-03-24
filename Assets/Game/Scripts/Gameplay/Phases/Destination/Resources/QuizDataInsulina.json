@@ -1,23 +1,33 @@
 {
     "questions": [
         {
-            "question": "Pergunta A sobre a destinação da insulina",
+            "question": "Após a síntese e processamento da proinsulina, o hormônio insulina é excretado para:",
             "correctOption": 2,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Células da pele",
+                "Corrente sanguínea",
+                "Fígado",
+                "Lisossomos"
             ]
         },
         {
-            "question": "Pergunta B sobre a destinação da insulina",
+            "question": "A insulina tem como função diminuir os níveis de glicose circulante que aumentam após as refeições. Como ela é transportada para os diferentes tecidos do organismo?",
+            "correctOption": 4,
+            "options": [
+                "Pelo sistema respiratório",
+                "Pelo sistema urinário",
+                "Pelo sistema endócrino",
+                "Pelo sistema circulatório"
+            ]
+        },
+        {
+            "question": "O que acontece quando o nível de glicose aumenta no  organismo?",
             "correctOption": 1,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "A insulina é liberada dos grânulos do pâncreas  para a corrente sanguínea",
+                "O glucagon é liberado dos grânulos do pâncreas e se dirige para a corrente sanguínea",
+                "A insulina é liberada dos lisossomos para atuar nas células do pâncreas",
+                "A melanina é liberada dos grânulos e atua nas células da pele"
             ]
         }
     ]

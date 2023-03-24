@@ -1,23 +1,33 @@
 {
     "questions": [
         {
-            "question": "Pergunta A sobre a destinação do glucacon",
-            "correctOption": 2,
+            "question": "Após a síntese e processamento do glucagon, esse hormônio é transportado  para qual parte do organismo para efetuar sua função?",
+            "correctOption": 3,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Corrente sanguínea",
+                "Pâncreas",
+                "Fígado",
+                "Células da pele"
             ]
         },
         {
-            "question": "Pergunta B sobre a destinação do glucacon",
-            "correctOption": 1,
+            "question": "O glucagon tem como função auxiliar a quebra do glicogênio para aumentar  os  níveis  de glicose do corpo. Para que isso ocorra, em qual órgão o glucagon irá agir?",
+            "correctOption": 2,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Pâncreas",
+                "Fígado",
+                "Grânulos da pele",
+                "Corrente sanguínea"
+            ]
+        },
+        {
+            "question": "O que acontece quando o nível de glicose diminui no organismo?",
+            "correctOption": 4,
+            "options": [
+                "O glucagon sai dos grânulos da pele e se dirige para o pâncreas para liberar glicose",
+                "O glucagon é liberado dos lisossomos e se dirige para o fígado para liberar a glicose",
+                "O glucagon se dirige à corrente sanguínea e leva as moléculas de glicose para dentro das células",
+                "O glucagon é liberado dos grânulos do pâncreas  e, no fígado, quebra o glicogênio liberando glicose"
             ]
         }
     ]

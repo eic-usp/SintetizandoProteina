@@ -944,7 +944,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000015258789, y: -314.86407}
-  m_SizeDelta: {x: 0, y: 1460.18}
+  m_SizeDelta: {x: 0, y: 1607.28}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &5147446444477700078
 CanvasRenderer:
@@ -1032,12 +1032,12 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_wordSpacing: 10
+  m_lineSpacing: 5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5654048530025472016}
   m_HandleRect: {fileID: 3018452554843675909}
   m_Direction: 2
-  m_Value: -0.00000007993667
-  m_Size: 0.21563381
+  m_Value: -0.00000007083845
+  m_Size: 0.19589879
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4614,7 +4614,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.21563381}
+  m_AnchorMax: {x: 1, y: 0.19589879}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5901,6 +5901,7 @@ MonoBehaviour:
   rightAnswerColor: {r: 0, g: 1, b: 0, a: 1}
   wrongAnswerColor: {r: 1, g: 0, b: 0, a: 1}
   questionsFilePath: 
+  numberOfQuestions: 0
   <MultipleAttempts>k__BackingField: 1
 --- !u!114 &1829796137150418925
 MonoBehaviour:
@@ -6905,8 +6906,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_text
-      value: "o ret\xEDculo endoplasm\xE1tico liso \xE9 um sistema de canais tubulares
-        limitados por membranas lipoproteicas, continuados a partir do ret\xEDculo
+      value: "O ret\xEDculo endoplasm\xE1tico liso \xE9 um sistema de canais tubulares
+        limitados por membranas lipoprot\xE9icas, continuados a partir do ret\xEDculo
         endoplasm\xE1tico rugoso. N\xE3o possui ribossomos aderidos. Suas fun\xE7\xF5es
         compreendem o transporte intracelular de subst\xE2ncias, s\xEDntese de lip\xEDdeos,
         inativa\xE7\xE3o de  subst\xE2ncias  t\xF3xicas \xE0s c\xE9lulas."
@@ -6921,7 +6922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_Name
-      value: Info-Liso
+      value: Info-REL
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_IsActive
@@ -7136,13 +7137,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_text
-      value: "Os ribossomos, geralmente numerosos, atuam no processo de s\xEDntese
-        proteica. S\xE3o formados por duas subunidades, uma maior e outra menor,
-        que s\xE3o acopladas uma sobre a outra durante a s\xEDntese proteica. S\xE3o
-        constitu\xEDdas basicamente por prote\xEDnas e RNA riboss\xF4mico. Ap\xF3s
-        o t\xE9rmino da s\xEDntese proteica ocorre o desacoplamento das subunidades
-        riboss\xF4micas que permanecem separadas no citosol (ou anexadas no RER)
-        at\xE9 se associarem novamente para dar in\xEDcio a uma nova tradu\xE7\xE3o."
+      value: "Os lisossomos surgem com as ves\xEDculas liberadas pelo Complexo de
+        Golgi. Possuem formato geralmente esf\xE9rico e s\xE3o constitu\xEDdos por
+        uma membrana que envolve enzimas hidrol\xEDticas. Sua fun\xE7\xE3o est\xE1
+        relacionada \xE0 digest\xE3o intracelular, tanto de part\xEDculas alimentares,
+        que s\xE3o incorporadas pela c\xE9lula, como de componentes celulares desgastados
+        ou danificados."
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_fontSize
@@ -7613,15 +7613,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_text
-      value: "\xC9 constitu\xEDdo por um sistema  de ves\xEDculas membranosas, al\xE9m
-        de outras menores esf\xE9ricas que se formam  a partir das primeiras. Suas
-        membranas s\xE3o lipoproteicas e nunca apresentam ribossomos aderidos. Suas
-        fun\xE7\xF5es est\xE3o relacionadas com o armazenamento e o encaminhamento
-        das  prote\xEDnas produzidas no ret\xEDculo endoplasm\xE1tico rugoso. As
-        ves\xEDculas menores transportam as macromol\xE9culas sintetizadas para outros
-        locais, dentro ou fora das c\xE9lulas. Nele tamb\xE9m ocorre a s\xEDntese
-        de polissacar\xEDdeos e, alguns deles ser\xE3o ligados \xE0s prote\xEDnas
-        para formar as glicoprote\xEDnas."
+      value: "O complexo de Golgi \xE9 constitu\xEDdo por um sistema de ves\xEDculas
+        membranosas, al\xE9m de outras menores esf\xE9ricas que se formam a partir
+        das primeiras. Suas membranas s\xE3o lipoproteicas e nunca apresentam ribossomos
+        aderidos. Suas fun\xE7\xF5es est\xE3o relacionadas com o armazenamento e
+        o encaminhamento das  prote\xEDnas produzidas no ret\xEDculo endoplasm\xE1tico
+        rugoso. As ves\xEDculas menores transportam as macromol\xE9culas sintetizadas
+        para outros locais, dentro ou fora das c\xE9lulas. No complexo de Golgi tamb\xE9m
+        ocorre a s\xEDntese de polissacar\xEDdeos, sendo que alguns deles ser\xE3o
+        ligados \xE0s prote\xEDnas para formar as glicoprote\xEDnas."
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_fontSize
@@ -7776,23 +7776,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_text
-      value: "O n\xFAcleo \xE9 delimitado pela membrana chamada carioteca, a qual
+      value: "O n\xFAcleo \xE9 delimitado pela membrana  chamada carioteca, a qual
         possui poros que permitem a comunica\xE7\xE3o com o citoplasma, al\xE9m da
         conex\xE3o com o Ret\xEDculo Endoplasm\xE1tico Rugoso. No n\xFAcleo est\xE3o
         os cromossomas e  um ou mais nucl\xE9olos. Os cromossomas s\xE3o formados
         por mol\xE9culas de DNA que est\xE3o envoltos por prote\xEDnas. Os nucl\xE9olos 
         s\xE3o estruturas onde ocorre  o ac\xFAmulo de mol\xE9culas de  RNA riboss\xF4mico
-        e RNA transportador, ap\xF3s serem sintetizados, al\xE9m de prote\xEDnas.
-        Estas mol\xE9culas, ap\xF3s serem transportados para o citoplasma ir\xE3o
+        (rRNA) e RNA transportador (tRNA), ap\xF3s serem sintetizados, al\xE9m de
+        prote\xEDnas. Os rRNA , ap\xF3s serem transportados  para o citoplasma ir\xE3o
         formar os ribossomos.  Quando a c\xE9lula n\xE3o est\xE1 em divis\xE3o, os
         cromossomos se apresentam como emaranhados de filamentos longos e finos de
         DNA disperso no fluido nuclear, constituindo a chamada cromatina. As por\xE7\xF5es
         condensadas da cromatina constituem a heterocromatina, enquanto as regi\xF5es
-        descondensadas constituem a eucromatina."
+        menos condensadas constituem  a eucromatina."
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_Name
-      value: Info-Cell
+      value: Info-Nucleus
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_IsActive
@@ -8772,7 +8772,7 @@ PrefabInstance:
       value: "As mitoc\xF4ndrias t\xEAm como fun\xE7\xE3o a produ\xE7\xE3o de energia
         atrav\xE9s do processo de respira\xE7\xE3o celular aer\xF3bica. Ela possui
         duas membranas: uma externa lisa e cont\xEDnua e outra interna, pregueada
-        devido \xE0s invagina\xE7\xF5es que formam a cristas mitocondriais. A membrana
+        devido \xE0s invagina\xE7\xF5es que formam as cristas mitocondriais. A membrana
         interna delimita o interior das mitoc\xF4ndrias, ou seja, sua matriz, onde
         est\xE1 mergulhado o DNA mitocondrial, enzimas e outros componentes da matriz."
       objectReference: {fileID: 0}
@@ -9034,12 +9034,12 @@ PrefabInstance:
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_text
       value: "O ret\xEDculo endoplasm\xE1tico rugoso \xE9 um sistema de canais limitados
-        por membranas lipoproteicas na forma de s\xE1culos e ves\xEDculas achatados
+        por membranas lipoprot\xE9icas na forma de s\xE1culos e ves\xEDculas achatadas
         que se comunicam com a carioteca. Possui ribossomos aderidos \xE0 face da
         membrana voltada ao citoplasma. Suas fun\xE7\xF5es compreendem o transporte
         intracelular de prote\xEDnas, sintetizadas pelos ribossomos, bem como por
-        modifica\xE7\xF5es que algumas prote\xEDnas podem sofrer , at\xE9 serem 
-        encaminhadas ao complexo de Golgi."
+        modifica\xE7\xF5es que algumas prote\xEDnas podem sofrer, at\xE9 serem encaminhadas
+        ao complexo de Golgi."
       objectReference: {fileID: 0}
     - target: {fileID: 7012485688329937209, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_fontSize
@@ -9051,7 +9051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_Name
-      value: Info-Rugoso
+      value: Info-RER
       objectReference: {fileID: 0}
     - target: {fileID: 9199902675217693100, guid: 8759a64bd7e32114fb19f18a8a489dea, type: 3}
       propertyPath: m_IsActive

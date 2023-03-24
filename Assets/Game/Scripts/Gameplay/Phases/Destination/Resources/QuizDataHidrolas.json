@@ -1,23 +1,23 @@
 {
     "questions": [
         {
-            "question": "Pergunta A sobre a destinação da hidrolase",
-            "correctOption": 2,
+            "question": "Após a síntese e processamento da hidrolase ácida, essa proteína é destinada a qual estrutura celular para exercer sua função?",
+            "correctOption": 1,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Lisossomos",
+                "Complexo de Golgi",
+                "Retículo Endoplasmático",
+                "Citoplasma"
             ]
         },
         {
-            "question": "Pergunta B sobre a destinação da hidrolase",
-            "correctOption": 1,
+            "question": "As hidrolases ácidas são proteínas que atuam na degradação de microrganismos que penetram em nosso organismo. Após serem sintetizadas para quais células são transportadas?",
+            "correctOption": 3,
             "options": [
-                "Resposta 1",
-                "Resposta 2",
-                "Resposta 3",
-                "Resposta 4"
+                "Células da corrente sanguínea",
+                "Células do pâncreas, onde irão efetuar a degradação dos microrganismos",
+                "Lisossomos, dentro da própria célula onde foi sintetizada",
+                "Células da pele, onde irão fagocitar os microrganismos"
             ]
         }
     ]
