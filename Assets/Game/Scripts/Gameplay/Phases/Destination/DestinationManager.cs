@@ -17,7 +17,7 @@ namespace Phases.Destination
             destinationQuiz.SetActive(true);
             
             var protein = FindObjectOfType<GeneralScripts.Player.PlayerInfo>().ProteinName;
-            quizManager.Setup("QuizData" + protein[0].ToString().ToUpper() + protein[1..], 1);
+            quizManager.SetUp("QuizData" + protein[0].ToString().ToUpper() + protein[1..], 1);
             quizManager.PopQuestion();
         }
 

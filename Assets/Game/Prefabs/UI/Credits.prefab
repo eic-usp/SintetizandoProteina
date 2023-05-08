@@ -257,32 +257,52 @@ MonoBehaviour:
   creditPrefab: {fileID: 618237581088055602, guid: 35978fe56aece314d813bdc264560728, type: 3}
   spawnGroups: {fileID: 954846793339185601}
   groups:
-  - groupName: "Coordena\xE7\xE3o"
+  - groupName: "Programa\xE7\xE3o"
     creditGroupInformation:
-    - nameCredit: Gislaine C. Santos
-      contentCredit: Educadora
+    - nameCredit: Jean Carlo Leal Delfino
+      contentCredit: "Programa\xE7\xE3o"
       imageCredit: {fileID: 0}
-    - nameCredit: Leila M. Beltramini
-      contentCredit: Coordenadora do EIC
+    - nameCredit: Lucas Xavier Leite
+      contentCredit: "Programa\xE7\xE3o"
       imageCredit: {fileID: 0}
-  - groupName: Consultoria
+  - groupName: Arte & UI
     creditGroupInformation:
-    - nameCredit: Thiago Garcia
-      contentCredit: "Consultoria e coordena\xE7\xE3o em TI"
-      imageCredit: {fileID: 0}
-  - groupName: Arte
-    creditGroupInformation:
-    - nameCredit: Thiago Lopes
-      contentCredit: Modelagem 3D
-      imageCredit: {fileID: 0}
     - nameCredit: Bruna Peppe
-      contentCredit: UI e Arte 2D
+      contentCredit: Arte Conceitual
       imageCredit: {fileID: 0}
-  - groupName: "Prrograma\xE7\xE3o"
+    - nameCredit: Gislaine Costa dos Santos
+      contentCredit: Design de Interface
+      imageCredit: {fileID: 0}
+    - nameCredit: Thiago Nicola Cajuela Garcia
+      contentCredit: Design de Interface
+      imageCredit: {fileID: 0}
+  - groupName: "Anima\xE7\xF5es & Efeitos Visuais"
     creditGroupInformation:
-    - nameCredit: Jean Delfino
-      contentCredit: Programador de UI e Gameplay
+    - nameCredit: Jean Carlo Leal Delfino
+      contentCredit: "Anima\xE7\xE3o 2D"
       imageCredit: {fileID: 0}
-    - nameCredit: Lucas
-      contentCredit: Programador de Gameplay
+    - nameCredit: Lucas Xavier Leite
+      contentCredit: Efeitos Visuais
+      imageCredit: {fileID: 0}
+    - nameCredit: Thiago Lopes Bandeira
+      contentCredit: "Modelagem & Anima\xE7\xE3o 3D"
+      imageCredit: {fileID: 0}
+  - groupName: "Conte\xFAdo"
+    creditGroupInformation:
+    - nameCredit: Gislaine Costa dos Santos
+      contentCredit: "Cria\xE7\xE3o de Conte\xFAdo"
+      imageCredit: {fileID: 0}
+    - nameCredit: Larissa Rodrigues Zacharias
+      contentCredit: "Cria\xE7\xE3o de Conte\xFAdo"
+      imageCredit: {fileID: 0}
+    - nameCredit: Leila Maria Beltramini
+      contentCredit: "Revis\xE3o de Conte\xFAdo"
+      imageCredit: {fileID: 0}
+  - groupName: Recursos de Terceiros
+    creditGroupInformation:
+    - nameCredit: Bensound.com
+      contentCredit: "M\xFAsica de Menu: \"Cute\""
+      imageCredit: {fileID: 0}
+    - nameCredit: Nick Kiselev
+      contentCredit: "M\xFAsica de Gameplay: \"Hypercasual\""
       imageCredit: {fileID: 0}

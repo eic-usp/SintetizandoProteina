@@ -676,7 +676,7 @@ MonoBehaviour:
   animationTime: 1
 --- !u!95 &153511417
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -693,7 +693,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &237675351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1752,7 +1753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &501940962
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1769,7 +1770,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &501940963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2314,7 +2316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &664604941
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2331,7 +2333,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &664604942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4641,7 +4644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &1127215701
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4658,7 +4661,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1127215702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7568,7 +7572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!95 &2107747884
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7585,7 +7589,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2107747885
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8055,6 +8060,62 @@ PrefabInstance:
     - target: {fileID: 954846791945948655, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
       propertyPath: m_Name
       value: Credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[0].creditGroupInformation.Array.data[2].nameCredit
+      value: Leila Maria Beltramini
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[2].creditGroupInformation.Array.data[4].nameCredit
+      value: Thiago Nicola Cajuela Garcia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[3].nameCredit
+      value: Thiago Lopes Bandeira
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[4].nameCredit
+      value: Thiago Nicola Cajuela Garcia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[2].nameCredit
+      value: Thiago Nicola Cajuela Garcia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[3].nameCredit
+      value: Thiago Nicola Cajuela Garcia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[4].nameCredit
+      value: Thiago Nicola Cajuela Garcia
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[0].creditGroupInformation.Array.data[2].contentCredit
+      value: "Revis\xE3o de Conte\xFAdo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[2].creditGroupInformation.Array.data[4].contentCredit
+      value: Modelagem 3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[3].contentCredit
+      value: "Modelagem & Anima\xE7\xE3o 3D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[4].contentCredit
+      value: UI & Modelagem 3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[2].contentCredit
+      value: Design de Interface
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[3].contentCredit
+      value: Design de Interface
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[4].contentCredit
+      value: UI & Modelagem 3D
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
@@ -8657,8 +8718,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2211474043736659474, guid: dbf7404d93c0ffb4783e6df10c8fd9e3, type: 3}
       propertyPath: m_text
-      value: "Para normalizar a concentra\xE7\xE3o de a\xE7ucar no seu sangue, caso
-        ela venha a cair, voc\xEA deve sintetizar uma mol\xE9cula de proglucagon
+      value: "Para normalizar a concentra\xE7\xE3o de a\xE7\xFAcar no seu sangue,
+        caso ela venha a cair, voc\xEA deve sintetizar uma mol\xE9cula de proglucagon
         e armazen\xE1-la em um <color=#50D500><b>gr\xE2nulo de secre\xE7\xE3o</b></color>."
       objectReference: {fileID: 0}
     - target: {fileID: 2768442125560234599, guid: dbf7404d93c0ffb4783e6df10c8fd9e3, type: 3}
