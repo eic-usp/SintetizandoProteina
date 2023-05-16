@@ -72,8 +72,6 @@ namespace Phases.Cell
             dnaReference.SetupStructure(endingString.Length, endingString, true); //Instantiate ending
 
             dnaReference.ChangeSecondHalf();
-
-            AMNManager.SetNumberOfAMN(AMNManager.GetNumberOfAMN() + 1);
         }
 
         private void SpawnDot(int start, string nonUsableCharacter)
