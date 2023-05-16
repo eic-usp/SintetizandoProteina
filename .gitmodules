@@ -1,0 +1,3 @@
+[submodule "Assets/Quiz"]
+	path = Assets/Quiz
+	url = git@github.com:eic-usp/Quiz.git
