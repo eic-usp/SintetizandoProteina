@@ -3897,9 +3897,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2211474043736659474, guid: dbf7404d93c0ffb4783e6df10c8fd9e3, type: 3}
       propertyPath: m_text
-      value: "Para ajudar os macr\xF3fagos a combates os  v\xEDrus causadores da
-        sua gripe, voc\xEA deve produzir uma mol\xE9cula de uma enzima hidrolase
-        \xE1cida e encaminh\xE1-la ao interior de um <color=#50D500><b>lisossomo</b></color>."
+      value: "Para ajudar os macr\xF3fagos a combater os v\xEDrus causadores da sua
+        gripe, voc\xEA deve produzir uma mol\xE9cula de uma enzima hidrolase \xE1cida
+        e encaminh\xE1-la ao interior de um <color=#50D500><b>lisossomo</b></color>."
       objectReference: {fileID: 0}
     - target: {fileID: 2768442125560234599, guid: dbf7404d93c0ffb4783e6df10c8fd9e3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5801,7 +5801,7 @@ PrefabInstance:
       propertyPath: m_text
       value: "Para garantir a sa\xFAde da sua pele, evite o sol forte, use filtro
         solar e sintetize uma mol\xE9cula de <color=#50D500><b>tirosinas</b></color>,
-        enzima que catalisa uma das rea\xE7\xF5es de sint\xE9se de melanina."
+        enzima que catalisa uma das rea\xE7\xF5es de s\xEDntese de melanina."
       objectReference: {fileID: 0}
     - target: {fileID: 2768442125560234599, guid: dbf7404d93c0ffb4783e6df10c8fd9e3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
