@@ -5,7 +5,7 @@ using GeneralScripts.Player;
 
 /*
     Part visual of the project, you need to set a protein in the scene
-    Then set his parent, this serves to identify his index in the videos of the VideoChoice
+    Then set his parent, this serves to identify his index in the videos of the VideoController
     Set proteinName to be used in the json
     Set synthesizedProteinName to be used in a field in the Gameplay
 
@@ -17,9 +17,9 @@ namespace UI.Protein.Info
     public class Protein : MonoBehaviour
     {
 
-        [SerializeField] private Transform maxParent = default;
+        [SerializeField] private Transform maxParent;
 
-        private static VideoChoice videoChoice;
+        private static VideoController _videoController;
 
         [SerializeField] private ProteinDescription proteinDescription; //Using it instead of JSON
 
@@ -39,15 +39,15 @@ namespace UI.Protein.Info
             public List<ProteinDeclaration> proteinValues;
         }
 
-        public static void Setup(VideoChoice vc)
+        public static void Setup(VideoController vc)
         {
-            videoChoice = vc;
+            _videoController = vc;
         }
         
         public void OnClickSendVideo()
         {
             Audio.AudioManager.Instance.StopMusic();
-            videoChoice.ChooseProtein(maxParent.GetSiblingIndex());
+            _videoController.ChooseProtein(maxParent.GetSiblingIndex());
             CellNucleusManager.SetDNAString(proteinDescription.proteinDNA); //Sends the protein to the gameplay
             FindObjectOfType<PlayerInfo>().SetProteinDisplayName(synthesizedProteinName);
             FindObjectOfType<PlayerInfo>().SetProteinName(proteinName);
