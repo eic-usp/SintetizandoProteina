@@ -1482,15 +1482,17 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 1
   m_AspectRatio: 5
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -1510,10 +1512,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClips:
-  - {fileID: 32900000, guid: 122911da64cc6804da86a2d79afb8bf2, type: 3}
-  - {fileID: 32900000, guid: 3fe238251a05eb64e9f4f4d9d44a6eea, type: 3}
-  - {fileID: 32900000, guid: afa52a24a4e43664a87cd9ae5d85ec4d, type: 3}
-  - {fileID: 32900000, guid: a3d020df4dae5ea4ab488a38ed32b8a0, type: 3}
+  - Glucagon.mp4
+  - "Hidrolase \xC1cida.mp4"
+  - Insulina.mp4
+  - Melanina.mp4
   screens: {fileID: 782384579}
   myTransition: {fileID: 153511416}
 --- !u!224 &329735647 stripped

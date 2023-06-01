@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using Cysharp.Threading.Tasks;
@@ -17,16 +16,15 @@ namespace UI.Protein
 
     public class VideoChoice : MonoBehaviour
     {
-        [SerializeField] List<VideoClip> videoClips = new List<VideoClip>();
-        [SerializeField] Transform screens;
+        [SerializeField] private string[] videoClips;
+        [SerializeField] private Transform screens;
 
-        [SerializeField] TransitionController myTransition = default;
+        [SerializeField] TransitionController myTransition;
 
         private VideoPlayer videoPlayer;
         private int actualVideoClip;
-
-        //private UniTask videoUniTask;
-        bool pause;
+        
+        private bool pause;
 
         private void Start()
         {
@@ -36,9 +34,9 @@ namespace UI.Protein
 
         public void ChooseProtein(int index)
         {
-            videoPlayer.clip = videoClips[index];
+            videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoClips[index]);
             actualVideoClip = index;
-            this.transform.GetChild(0).gameObject.SetActive(true); //The buttons
+            transform.GetChild(0).gameObject.SetActive(true); //The buttons
             PlayVideo();
         }
 
@@ -57,8 +55,8 @@ namespace UI.Protein
 
         private async void ShowScreen()
         {
-            gameObject.SetActive(false); //Instanteneous stop all coroutine
-            await PlayTransitionIn(); //Don't get finished in SetActive(false)
+            gameObject.SetActive(false); // Instantaneously stop all coroutines
+            await PlayTransitionIn(); // Don't get finished in SetActive(false)
         }
 
         private async UniTask PlayTransitionIn()
@@ -87,7 +85,6 @@ namespace UI.Protein
 
             videoPlayer.Play();
             StartCoroutine(FinishCheck());
-            //videoUniTask.Start();
         }
 
         public void SkipVideo()
