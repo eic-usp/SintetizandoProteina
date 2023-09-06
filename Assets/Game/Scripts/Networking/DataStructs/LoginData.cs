@@ -11,5 +11,6 @@
     public struct LoginReturnData
     {
         public string token;
+        public PlayerStatus player;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using UnityEngine.Networking;
 using Networking.RequestHandlers;
+using UnityEngine;
 
 namespace Networking
 {

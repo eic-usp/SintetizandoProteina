@@ -3,8 +3,9 @@
     [System.Serializable]
     public struct RankingEntry
     {
-        public string name;
-        public int score;
+        public string playerId;
+        public int highScore;
+        public string playedAt;
     }
 
     [System.Serializable]

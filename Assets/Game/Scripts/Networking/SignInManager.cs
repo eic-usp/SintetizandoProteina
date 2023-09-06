@@ -10,17 +10,26 @@ namespace Networking
 {
     public class SignInManager : MonoBehaviour
     {
-        [SerializeField] private Button signInButton, signOutButton;
+        [SerializeField] private Button signInButton, signOutButton, rankingButton;
         [SerializeField] private RetryMenu retryMenu;
         [SerializeField] private TMP_InputField emailOrId;
         [SerializeField] private TMP_InputField password;
         [SerializeField] private Toggle remember;
         [SerializeField] private GameObject loginPanel;
 
+        public static PlayerStatus PlayerStatus { get; private set; }
+        private const string PlayerStatusFilePath = "player.json";
+
+        private enum LoginState
+        {
+            LoggedIn,
+            LoggedOut,
+            LoginFailed
+        }
+
         private void Awake()
         {
-            signInButton.gameObject.SetActive(true);
-            signOutButton.gameObject.SetActive(false);
+            SwitchState(LoginState.LoggedOut);
         }
 
         private void Start()
@@ -34,9 +43,7 @@ namespace Networking
 
             if (string.IsNullOrEmpty(authCookie))
             {
-                signInButton.gameObject.SetActive(true);
-                signOutButton.gameObject.SetActive(false);
-
+                SwitchState(LoginState.LoginFailed);
                 yield break;
             }
             
@@ -45,7 +52,10 @@ namespace Networking
 
         private void OnValidateSuccess()
         {
-            OnSignInSuccess();
+            var json = System.IO.File.ReadAllText(PlayerStatusFilePath);
+            JsonUtility.FromJsonOverwrite(json, PlayerStatus);
+            
+            SwitchState(LoginState.LoggedIn);
         }
 
         private void OnValidateFailure(UnityWebRequest request)
@@ -58,8 +68,7 @@ namespace Networking
             {
                 case 401:
                     retryMenu.SessionExpiredInMenu();
-                    signInButton.gameObject.SetActive(true);
-                    signOutButton.gameObject.SetActive(false);
+                    SwitchState(LoginState.LoginFailed);
                     break;
                 default:
                     retryMenu.InternetConnectionLost(ValidateCookie(), true);
@@ -87,11 +96,13 @@ namespace Networking
             yield return LoginRequestHandler.Login(loginData, OnSignInSuccess, OnSignInFailure, remember.isOn);
         }
 
-        private void OnSignInSuccess()
+        private void OnSignInSuccess(PlayerStatus playerStatus)
         {
-            retryMenu.Close();
-            signInButton.gameObject.SetActive(false);
-            signOutButton.gameObject.SetActive(true);
+            PlayerStatus = playerStatus;
+            var json = JsonUtility.ToJson(playerStatus, true);
+            System.IO.File.WriteAllText(Application.persistentDataPath + PlayerStatusFilePath, json);
+            
+            SwitchState(LoginState.LoggedIn);
         }
 
         private void OnSignInFailure(UnityWebRequest request)
@@ -101,6 +112,7 @@ namespace Networking
             {
                 case 401:
                     retryMenu.InvalidLoginCredentials();
+                    SwitchState(LoginState.LoginFailed);
                     break;
                 default:
                     retryMenu.InternetConnectionLost(SignInEnumerator(), true);
@@ -114,9 +126,8 @@ namespace Networking
             UnityWebRequest.ClearCookieCache();
             PlayerPrefs.DeleteKey(LoginRequestHandler.AuthKey);
             LoginRequestHandler.TempAuth = string.Empty;
-            retryMenu.Close();
-            signInButton.gameObject.SetActive(true);
-            signOutButton.gameObject.SetActive(false);
+            
+            SwitchState(LoginState.LoggedOut);
         }
 
         public void TestApi()
@@ -133,9 +144,31 @@ namespace Networking
         }
         private static void OnSuccessOrFailureDebug(UnityWebRequest request)
         {
-            var res = request;
-            Debug.Log($"{res.responseCode}: {res.error}");
+            Debug.Log($"{request.responseCode}: {request.error}");
             // request.Dispose();
+        }
+
+        private void SwitchState(LoginState state)
+        {
+            switch (state)
+            {
+                case LoginState.LoggedIn:
+                    retryMenu.Close();
+                    signInButton.gameObject.SetActive(false);
+                    signOutButton.gameObject.SetActive(true);
+                    break;
+                case LoginState.LoggedOut:
+                    retryMenu.Close();
+                    signInButton.gameObject.SetActive(true);
+                    signOutButton.gameObject.SetActive(false);
+                    break;
+                case LoginState.LoginFailed:
+                    signInButton.gameObject.SetActive(true);
+                    signOutButton.gameObject.SetActive(false);
+                    break;
+                default:
+                    throw new System.ArgumentOutOfRangeException(nameof(state), state, null);
+            }
         }
     }
 }

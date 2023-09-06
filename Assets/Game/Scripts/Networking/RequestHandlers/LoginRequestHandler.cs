@@ -29,7 +29,7 @@ namespace Networking.RequestHandlers
             }
         }
 
-        public static IEnumerator Login(LoginData data, Action onSuccess, Action<UnityWebRequest> onFailure = null,
+        public static IEnumerator Login(LoginData data, Action<PlayerStatus> onSuccess, Action<UnityWebRequest> onFailure = null,
             bool remember = false)
         {
             RaycastBlockEvent.Invoke(true);
@@ -53,9 +53,18 @@ namespace Networking.RequestHandlers
 
             if (req.result == UnityWebRequest.Result.Success)
             {
-                SaveAuthCookie(req, remember);
-                onSuccess?.Invoke();
-                req.Dispose();
+                var loginReturnData = JsonUtility.FromJson<LoginReturnData>(req.downloadHandler.text);
+                var playerStatus = loginReturnData.player;
+                    // if (Cryptography.IsSignatureValid(playerStatus))
+                    // {
+                        SaveAuthCookie(req, remember);
+                        onSuccess?.Invoke(playerStatus);
+                        req.Dispose();
+                        // }
+                    // else
+                    // {
+                    //     onFailure?.Invoke(req);
+                    // }
             }
             else
             {
