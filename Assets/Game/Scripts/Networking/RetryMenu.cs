@@ -18,14 +18,13 @@ public class RetryMenu : MonoBehaviour
         Return
     }
 
-    private Mode mode;
-    private int numTries = 0;
-    private IEnumerator retryEnumerator;
+    private Mode _mode;
+    private IEnumerator _retryEnumerator;
     
     private void Open(Mode mode, IEnumerator retryEnumerator = null)
     {
-        this.mode = mode;
-        this.retryEnumerator = retryEnumerator;
+        _mode = mode;
+        _retryEnumerator = retryEnumerator;
         gameObject.SetActive(true);
         cancelButton.interactable = true;
         retryButton.interactable = (mode == Mode.Confirm || mode == Mode.CloseableConfirm);
@@ -38,7 +37,7 @@ public class RetryMenu : MonoBehaviour
 
     public void Cancel()
     {
-        switch (mode)
+        switch (_mode)
         {
             case Mode.Alert:
             case Mode.CloseableConfirm:
@@ -58,9 +57,9 @@ public class RetryMenu : MonoBehaviour
         cancelButton.interactable = false;
         retryButton.interactable = false;
         
-        if (retryEnumerator != null)
+        if (_retryEnumerator != null)
         {
-            StartCoroutine(retryEnumerator);
+            StartCoroutine(_retryEnumerator);
         }
     }
     
@@ -84,8 +83,7 @@ public class RetryMenu : MonoBehaviour
     
     public void InternetConnectionLost(IEnumerator retryEnumerator, bool closeable = false)
     {
-        numTries++;
-        message.SetText($"Erro de conexão ({numTries}x)\nNão foi possível se conectar ao nosso servidor");
+        message.SetText($"Erro de conexão\nNão foi possível se conectar ao nosso servidor");
         Open(closeable ? Mode.CloseableConfirm : Mode.Confirm, retryEnumerator);
     }
 }

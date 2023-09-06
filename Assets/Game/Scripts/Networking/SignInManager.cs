@@ -10,7 +10,7 @@ namespace Networking
 {
     public class SignInManager : MonoBehaviour
     {
-        [SerializeField] private Button signInButton, signOutButton, rankingButton;
+        [SerializeField] private Button signInButton, signOutButton;
         [SerializeField] private RetryMenu retryMenu;
         [SerializeField] private TMP_InputField emailOrId;
         [SerializeField] private TMP_InputField password;
@@ -52,7 +52,7 @@ namespace Networking
 
         private void OnValidateSuccess()
         {
-            var json = System.IO.File.ReadAllText(PlayerStatusFilePath);
+            var json = System.IO.File.ReadAllText(Application.persistentDataPath + PlayerStatusFilePath);
             JsonUtility.FromJsonOverwrite(json, PlayerStatus);
             
             SwitchState(LoginState.LoggedIn);

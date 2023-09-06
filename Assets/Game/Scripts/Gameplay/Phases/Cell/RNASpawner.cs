@@ -29,20 +29,21 @@ namespace Phases.Cell
 
         private int quantity; //Needs to be multiple of 3, and it will because of the AMN
 
-        [SerializeField] RNA prefab = default;
-        [SerializeField] TextWithInput middleRNA = default;
+        [SerializeField] RNA prefab;
+        [SerializeField] TextWithInput middleRNA;
         [SerializeField] string nonUsableCharacter = "-";
 
-        [SerializeField] Transform RNASpawn = default;
+        [SerializeField] Transform RNASpawn;
         
         [Space]
         [Header("Colors used in the lights")]
         [Space]
         //Color for the player input
-        [SerializeField] Color defColor = default;
-        [SerializeField] Color whenRight = default;
-        [SerializeField] Color whenWrong = default;
-        private Dictionary<string, string> validationDNARNA = new Dictionary<string, string>()
+        [SerializeField] Color defColor;
+        [SerializeField] Color whenRight;
+        [SerializeField] Color whenWrong;
+        
+        private Dictionary<string, string> validationDNARNA = new()
         {
             {"A", "U"},
             {"T", "A"},
@@ -52,6 +53,9 @@ namespace Phases.Cell
 
         private string[] answers; //Save of the answers of the RNA given by the player
         private int nextPhase = 0;
+        
+        public int WrongAnswersStrike { get; set; }
+        public int RightAnswersStrike { get; set; }
 
         private void Start()
         {
@@ -59,14 +63,17 @@ namespace Phases.Cell
             SetInputOperation();
         }
 
-        private void InstantiateRNAUsingString(int actualNumber, string dataString,TextWithInput prefabT)
+        private void InstantiateRNAUsingString(int actualNumber, string dataString, TextWithInput prefabT)
         {
-            int i;
-            TextWithInput hold;
-
-            for (i = 0 ; i < dataString.Length ; i++)
+            for (int i = 0 ; i < dataString.Length ; i++)
             {
-                hold = Instantiate<TextWithInput>(prefabT, RNASpawn);
+                var hold = Instantiate(prefabT, RNASpawn);
+                
+                if (hold is RNA rna)
+                {
+                    rna.Spawner = this;
+                }
+                
                 hold.SetPosition(actualNumber + i); //Puts its original position, so i can build the "replic" vector
                 hold.Setup(dataString[i].ToString());
             }

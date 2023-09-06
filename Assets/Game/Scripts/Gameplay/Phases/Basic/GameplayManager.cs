@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-
 using UnityEngine;
-
 using Phases;
 using Phases.Wait;
 using UI.Text;
+using Audio;
 
 /*
     Component responsible for the Gameplay, it organize the flow, but not the interactions
@@ -59,12 +58,14 @@ public sealed class GameplayManager : MonoBehaviour
 
         if (actualPhase > 0)
         {
-            Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.MissionCompleted, oneShot: true, oneShotVolumeScale: 0.5f);
+            AudioManager.Instance.Play(SoundEffectTrack.MissionCompleted, oneShot: true, oneShotVolumeScale: 0.5f);
+            ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.MissionCompleted);
         }
 
         if (actualPhase == gamePhases.Count)
         {
             print("Jogo acabou");
+            ScoreManager.Instance.FinishMatch();
             return;
         }
 

@@ -10,6 +10,8 @@ namespace Phases.Destination
         [SerializeField] private GameObject destinationQuiz;
         [SerializeField] private GameObject destinationPanel;
         [SerializeField] private GameObject gameOverPanel;
+
+        private int _tries;
         
         private void Start()
         {
@@ -33,11 +35,31 @@ namespace Phases.Destination
 
         private void OnChoose(bool correct, QuizResult quizResult)
         {
-            Audio.AudioManager.Instance.Play(correct ? Audio.SoundEffectTrack.RightAnswer : Audio.SoundEffectTrack.WrongAnswer);
-            
             if (correct)
             {
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.RightAnswer);
+                
+                ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionHit);
+                
+                if (_tries == 0)
+                {
+                    ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionHitBonus);
+                }
+                
                 EndPhase();
+            }
+            else
+            {
+                Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.WrongAnswer);
+                
+                _tries++;
+
+                ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionMiss);
+
+                if (_tries % ScoreManager.Instance.DefaultPenaltyRequirement == 0)
+                {
+                    ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionMissPenalty);
+                }
             }
         }
 

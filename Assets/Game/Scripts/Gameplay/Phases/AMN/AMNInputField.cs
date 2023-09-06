@@ -10,6 +10,9 @@ namespace Phases.AMN
 
         private bool wait = false;
 
+        private int _wrongAnswersStrike;
+        private int _rightAnswersStrike;
+
         private void Start()
         {
             thisInput = this.GetComponent<TMP_InputField>(); 
@@ -27,6 +30,16 @@ namespace Phases.AMN
             if (amnM.VerifyAMN(thisInput.text))
             {
                 Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.RightAnswer);
+
+                _rightAnswersStrike++;
+                _wrongAnswersStrike = 0;
+
+                ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionHit);
+
+                if (_rightAnswersStrike % ScoreManager.Instance.DefaultBonusRequirement == 0)
+                {
+                    ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionHitBonus);
+                }
                 
                 string auxTextAMN = thisInput.text;
                 thisInput.text = "";
@@ -43,6 +56,16 @@ namespace Phases.AMN
             else
             {
                 Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.WrongAnswer);
+
+                _wrongAnswersStrike++;
+                _rightAnswersStrike = 0;
+                
+                ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionMiss);
+                
+                if (_wrongAnswersStrike % ScoreManager.Instance.DefaultPenaltyRequirement == 0)
+                {
+                    ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionMissPenalty);
+                }
             }
         }
 

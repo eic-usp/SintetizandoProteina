@@ -41,6 +41,7 @@ namespace Phases
         public void DeactivateInput()
         {
             mainInputField.DeactivateInputField();
+            mainInputField.readOnly = true;
         }
 
         public TMP_InputField GetMainInputField() => mainInputField;
