@@ -5,6 +5,7 @@ using Phases;
 using Phases.Wait;
 using UI.Text;
 using Audio;
+using Networking;
 
 /*
     Component responsible for the Gameplay, it organize the flow, but not the interactions
@@ -23,14 +24,15 @@ public sealed class GameplayManager : MonoBehaviour
         public List<string> messages = default; //Used by InfoDisplay
     }
 
-    [SerializeField] List<Phase> gamePhases; //List of managers
+    [SerializeField] private List<Phase> gamePhases; //List of managers
     private int actualPhase = -1;
 
-    [SerializeField] Marking marking; //Denotates which is the current phase
-    [SerializeField] InfoDisplay info; //Show the messages in the gamePhases
+    [SerializeField] private Marking marking; //Denotates which is the current phase
+    [SerializeField] private InfoDisplay info; //Show the messages in the gamePhases
+    [SerializeField] private RetryMenu retryMenu;
 
     //[SerializeField] Transform phaseInstructionSpawn; //Used in the beginning of the phase to spawn a mini tutorial
-    [Space] [Header("Extra Phase Related Atributes")] [Space]
+    [Space] [Header("Extra Phase Related Attributes")] [Space]
     
     [SerializeField] InstructionManager iM;
     [SerializeField] GameObject waitManager; //Appear between phases, phaseInstruction basically
@@ -65,7 +67,16 @@ public sealed class GameplayManager : MonoBehaviour
         if (actualPhase == gamePhases.Count)
         {
             print("Jogo acabou");
-            ScoreManager.Instance.FinishMatch();
+            
+            if (SignInManager.IsPlayerLoggedIn)
+            {
+                ScoreManager.Instance.FinishMatch();
+            }
+            else
+            {
+                retryMenu.UserIsNotLoggedIn();
+            }
+
             return;
         }
 

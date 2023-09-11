@@ -62,6 +62,12 @@ public class RetryMenu : MonoBehaviour
             StartCoroutine(_retryEnumerator);
         }
     }
+
+    public void UserIsNotLoggedIn()
+    {
+        message.SetText("Parece que você não está logado.\nRetorne ao menu e entre com seu usuário e senha para registrar sua pontuação e competir com seus amigos!");
+        Open(Mode.Alert);
+    }
     
     public void InvalidLoginCredentials()
     {
@@ -71,7 +77,7 @@ public class RetryMenu : MonoBehaviour
     
     public void SessionExpiredInGame()
     {
-        message.SetText("Sua sessão expirou. Por favor, retorne ao menu e faça login novamente");
+        message.SetText("Não foi possível registrar sua pontuação. Por favor, retorne ao menu e faça login novamente");
         Open(Mode.Return);
     }
 

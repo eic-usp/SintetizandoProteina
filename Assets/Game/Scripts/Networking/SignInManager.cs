@@ -18,6 +18,7 @@ namespace Networking
         [SerializeField] private GameObject loginPanel;
 
         public static PlayerStatus PlayerStatus { get; private set; }
+        public static bool IsPlayerLoggedIn { get; private set; }
         private const string PlayerStatusFilePath = "player.json";
 
         private enum LoginState
@@ -126,6 +127,7 @@ namespace Networking
             UnityWebRequest.ClearCookieCache();
             PlayerPrefs.DeleteKey(LoginRequestHandler.AuthKey);
             LoginRequestHandler.TempAuth = string.Empty;
+            PlayerStatus = default;
             
             SwitchState(LoginState.LoggedOut);
         }
@@ -156,15 +158,18 @@ namespace Networking
                     retryMenu.Close();
                     signInButton.gameObject.SetActive(false);
                     signOutButton.gameObject.SetActive(true);
+                    IsPlayerLoggedIn = true;
                     break;
                 case LoginState.LoggedOut:
                     retryMenu.Close();
                     signInButton.gameObject.SetActive(true);
                     signOutButton.gameObject.SetActive(false);
+                    IsPlayerLoggedIn = false;
                     break;
                 case LoginState.LoginFailed:
                     signInButton.gameObject.SetActive(true);
                     signOutButton.gameObject.SetActive(false);
+                    IsPlayerLoggedIn = false;
                     break;
                 default:
                     throw new System.ArgumentOutOfRangeException(nameof(state), state, null);

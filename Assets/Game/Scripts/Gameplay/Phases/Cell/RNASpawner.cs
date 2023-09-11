@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-
 using System.Linq;
 using Phases.AMN;
 
@@ -22,10 +21,8 @@ namespace Phases.Cell
     {
         public System.Action OnComplete { set; get; }
 
-        [Space]
-        [Header("RNA Manager Atributes")]
-        [Space]
-        [SerializeField] CellNucleusManager originalPlace; //Where the RNA starts (the nucleus)
+        [Space] [Header("RNA Manager Atributes")] [Space]
+        [SerializeField] private CellNucleusManager originalPlace; //Where the RNA starts (the nucleus)
 
         private int quantity; //Needs to be multiple of 3, and it will because of the AMN
 

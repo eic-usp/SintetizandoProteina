@@ -66,7 +66,7 @@ namespace Phases
         protected void SetInputData(Transform inputArea)
         {
             this.inputArea = inputArea;
-            TextWithInput.SetOnwer(this);
+            TextWithInput.SetOwner(this);
         }
     }
 }

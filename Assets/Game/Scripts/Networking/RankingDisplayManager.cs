@@ -9,6 +9,7 @@ namespace Networking
     {
         [SerializeField] private Transform rankingEntriesPanel;
         [SerializeField] private ScrollRect rankingScrollView;
+        [SerializeField] private Button anchorButton;
 
         [Header("Ranking Display Entry Objects")]
         
@@ -25,6 +26,7 @@ namespace Networking
         private void OnEnable()
         {
             StartCoroutine(RankingRequestHandler.GetRankings(Show));
+            anchorButton.interactable = SignInManager.IsPlayerLoggedIn;
         }
 
         private void Show(RankingData rankingData)
@@ -49,7 +51,7 @@ namespace Networking
             for (var position = 0; position < rankingEntriesCount; position++)
             {
                 var entry = rankingData.entries[position];
-                var ownEntry = (entry.playerId == SignInManager.PlayerStatus.id);
+                var ownEntry = (SignInManager.IsPlayerLoggedIn && entry.playerId == SignInManager.PlayerStatus.id);
 
                 var newEntry = position switch
                 {
@@ -74,6 +76,8 @@ namespace Networking
 
         public void ScrollToPlayer()
         {
+            if (_ownEntryTransform == null) return;
+
             var u = (Vector2) rankingScrollView.transform.InverseTransformPoint(rankingScrollView.content.position);
             var v = (Vector2) rankingScrollView.transform.InverseTransformPoint(_ownEntryTransform.position);
             rankingScrollView.content.anchoredPosition = (u - v) * Vector2.up;

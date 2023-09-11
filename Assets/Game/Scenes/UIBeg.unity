@@ -1102,6 +1102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rankingEntriesPanel: {fileID: 1692048281}
   rankingScrollView: {fileID: 1462807925}
+  anchorButton: {fileID: 717552494}
   rankingDisplayEntry: {fileID: 5327615777892619059, guid: 403da9d55f8c5854f9d41ff354e39547, type: 3}
   rankingDisplayEntryFirstPlace: {fileID: 6393987353489491427, guid: 5dd37426fd908b04ab66c69b6cce9b9c, type: 3}
   rankingDisplayEntrySecondPlace: {fileID: 2527843578744697579, guid: 8a9a771e0b9e3894db9856e8ebfd3f77, type: 3}
@@ -3802,6 +3803,7 @@ GameObject:
   - component: {fileID: 666076216}
   - component: {fileID: 666076215}
   - component: {fileID: 666076214}
+  - component: {fileID: 666076217}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -3924,6 +3926,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666076212}
   m_CullTransparentMesh: 0
+--- !u!114 &666076217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666076212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e6addd97814ae3ae2964c8af2b150e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hover: 0
+  click: 1
 --- !u!1 &668770212
 GameObject:
   m_ObjectHideFlags: 0
@@ -4086,6 +4102,7 @@ GameObject:
   - component: {fileID: 717552496}
   - component: {fileID: 717552495}
   - component: {fileID: 717552494}
+  - component: {fileID: 717552497}
   m_Layer: 5
   m_Name: AnchorButton
   m_TagString: Untagged
@@ -4139,7 +4156,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4208,6 +4225,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717552492}
   m_CullTransparentMesh: 1
+--- !u!114 &717552497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717552492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e6addd97814ae3ae2964c8af2b150e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hover: 0
+  click: 1
 --- !u!224 &747613119 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 905199377442962963, guid: 9d725227c816b9a439cb421336f488a8, type: 3}

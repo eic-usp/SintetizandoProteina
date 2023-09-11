@@ -15,7 +15,9 @@ public class ScoreManager : MonoBehaviour
     
     [field: SerializeField] public int DefaultPenaltyRequirement { get; set; } = 3;
     [field: SerializeField] public int DefaultBonusRequirement { get; set; } = 3;
-
+    [field: SerializeField] public int DefaultTimeBonusRequirement { get; set; } = 15;
+    [field: SerializeField] public int DefaultTimePenaltyRequirement { get; set; } = 30;
+    
     public enum ScoreContext
     {
         InMissionHit,

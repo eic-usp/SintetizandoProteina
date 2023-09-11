@@ -1449,6 +1449,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1003129660}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
+      propertyPath: retryMenu
+      value: 
+      objectReference: {fileID: 1219092995}
+    - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[6].manager
       value: 
       objectReference: {fileID: 2036688602}
@@ -7294,6 +7298,8 @@ MonoBehaviour:
   retryMenu: {fileID: 1219092995}
   <DefaultPenaltyRequirement>k__BackingField: 3
   <DefaultBonusRequirement>k__BackingField: 3
+  <DefaultTimeBonusRequirement>k__BackingField: 15
+  <DefaultTimePenaltyRequirement>k__BackingField: 30
   scoreTable:
   - context: 0
     score: 5

@@ -6,13 +6,13 @@ namespace Phases.Cell
 {
     public class RNA : TextWithInput
     {
-        [SerializeField] Image lightConfirm = default; 
-        private bool valueInput = false;
-        private bool singletonInput = false;
+        [SerializeField] Image lightConfirm; 
+        private bool valueInput;
+        private bool singletonInput;
 
         public RNASpawner Spawner { get; set; }
 
-        void Start()
+        private void Start()
         {
             //Adds a listener to the main input field and invokes a method when the value changes.
             GetMainInputField().onValueChanged.AddListener(delegate { ValueChangeCheck(); });
@@ -82,8 +82,8 @@ namespace Phases.Cell
                     Debug.Log("Bonus");
                     ScoreManager.Instance.UpdateScore(ScoreManager.ScoreContext.InMissionHitBonus);
                 }
-                
-                DeactivateInput();
+
+                GetMainInputField().readOnly = true;
 
                 return;
             }
