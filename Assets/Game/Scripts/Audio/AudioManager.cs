@@ -36,7 +36,7 @@ namespace Audio
             [field:SerializeField] public bool Loop { get; set; }
         }
 
-        public static AudioManager Instance;
+        public static AudioManager Instance { get; private set; }
         
         private Dictionary<GameSceneManagement.Loader.Scene, MusicTrack> _sceneMusics;
         private AudioSource _musicSource;

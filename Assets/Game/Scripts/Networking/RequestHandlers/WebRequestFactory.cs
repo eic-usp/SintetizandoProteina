@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using UnityEngine.Networking;
 using Networking.RequestHandlers;
+using UnityEngine;
 
 namespace Networking
 {
@@ -28,17 +29,13 @@ namespace Networking
         public static UnityWebRequest AuthPostJson(string url, string data = "{}")
         {
             var req = PostJson(url, data);
+            
+            var token = PlayerPrefs.GetString(LoginRequestHandler.AuthKey, LoginRequestHandler.TempAuth);
+            req.SetRequestHeader("Authorization", token);
 
-#if !UNITY_WEBGL
-            var authCookie = PlayerPrefs.GetString(LoginRequestHandler.AuthKey, LoginRequestHandler.TempAuth);
-            req.SetRequestHeader("Cookie", authCookie);
-#elif UNITY_WEBGL
-            if (!string.IsNullOrEmpty(LoginRequestHandler.TempAuth))
-            {
-                var authCookie = LoginRequestHandler.TempAuth;
-                req.SetRequestHeader("Cookie", authCookie);
-            }
-#endif
+            // Debug.Log($"[POST] Cookie sent: {req.GetRequestHeader("Cookie")}");
+            // Debug.Log($"[POST] Authorization sent: {req.GetRequestHeader("Authorization")}");  
+
             req.timeout = Timeout;
 
             return req;
@@ -47,17 +44,13 @@ namespace Networking
         public static UnityWebRequest AuthGet(string url)
         {
             var req = UnityWebRequest.Get(url);
+            
+            var token = PlayerPrefs.GetString(LoginRequestHandler.AuthKey, LoginRequestHandler.TempAuth);
+            req.SetRequestHeader("Authorization", token);
 
-#if !UNITY_WEBGL
-            var authCookie = PlayerPrefs.GetString(LoginRequestHandler.AuthKey, LoginRequestHandler.TempAuth);
-            req.SetRequestHeader("Cookie", authCookie);
-#elif UNITY_WEBGL
-            if (!string.IsNullOrEmpty(LoginRequestHandler.TempAuth))
-            {
-                var authCookie = LoginRequestHandler.TempAuth;
-                req.SetRequestHeader("Cookie", authCookie);
-            }
-#endif
+            // Debug.Log($"[GET] Cookie sent: {req.GetRequestHeader("Cookie")}");
+            // Debug.Log($"[GET] Authorization sent: {req.GetRequestHeader("Authorization")}");  
+
             req.timeout = Timeout;
 
             return req;

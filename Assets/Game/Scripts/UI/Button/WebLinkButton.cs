@@ -14,9 +14,12 @@ namespace UI.Button
 
         private void Open()
         {
-            if (string.IsNullOrEmpty(url.Trim()))
+            url = url.Trim();
+            
+            if (string.IsNullOrEmpty(url))
             {
                 Debug.LogError("Invalid URL");
+                return;
             }
         
             Application.OpenURL(url);

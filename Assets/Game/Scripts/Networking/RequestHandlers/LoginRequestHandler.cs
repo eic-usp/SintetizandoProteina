@@ -11,32 +11,31 @@ namespace Networking.RequestHandlers
         public const string AuthKey = "Auth";
         public static string TempAuth;
 
-        public static void SaveAuthCookie(UnityWebRequest req, bool remember = false)
+        public static void SaveAuthCookie(UnityWebRequest req, string token, bool remember = false)
         {
-            var cookie = req.GetResponseHeader("Set-Cookie");
-
-            if (!string.IsNullOrEmpty(cookie))
+            var authHeaderValue = $"Bearer {token}";
+            
+            if (remember)
             {
-                if (remember)
-                {
-                    PlayerPrefs.SetString(AuthKey, cookie);
-                }
-                else
-                {
-                    TempAuth = cookie;
-                    UnityWebRequest.ClearCookieCache();
-                }
+                PlayerPrefs.SetString(AuthKey, authHeaderValue);
+                TempAuth = null;
+            }
+            else
+            {
+                TempAuth = authHeaderValue;
+                PlayerPrefs.DeleteKey(AuthKey);
+                UnityWebRequest.ClearCookieCache();
             }
         }
 
-        public static IEnumerator Login(LoginData data, Action onSuccess, Action<UnityWebRequest> onFailure = null,
-            bool remember = false)
+        public static IEnumerator Login(LoginData data, Action<PlayerStatus> onSuccess, Action<UnityWebRequest> onFailure = null)
         {
             RaycastBlockEvent.Invoke(true);
             
             var req = WebRequestFactory.PostJson(Endpoints.Login, JsonUtility.ToJson(data));
             yield return req.SendWebRequest();
 
+#if UNITY_EDITOR
             try
             {
                 foreach (var responseHeader in req.GetResponseHeaders())
@@ -48,14 +47,26 @@ namespace Networking.RequestHandlers
             {
                 Debug.LogError(error);
             }
+#endif
 
             RaycastBlockEvent.Invoke(false);
 
             if (req.result == UnityWebRequest.Result.Success)
             {
-                SaveAuthCookie(req, remember);
-                onSuccess?.Invoke();
-                req.Dispose();
+                var loginReturnData = JsonUtility.FromJson<LoginReturnData>(req.downloadHandler.text);
+                var playerStatus = loginReturnData.player;
+                var token = loginReturnData.token;
+
+                // if (Cryptography.IsSignatureValid(playerStatus))
+                    // {
+                        SaveAuthCookie(req, token, data.remember);
+                        onSuccess?.Invoke(playerStatus);
+                        req.Dispose();
+                        // }
+                    // else
+                    // {
+                    //     onFailure?.Invoke(req);
+                    // }
             }
             else
             {

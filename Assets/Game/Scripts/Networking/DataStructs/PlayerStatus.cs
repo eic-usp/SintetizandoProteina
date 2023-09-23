@@ -1,11 +1,13 @@
 ﻿namespace Networking.DataStructs
 {
+    [System.Serializable]
     public struct PlayerStatus
     {
-        public string message;
-        public string name;
-        public int game_count;
-        public int top_score;
+        public string id;
+        public string email;
+        public string firstName;
+        public string lastName;
+        public string birthdate;
         public string sign;
     }
 }

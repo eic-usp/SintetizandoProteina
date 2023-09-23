@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -22,6 +23,7 @@ namespace Phases.Cell
         //[SerializeField] GameObject visualDNA = default; //Prototype
         [SerializeField] RNASpawner rnaReference; //Sets the RNA and the RNA sets it
         [SerializeField] DNAManager dnaReference; // The original DNA
+        [SerializeField] private int timeCountScale = 1;
 
         private const string DNAtranscriptionBeg = "TAC"; //Always the beg of the DNA
         private string[] DNAtranscriptionEnd = { "ATT", "ATC", "ACT" }; //The end of the DNA
@@ -33,12 +35,47 @@ namespace Phases.Cell
         private static bool random = false; //Sets if the start is a random protein or not
 
         private int quantity;
+        
+        private float _time;
+        private ScoreManager.ScoreContext? _completionBonusContext;
 
         private void Start()
         {
             //Separate the DNA and Expand the nucleus 
             DNAAnimations();
-            rnaReference.OnComplete = EndPhase;
+
+            var countTimeCoroutine = StartCoroutine(CountTime(timeCountScale));
+            
+            rnaReference.OnComplete = () =>
+            {
+                StopCoroutine(countTimeCoroutine);
+
+                if (_time <= ScoreManager.Instance.DefaultTimeBonusRequirement)
+                {
+                    _completionBonusContext = ScoreManager.ScoreContext.InMissionHitBonus;
+                }
+                else if (_time > ScoreManager.Instance.DefaultTimePenaltyRequirement)
+                {
+                    _completionBonusContext = ScoreManager.ScoreContext.InMissionMissPenalty;
+                }
+
+                if (_completionBonusContext != null)
+                {
+                    ScoreManager.Instance.UpdateScore((ScoreManager.ScoreContext)_completionBonusContext);
+                }
+
+                EndPhase();
+            };
+        }
+        
+        private IEnumerator CountTime(int scale = 1)
+        {
+            while (true)
+            {
+                var delay = 1f / (10f * scale);
+                _time += delay;
+                yield return new WaitForSeconds(delay);
+            }
         }
 
         private async void DNAAnimations()

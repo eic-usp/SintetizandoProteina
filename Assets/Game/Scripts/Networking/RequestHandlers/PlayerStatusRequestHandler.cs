@@ -8,32 +8,32 @@ namespace Networking.RequestHandlers
 {
     public static class PlayerStatusRequestHandler
     {
-        public static IEnumerator GetUserStatus(Action<PlayerStatus> onSuccess,
-            Action<UnityWebRequest> onFailure = null)
+        public static IEnumerator GetPlayerStatus(Action<PlayerStatus> onSuccess, Action<UnityWebRequest> onFailure = null)
         {
             RaycastBlockEvent.Invoke(true);
 
-            var request = WebRequestFactory.AuthGet(Endpoints.PlayerStatus);
-            yield return request.SendWebRequest();
+            var req = WebRequestFactory.AuthGet(Endpoints.PlayerStatus);
+            yield return req.SendWebRequest();
 
             RaycastBlockEvent.Invoke(false);
 
-            if (request.result == UnityWebRequest.Result.Success)
+            if (req.result == UnityWebRequest.Result.Success)
             {
-                var userStatus = JsonUtility.FromJson<PlayerStatus>(request.downloadHandler.text);
+                var playerStatus = JsonUtility.FromJson<PlayerStatus>(req.downloadHandler.text);
+                onSuccess?.Invoke(playerStatus);
 
-                if (Cryptography.IsSignatureValid(userStatus))
-                {
-                    onSuccess?.Invoke(userStatus);
-                }
-                else
-                {
-                    onFailure?.Invoke(request);
-                }
+                // if (Cryptography.IsSignatureValid(playerStatus))
+                // {
+                //     onSuccess?.Invoke(playerStatus);
+                // }
+                // else
+                // {
+                //     onFailure?.Invoke(req);
+                // }
             }
             else
             {
-                onFailure?.Invoke(request);
+                onFailure?.Invoke(req);
             }
         }
     }
