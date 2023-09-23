@@ -5,6 +5,7 @@
     {
         public string emailOrId;
         public string password;
+        public bool remember;
     }
 
     [System.Serializable]

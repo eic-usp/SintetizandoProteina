@@ -15,11 +15,10 @@ namespace Networking
         [SerializeField] private TMP_InputField emailOrId;
         [SerializeField] private TMP_InputField password;
         [SerializeField] private Toggle remember;
-        [SerializeField] private GameObject loginPanel;
+        [SerializeField] private GameObject signInPanel;
 
         public static PlayerStatus PlayerStatus { get; private set; }
         public static bool IsPlayerLoggedIn { get; private set; }
-        private const string PlayerStatusFilePath = "player.json";
 
         private enum LoginState
         {
@@ -53,8 +52,9 @@ namespace Networking
 
         private void OnValidateSuccess()
         {
-            var json = System.IO.File.ReadAllText(Application.persistentDataPath + PlayerStatusFilePath);
-            JsonUtility.FromJsonOverwrite(json, PlayerStatus);
+            StartCoroutine(PlayerStatusRequestHandler.GetPlayerStatus(
+                playerStatus => PlayerStatus = playerStatus,
+                OnValidateFailure));
             
             SwitchState(LoginState.LoggedIn);
         }
@@ -82,7 +82,6 @@ namespace Networking
         public void SignIn()
         {
             if (string.IsNullOrEmpty(emailOrId.text) || string.IsNullOrEmpty(password.text)) return;
-            loginPanel.SetActive(false);
             StartCoroutine(SignInEnumerator());
         }
 
@@ -91,18 +90,16 @@ namespace Networking
             var loginData = new LoginData
             {
                 emailOrId = emailOrId.text.Trim(),
-                password = password.text.Trim()
+                password = password.text.Trim(),
+                remember = remember.isOn
             };
-            
-            yield return LoginRequestHandler.Login(loginData, OnSignInSuccess, OnSignInFailure, remember.isOn);
+
+            yield return LoginRequestHandler.Login(loginData, OnSignInSuccess, OnSignInFailure);
         }
 
         private void OnSignInSuccess(PlayerStatus playerStatus)
         {
             PlayerStatus = playerStatus;
-            var json = JsonUtility.ToJson(playerStatus, true);
-            System.IO.File.WriteAllText(Application.persistentDataPath + PlayerStatusFilePath, json);
-            
             SwitchState(LoginState.LoggedIn);
         }
 
@@ -116,7 +113,7 @@ namespace Networking
                     SwitchState(LoginState.LoginFailed);
                     break;
                 default:
-                    retryMenu.InternetConnectionLost(SignInEnumerator(), true);
+                    retryMenu.InternetConnectionLost(SignInEnumerator(), true); ;
                     break;
             }
             // req.Dispose();
@@ -132,17 +129,14 @@ namespace Networking
             SwitchState(LoginState.LoggedOut);
         }
 
-        public void TestApi()
+        public void TestApi(int score)
         {
             var matchData = new MatchData
             {
-                score = 500
+                score = score
             };
             
-            StartCoroutine(MatchRequestHandler.CreateMatch(
-                    matchData, OnSuccessOrFailureDebug, OnSuccessOrFailureDebug
-                )
-            );
+            StartCoroutine(MatchRequestHandler.CreateMatch(matchData, OnSuccessOrFailureDebug, OnSuccessOrFailureDebug));
         }
         private static void OnSuccessOrFailureDebug(UnityWebRequest request)
         {
@@ -158,6 +152,7 @@ namespace Networking
                     retryMenu.Close();
                     signInButton.gameObject.SetActive(false);
                     signOutButton.gameObject.SetActive(true);
+                    signInPanel.SetActive(false);
                     IsPlayerLoggedIn = true;
                     break;
                 case LoginState.LoggedOut:

@@ -46,14 +46,6 @@ namespace UI.Menu
             PositioningBoltInstantiating();
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
-            {
-                ChangePartitionByIndex(actualSelected);
-            }
-        }
-
         private void PositioningBolt(int increment)
         {
             DestroyBolt(childRef);

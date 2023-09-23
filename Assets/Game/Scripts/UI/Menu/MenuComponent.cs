@@ -5,8 +5,8 @@ namespace UI.Menu
         public void OnPointerEnter()
         {
             selection.PositioningBoltByIndex(index);
-            // Audio.AudioManager.Instance.Play(Audio.SoundEffectTrack.ButtonClick);
         }
+        
         public void DoOperation()
         {
             base.Resume();

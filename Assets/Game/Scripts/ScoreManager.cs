@@ -63,7 +63,7 @@ public class ScoreManager : MonoBehaviour
         var s = Score;
         var ns = ScoreTable(context);
         Score = Mathf.Clamp(Score + ScoreTable(context), 0, maxScore != 0 ? maxScore : int.MaxValue);
-        Debug.Log($"(Score) {s} -> {Score} [{(Mathf.Sign(ns) == 1 ? "+" : "")}{ns}]");
+        // Debug.Log($"(Score) {s} -> {Score} [{(Mathf.Sign(ns) > 0 ? "+" : "")}{ns}]");
     }
 
     public void FinishMatch()
