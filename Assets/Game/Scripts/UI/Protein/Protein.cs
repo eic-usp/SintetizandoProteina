@@ -49,8 +49,8 @@ namespace UI.Protein.Info
             Audio.AudioManager.Instance.StopMusic();
             _videoController.ChooseProtein(maxParent.GetSiblingIndex());
             CellNucleusManager.SetDNAString(proteinDescription.proteinDNA); //Sends the protein to the gameplay
-            FindObjectOfType<PlayerInfo>().SetProteinDisplayName(synthesizedProteinName);
-            FindObjectOfType<PlayerInfo>().SetProteinName(proteinName);
+            PlayerInfo.Instance.SetProteinDisplayName(synthesizedProteinName);
+            PlayerInfo.Instance.SetProteinName(proteinName);
             SynthesizingProteinShow.SetProtein(proteinDescription); //Send the info to be seen in the gameplay
         }
     }
