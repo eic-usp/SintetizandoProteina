@@ -3,3 +3,8 @@
 //https://en.wikipedia.org/wiki/Display_resolution
 
 //https://medium.com/geekculture/4-ways-of-playing-animation-related-sounds-in-unity-2a845e44cb29
+
+Protein -> ProteinDescription
+
+PlayerInfo 
+SynthesizingProteinShow
