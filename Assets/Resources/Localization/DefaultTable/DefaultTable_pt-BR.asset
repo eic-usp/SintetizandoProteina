@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DefaultTable_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 2fa99bc4aaffc1840886840d9c73a01a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6372159631360
+    m_Localized: "PORTUGU\xCAS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: pt-BR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "Configura\xE7\xE3o de linguagem"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Linguagem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: Mudar Linguagem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "Sintetizando Prote\xEDnas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Esperamos que goste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Geral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: "Configura\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: Iniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: "\xC1udio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Localized: "Volume da m\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Localized: Sensibilidade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16
+    m_Localized: Sensibilidade do mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17
+    m_Localized: "Sensibilidade da c\xE2mera"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18
+    m_Localized: Controle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19
+    m_Localized: Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20
+    m_Localized: Alternativa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21
+    m_Localized: Som
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22
+    m_Localized: Volume dos efeitos sonoros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23
+    m_Localized: "Volume do A\xFAdio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24
+    m_Localized: "Configura\xE7\xF5es de gameplay"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25
+    m_Localized: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26
+    m_Localized: "Configura\xE7\xF5es de a\xFAdio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27
+    m_Localized: "A\xFAdio geral"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28
+    m_Localized: Ambiente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29
+    m_Localized: "A\xFAdio ambiente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30
+    m_Localized: "Narra\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31
+    m_Localized: "Audio narra\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32
+    m_Localized: Efeitos sonoros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33
+    m_Localized: "Gr\xE1ficos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34
+    m_Localized: "Qualidade gr\xE1fica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36
+    m_Localized: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37
+    m_Localized: Programadores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38
+    m_Localized: Programador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39
+    m_Localized: Product Owner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40
+    m_Localized: Artista 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41
+    m_Localized: Artista 2D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42
+    m_Localized: Editor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43
+    m_Localized: "Funcion\xE1rias"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44
+    m_Localized: Apoio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45
+    m_Localized: Arte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46
+    m_Localized: "Anima\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48
+    m_Localized: Sair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49
+    m_Localized: Narrador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51
+    m_Localized: Salvar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52
+    m_Localized: Fechar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53
+    m_Localized: Sair do jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54
+    m_Localized: Projetos salvos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55
+    m_Localized: Novo jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56
+    m_Localized: Carregar jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58
+    m_Localized: Continuar jogo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59
+    m_Localized: Obrigado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60
+    m_Localized: Agradecimentos especiais
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61
+    m_Localized: Selecionar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62
+    m_Localized: Retornar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63
+    m_Localized: Sair para o menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64
+    m_Localized: Alta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65
+    m_Localized: "M\xE9dia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 66
+    m_Localized: Baixa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67
+    m_Localized: Ranque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68
+    m_Localized: Logar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69
+    m_Localized: "Informa\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
