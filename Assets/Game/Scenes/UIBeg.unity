@@ -3237,6 +3237,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3542495640117328362, guid: ff16dcb4ca468ce4c81ffd1ae73f55e9, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 57
+      objectReference: {fileID: 0}
     - target: {fileID: 5604027550854698887, guid: ff16dcb4ca468ce4c81ffd1ae73f55e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5179,7 +5183,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:2fa99bc4aaffc1840886840d9c73a01a
     m_TableEntryReference:
-      m_KeyId: 67
+      m_KeyId: 76
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -6341,7 +6345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705582438772242028, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 315.01
+      value: 301.01
       objectReference: {fileID: 0}
     - target: {fileID: 5756749411564161467, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: m_Name
@@ -13059,61 +13063,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Credits
       objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[0].creditGroupInformation.Array.data[2].nameCredit
-      value: Leila Maria Beltramini
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[2].creditGroupInformation.Array.data[4].nameCredit
-      value: Thiago Nicola Cajuela Garcia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[3].nameCredit
-      value: Thiago Lopes Bandeira
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[4].nameCredit
-      value: Thiago Nicola Cajuela Garcia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[2].nameCredit
-      value: Thiago Nicola Cajuela Garcia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[3].nameCredit
-      value: Thiago Nicola Cajuela Garcia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[4].nameCredit
-      value: Thiago Nicola Cajuela Garcia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[0].creditGroupInformation.Array.data[2].contentCredit
-      value: "Revis\xE3o de Conte\xFAdo"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[2].creditGroupInformation.Array.data[4].contentCredit
-      value: Modelagem 3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[3].contentCredit
-      value: "Modelagem & Anima\xE7\xE3o 3D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[3].creditGroupInformation.Array.data[4].contentCredit
-      value: UI & Modelagem 3D
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[2].contentCredit
-      value: Design de Interface
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[3].contentCredit
-      value: Design de Interface
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407873840308793443, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
-      propertyPath: groups.Array.data[4].creditGroupInformation.Array.data[4].contentCredit
-      value: UI & Modelagem 3D
+    - target: {fileID: 954846793339185601, guid: 7dba38f37e0f8af4da2568ab8f7633e0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16691,7 +16643,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:2fa99bc4aaffc1840886840d9c73a01a
     m_TableEntryReference:
-      m_KeyId: 68
+      m_KeyId: 77
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
