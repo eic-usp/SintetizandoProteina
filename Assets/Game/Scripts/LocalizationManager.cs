@@ -9,6 +9,7 @@ using UnityEngine.Localization.Tables;
 public class LocalizationManager : MonoBehaviour
 {
     public static readonly string DefaultTable = "DefaultTable";
+    public static readonly string MainMenuAndGameplayRandoms = "MainMenu and Gameplay Random";
 
     void Start()
     {
