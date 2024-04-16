@@ -4,9 +4,12 @@ using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using System.Collections;
 using System.Threading;
+using UnityEngine.Localization.Tables;
 
-public class AutoLanguageDetection : MonoBehaviour
+public class LocalizationManager : MonoBehaviour
 {
+    public static readonly string DefaultTable = "DefaultTable";
+
     void Start()
     {
         StartCoroutine("LoadLocale");
@@ -40,6 +43,22 @@ public class AutoLanguageDetection : MonoBehaviour
         if(systemLocale != null) LocalizationSettings.SelectedLocale = systemLocale;
 
         yield return null;
+    }
+
+    public static StringTable GetTable(string tableName)
+    {
+        var table = LocalizationSettings.StringDatabase.GetTable(tableName);
+
+        return table;
+    }
+    
+    public static StringTableEntry FindStringReference(string tableName, string keyName)
+    {
+        var table = LocalizationSettings.StringDatabase.GetTable(tableName);
+
+        var entry = table.GetEntry(keyName);
+
+        return entry;
     }
 
     public static bool CompareLanguagesFirstCode(string language, string toCompareLanguage)

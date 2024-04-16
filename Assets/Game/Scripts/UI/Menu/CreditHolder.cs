@@ -1,15 +1,17 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 namespace UI.Menu
 {
     public class CreditHolder : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI groupName;
+        [SerializeField] private LocalizeStringEvent contentString;
 
         public void Setup(string groupName)
         {
-            this.groupName.text = groupName;
+            contentString.StringReference = new LocalizedString(LocalizationManager.DefaultTable, groupName);
         }
     }
 }
