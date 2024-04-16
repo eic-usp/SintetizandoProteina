@@ -175,127 +175,199 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 39
-    m_Localized: Product Owner
+    m_Localized: "Programa\xE7\xE3o"
     m_Metadata:
       m_Items: []
   - m_Id: 40
-    m_Localized: Artista 3D
+    m_Localized: Product Owner
     m_Metadata:
       m_Items: []
   - m_Id: 41
-    m_Localized: Artista 2D
+    m_Localized: Desing de interface
     m_Metadata:
       m_Items: []
   - m_Id: 42
-    m_Localized: Editor
+    m_Localized: Artista 3D
     m_Metadata:
       m_Items: []
   - m_Id: 43
-    m_Localized: "Funcion\xE1rias"
+    m_Localized: Artista 2D
     m_Metadata:
       m_Items: []
   - m_Id: 44
-    m_Localized: Apoio
+    m_Localized: Arte Conceitual
     m_Metadata:
       m_Items: []
   - m_Id: 45
-    m_Localized: Arte
+    m_Localized: "Modelagem & Anima\xE7\xE3o 3D"
     m_Metadata:
       m_Items: []
   - m_Id: 46
-    m_Localized: "Anima\xE7\xE3o"
+    m_Localized: Efeitos Visuais
     m_Metadata:
       m_Items: []
   - m_Id: 47
-    m_Localized: Voltar
+    m_Localized: Editor
     m_Metadata:
       m_Items: []
   - m_Id: 48
-    m_Localized: Sair
+    m_Localized: "Cria\xE7\xE3o de Conte\xFAdo"
     m_Metadata:
       m_Items: []
   - m_Id: 49
-    m_Localized: Narrador
+    m_Localized: "Revis\xE3o de Conte\xFAdo"
     m_Metadata:
       m_Items: []
   - m_Id: 50
-    m_Localized: Tutorial
+    m_Localized: "Conte\xFAdo"
     m_Metadata:
       m_Items: []
   - m_Id: 51
-    m_Localized: Salvar
+    m_Localized: Recursos de terceiros
     m_Metadata:
       m_Items: []
   - m_Id: 52
-    m_Localized: Fechar
+    m_Localized: "Funcion\xE1rias"
     m_Metadata:
       m_Items: []
   - m_Id: 53
-    m_Localized: Sair do jogo
+    m_Localized: Apoio
     m_Metadata:
       m_Items: []
   - m_Id: 54
-    m_Localized: Projetos salvos
+    m_Localized: Arte
     m_Metadata:
       m_Items: []
   - m_Id: 55
-    m_Localized: Novo jogo
+    m_Localized: "Anima\xE7\xE3o"
     m_Metadata:
       m_Items: []
   - m_Id: 56
-    m_Localized: Carregar jogo
+    m_Localized: Voltar
     m_Metadata:
       m_Items: []
   - m_Id: 57
-    m_Localized: Continuar
+    m_Localized: Sair
     m_Metadata:
       m_Items: []
   - m_Id: 58
-    m_Localized: Continuar jogo
+    m_Localized: Narrador
     m_Metadata:
       m_Items: []
   - m_Id: 59
-    m_Localized: Obrigado
+    m_Localized: Tutorial
     m_Metadata:
       m_Items: []
   - m_Id: 60
-    m_Localized: Agradecimentos especiais
+    m_Localized: Salvar
     m_Metadata:
       m_Items: []
   - m_Id: 61
-    m_Localized: Selecionar
+    m_Localized: Fechar
     m_Metadata:
       m_Items: []
   - m_Id: 62
-    m_Localized: Retornar
+    m_Localized: Sair do jogo
     m_Metadata:
       m_Items: []
   - m_Id: 63
-    m_Localized: Sair para o menu principal
+    m_Localized: Projetos salvos
     m_Metadata:
       m_Items: []
   - m_Id: 64
-    m_Localized: Alta
+    m_Localized: Novo jogo
     m_Metadata:
       m_Items: []
   - m_Id: 65
-    m_Localized: "M\xE9dia"
+    m_Localized: Carregar jogo
     m_Metadata:
       m_Items: []
   - m_Id: 66
-    m_Localized: Baixa
+    m_Localized: Continuar
     m_Metadata:
       m_Items: []
   - m_Id: 67
-    m_Localized: Ranking
+    m_Localized: Continuar jogo
     m_Metadata:
       m_Items: []
   - m_Id: 68
-    m_Localized: Logar
+    m_Localized: Obrigado
     m_Metadata:
       m_Items: []
   - m_Id: 69
+    m_Localized: Agradecimentos especiais
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70
+    m_Localized: Selecionar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71
+    m_Localized: Retornar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72
+    m_Localized: Sair para o menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73
+    m_Localized: Alta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74
+    m_Localized: "M\xE9dia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75
+    m_Localized: Baixa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76
+    m_Localized: Ranque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77
+    m_Localized: Logar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78
     m_Localized: "Informa\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80
+    m_Localized: Erro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81
+    m_Localized: Tentar novamente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82
+    m_Localized: Entrar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83
+    m_Localized: Arte & UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84
+    m_Localized: "Anima\xE7\xF5es & Efeitos Visuais"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85
+    m_Localized: "Anima\xE7\xE3o 2D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86
+    m_Localized: "M\xFAsica de Gameplay: \"Hypercasual\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87
+    m_Localized: "M\xFAsica de Menu: \"Cute\""
     m_Metadata:
       m_Items: []
   references:

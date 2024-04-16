@@ -175,127 +175,199 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 39
-    m_Localized: Product Owner
+    m_Localized: Programming
     m_Metadata:
       m_Items: []
   - m_Id: 40
-    m_Localized: 3D Artist
+    m_Localized: Product Owner
     m_Metadata:
       m_Items: []
   - m_Id: 41
-    m_Localized: 2D Artist
+    m_Localized: Interface design
     m_Metadata:
       m_Items: []
   - m_Id: 42
-    m_Localized: Editor
+    m_Localized: 3D Artist
     m_Metadata:
       m_Items: []
   - m_Id: 43
-    m_Localized: Employees
+    m_Localized: 2D Artist
     m_Metadata:
       m_Items: []
   - m_Id: 44
-    m_Localized: Support
+    m_Localized: Conceptual Art
     m_Metadata:
       m_Items: []
   - m_Id: 45
-    m_Localized: Art
+    m_Localized: 3D Modeling & Animation
     m_Metadata:
       m_Items: []
   - m_Id: 46
-    m_Localized: Animation
+    m_Localized: Visual effects
     m_Metadata:
       m_Items: []
   - m_Id: 47
-    m_Localized: Resume
+    m_Localized: Editor
     m_Metadata:
       m_Items: []
   - m_Id: 48
-    m_Localized: Quit
+    m_Localized: Content Creation
     m_Metadata:
       m_Items: []
   - m_Id: 49
-    m_Localized: Storyteller
+    m_Localized: Content Review
     m_Metadata:
       m_Items: []
   - m_Id: 50
-    m_Localized: Tutorial
+    m_Localized: Content
     m_Metadata:
       m_Items: []
   - m_Id: 51
-    m_Localized: Save
+    m_Localized: Third-party resources
     m_Metadata:
       m_Items: []
   - m_Id: 52
-    m_Localized: Close
+    m_Localized: Employees
     m_Metadata:
       m_Items: []
   - m_Id: 53
-    m_Localized: Quit game
+    m_Localized: Support
     m_Metadata:
       m_Items: []
   - m_Id: 54
-    m_Localized: Save projects
+    m_Localized: Art
     m_Metadata:
       m_Items: []
   - m_Id: 55
-    m_Localized: New game
+    m_Localized: Animation
     m_Metadata:
       m_Items: []
   - m_Id: 56
-    m_Localized: Load game
+    m_Localized: Resume
     m_Metadata:
       m_Items: []
   - m_Id: 57
-    m_Localized: Continue
+    m_Localized: Quit
     m_Metadata:
       m_Items: []
   - m_Id: 58
-    m_Localized: Continue game
+    m_Localized: Storyteller
     m_Metadata:
       m_Items: []
   - m_Id: 59
-    m_Localized: Thanks
+    m_Localized: Tutorial
     m_Metadata:
       m_Items: []
   - m_Id: 60
-    m_Localized: Special Thanks
+    m_Localized: Save
     m_Metadata:
       m_Items: []
   - m_Id: 61
-    m_Localized: Select
+    m_Localized: Close
     m_Metadata:
       m_Items: []
   - m_Id: 62
-    m_Localized: Return
+    m_Localized: Quit game
     m_Metadata:
       m_Items: []
   - m_Id: 63
-    m_Localized: Quit to main menu
+    m_Localized: Save projects
     m_Metadata:
       m_Items: []
   - m_Id: 64
-    m_Localized: High
+    m_Localized: New game
     m_Metadata:
       m_Items: []
   - m_Id: 65
-    m_Localized: Medium
+    m_Localized: Load game
     m_Metadata:
       m_Items: []
   - m_Id: 66
-    m_Localized: Low
+    m_Localized: Continue
     m_Metadata:
       m_Items: []
   - m_Id: 67
-    m_Localized: Ranking
+    m_Localized: Continue game
     m_Metadata:
       m_Items: []
   - m_Id: 68
-    m_Localized: Login
+    m_Localized: Thanks
     m_Metadata:
       m_Items: []
   - m_Id: 69
+    m_Localized: Special Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72
+    m_Localized: Quit to main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 73
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76
+    m_Localized: Rank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78
     m_Localized: Information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80
+    m_Localized: Error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81
+    m_Localized: Try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82
+    m_Localized: Enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83
+    m_Localized: Art & UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84
+    m_Localized: Animation & Visual Effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85
+    m_Localized: 2D Animation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 86
+    m_Localized: 'Gameplay Music: "Hypercasual"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87
+    m_Localized: 'Menu Music: "Cute"'
     m_Metadata:
       m_Items: []
   references:
