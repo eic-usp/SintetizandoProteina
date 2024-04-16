@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 public class RetryMenu : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI message;
+    [SerializeField] private LocalizeStringEvent errorMessage;
     [SerializeField] private Button retryButton, cancelButton;
     
     private enum Mode
@@ -65,31 +67,39 @@ public class RetryMenu : MonoBehaviour
 
     public void UserIsNotLoggedIn()
     {
-        message.SetText("Parece que você não está logado.\nRetorne ao menu e entre com seu usuário e senha para registrar sua pontuação e competir com seus amigos!");
+        SetMessage("id_not_logged_in");
+
         Open(Mode.Alert);
     }
     
     public void InvalidLoginCredentials()
     {
-        message.SetText("E-mail, nome de usuário ou senha inválidos. Se esqueceu sua senha, clique em \"esqueci a senha\"");
+        SetMessage("id_invalid_data");
+
         Open(Mode.Alert);
     }
     
     public void SessionExpiredInGame()
     {
-        message.SetText("Não foi possível registrar sua pontuação. Por favor, retorne ao menu e faça login novamente");
+        SetMessage("id_score_error");
+
         Open(Mode.Return);
     }
 
     public void SessionExpiredInMenu()
     {
-        message.SetText("Sua sessão expirou. Por favor, faça login novamente");
+        SetMessage("id_expired_session");
         Open(Mode.Alert);
     }
     
     public void InternetConnectionLost(IEnumerator retryEnumerator, bool closeable = false)
     {
-        message.SetText($"Erro de conexão\nNão foi possível se conectar ao nosso servidor");
+        SetMessage("id_connection_error");
         Open(closeable ? Mode.CloseableConfirm : Mode.Confirm, retryEnumerator);
+    }
+
+    private void SetMessage(string errorCode)
+    {
+        errorMessage.StringReference = new LocalizedString(LocalizationManager.MainMenuAndGameplayRandoms, errorCode);
     }
 }
