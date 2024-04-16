@@ -17,7 +17,76 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2af0a8bb630b6834c823163d7c68438f, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 913092620288
+    m_Localized: "Nome de usu\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: "Nome inv\xE1lido"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Insira nome desejado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "Insira seu nome de usu\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "Voc\xEA poder\xE1 mudar seu nome a qualquer momento"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "Sua sess\xE3o expirou. Por favor, fa\xE7a login novamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "Email ou nome de usu\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Criar conta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Esqueci a senha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Mantenha-me conectado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Senha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: "Parece que voc\xEA n\xE3o est\xE1 logado.\nRetorne ao menu e entre
+      com seu usu\xE1rio e senha para registrar sua pontua\xE7\xE3o e competir com
+      seus amigos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: "E-mail, nome de usu\xE1rio ou senha inv\xE1lidos. Se esqueceu sua
+      senha, clique em \"esqueci a senha\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: "N\xE3o foi poss\xEDvel registrar sua pontua\xE7\xE3o. Por favor,
+      retorne ao menu e fa\xE7a login novamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Localized: "Sua sess\xE3o expirou. Por favor, fa\xE7a login novamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Localized: "Erro de conex\xE3o\nN\xE3o foi poss\xEDvel se conectar ao nosso
+      servidor"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

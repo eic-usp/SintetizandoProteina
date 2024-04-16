@@ -14,7 +14,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: MainMenu and Gameplay Random
   m_TableCollectionNameGuidString: 2af0a8bb630b6834c823163d7c68438f
-  m_Entries: []
+  m_Entries:
+  - m_Id: 913092620288
+    m_Key: id_user_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Key: id_invalid_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Key: id_desired_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Key: id_insert_user_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Key: id_change_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Key: id_expired_login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Key: id_email_or_user
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Key: id_create_account
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Key: id_forgot_password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Key: id_keep_logged
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Key: id_password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Key: id_not_logged_in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Key: id_invalid_data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Key: id_score_error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Key: id_expired_session
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Key: id_connection_error
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

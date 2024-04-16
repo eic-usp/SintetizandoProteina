@@ -17,7 +17,79 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2af0a8bb630b6834c823163d7c68438f, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 913092620288
+    m_Localized: User login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: Invalid name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Insert desired name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Insert your user name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: You will be able to change your nickname at any given time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: Your session has expired. Please log in again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Email or username
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Create account
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Forgot the password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Keep me logged in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: 'It looks like you''re not logged in.
+
+      Return to the menu
+      and log in with your username and password to record your score and compete
+      with your friends!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Your email, username, or password is invalid. If you forgot your
+      password, click on "forgot password"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: Your score couldn't be registered. Please return to the menu and
+      log in again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Localized: Your session has expired. Please log in again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Localized: 'Connection error.
+
+      Unable to connect to our server.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
