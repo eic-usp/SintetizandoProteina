@@ -370,8 +370,16 @@ MonoBehaviour:
     m_Localized: "M\xFAsica de Menu: \"Cute\""
     m_Metadata:
       m_Items: []
-  - m_Id: 361368302628864
+  - m_Id: 88
     m_Localized: Ranking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89
+    m_Localized: Tela cheia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90
+    m_Localized: Volume geral
     m_Metadata:
       m_Items: []
   references:

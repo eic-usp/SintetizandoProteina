@@ -203,7 +203,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 46
-    m_Localized: Visual effects
+    m_Localized: Visual Effects
     m_Metadata:
       m_Items: []
   - m_Id: 47
@@ -370,8 +370,16 @@ MonoBehaviour:
     m_Localized: 'Menu Music: "Cute"'
     m_Metadata:
       m_Items: []
-  - m_Id: 361368302628864
+  - m_Id: 88
     m_Localized: Ranking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 89
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90
+    m_Localized: General volume
     m_Metadata:
       m_Items: []
   references:
