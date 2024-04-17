@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 913092620288
-    m_Localized: User login
+    m_Localized: User name
     m_Metadata:
       m_Items: []
   - m_Id: 1
