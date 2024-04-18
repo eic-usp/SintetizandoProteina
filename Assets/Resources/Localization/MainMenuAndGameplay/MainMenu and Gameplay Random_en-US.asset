@@ -18,8 +18,8 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 913092620288
-    m_Localized: User name
+  - m_Id: 16
+    m_Localized: To start, choose a protein.
     m_Metadata:
       m_Items: []
   - m_Id: 1
@@ -50,16 +50,24 @@ MonoBehaviour:
     m_Localized: Create account
     m_Metadata:
       m_Items: []
-  - m_Id: 8
-    m_Localized: Forgot the password
+  - m_Id: 15
+    m_Localized: 'Connection error.
+
+      Unable to connect to our server.'
     m_Metadata:
       m_Items: []
-  - m_Id: 9
-    m_Localized: Keep me logged in
+  - m_Id: 14
+    m_Localized: Your session has expired. Please log in again.
     m_Metadata:
       m_Items: []
-  - m_Id: 10
-    m_Localized: Password
+  - m_Id: 13
+    m_Localized: Your score couldn't be registered. Please return to the menu and
+      log in again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Your email, username, or password is invalid. If you forgot your
+      password, click on "forgot password"
     m_Metadata:
       m_Items: []
   - m_Id: 11
@@ -70,24 +78,20 @@ MonoBehaviour:
       with your friends!'
     m_Metadata:
       m_Items: []
-  - m_Id: 12
-    m_Localized: Your email, username, or password is invalid. If you forgot your
-      password, click on "forgot password"
+  - m_Id: 10
+    m_Localized: Password
     m_Metadata:
       m_Items: []
-  - m_Id: 13
-    m_Localized: Your score couldn't be registered. Please return to the menu and
-      log in again.
+  - m_Id: 9
+    m_Localized: Keep me logged in
     m_Metadata:
       m_Items: []
-  - m_Id: 14
-    m_Localized: Your session has expired. Please log in again.
+  - m_Id: 8
+    m_Localized: Forgot the password
     m_Metadata:
       m_Items: []
-  - m_Id: 15
-    m_Localized: 'Connection error.
-
-      Unable to connect to our server.'
+  - m_Id: 697491256225792
+    m_Localized: User name
     m_Metadata:
       m_Items: []
   references:

@@ -28,6 +28,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cead1631fa794a343a3157fcae5f9394
+    m_Address: Assets/Resources/Localization/Protein/Protein Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fba08e216032614fa763bc39fc38376
+    m_Address: Assets/Resources/Localization/Content/Content Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 25031723ded86e946ace0782edc6a15b, type: 2}
   m_SchemaSet:

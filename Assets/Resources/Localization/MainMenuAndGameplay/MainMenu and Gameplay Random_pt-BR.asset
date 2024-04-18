@@ -18,8 +18,8 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 913092620288
-    m_Localized: "Nome de usu\xE1rio"
+  - m_Id: 16
+    m_Localized: "Para come\xE7ar, escolha uma prote\xEDna"
     m_Metadata:
       m_Items: []
   - m_Id: 1
@@ -50,16 +50,23 @@ MonoBehaviour:
     m_Localized: Criar conta
     m_Metadata:
       m_Items: []
-  - m_Id: 8
-    m_Localized: Esqueci a senha
+  - m_Id: 15
+    m_Localized: "Erro de conex\xE3o\nN\xE3o foi poss\xEDvel se conectar ao nosso
+      servidor"
     m_Metadata:
       m_Items: []
-  - m_Id: 9
-    m_Localized: Mantenha-me conectado
+  - m_Id: 14
+    m_Localized: "Sua sess\xE3o expirou. Por favor, fa\xE7a login novamente"
     m_Metadata:
       m_Items: []
-  - m_Id: 10
-    m_Localized: Senha
+  - m_Id: 13
+    m_Localized: "N\xE3o foi poss\xEDvel registrar sua pontua\xE7\xE3o. Por favor,
+      retorne ao menu e fa\xE7a login novamente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: "E-mail, nome de usu\xE1rio ou senha inv\xE1lidos. Se esqueceu sua
+      senha, clique em \"esqueci a senha\""
     m_Metadata:
       m_Items: []
   - m_Id: 11
@@ -68,23 +75,20 @@ MonoBehaviour:
       seus amigos!"
     m_Metadata:
       m_Items: []
-  - m_Id: 12
-    m_Localized: "E-mail, nome de usu\xE1rio ou senha inv\xE1lidos. Se esqueceu sua
-      senha, clique em \"esqueci a senha\""
+  - m_Id: 10
+    m_Localized: Senha
     m_Metadata:
       m_Items: []
-  - m_Id: 13
-    m_Localized: "N\xE3o foi poss\xEDvel registrar sua pontua\xE7\xE3o. Por favor,
-      retorne ao menu e fa\xE7a login novamente"
+  - m_Id: 9
+    m_Localized: Mantenha-me conectado
     m_Metadata:
       m_Items: []
-  - m_Id: 14
-    m_Localized: "Sua sess\xE3o expirou. Por favor, fa\xE7a login novamente"
+  - m_Id: 8
+    m_Localized: Esqueci a senha
     m_Metadata:
       m_Items: []
-  - m_Id: 15
-    m_Localized: "Erro de conex\xE3o\nN\xE3o foi poss\xEDvel se conectar ao nosso
-      servidor"
+  - m_Id: 697491256225792
+    m_Localized: "Nome de usu\xE1rio"
     m_Metadata:
       m_Items: []
   references:

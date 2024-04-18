@@ -15,7 +15,7 @@ MonoBehaviour:
   m_TableCollectionName: MainMenu and Gameplay Random
   m_TableCollectionNameGuidString: 2af0a8bb630b6834c823163d7c68438f
   m_Entries:
-  - m_Id: 913092620288
+  - m_Id: 697491256225792
     m_Key: id_user_name
     m_Metadata:
       m_Items: []
@@ -77,6 +77,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 15
     m_Key: id_connection_error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16
+    m_Key: id_to_start
     m_Metadata:
       m_Items: []
   m_Metadata:
