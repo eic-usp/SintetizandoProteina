@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Content_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 2fba08e216032614fa763bc39fc38376, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 363718488064
+    m_Localized: <size=125%>O que acontece? </size>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: O mecanismo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Objetivo do jogador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: O que deve fazer ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "A taxa adequada de <color=#50D500><b>glicose</b></color> \xE9 restabelecida
+      a partir da libera\xE7\xE3o do <color=#50D500><b>horm\xF4nio glucagon</b></color>,
+      que age nas c\xE9lulas do f\xEDgado onde est\xE1 armazenado o glicog\xEAnio,
+      que \xE9 a fonte de reserva de glicose nos animais. O glucagon, que \xE9 produzido
+      no p\xE2ncreas na forma de uma prote\xEDna precursora, o <color=#50D500><b>proglucagon</b></color>,
+      fica armazenada em <color=#50D500><b>gr\xE2nulos</b></color> de certas c\xE9lulas
+      do <color=#50D500><b>p\xE2ncreas</b></color>. Somente quando a taxa de a\xE7\xFAcar
+      do sangue baixa, proglucagon \xE9 convertido em glucagon, e este, secretado
+      para a corrente sangu\xEDnea, ir\xE1 agir nas c\xE9lulas do f\xEDgado disparando
+      o mecanismo que transforma o glicog\xEAnio em glicose."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "Para normalizar a concentra\xE7\xE3o de a\xE7\xFAcar no seu sangue,
+      caso ela venha a cair, voc\xEA deve sintetizar uma mol\xE9cula de proglucagon
+      e armazen\xE1-la em um <color=#50D500><b>gr\xE2nulo de secre\xE7\xE3o</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "O sistema imune \xE9 composto por v\xE1rias c\xE9lulas, dentre
+      elas os <color=#50D500><b>macr\xF3fagos</b></color>, presentes no <color=#50D500><b>sangue</b></color>
+      e nos tecidos infectados. Particulas estranhas, como v\xEDrus e bact\xE9rias,
+      s\xE3o englobadas pelos macr\xF3fagos e ent\xE3o degradadas com enzimas <color=#50D500><b>hidrolases
+      \xE1cidas</b></color>, contidas em organelas celulares chamadas <color=#50D500><b>lisossomos</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: "Para ajudar os macr\xF3fagos a combater os v\xEDrus causadores
+      da sua gripe, voc\xEA deve produzir uma mol\xE9cula de uma enzima hidrolase
+      \xE1cida e encaminh\xE1-la ao interior de um <color=#50D500><b>lisossomo</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "A digest\xE3o converte a maior parte da grande quantidade de <color=#50D500><b>carboidratos</b></color>
+      presentes nessa dieta em <color=#50D500><b>glicose</b></color>, um tipo de
+      a\xE7\xFAcar que \xE9 a principal <color=#50D500><b>fonte energ\xE9tica</b></color>
+      para o <color=#50D500><b>metabolismo</b></color> celular. Entretanto, a glicose
+      livre na circula\xE7\xE3o sangu\xEDnea n\xE3o consegue por si s\xF3 entrar
+      em algumas c\xE9lulas, e necessita, para isso, do <color=#50D500><b>horm\xF4nio
+      insulina</b></color>.\nO precursor da insulina \xE9 a prote\xEDna <color=#50D500><b>proinsulina</b></color>,
+      constantemente produzida e armazenada em <color=#50D500><b>gr\xE2nulos</b></color>
+      de certas c\xE9lulas do <color=#50D500><b>p\xE2ncreas</b></color>. Momentos
+      ap\xF3s as refei\xE7\xF5es, as mol\xE9culas de proinsulina s\xE3o convertidas
+      em insulina, secretadas para o sangue e distribuidas para grande parte das
+      c\xE9lulas do corpo atr\xE1ves da circula\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: "Sintetizar uma mol\xE9cula de proinsulina e armazen\xE1-la em um
+      <color=#50D500><b>gr\xE2nulo de secre\xE7\xE3o</b></color> para que, ap\xF3s
+      outras refei\xE7\xF5es como esta, seja transformada em insulina e liberada."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: "A melanina \xE9 produzida no complexo de Golgi de c\xE9lulas da
+      pele denominadas <color=#50D500><b>melan\xF3citos</b></color>. O ac\xFAmulo
+      cont\xEDnuo de melanina causa o escurecimento gradativo da pele, aumentando
+      a <color=#50D500><b>prote\xE7\xE3o</b></color> contra a radia\xE7\xE3o solar.  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: "Para garantir a sa\xFAde da sua pele, evite o sol forte, use filtro
+      solar e sintetize uma mol\xE9cula de <color=#50D500><b>tirosinas</b></color>,
+      enzima que catalisa uma das rea\xE7\xF5es de s\xEDntese de melanina."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

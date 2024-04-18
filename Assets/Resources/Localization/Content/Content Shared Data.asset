@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Content Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Content
+  m_TableCollectionNameGuidString: 2fba08e216032614fa763bc39fc38376
+  m_Entries:
+  - m_Id: 363718488064
+    m_Key: id_what_happen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Key: id_the_mechanism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Key: id_player_objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Key: id_should_do
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Key: id_glucagon_mecanism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Key: id_glucagon_objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Key: id_hidrolase_mechanism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Key: id_hidrolase_objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Key: id_insulin_mechanism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Key: id_insulin_objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Key: id_melanin_mechanism
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Key: id_melanin_objective
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8291652904761163787
+  references:
+    version: 2
+    RefIds:
+    - rid: 8291652904761163787
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713464051573

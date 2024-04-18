@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Content_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 2fba08e216032614fa763bc39fc38376, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 363718488064
+    m_Localized: <size=125%>What happens ? </size>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: The mecanim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Player objective
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: What should you do ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: The proper <color=#50D500><b>glucose</b></color> level is restored
+      through the release of the <color=#50D500><b>hormone glucagon</b></color>,
+      which acts on the liver cells where glycogen is stored, serving as the reserve
+      source of glucose in animals. Glucagon, produced in the pancreas in the form
+      of a precursor protein called <color=#50D500><b>proglucagon</b></color>, is
+      stored in <color=#50D500><b>granules</b></color> within certain cells int the
+      <color=#50D500>pancreas</b></color>. Only when blood sugar levels drop, proglucagon
+      is converted into glucagon, which is then secreted into the bloodstream, acting
+      on liver cells to trigger the mechanism that converts glycogen into glucose.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: '
+
+      To normalize the concentration of sugar in your blood,
+      in case it drops, you should synthesize a molecule of proglucagon and store
+      it in a <color=#50D500><b>secretory granule</b></color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: The immune system is composed of various cells, including <color=#50D500><b>macrophages</b></color>,
+      present in the <color=#50D500><b>blood</b></color> and infected tissues. Foreign
+      particles, such as viruses and bacteria, are engulfed by macrophages and then
+      degraded with <color=#50D500><b>acidic hydrolase</b></color> enzymes contained
+      in cellular organelles called <color=#50D500><b>lysosomes</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: '"To assist macrophages in combating the viruses causing your flu,
+      you should produce a molecule of an acidic hydrolase enzyme and deliver it
+      into a <color=#50D500><b>lysosome</b></color>."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: 'Digestion converts most of the large quantity of <color=#50D500><b>carbohydrates</b></color>
+      present in this diet into <color=#50D500><b>glucose</b></color>, a type of
+      sugar that is the main <color=#50D500><b>energy source</b></color> for cellular
+      <color=#50D500><b>metabolism</b></color>. However, free glucose in the bloodstream
+      cannot enter some cells by itself and requires the <color=#50D500><b>hormone
+      insulin</b></color> for that.
+
+      The precursor of insulin is the protein
+      <color=#50D500><b>proinsulin</b></color>, constantly produced and stored in
+      <color=#50D500><b>granules within certain cell int the <color=#50D500><b>pancreas</b></color>.
+      Moments after meals, proinsulin molecules are converted into insulin, secreted
+      into the blood, and distributed to a large portion of the body''s cells through
+      circulation.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Synthesize a molecule of proinsulin and store it in a <color=#50D500><b>secretory
+      granule</b></color> so that, after other meals like this one, it can be transformed
+      into insulin and released.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Melanin is produced in the Golgi apparatus of skin cells called
+      <color=#50D500><b>melanocytes</b></color>. The continuous accumulation of melanin
+      causes gradual darkening of the skin, increasing <color=#50D500><b>protection</b></color>
+      against solar radiation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: To ensure the health of your skin, avoid strong sunlight, use sunscreen,
+      and synthesize a molecule of <color=#50D500><b>tyrosinase</b></color>, an enzyme
+      that catalyzes one of the synthesis reactions of melanin.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
