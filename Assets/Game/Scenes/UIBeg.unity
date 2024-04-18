@@ -6612,6 +6612,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5818151966678660314, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 6372159631360
+      objectReference: {fileID: 0}
+    - target: {fileID: 5818151966678660314, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:2fa99bc4aaffc1840886840d9c73a01a
+      objectReference: {fileID: 0}
     - target: {fileID: 6308394164210550544, guid: f12e5828e0415874f86f4f14e80b03b6, type: 3}
       propertyPath: selection
       value: 
