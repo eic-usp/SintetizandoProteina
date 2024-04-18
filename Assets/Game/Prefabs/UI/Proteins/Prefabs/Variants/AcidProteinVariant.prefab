@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
@@ -71,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1326635617, guid: 00d1200a75efb1e4fb2bb00a8b237837, type: 3}
+    - target: {fileID: 4664990081343469735, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -153,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -280,6 +285,9 @@ PrefabInstance:
       value: "Hidrolase \xC1cida"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
 --- !u!224 &6606439208920776135 stripped
 RectTransform:

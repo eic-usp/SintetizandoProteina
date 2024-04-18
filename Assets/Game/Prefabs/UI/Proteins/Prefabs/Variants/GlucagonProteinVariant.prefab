@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 416631840137470636, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
@@ -66,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 3154548484301503032, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664990081343469735, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 212677406720
       objectReference: {fileID: 0}
     - target: {fileID: 5251179568982561068, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_AnchorMax.y
@@ -149,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7144544509969050855, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -276,6 +281,9 @@ PrefabInstance:
       value: Glucagon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 617ef43e126b2da4fbf4c74a75993daf, type: 3}
 --- !u!224 &352394600799844121 stripped
 RectTransform:
