@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
 using Cysharp.Threading.Tasks;
-
+using Game.Scripts.Subtitles;
 using UI.Animation;
 
 /*
@@ -17,10 +17,14 @@ namespace UI.Protein
     public class VideoController : MonoBehaviour
     {
         [SerializeField] private string[] videoClips;
+
         [SerializeField] private GameObject controls;
         [SerializeField] private Transform screens;
 
         [SerializeField] private TransitionController myTransition;
+
+        [SerializeField] private Subtitles subtitles;
+        [SerializeField] private TextAsset[] subtitlesText;
 
         private VideoPlayer _videoPlayer;
         private int _actualVideoClip;
@@ -37,12 +41,17 @@ namespace UI.Protein
             _videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoClips[index]);
             _actualVideoClip = index;
             controls.gameObject.SetActive(true);
+            subtitles.SetSubtitles(subtitlesText[index]);
             PlayVideo();
         }
 
         private IEnumerator FinishCheck()
         {
-            yield return new WaitWhile(() => _videoPlayer.isPlaying);
+            yield return new WaitWhile(() =>
+            {
+                subtitles.UpdateSubtitles();
+                return _videoPlayer.isPlaying;
+            });
 
             if (!_pause)
             {
@@ -54,6 +63,7 @@ namespace UI.Protein
         {
             controls.SetActive(false);
             gameObject.SetActive(false); // Instantaneously stop all coroutines
+            subtitles.ResetSubtitles();
             await PlayTransitionIn(); // Don't get finished in SetActive(false)
         }
 
