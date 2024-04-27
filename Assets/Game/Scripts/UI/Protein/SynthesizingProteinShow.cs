@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 namespace UI.Protein.Info
@@ -17,8 +19,8 @@ namespace UI.Protein.Info
         [Space] [Header("Box Description of Extra")] [Space]
 
         [SerializeField] private GameObject boxTextExtraDescription;
-        [SerializeField] private TextMeshProUGUI nameExtraData;
-        [SerializeField] private TextMeshProUGUI textDescriptionExtraData;
+        [SerializeField] private LocalizeStringEvent nameExtraData;
+        [SerializeField] private LocalizeStringEvent textDescriptionExtraData;
         [SerializeField] private ScrollRect scrollRectExtraData;
 
         private int lastExtra = -1;
@@ -57,9 +59,15 @@ namespace UI.Protein.Info
             
             lastExtra = index;
             boxTextExtraDescription.SetActive(true);
+
+            nameExtraData.StringReference = new LocalizedString(
+                LocalizationManager.BoxExtra, 
+                toShow.sp.GetNameExtra(key, index));
             
-            nameExtraData.text = toShow.sp.GetNameExtra(key, index);
-            textDescriptionExtraData.text = toShow.sp.GetDescriptionTextExtra(key, index);
+            textDescriptionExtraData.StringReference = new LocalizedString(
+                LocalizationManager.BoxExtra, 
+                toShow.sp.GetDescriptionTextExtra(key, index));
+
             scrollRectExtraData.verticalNormalizedPosition = 1f;
         }
 
