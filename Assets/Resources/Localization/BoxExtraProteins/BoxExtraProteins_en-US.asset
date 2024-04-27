@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: e0277799561992a47b0b5813afade6e7, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1874171244544
+    m_Localized: Glucagon is one of the hormones produced by the pancreas, which
+      acts on liver cells that store glycogen (a source of glucose reserve in animals).
+      When blood glucose levels drop, the hormone glucagon, stored in the pancreas
+      as proglucagon, is released into the bloodstream and enters liver cells, initiating
+      the process of breaking down glycogen, releasing glucose molecules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: The immune system is composed of various cells, including phagocytes
+      and lymphocytes. The former are represented by Neutrophils (also known as polymorphonuclear
+      cells) and Monocytes, present in the blood, and by macrophages present in various
+      tissues of our body. Lymphocytes are found in the blood and also in lymph nodes
+      scattered throughout the body, and they are involved in antibody production.
+      Foreign particles (bacteria, protozoa, viruses) can be engulfed by phagocytes
+      and degraded by enzymes present in lysosomes. Acid hydrolase is one of the
+      enzymes contained in lysosomes that is involved in the degradation of phagocytosed
+      microorganisms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: In the digestive process, most of the carbohydrates present in our
+      diet are converted into glucose, a simple sugar that is the primary source
+      of energy used in all cellular processes. However, the glucose absorbed during
+      digestion and found freely circulating in the bloodstream cannot penetrate
+      into cells. For this to occur, the cell requires the hormone insulin, which
+      is produced by the pancreas, but in the form of a precursor to insulin called
+      proinsulin, which is stored in specific cells. Moments after meals, proinsulin
+      molecules are converted into insulin, released into the bloodstream, and distributed
+      to cells throughout the body.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Melanin is produced by melanocytes, one of the types of cells found
+      in the skin, whose main function is pigmentation and protection against solar
+      radiation. It provides pigmentation to the skin, eyes, and hair across all
+      biological kingdoms. The absence of melanin gives rise to a condition called
+      albinism in the animal kingdom.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

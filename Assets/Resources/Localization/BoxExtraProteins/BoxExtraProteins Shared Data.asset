@@ -14,7 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: BoxExtraProteins
   m_TableCollectionNameGuidString: e0277799561992a47b0b5813afade6e7
-  m_Entries: []
+  m_Entries:
+  - m_Id: 1874171244544
+    m_Key: id_glucagon_information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Key: id_acyd_hidrolace_information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Key: id_insulin_information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Key: id_melanin_information
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

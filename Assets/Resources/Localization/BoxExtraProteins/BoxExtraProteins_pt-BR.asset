@@ -17,7 +17,53 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: e0277799561992a47b0b5813afade6e7, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 1874171244544
+    m_Localized: "O Glucagon \xE9 um dos horm\xF4nios produzidos pelo p\xE2ncreas,
+      que age sobre as c\xE9lulas do f\xEDgado que armazenam o glicog\xEAnio (fonte
+      de reserva de glicose nos animais). Quando os n\xEDveis de  glicose no sangue
+      baixam, o horm\xF4nio glucagon,  armazenado no p\xE2ncreas como proglucagon,
+      \xE9 liberado para a corrente sangu\xEDnea e penetram nas c\xE9lulas do f\xEDgado
+      iniciando o processo que quebra o glicog\xEAnio, liberando mol\xE9culas de
+      glicose."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: "O sistema imune \xE9 composto por v\xE1rias c\xE9lulas, dentre
+      elas os fag\xF3citos e os linf\xF3citos. Os primeiros representados pelos Neutr\xF3filos
+      (tamb\xE9m conhecidos como polimorfonucleares) e Mon\xF3citos, presentes no
+      sangue, e pelos macr\xF3fagos presentes em v\xE1rios tecidos de nosso organismo.
+      Os linf\xF3citos s\xE3o encontrados no sangue e tamb\xE9m nos n\xF3dulos linf\xE1ticos
+      espalhados pelo organismo, est\xE3o relacionados com a produ\xE7\xE3o de anticorpos.
+      Part\xEDculas estranhas (bact\xE9rias, protozo\xE1rios, v\xEDrus) podem ser
+      englobadas pelos fag\xF3citos e degradadas por a\xE7\xE3o de enzimas presentes
+      nos lisossomos. A hidrolase \xE1cida \xE9 uma das enzimas contidas nos lisossomos
+      que est\xE1 envolvida na degrada\xE7\xE3o dos microrganismos fagocitados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "No processo digest\xF3rio, a maior parte  dos carboidratos presentes
+      na nossa dieta \xE9 convertido em glicose, um a\xE7\xFAcar simples que \xE9
+      a principal fonte de energia a ser utilizada em todos os processos celulares.
+      Entretanto, a glicose que foi absorvida na digest\xE3o e encontra-se livre
+      na circula\xE7\xE3o sangu\xEDnea n\xE3o consegue penetrar dentro das c\xE9lulas.
+      Para que isso ocorra, a c\xE9lula necessita do horm\xF4nio insulina, que \xE9
+      produzido pelo p\xE2ncreas, por\xE9m na forma de um precursor da insulina,
+      chamado de proinsulina, que fica armazenado em c\xE9lulas espec\xEDficas. Momentos
+      ap\xF3s as refei\xE7\xF5es, as mol\xE9culas de proinsulina s\xE3o convertidas
+      em insulina, liberadas para a corrente sangu\xEDnea e distribu\xEDdas para
+      as c\xE9lulas de todo corpo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "A melanina \xE9 produzida pelos melan\xF3citos, um dos tipos de
+      c\xE9lulas existentes na pele,  cuja principal fun\xE7\xE3o \xE9 a pigmenta\xE7\xE3o
+      e prote\xE7\xE3o contra a radia\xE7\xE3o solar. Ela confere pigmenta\xE7\xE3o
+      \xE0 pele, aos olhos e aos cabelos em todos os reinos biol\xF3gicos. A falta
+      de melanina d\xE1 origem a uma condi\xE7\xE3o denominada albinismo no reino
+      animal."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
