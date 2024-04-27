@@ -14,7 +14,7 @@ namespace UI.Protein.Info
         
         [Space] [Header("Box Description of the actual synthesizing protein")] [Space]
 
-        [SerializeField] private TextMeshProUGUI descriptionProtein;
+        [SerializeField] private LocalizeStringEvent descriptionProtein;
 
         [Space] [Header("Box Description of Extra")] [Space]
 
@@ -31,7 +31,10 @@ namespace UI.Protein.Info
 
         private void Start()
         {
-            descriptionProtein.text = toShow.sp.GetDescriptionProtein();
+            descriptionProtein.StringReference = new LocalizedString(
+                LocalizationManager.BoxExtraProtein, 
+                toShow.sp.GetDescriptionProtein());
+            
             Instantiate(toShow.transformedProtein, positionOfTransformedProtein);
         }
 
@@ -71,6 +74,6 @@ namespace UI.Protein.Info
             scrollRectExtraData.verticalNormalizedPosition = 1f;
         }
 
-        public TextMeshProUGUI GetDescriptionProtein() => descriptionProtein;
+        //public TextMeshProUGUI GetDescriptionProtein() => descriptionProtein;
     }
 }

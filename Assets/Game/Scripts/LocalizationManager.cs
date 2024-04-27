@@ -12,6 +12,7 @@ public class LocalizationManager : MonoBehaviour
     public static readonly string MainMenuAndGameplayRandoms = "MainMenu and Gameplay Random";
     public static readonly string Subtitles = "Subtitles";
     public static readonly string BoxExtra = "BoxExtra";
+    public static readonly string BoxExtraProtein = "BoxExtraProteins";
 
     void Start()
     {
