@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: BoxExtra_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: feb736c698faf364bb8a1eef1ded0910, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 125242945536
+    m_Localized: "Protein synthesis begins within the nucleus, when a segment of
+      the DNA molecule (gene) corresponding to the protein to be formed is transcribed.
+      This process, called transcription, involves copying a gene to form a molecule
+      called messenger RNA (mRNA). DNA and RNA are molecules composed of nucleotides.
+      Nucleotides consist of a sugar\u2014ribose in RNA, hence called ribonucleotides,
+      and deoxyribose in DNA, hence called deoxyribonucleotides\u2014a phosphate,
+      and a nitrogenous base. The following nitrogenous bases compose ribonucleotides:
+      adenine (A), uracil (U), found exclusively in RNA molecules, cytosine (C),
+      and guanine (G), while deoxyribonucleotides are formed by adenine (A), thymine
+      (T), found exclusively in DNA molecules, cytosine (C), and guanine (G).RNA
+      is formed from a single strand, using a DNA template strand. During this process,
+      ribonucleotides pair with DNA nucleotides. Ribonucleotides pair with deoxyribonucleotides
+      according to Chargaff's rule: A-T, U-A, C-G, and G-C. There is a specific nucleotide
+      sequence in DNA where the transcription process begins: TAC; thus, at the beginning
+      of mRNA, there will be a sequence of AUG, called the start codon. The enzyme
+      RNA polymerase will link ribonucleotides together, forming mRNA, which is a
+      single strand. mRNA is then detached from the DNA gene sequence when it encounters
+      sequences on the DNA called \"STOP\": ATT, ATC, ACT, or in other words, transcription
+      termination codons. A complex of proteins present in the nucleus will transport
+      mRNA through nuclear membrane pores to ribosomes in the cytoplasm."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: 'After mRNA molecules bind to ribosomes, another stage of protein
+      synthesis begins: the process of translation, where protein molecules are formed.
+      Ribosomes consist of two subunits, a larger one and a smaller one, where mRNA
+      will bind to initiate translation, i.e., the process of protein synthesis.
+      Each sequence of three nucleotides (called codons) on mRNA is translated, with
+      the help of another RNA molecule called transfer RNA (tRNA), where each amino
+      acid has its tRNA (tRNA-AA). For example, an mRNA of 18 nucleotides with the
+      following base sequence: AUG-CAG-UGG-UCA-GCA-UAA corresponds to the amino acids
+      methionine, arginine, tryptophan, serine, alanine. The initial codon AUG is
+      the initiator (always encoding methionine), while the codons UAA, UAG, UGA
+      are the terminators, meaning the ribosome will read the entire mRNA molecule,
+      starting at the specific sequence (AUG), until the last, which is the termination
+      sequence (STOP). With each added amino acid, they bond together forming a peptide
+      bond (linking one amino acid to another), thus a protein is also called a polypeptide
+      chain. When it reaches the STOP codon, the polypeptide chain disconnects from
+      the ribosome, and translation is complete.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: In this next stage, protein processing may occur, meaning they may
+      still undergo some modifications that will make them functional. This could
+      involve attaching other types of molecules to them, such as carbohydrates,
+      forming glycoproteins; lipids, forming lipoproteins; or even metals, such as
+      iron, copper, forming metalloproteins. They can also undergo structural modifications
+      in the chain to become active. The formed polypeptide chain is called the primary
+      structure, which will then be rearranged into three-dimensional structures
+      referring to their spatial folding, necessary for exerting their biological
+      activities. Secondary structures are represented by alpha helices, beta sheets,
+      and loops, and the tertiary structure is the spatial arrangement that secondary
+      structures acquire when they "fold" together. In this form, they are active
+      and perform their biological functions, referred to as monomers. They can also
+      be composed of two or more monomers, forming dimers, trimers, tetramers, and
+      other polymeric forms, which are called quaternary structures. These processes
+      are carried out by different enzymes and/or protein complexes present in the
+      cytoplasm and are essential for the physiological function that the protein
+      will perform.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Each protein is produced to perform a specific function, and for
+      this to occur, it needs to be transported to its target location. This location
+      can be within the cell itself, in other structures such as the nucleus, mitochondria,
+      lysosomes, or outside the cells, where they will perform their activities in
+      other locations of the organism, being carried by the bloodstream and lymphatic
+      system. Many proteins are also stored in the form of pre-proteins in granules,
+      which serve as "depots" for these proteins. When the body requires the action
+      of that protein, it will be converted into an active protein and released from
+      these storage sites, exerting its biological action.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: Transcription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: Translation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Processing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Destination
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
