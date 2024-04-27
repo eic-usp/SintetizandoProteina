@@ -4717,6 +4717,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -341.39502
       objectReference: {fileID: 0}
+    - target: {fileID: 3043716164986039690, guid: 718d98c47727b8949b2b45e155554b0a, type: 3}
+      propertyPath: synthesizedProteinName
+      value: id_synthetized_insulin
+      objectReference: {fileID: 0}
     - target: {fileID: 4973056151977277057, guid: 718d98c47727b8949b2b45e155554b0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -5270,6 +5274,10 @@ PrefabInstance:
     - target: {fileID: 5477016269932011974, guid: 22a57433445b5514499e70121bed7e52, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988626417156652148, guid: 22a57433445b5514499e70121bed7e52, type: 3}
+      propertyPath: synthesizedProteinName
+      value: id_synthetized_glucagon
       objectReference: {fileID: 0}
     - target: {fileID: 7065404643838163282, guid: 22a57433445b5514499e70121bed7e52, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8101,6 +8109,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -341.39502
       objectReference: {fileID: 0}
+    - target: {fileID: 4589637245636949674, guid: d2f47c4960038914c94325eea1901bc7, type: 3}
+      propertyPath: synthesizedProteinName
+      value: id_synthetized_acid_hydrolase
+      objectReference: {fileID: 0}
     - target: {fileID: 5679682293260431335, guid: d2f47c4960038914c94325eea1901bc7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -10434,6 +10446,10 @@ PrefabInstance:
     - target: {fileID: 7848129877750995533, guid: 8a15d4393cb1a684b8465d207273788b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -341.39502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934183859945234283, guid: 8a15d4393cb1a684b8465d207273788b, type: 3}
+      propertyPath: synthesizedProteinName
+      value: id_synthetized_melanin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

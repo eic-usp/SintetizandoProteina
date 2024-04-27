@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 using GeneralScripts.Reflection;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 /*
     See GeneralGetter for some info, basically you pass actualText, and set a TMPro component with 
@@ -19,6 +21,8 @@ public class TextSend : MonoBehaviour
     {
         public UnityEvent myEvent;
         public TextMeshProUGUI textField;
+        public LocalizeStringEvent stringEvent;
+        public string table;
     }
 
     private string actualText;
@@ -42,8 +46,16 @@ public class TextSend : MonoBehaviour
             m_MyEvent.Invoke();
             
             gg = (AbstractGetter) myGetter;
-            gg.SetReceptorField(this, "actualText");   
+            gg.SetReceptorField(this, "actualText");
 
+            if (textLis[i].stringEvent != null)
+            {
+                textLis[i].stringEvent.StringReference = new LocalizedString(
+                    textLis[i].table,
+                    actualText);
+                continue;
+            }
+            
             textLis[i].textField.text = textLis[i].textField.text + actualText;
         }
     }
