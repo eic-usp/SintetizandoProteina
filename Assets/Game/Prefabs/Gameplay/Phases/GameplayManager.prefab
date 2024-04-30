@@ -50,30 +50,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: "Encontrar o n\xFAcleo"
-    descriptionPhase: "O processo de s\xEDntese de prote\xEDnas \xE9 realizado no
-      citoplasma pelos ribossomos, que se encontram livres ou ligados ao Ret\xEDculo
-      Endoplasm\xE1tico Rugoso (RER), nas c\xE9lulas eucari\xF3ticas, enquanto em
-      procariotos eles est\xE3o livres no citoplasma. Como a informa\xE7\xE3o est\xE1
-      nos genes (dentro do n\xFAcleo) elas precisam ser  copiadas e levadas at\xE9
-      os ribossomos, num processo chamado de transcri\xE7\xE3o.  Os genes que correspondem
-      a uma determinada prote\xEDna  est\xE3o presentes em uma sequ\xEAncia espec\xEDfica
-      do DNA.   Assim, a transcri\xE7\xE3o da informa\xE7\xE3o, em eucariotos, ocorre
-      no n\xFAcleo, ou seja um gene ser\xE1 copiado, a partir do DNA, formando uma 
-      mol\xE9cula intermedi\xE1ria: o  RNA mensageiro (RNAm).  O DNA e o RNA s\xE3o
-      mol\xE9culas formadas por nucleot\xEDdeos. Os nucleot\xEDdeos s\xE3o compostos
-      de um a\xE7\xFAcar, ribose no RNA, por isso chamados de ribonucleot\xEDdeos
-      e desoxirribose no DNA, por isso chamados desoxirribonucleot\xEDdeos, um fosfato
-      e uma base nitrogenada. As seguintes bases nitrogenadas comp\xF5em os ribonucleot\xEDdeos:
-      adenina (A), uracila (U), encontrada exclusivamente na mol\xE9cula de RNA,
-      citosina (C) e guanina (G), enquanto os desoxirribonucleot\xEDdeos s\xE3o formados
-      pela adenina (A), timina (T), encontrada exclusivamente na mol\xE9cula de DNA,
-      citosina (C) e guanina (G).  Encontre o n\xFAcleo da c\xE9lula para iniciar
-      o processo de transcri\xE7\xE3o e concluir a miss\xE3o 1. "
+    namePhase: id_1_mission
+    descriptionPhase: id_1_mission_description
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Encontre o n\xFAcleo da c\xE9lula  para iniciar o processo de transcri\xE7\xE3o
-    e realizar a primeira etapa da s\xEDntese proteica (miss\xE3o 1)!"
+  - id_mission_1_instruction
   instructions: {fileID: 0}
   gameplayManager: {fileID: 7295050311995265380}
   missionManager: {fileID: 7551402958393808104}
@@ -119,7 +100,7 @@ RectTransform:
   - {fileID: 7524598499529824716}
   - {fileID: 2949134303255318800}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -208,6 +189,7 @@ MonoBehaviour:
       a associa\xE7\xE3o correta."
   marking: {fileID: 0}
   info: {fileID: 0}
+  retryMenu: {fileID: 0}
   iM: {fileID: 0}
   waitManager: {fileID: 7170385564319291578}
 --- !u!114 &1355886804
@@ -274,33 +256,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: Processamento
-    descriptionPhase: "Ap\xF3s a forma\xE7\xE3o da cadeia de amino\xE1cidos, chamada
-      de cadeia polipept\xEDdica ou estrutura prim\xE1ria da prote\xEDna, ela ainda
-      ser\xE1 reorganizada em estruturas tridimensionais que se referem ao seu enrolamento
-      espacial, necess\xE1rio para exercerem suas atividades biol\xF3gicas. Algumas
-      prote\xEDnas ainda sofrem outras modifica\xE7\xF5es estruturais para se tornarem
-      ativas. Podem ser ligadas a elas outros tipos de mol\xE9culas como os carboidratos,
-      formando as glicoprote\xEDnas; os lip\xEDdios, formando as lipoprote\xEDnas,
-      ou ainda metais, como ferro, cobre, formando as metaloprote\xEDnas. A estrutura
-      espacial compreende as estruturas secund\xE1rias, representadas pelas h\xE9lices
-      alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria que \xE9 o
-      arranjo espacial que as estruturas secund\xE1rias adquirem quando se \u201Cenrolam\u201D
-      entre si. Nesta forma, muitas s\xE3o ativas e exercem suas fun\xE7\xF5es biol\xF3gicas
-      sendo chamadas de mon\xF4meros. Elas tamb\xE9m podem ser constitu\xEDdas de
-      dois ou mais mon\xF4meros, formando d\xEDmeros, tr\xEDmeros, tetr\xE2meros,
-      e outras formas polim\xE9ricas, que s\xE3o denominadas de estrutura quatern\xE1ria.
-      Estes processos s\xE3o realizados por diferentes enzimas e/ou complexos prot\xE9icos
-      presentes no citoplasma e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica
-      que a prote\xEDna ir\xE1 exercer. Depois de todo esse processamento, a prote\xEDna
-      fica ativa ou pronta para ser armazenada e utilizada quando necess\xE1rio.
-      Clique em \u201Ccontinuar\u201D para concluir a miss\xE3o 4. "
+    namePhase: id_4_mission
+    descriptionPhase: id_4_mission_description
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Nessa etapa voc\xEA saber\xE1 mais sobre o processamento de prote\xEDnas ap\xF3s
-    a sua s\xEDntese na tradu\xE7\xE3o. Esse processo \xE9 importante para ativa\xE7\xE3o
-    e habilita\xE7\xE3o da prote\xEDna para exercer suas fun\xE7\xF5es. Clique em
-    \u201Ccontinuar\u201D para a pr\xF3xima miss\xE3o."
+  - id_mission_4_instruction
   instructions: {fileID: 0}
   cellReference: {fileID: 0}
   processingDescriptionObject: {fileID: 0}
@@ -356,21 +316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseDescription:
-    namePhase: "Destina\xE7\xE3o"
-    descriptionPhase: "Ap\xF3s a s\xEDntese e processamento das prote\xEDnas, muitas
-      s\xE3o armazenadas como pr\xF3-prote\xEDnas inativas em gr\xE2nulos  at\xE9
-      serem secretadas e/ou ativadas quando o corpo precisar de suas a\xE7\xF5es,
-      em seus tecidos ou locais alvo. Esses locais podem ser  as estruturas celulares
-      (como o lisossomo, n\xFAcleo, mitoc\xF4ndrias) \xF3rg\xE3os (como o f\xEDgado,
-      rins), tecidos, c\xE9lulas (como os melan\xF3citos), etc. Estas prote\xEDnas
-      podem atuar dentro da pr\xF3pria c\xE9lula ou serem liberadas diretamente na
-      corrente sangu\xEDnea para  atuarem em locais espec\xEDficos. Responda o quiz
-      sobre a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima
-      miss\xE3o da sua jornada! "
+    namePhase: id_5_mission
+    descriptionPhase: id_5_mission_description
     additionalInfo: {fileID: 0}
   textInstructions:
-  - "Leia o texto sobre a destina\xE7\xE3o das prote\xEDnas ap\xF3s sua s\xEDntese
-    e processamento e responda o quiz para finalizar a sua jornada!"
+  - id_mission_5_instruction
   instructions: {fileID: 0}
   quizManager: {fileID: 0}
   destinationQuiz: {fileID: 0}
@@ -381,51 +331,52 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7295050311995265381}
     m_Modifications:
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 173.73
       objectReference: {fileID: 0}
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 67.04
       objectReference: {fileID: 0}
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 650
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 238026369567464378, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -431.03
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 509.55
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 650
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 981554201854660907, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -433,75 +384,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714762801987774854, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 1714762801987774854, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 218.12
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 367.51
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 640
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4558822015170593514, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -183.755
       objectReference: {fileID: 0}
     - target: {fileID: 6302731479818470400, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6302731479818470400, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6302731479818470400, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 367.51
       objectReference: {fileID: 0}
     - target: {fileID: 6302731479818470400, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 650
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6302731479818470400, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -193.755
       objectReference: {fileID: 0}
     - target: {fileID: 6884177883268692777, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6884177883268692777, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6884177883268692777, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 367.51
       objectReference: {fileID: 0}
     - target: {fileID: 6884177883268692777, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 650
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6884177883268692777, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -183.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7170385563898747864, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.870003
       objectReference: {fileID: 0}
     - target: {fileID: 7170385563898747867, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_Size
@@ -513,15 +468,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7170385564656578974, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7170385564656578974, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7170385564656578974, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.6798744
       objectReference: {fileID: 0}
     - target: {fileID: 7170385565459342948, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_Name
@@ -529,7 +484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7170385565459342948, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7170385565459342951, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_Pivot.x
@@ -615,17 +570,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7551402957522627126, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+      propertyPath: mission
+      value: id_mission
+      objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
@@ -633,31 +592,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: 7571924299030703969, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 509.55
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 650
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7879884967316951812, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -665,30 +624,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8925281586200525293, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -5.6100006
       objectReference: {fileID: 0}
     - target: {fileID: 9090030219531212223, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9090030219531212223, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9090030219531212223, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1300
       objectReference: {fileID: 0}
     - target: {fileID: 9090030219531212223, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: 9090030219531212223, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7170385565459342948, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 778141221}
+    - targetCorrespondingSourceObject: {fileID: 8286307447822529618, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4033664056973362252}
+    - targetCorrespondingSourceObject: {fileID: 5581440340541124584, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2861812074632872176}
   m_SourcePrefab: {fileID: 100100000, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+--- !u!1 &5581440342082769206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5581440340541124584, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+  m_PrefabInstance: {fileID: 1545469662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2861812074632872176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581440342082769206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:2fa99bc4aaffc1840886840d9c73a01a
+    m_TableEntryReference:
+      m_KeyId: 66
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8752182685932115996}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!224 &7170385564319291577 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7170385565459342951, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
@@ -722,11 +738,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23435481e1efff44acdcd1e69542480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8286307448696818316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8286307447822529618, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+  m_PrefabInstance: {fileID: 1545469662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4033664056973362252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8286307448696818316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:6ea166792743ada4c9510f338f20e032
+    m_TableEntryReference:
+      m_KeyId: 1
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7551402958393808104}
+        m_TargetAssemblyTypeName: Phases.Wait.MissionManager, Assembly-CSharp
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8752182685932115996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8752182687341684418, guid: 6078f47bf3dd4ff45ab2dd9936a539bf, type: 3}
+  m_PrefabInstance: {fileID: 1545469662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581440342082769206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &545324924284298383
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7295050311995265381}
     m_Modifications:
     - target: {fileID: 545324925275556229, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
@@ -817,18 +890,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: AMNManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5448459299121910792, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
 --- !u!224 &1159113994 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 545324925275556229, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
   m_PrefabInstance: {fileID: 545324924284298383}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1159113995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 545324925275556228, guid: aa38f2fd4c37a384f8500e04b25c5d40, type: 3}
+  m_PrefabInstance: {fileID: 545324924284298383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c221b510ccdbbf4289d1b91017dbda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &807698542620150924
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7295050311995265381}
     m_Modifications:
     - target: {fileID: 807698542915809969, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
@@ -935,11 +1027,26 @@ PrefabInstance:
       propertyPath: rnaReference
       value: 
       objectReference: {fileID: 5572511312914652307}
+    - target: {fileID: 7523869105389573679, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
+      propertyPath: phaseDescription.namePhase
+      value: id_2_mission
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523869105389573679, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
+      propertyPath: textInstructions.Array.data[0]
+      value: id_mission_2_instruction
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523869105389573679, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
+      propertyPath: phaseDescription.descriptionPhase
+      value: id_2_mission_description
+      objectReference: {fileID: 0}
     - target: {fileID: 9115644990207987630, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
       propertyPath: m_Alpha
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9636a806c23d0454ab34897bede6de5f, type: 3}
 --- !u!114 &7160620728225733283 stripped
 MonoBehaviour:
@@ -962,6 +1069,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7295050311995265381}
     m_Modifications:
     - target: {fileID: 7780435882062524, guid: dbf61f0fbd5db934daf4d2a9f7394f03, type: 3}
@@ -3173,6 +3281,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbf61f0fbd5db934daf4d2a9f7394f03, type: 3}
 --- !u!224 &1366247880795476977 stripped
 RectTransform:
@@ -3195,8 +3306,25 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7295050311995265381}
     m_Modifications:
+    - target: {fileID: 1249367191, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
+      propertyPath: amnManager
+      value: 
+      objectReference: {fileID: 1159113995}
+    - target: {fileID: 1249367191, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
+      propertyPath: phaseDescription.namePhase
+      value: id_3_mission
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249367191, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
+      propertyPath: textInstructions.Array.data[0]
+      value: id_mission_3_instruction
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249367191, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
+      propertyPath: phaseDescription.descriptionPhase
+      value: id_3_mission_description
+      objectReference: {fileID: 0}
     - target: {fileID: 569274660651924530, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
       propertyPath: m_Alpha
       value: 1
@@ -3302,6 +3430,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d154f916e55293409ebc7d9e05f6d9e, type: 3}
 --- !u!224 &7136562423422220865 stripped
 RectTransform:
