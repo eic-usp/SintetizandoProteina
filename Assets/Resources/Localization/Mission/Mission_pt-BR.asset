@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 88af7d49f4ed2ac46a7b3b5218be71bc, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 87477604352
+    m_Localized: "Miss\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87511158784
+    m_Localized: "Encontrar o n\xFAcleo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353088
+    m_Localized: "Transcri\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353089
+    m_Localized: "Tradu\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353090
+    m_Localized: Processamento
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353091
+    m_Localized: "Destina\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547392
+    m_Localized: "O processo de s\xEDntese de prote\xEDnas \xE9 realizado no citoplasma
+      pelos ribossomos, que se encontram livres ou ligados ao Ret\xEDculo Endoplasm\xE1tico
+      Rugoso (RER), nas c\xE9lulas eucari\xF3ticas, enquanto em procariotos eles
+      est\xE3o livres no citoplasma. Como a informa\xE7\xE3o est\xE1 nos genes (dentro
+      do n\xFAcleo) elas precisam ser  copiadas e levadas at\xE9 os ribossomos, num
+      processo chamado de transcri\xE7\xE3o.  Os genes que correspondem a uma determinada
+      prote\xEDna  est\xE3o presentes em uma sequ\xEAncia espec\xEDfica do DNA.  
+      Assim, a transcri\xE7\xE3o da informa\xE7\xE3o, em eucariotos, ocorre no n\xFAcleo,
+      ou seja um gene ser\xE1 copiado, a partir do DNA, formando uma  mol\xE9cula
+      intermedi\xE1ria: o  RNA mensageiro (RNAm).  O DNA e o RNA s\xE3o mol\xE9culas
+      formadas por nucleot\xEDdeos. Os nucleot\xEDdeos s\xE3o compostos de um a\xE7\xFAcar,
+      ribose no RNA, por isso chamados de ribonucleot\xEDdeos e desoxirribose no
+      DNA, por isso chamados desoxirribonucleot\xEDdeos, um fosfato e uma base nitrogenada.
+      As seguintes bases nitrogenadas comp\xF5em os ribonucleot\xEDdeos: adenina
+      (A), uracila (U), encontrada exclusivamente na mol\xE9cula de RNA, citosina
+      (C) e guanina (G), enquanto os desoxirribonucleot\xEDdeos s\xE3o formados pela
+      adenina (A), timina (T), encontrada exclusivamente na mol\xE9cula de DNA, citosina
+      (C) e guanina (G).  Encontre o n\xFAcleo da c\xE9lula para iniciar o processo
+      de transcri\xE7\xE3o e concluir a miss\xE3o 1. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547393
+    m_Localized: "Voc\xEA identificou corretamente o n\xFAcleo e a transcri\xE7\xE3o
+      poder\xE1 ter in\xEDcio. O RNA \xE9 formado por uma fita \xFAnica, a partir
+      de uma fita molde de DNA. Nesse processo acontece o pareamento dos ribonucleot\xEDdeos 
+      com os  nucleot\xEDdeos do DNA. H\xE1 uma sequ\xEAncia de nucleot\xEDdeos no
+      DNA onde o processo de transcri\xE7\xE3o \xE9 iniciado: TAC, assim no in\xEDcio
+      do RNAm haver\xE1 uma sequ\xEAncia de AUG, chamado de sequ\xEAncia inicial.
+      A Enzima RNA polimerase ir\xE1 ligar um ribonucleot\xEDdeo ao outro, formando
+      o RNAm. Uma vez que todo o gene \xE9 transcrito, a fita de RNA \xE9 liberada
+      da mol\xE9cula de DNA. O RNAm \xE9 ent\xE3o desligado da sequ\xEAncia g\xEAnica
+      do DNA, quando encontra uma das sequ\xEAncias no DNA chamadas de \u201CFIM\u201D:
+      ATT, ATC, ACT, ou seja c\xF3digos de parada da transcri\xE7\xE3o. Um complexo
+      de prote\xEDnas, existentes no n\xFAcleo, ter\xE3o a fun\xE7\xE3o de transportar
+      o RNAm, atrav\xE9s dos poros da membrana nuclear at\xE9 o Ret\xEDculo Endoplasm\xE1tico
+      Rugoso (RER), no citoplasma onde os ribossomas est\xE3o ligados. Adicione corretamente
+      as bases que se complementam com a fita molde de DNA para formar uma fita de
+      RNAm e encaminhe a mol\xE9cula para o ribossomo (citoplasma) para concluir
+      a miss\xE3o 2! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547394
+    m_Localized: "O processo de tradu\xE7\xE3o \xE9 respons\xE1vel pela s\xEDntese
+      da prote\xEDna, ou seja ir\xE1 decodificar o RNAm, que foi transportado para
+      o citoplasma e ligados aos ribossomos, presentes no Ret\xEDculo Endoplasm\xE1tico
+      Rugoso (RER).  O ribossomo ir\xE1  traduzir a informa\xE7\xE3o presente no
+      RNAm, iniciando a s\xEDntese da prote\xEDna em quest\xE3o. A cada 3 bases nitrogenadas
+      do RNAm (que representa um c\xF3don), ele acrescenta o amino\xE1cido correspondente,
+      que estar\xE1 ligado a outro tipo de RNA, o RNA transportador tRNA). Essa correspond\xEAncia
+      entre as 3 bases nitrogenadas (c\xF3dons) e os amino\xE1cidos pode ser conferida
+      a partir do disco do C\xF3digo Gen\xE9tico, que \xE9 lido do centro para fora,
+      formando um caminho at\xE9 chegar no amino\xE1cido correto. Os amino\xE1cidos
+      ser\xE3o ligados entre si atrav\xE9s de uma liga\xE7\xE3o qu\xEDmica espec\xEDfica,
+      chamada de liga\xE7\xE3o pept\xEDdica.  Identifique os amino\xE1cidos correspondentes
+      com os c\xF3dons (cada 3 bases nitrogenadas) do RNAm e insira o nome correto
+      do amino\xE1cido. Ap\xF3s completar a fita de RNAm, clique em \u201Cprocessar
+      a prote\xEDna\u201D para concluir a miss\xE3o 3! "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547395
+    m_Localized: "Ap\xF3s a forma\xE7\xE3o da cadeia de amino\xE1cidos, chamada de
+      cadeia polipept\xEDdica ou estrutura prim\xE1ria da prote\xEDna, ela ainda
+      ser\xE1 reorganizada em estruturas tridimensionais que se referem ao seu enrolamento
+      espacial, necess\xE1rio para exercerem suas atividades biol\xF3gicas. Algumas
+      prote\xEDnas ainda sofrem outras modifica\xE7\xF5es estruturais para se tornarem
+      ativas. Podem ser ligadas a elas outros tipos de mol\xE9culas como os carboidratos,
+      formando as glicoprote\xEDnas; os lip\xEDdios, formando as lipoprote\xEDnas,
+      ou ainda metais, como ferro, cobre, formando as metaloprote\xEDnas. A estrutura
+      espacial compreende as estruturas secund\xE1rias, representadas pelas h\xE9lices
+      alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria que \xE9 o
+      arranjo espacial que as estruturas secund\xE1rias adquirem quando se \u201Cenrolam\u201D
+      entre si. Nesta forma, muitas s\xE3o ativas e exercem suas fun\xE7\xF5es biol\xF3gicas
+      sendo chamadas de mon\xF4meros. Elas tamb\xE9m podem ser constitu\xEDdas de
+      dois ou mais mon\xF4meros, formando d\xEDmeros, tr\xEDmeros, tetr\xE2meros,
+      e outras formas polim\xE9ricas, que s\xE3o denominadas de estrutura quatern\xE1ria.
+      Estes processos s\xE3o realizados por diferentes enzimas e/ou complexos prot\xE9icos
+      presentes no citoplasma e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica
+      que a prote\xEDna ir\xE1 exercer. Depois de todo esse processamento, a prote\xEDna
+      fica ativa ou pronta para ser armazenada e utilizada quando necess\xE1rio.
+      Clique em \u201Ccontinuar\u201D para concluir a miss\xE3o 4. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547396
+    m_Localized: "Ap\xF3s a s\xEDntese e processamento das prote\xEDnas, muitas s\xE3o
+      armazenadas como pr\xF3-prote\xEDnas inativas em gr\xE2nulos  at\xE9 serem
+      secretadas e/ou ativadas quando o corpo precisar de suas a\xE7\xF5es, em seus
+      tecidos ou locais alvo. Esses locais podem ser  as estruturas celulares (como
+      o lisossomo, n\xFAcleo, mitoc\xF4ndrias) \xF3rg\xE3os (como o f\xEDgado, rins),
+      tecidos, c\xE9lulas (como os melan\xF3citos), etc. Estas prote\xEDnas podem
+      atuar dentro da pr\xF3pria c\xE9lula ou serem liberadas diretamente na corrente
+      sangu\xEDnea para  atuarem em locais espec\xEDficos. Responda o quiz sobre
+      a destina\xE7\xE3o da prote\xEDna escolhida para finalizar a \xFAltima miss\xE3o
+      da sua jornada! "
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

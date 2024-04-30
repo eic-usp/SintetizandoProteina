@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Mission Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Mission
+  m_TableCollectionNameGuidString: 88af7d49f4ed2ac46a7b3b5218be71bc
+  m_Entries:
+  - m_Id: 87477604352
+    m_Key: id_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87511158784
+    m_Key: id_1_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353088
+    m_Key: id_2_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353089
+    m_Key: id_3_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353090
+    m_Key: id_4_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353091
+    m_Key: id_5_mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547392
+    m_Key: id_1_mission_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547393
+    m_Key: id_2_mission_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547394
+    m_Key: id_3_mission_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547395
+    m_Key: id_4_mission_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547396
+    m_Key: id_5_mission_description
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8291653175405707280
+  references:
+    version: 2
+    RefIds:
+    - rid: 8291653175405707280
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1714501892587

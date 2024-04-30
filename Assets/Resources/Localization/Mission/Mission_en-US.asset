@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mission_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 88af7d49f4ed2ac46a7b3b5218be71bc, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 87477604352
+    m_Localized: Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87511158784
+    m_Localized: Find the nucleous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353088
+    m_Localized: Transcription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353089
+    m_Localized: Translation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353090
+    m_Localized: Processing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87515353091
+    m_Localized: Destination
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547392
+    m_Localized: 'The process of protein synthesis occurs in the cytoplasm by ribosomes,
+      which are either free or attached to the Rough Endoplasmic Reticulum (RER)
+      in eukaryotic cells, while in prokaryotes they are free in the cytoplasm. Since
+      the genetic information is within the genes (inside the nucleus), they need
+      to be copied and transported to the ribosomes in a process called transcription.
+      The genes corresponding to a specific protein are present in a specific sequence
+      of DNA. Thus, transcription of the information, in eukaryotes, occurs in the
+      nucleus, meaning a gene will be copied from DNA, forming an intermediate molecule:
+      messenger RNA (mRNA). DNA and RNA are molecules formed by nucleotides. Nucleotides
+      consist of a sugar, ribose in RNA, hence called ribonucleotides, and deoxyribose
+      in DNA, hence called deoxyribonucleotides, a phosphate, and a nitrogenous base.
+      The following nitrogenous bases compose ribonucleotides: adenine (A), uracil
+      (U), found exclusively in RNA molecules, cytosine (C), and guanine (G), while
+      deoxyribonucleotides are formed by adenine (A), thymine (T), found exclusively
+      in DNA molecules, cytosine (C), and guanine (G). Find the cell nucleus to initiate
+      the transcription process and complete mission 1.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547393
+    m_Localized: 'You have correctly identified the nucleus, and transcription can
+      now begin. RNA is formed by a single strand, from a DNA template strand. In
+      this process, ribonucleotides pair with DNA nucleotides. There is a sequence
+      of nucleotides in the DNA where the transcription process begins: TAC, so at
+      the beginning of the mRNA there will be a sequence of AUG, called the start
+      codon. The RNA polymerase enzyme will link one ribonucleotide to another, forming
+      the mRNA. Once the entire gene is transcribed, the RNA strand is released from
+      the DNA molecule. The mRNA is then detached from the DNA gene sequence when
+      it encounters one of the sequences in DNA called "STOP": ATT, ATC, ACT, in
+      other words, transcription stop codons. A complex of proteins, existing in
+      the nucleus, will transport the mRNA through the nuclear membrane pores to
+      the Rough Endoplasmic Reticulum (RER) in the cytoplasm where the ribosomes
+      are attached. Correctly add the bases that complement the DNA template strand
+      to form an mRNA strand and forward the molecule to the ribosome (cytoplasm)
+      to complete mission 2!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547394
+    m_Localized: The process of translation is responsible for protein synthesis,
+      meaning it will decode the mRNA, which has been transported to the cytoplasm
+      and attached to the ribosomes, present in the Rough Endoplasmic Reticulum (RER).
+      The ribosome will translate the information present in the mRNA, initiating
+      the synthesis of the protein in question. For every 3 nitrogenous bases of
+      the mRNA (which represent a codon), it adds the corresponding amino acid, which
+      is attached to another type of RNA, the transfer RNA (tRNA). This correspondence
+      between the 3 nitrogenous bases (codons) and the amino acids can be checked
+      from the Genetic Code wheel, which is read from the center outwards, forming
+      a path until it reaches the correct amino acid. The amino acids will be linked
+      together through a specific chemical bond, called a peptide bond. Identify
+      the corresponding amino acids with the codons (every 3 nitrogenous bases) of
+      the mRNA and insert the correct name of the amino acid. After completing the
+      mRNA strand, click on "process the protein" to complete mission 3!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547395
+    m_Localized: After the formation of the chain of amino acids, called the polypeptide
+      chain or primary structure of the protein, it will still be rearranged into
+      three-dimensional structures that refer to its spatial folding, necessary to
+      exert their biological activities. Some proteins also undergo other structural
+      modifications to become active. Other types of molecules can be attached to
+      them, such as carbohydrates, forming glycoproteins; lipids, forming lipoproteins;
+      or even metals, such as iron, copper, forming metalloproteins. The spatial
+      structure comprises secondary structures, represented by alpha helices, beta
+      strands, and loops, and the tertiary structure, which is the spatial arrangement
+      that the secondary structures acquire when they "fold" around each other. In
+      this form, many proteins are active and perform their biological functions,
+      being called monomers. They can also be composed of two or more monomers, forming
+      dimers, trimers, tetramers, and other polymeric forms, which are called quaternary
+      structures. These processes are carried out by different enzymes and/or protein
+      complexes present in the cytoplasm and are essential for the physiological
+      function that the protein will perform. After all this processing, the protein
+      becomes active or ready to be stored and used when necessary. Click "continue"
+      to complete mission 4.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87519547396
+    m_Localized: After the synthesis and processing of proteins, many are stored
+      as inactive pro-proteins in granules until they are secreted and/or activated
+      when the body needs their actions, in its tissues or target locations. These
+      locations can be cellular structures (such as the lysosome, nucleus, mitochondria),
+      organs (such as the liver, kidneys), tissues, cells (such as melanocytes),
+      etc. These proteins can act within the cell itself or be released directly
+      into the bloodstream to act at specific sites. Answer the quiz about the destination
+      of the chosen protein to complete the final mission of your journey!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

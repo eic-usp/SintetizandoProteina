@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: You will be able to change your nickname at any given time
+    m_Localized: You will be able to change your nickname at any time
     m_Metadata:
       m_Items: []
   - m_Id: 5
@@ -92,6 +92,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 697491256225792
     m_Localized: User name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17
+    m_Localized: Misson
     m_Metadata:
       m_Items: []
   references:
