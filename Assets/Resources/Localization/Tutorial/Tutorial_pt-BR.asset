@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 9696160b5c124cd45ba2823b74450949, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1282111852544
+    m_Localized: Tutorial Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: "Bem vindo ao jogo <color=green>\"Sintetizando prote\xEDnas\"</color>,
+      aqui est\xE1 um pequeno tutorial para n\xE3o se sentir perdido com a navega\xE7\xE3o
+      do jogo.\n\nCaso n\xE3o precise \xE9 s\xF3 clicar o bot\xE3o com o \"X\" no
+      <color=green>canto superior direito</color> desse painel.\n\nPara continuar
+      o tutorial \xE9 s\xF3 clicar na seta para a direita no <color=green>canto inferior
+      direito</color> desse painel, voc\xEA poder\xE1 voltar as informa\xE7\xF5es
+      at\xE9 fechar esse painel, ent\xE3o preste bastante aten\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "Inicialmente a parte mais interativa do jogo est\xE1 na parte inferior,
+      especialmente na <color=green>barra branca</color> nela estar\xE1 presente
+      o conte\xFAdo de uma <color=green>miss\xE3o</color>, esta sendo uma representa\xE7\xE3o
+      de uma fase de sintetiza\xE7\xE3o de uma prote\xEDna qualquer.\n\nClicando
+      no bot\xE3o com o nome da prote\xEDna atualmente a ser sintetizada voc\xEA
+      conseguir\xE1 mais informa\xE7\xF5es sobre as fases do jogo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "Se voc\xEA clicou no bot\xE3o da prote\xEDna na parte de baixo
+      (como dito na sess\xE3o anterior) voc\xEA percebeu que existem algumas palavras
+      <color=blue>destacadas</color>, caso clique nelas ir\xE1 aparecer uma p\xE1gina
+      extra com informa\xE7\xF5es adicionais da prote\xEDna."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: 'Still talking about the phases at the <color=green>top</color>,
+      a little detail about the phase is detailed, the content is part of the mission
+      text that you have already seen, but will always be available.
+
+      
+
+      In
+      the <color=green>left box</color>, you will have brief information on how to
+      play the game in case you forget, they are short but very useful.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "Parecem muitas informa\xE7\xF5es, mas elas est\xE3o bem dilu\xEDdas,
+      especialmente nas fases, onde mais informa\xE7\xF5es aparecem, mas s\xE3o poss\xEDveis
+      de serem vistas novamente com um bot\xE3o de <color=green>instru\xE7\xF5es</color>
+      caso a fase seja complexa.\n\nEsperamos que goste do jogo, para come\xE7as
+      a jogar \xE9 s\xF3 clicar no <color=green>bot\xE3o de fechar</color> ou na
+      <color=green>seta direita no canto inferior direito</color>.\n\nSe diverta
+      !!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "Encontre o n\xFAcleo da c\xE9lula  para iniciar o processo de transcri\xE7\xE3o
+      e realizar a primeira etapa da s\xEDntese proteica (miss\xE3o 1)!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: "Preencha a fita de RNA com os nucleot\xEDdeos complementares para
+      formar a mol\xE9cula de RNA mensageiro. Quando formada, direcione a mol\xE9cula
+      para fora do n\xFAcleo atrav\xE9s dos poros!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "Identifique os amino\xE1cidos correspondentes aos c\xF3dons na
+      fita de RNAm e insira o nome correto do amino\xE1cido no campo abaixo. Para
+      completar a miss\xE3o, clique em \u201Cprocessar prote\xEDna\u201D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: "Nessa etapa voc\xEA saber\xE1 mais sobre o processamento de prote\xEDnas
+      ap\xF3s a sua s\xEDntese na tradu\xE7\xE3o. Esse processo \xE9 importante para
+      ativa\xE7\xE3o e habilita\xE7\xE3o da prote\xEDna para exercer suas fun\xE7\xF5es.
+      Clique em \u201Ccontinuar\u201D para a pr\xF3xima miss\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: "Leia o texto sobre a destina\xE7\xE3o das prote\xEDnas ap\xF3s
+      sua s\xEDntese e processamento e responda o quiz para finalizar a sua jornada!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

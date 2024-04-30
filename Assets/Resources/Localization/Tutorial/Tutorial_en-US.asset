@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 9696160b5c124cd45ba2823b74450949, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1282111852544
+    m_Localized: Game Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: '
+
+      Welcome to the game <color=green>"Protein Synthesis"</color>
+      Here''s a quick tutorial to help you navigate the game without feeling lost.
+
+
+      If
+      you don''t need it, just click the button with the "X" in the <color=green>top
+      right corner</color> of this panel.
+
+
+      To continue the tutorial, simply
+      click the arrow to the right in the <color=green>bottom right corner</color>
+      of this panel. You can go back to the information until you close this panel,
+      so pay close attention.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: 'Initially, the most interactive part of the game is at the bottom,
+      especially in the <color=green>white bar</color>. It will display the content
+      of a <color=green>mission</color>, representing a phase of synthesizing a specific
+      protein.
+
+
+      By clicking on the button with the name of the currently synthesized
+      protein, you''ll get more information about the game phases.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: If you clicked on the protein button at the bottom (as mentioned
+      in the previous session), you noticed that there are some <color=blue>highlighted</color>
+      words. If you click on them, an extra page with additional protein information
+      will appear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "If you clicked on the protein button at the bottom (as mentioned
+      in the previous session), you noticed that there are some <color=blue>highlighted</color>
+      words. \n\nIf you click on them, an extra page with additional protein information
+      will appear."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: 'It seems like a lot of information, but it''s well-distributed,
+      especially in the phases, where more information appears but can be viewed
+      again with an <color=green>instructions</color> button if the phase is complex.
+
+
+      We
+      hope you enjoy the game, to start playing just click on the <color=green>close
+      button</color> or on the <color=green>right arrow in the bottom right corner</color>.
+
+
+      Have
+      fun!!!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Find the cell nucleus to initiate the transcription process and
+      carry out the first step of protein synthesis (mission 1)!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Fill in the RNA strand with complementary nucleotides to form the
+      messenger RNA molecule. Once formed, direct the molecule out of the nucleus
+      through the pores!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Identify the amino acids corresponding to the codons on the mRNA
+      strand and enter the correct name of the amino acid in the field below. To
+      complete the mission, click "process protein."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: In this stage, you'll learn more about the processing of proteins
+      after their synthesis in translation. This process is crucial for activating
+      and enabling the protein to perform its functions. Click "continue" for the
+      next mission.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Read the text about the destination of proteins after their synthesis
+      and processing and answer the quiz to conclude your journey!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
