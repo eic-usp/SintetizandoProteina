@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.Serialization;
 
 /*
@@ -36,10 +38,26 @@ namespace UI.Text
                 this.texts[i + start].text = saveTexts[i];
             }
         }
+        
+        public void SetText(int start, bool localized){
+            
+            if (start + texts.Count > texts.Count) return;
+            if (!localized)
+            {
+                SetText(start);
+                return;
+            }
+            
+            for (int i = 0; i < texts.Count; i++)
+            {
+                this.texts[i + start].GetComponent<LocalizeStringEvent>().StringReference =  
+                    new LocalizedString(Marking.LocalizationTable, saveTexts[i]);
+            }
+        }
 
         public void SetExternalTextVisible()
         {
-            SetText(0);
+            SetText(0, true);
 
             for (int i = 0; i < texts.Count; i++)
             {

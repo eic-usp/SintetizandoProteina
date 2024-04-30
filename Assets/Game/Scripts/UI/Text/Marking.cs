@@ -12,6 +12,8 @@ namespace UI.Text
 {
     public class Marking : MonoBehaviour
     {
+        public static string LocalizationTable = "Tutorial";
+        
         [SerializeField] GameObject goal = default;
         [SerializeField] Transform spawnField = default;
         [SerializeField] List<TextMeshProUGUI> textMarking = default;

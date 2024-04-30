@@ -9812,42 +9812,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 534913450481895464, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880649616330573782, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880649616330573782, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880649616330573782, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 35.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880649616330573782, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880649616330573782, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -17.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 2131116501849578945, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_Name
-      value: Content-Text-Marking
-      objectReference: {fileID: 0}
-    - target: {fileID: 2131116501849578945, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5126444780823463097, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7345332834869754406, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9935,22 +9899,6 @@ PrefabInstance:
     - target: {fileID: 7345332834869754407, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
       propertyPath: m_Name
       value: Marks
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868017015411884978, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_Spacing
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868017015411884978, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_Padding.m_Left
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868017015411884978, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_Padding.m_Right
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868017015411884978, guid: 1bcf850326fb4a64db6022c7faec4344, type: 3}
-      propertyPath: m_ChildControlWidth
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
