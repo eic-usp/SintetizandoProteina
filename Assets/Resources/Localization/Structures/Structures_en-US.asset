@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Structures_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 6ea166792743ada4c9510f338f20e032, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 204758732800
+    m_Localized: The nucleus is delimited by the membrane called the nuclear envelope,
+      which has pores that allow communication with the cytoplasm, as well as connection
+      with the Rough Endoplasmic Reticulum. Inside the nucleus are the chromosomes
+      and one or more nucleoli. Chromosomes are formed by DNA molecules that are
+      wrapped in proteins. Nucleoli are structures where the accumulation of ribosomal
+      RNA (rRNA) and transfer RNA (tRNA) molecules occurs, after they are synthesized,
+      along with proteins. The rRNA, after being transported to the cytoplasm, will
+      form the ribosomes. When the cell is not dividing, the chromosomes appear as
+      tangled masses of long, thin DNA filaments dispersed in the nuclear fluid,
+      constituting the so-called chromatin. The condensed portions of the chromatin
+      make up the heterochromatin, while the less condensed regions make up the euchromatin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: The rough endoplasmic reticulum is a system of channels bounded
+      by lipoprotein membranes in the form of sacs and flattened vesicles that communicate
+      with the nuclear envelope. It has ribosomes attached to the membrane surface
+      facing the cytoplasm. Its functions include the intracellular transport of
+      proteins synthesized by ribosomes, as well as modifications that some proteins
+      may undergo before being sent to the Golgi complex.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: The smooth endoplasmic reticulum is a system of tubular channels
+      bounded by lipoprotein membranes, continuing from the rough endoplasmic reticulum.
+      It does not have attached ribosomes. Its functions include intracellular transport
+      of substances, lipid synthesis, and detoxification of substances harmful to
+      the cells.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: The centriole is a cylindrical structure consisting of bundles of
+      three parallel microtubules. Centrioles are absent in prokaryotes and flowering
+      plants, while in animals, two perpendicular centrioles are usually present.
+      After duplicating, they guide the formation of spindle fibers during cell division.
+      They also play a role in the formation of cilia and flagella
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: 'Mitochondria function in producing energy through the process of
+      aerobic cellular respiration. They have two membranes: an outer smooth and
+      continuous membrane, and an inner membrane, which is folded due to invaginations
+      that form the mitochondrial cristae. The inner membrane delineates the interior
+      of the mitochondria, known as its matrix, where mitochondrial DNA, enzymes,
+      and other matrix components are immersed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: The Golgi apparatus is composed of a system of membranous vesicles,
+      along with smaller spherical vesicles that form from the larger ones. Its membranes
+      are lipoproteic and never have attached ribosomes. Its functions are related
+      to the storage and routing of proteins produced in the rough endoplasmic reticulum.
+      The smaller vesicles transport the synthesized macromolecules to other locations,
+      inside or outside of the cells. Polysaccharide synthesis also occurs in the
+      Golgi apparatus, with some of them being attached to proteins to form glycoproteins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: Lysosomes originate from vesicles released by the Golgi apparatus.
+      They generally have a spherical shape and are composed of a membrane enclosing
+      hydrolytic enzymes. Their function is related to intracellular digestion, both
+      of food particles ingested by the cell and of worn-out or damaged cellular
+      components.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Nucleus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Rough endoplasmic reticulum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Smooth endoplasmic reticulum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Centriole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: Mitochondria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Golgi apparatus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: Lysosomes
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

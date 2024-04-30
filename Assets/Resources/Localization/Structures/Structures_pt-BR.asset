@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Structures_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 6ea166792743ada4c9510f338f20e032, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 204758732800
+    m_Localized: "O n\xFAcleo \xE9 delimitado pela membrana chamada carioteca, a
+      qual possui poros que permitem a comunica\xE7\xE3o com o citoplasma, al\xE9m
+      da conex\xE3o com o Ret\xEDculo Endoplasm\xE1tico Rugoso. No n\xFAcleo est\xE3o
+      os cromossomas e um ou mais nucl\xE9olos. Os cromossomas s\xE3o formados por
+      mol\xE9culas de DNA que est\xE3o envoltos por prote\xEDnas. Os nucl\xE9olos
+      s\xE3o estruturas onde ocorre o ac\xFAmulo de mol\xE9culas de RNA riboss\xF4mico
+      (rRNA) e RNA transportador (tRNA), ap\xF3s serem sintetizados, al\xE9m de prote\xEDnas.
+      Os rRNA , ap\xF3s serem transportados  para o citoplasma ir\xE3o formar os
+      ribossomos. Quando a c\xE9lula n\xE3o est\xE1 em divis\xE3o, os cromossomos
+      se apresentam como emaranhados de filamentos longos e finos de DNA disperso
+      no fluido nuclear, constituindo a chamada cromatina. As por\xE7\xF5es condensadas
+      da cromatina constituem a heterocromatina, enquanto as regi\xF5es menos condensadas
+      constituem a eucromatina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1
+    m_Localized: "O ret\xEDculo endoplasm\xE1tico rugoso \xE9 um sistema de canais
+      limitados por membranas lipoprot\xE9icas na forma de s\xE1culos e ves\xEDculas
+      achatadas que se comunicam com a carioteca. Possui ribossomos aderidos \xE0
+      face da membrana voltada ao citoplasma. Suas fun\xE7\xF5es compreendem o transporte
+      intracelular de prote\xEDnas, sintetizadas pelos ribossomos, bem como por modifica\xE7\xF5es
+      que algumas prote\xEDnas podem sofrer, at\xE9 serem encaminhadas ao complexo
+      de Golgi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "O ret\xEDculo endoplasm\xE1tico liso \xE9 um sistema de canais
+      tubulares limitados por membranas lipoprot\xE9icas, continuados a partir do
+      ret\xEDculo endoplasm\xE1tico rugoso. N\xE3o possui ribossomos aderidos. Suas
+      fun\xE7\xF5es compreendem o transporte intracelular de subst\xE2ncias, s\xEDntese
+      de lip\xEDdeos, inativa\xE7\xE3o de  subst\xE2ncias t\xF3xicas \xE0s c\xE9lulas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "O centr\xEDolo \xE9 uma estrutura cil\xEDndrica constitu\xEDda
+      por feixes de tr\xEAs microt\xFAbulos paralelos. Os centr\xEDolos est\xE3o
+      ausentes em procariontes e nas plantas com flores, enquanto que nos animais
+      dois centr\xEDolos perpendiculares geralmente est\xE3o presentes. Ap\xF3s duplicarem-se
+      orientam a forma\xE7\xE3o das fibras do fuso durante a divis\xE3o celular.
+      Tamb\xE9m atuam na forma\xE7\xE3o de c\xEDlios e flagelos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "As mitoc\xF4ndrias t\xEAm como fun\xE7\xE3o a produ\xE7\xE3o de
+      energia atrav\xE9s do processo de respira\xE7\xE3o celular aer\xF3bica. Ela
+      possui duas membranas: uma externa lisa e cont\xEDnua e outra interna, pregueada
+      devido \xE0s invagina\xE7\xF5es que formam as cristas mitocondriais. A membrana
+      interna delimita o interior das mitoc\xF4ndrias, ou seja, sua matriz, onde
+      est\xE1 mergulhado o DNA mitocondrial, enzimas e outros componentes da matriz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "O complexo de Golgi \xE9 constitu\xEDdo por um sistema de ves\xEDculas
+      membranosas, al\xE9m de outras menores esf\xE9ricas que se formam a partir
+      das primeiras. Suas membranas s\xE3o lipoproteicas e nunca apresentam ribossomos
+      aderidos. Suas fun\xE7\xF5es est\xE3o relacionadas com o armazenamento e o
+      encaminhamento das  prote\xEDnas produzidas no ret\xEDculo endoplasm\xE1tico
+      rugoso. As ves\xEDculas menores transportam as macromol\xE9culas sintetizadas
+      para outros locais, dentro ou fora das c\xE9lulas. No complexo de Golgi tamb\xE9m
+      ocorre a s\xEDntese de polissacar\xEDdeos, sendo que alguns deles ser\xE3o
+      ligados \xE0s prote\xEDnas para formar as glicoprote\xEDnas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "Os lisossomos surgem com as ves\xEDculas liberadas pelo Complexo
+      de Golgi. Possuem formato geralmente esf\xE9rico e s\xE3o constitu\xEDdos por
+      uma membrana que envolve enzimas hidrol\xEDticas. Sua fun\xE7\xE3o est\xE1
+      relacionada \xE0 digest\xE3o intracelular, tanto de part\xEDculas alimentares,
+      que s\xE3o incorporadas pela c\xE9lula, como de componentes celulares desgastados
+      ou danificados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: "N\xFAcleo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "Ret\xEDculo endoplasm\xE1tico rugoso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: "Ret\xEDculo endoplasm\xE1tico liso"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: "Centr\xEDolo "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: "Mitoc\xF4ndrias"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Complexo de Golgi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: Lisossomos
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
