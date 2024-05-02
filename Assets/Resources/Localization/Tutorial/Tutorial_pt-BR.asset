@@ -49,24 +49,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: 'Still talking about the phases at the <color=green>top</color>,
-      a little detail about the phase is detailed, the content is part of the mission
-      text that you have already seen, but will always be available.
-
-      
-
-      In
-      the <color=green>left box</color>, you will have brief information on how to
-      play the game in case you forget, they are short but very useful.'
+    m_Localized: "Ainda falando sobre as fases na <color=green>parte superior</color>
+      est\xE1 detalhado um pouco sobre a fase, o conte\xFAdo faz parte do texto da
+      miss\xE3o que voc\xEA j\xE1 viu, mas sempre estar\xE1 dispon\xEDvel.\n\nNa
+      <color=green>caixa da esquerda</color> voc\xEA ter\xE1 informa\xE7\xF5es breves
+      sobre como jogar o jogo caso se esquecer, elas s\xE3o curtas mas muito \xFAteis."
     m_Metadata:
       m_Items: []
   - m_Id: 5
-    m_Localized: "Parecem muitas informa\xE7\xF5es, mas elas est\xE3o bem dilu\xEDdas,
+    m_Localized: "Aparecem muitas informa\xE7\xF5es, mas elas est\xE3o bem dilu\xEDdas,
       especialmente nas fases, onde mais informa\xE7\xF5es aparecem, mas s\xE3o poss\xEDveis
       de serem vistas novamente com um bot\xE3o de <color=green>instru\xE7\xF5es</color>
       caso a fase seja complexa.\n\nEsperamos que goste do jogo, para come\xE7as
       a jogar \xE9 s\xF3 clicar no <color=green>bot\xE3o de fechar</color> ou na
-      <color=green>seta direita no canto inferior direito</color>.\n\nSe diverta
+      <color=green>seta direita no canto inferior direito</color>. \n\nSe diverta
       !!!"
     m_Metadata:
       m_Items: []

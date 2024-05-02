@@ -23,10 +23,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1
-    m_Localized: '
-
-      Welcome to the game <color=green>"Protein Synthesis"</color>
-      Here''s a quick tutorial to help you navigate the game without feeling lost.
+    m_Localized: 'Welcome to the game <color=green>"Protein Synthesis"</color> Here''s
+      a quick tutorial to help you navigate the game without feeling lost.
 
 
       If
@@ -48,7 +46,7 @@ MonoBehaviour:
 
 
       By clicking on the button with the name of the currently synthesized
-      protein, you''ll get more information about the game phases.'
+      protein, you''ll get more information about the game phases'
     m_Metadata:
       m_Items: []
   - m_Id: 3
@@ -59,21 +57,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: "If you clicked on the protein button at the bottom (as mentioned
-      in the previous session), you noticed that there are some <color=blue>highlighted</color>
-      words. \n\nIf you click on them, an extra page with additional protein information
-      will appear."
+    m_Localized: 'Still talking about the stages on the <color=green>top part</color>,
+      there''s a bit of detail about the stage. The content is part of the mission
+      text you''ve already seen, but it will always be available.
+
+      
+
+      In
+      the <color=green>left box</color>, you''ll find brief information on how to
+      play the game in case you forget. They''re short but very useful.'
     m_Metadata:
       m_Items: []
   - m_Id: 5
-    m_Localized: 'It seems like a lot of information, but it''s well-distributed,
-      especially in the phases, where more information appears but can be viewed
-      again with an <color=green>instructions</color> button if the phase is complex.
+    m_Localized: 'A lot of information appears, but it is very diluted, especially
+      in the phases, where more information appears, but it is possible to be seen
+      again with a <color=green>instructions</color> button if the phase is complex.
 
 
       We
       hope you enjoy the game, to start playing just click on the <color=green>close
-      button</color> or on the <color=green>right arrow in the bottom right corner</color>.
+      button</color> or the <color=green>right arrow in the bottom right corner</color>.
 
 
       Have
