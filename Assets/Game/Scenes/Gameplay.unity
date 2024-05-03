@@ -1428,31 +1428,31 @@ PrefabInstance:
       objectReference: {fileID: 1219092995}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[0].messages.Array.data[0]
-      value: id_message_1
+      value: id_message_box_1
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[1].messages.Array.data[0]
-      value: id_message_2
+      value: id_message_box_2
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[1].messages.Array.data[1]
-      value: id_message_3
+      value: id_message_box_3
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[2].messages.Array.data[0]
-      value: id_message_4
+      value: id_message_box_4
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[3].messages.Array.data[0]
-      value: id_message_5
+      value: id_message_box_5
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[4].messages.Array.data[0]
-      value: id_message_6
+      value: id_message_box_6
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265380, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: gamePhases.Array.data[4].messages.Array.data[1]
-      value: id_message_7
+      value: id_message_box_7
       objectReference: {fileID: 0}
     - target: {fileID: 7295050311995265381, guid: d43c02c6986570346b6e0e743ef371e7, type: 3}
       propertyPath: m_Pivot.x
