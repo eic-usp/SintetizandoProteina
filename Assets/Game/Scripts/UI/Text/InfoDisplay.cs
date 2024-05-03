@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 
 /*
     Used in the gameplay by the object InfoDisplay
@@ -15,6 +17,7 @@ namespace UI.Text
         [SerializeField] TextMeshProUGUI totalMessages; //Information in the display (X/TOTAL)
         [SerializeField] TextMeshProUGUI actualMessage; //Actual message (ACTUAL/TOTAL)
         [SerializeField] TextMeshProUGUI messageContent; //Content, here we show the message
+        [SerializeField] LocalizeStringEvent messageContentLocalized; //Content, here we show the message, localized
 
         private int actualMessageIndex;
 
@@ -41,7 +44,8 @@ namespace UI.Text
         private void ShowText()
         {
             actualMessage.text = (actualMessageIndex + 1).ToString();
-            messageContent.text = messages[actualMessageIndex];
+            //messageContent.text = messages[actualMessageIndex];
+            messageContentLocalized.StringReference = new LocalizedString(LocalizationManager.Subtitles, messages[actualMessageIndex]);
         }
 
         public void IncreaceMessage(int increace)

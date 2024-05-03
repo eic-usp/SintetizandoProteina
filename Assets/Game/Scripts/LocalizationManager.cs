@@ -14,6 +14,7 @@ public class LocalizationManager : MonoBehaviour
     public static readonly string BoxExtra = "BoxExtra";
     public static readonly string BoxExtraProtein = "BoxExtraProteins";
     public static readonly string Mission = "Mission";
+    public static readonly string Phases = "Phases";
 
     void Start()
     {

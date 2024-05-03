@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Phases
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: af0630ccbb05103429116160dc0530b4, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: ace5ee8f5f978224c83f5f2ffca9b409, type: 2}
+  - {fileID: 11400000, guid: 1a64f3022cb65924aa46c66a2949f54e, type: 2}
+  m_Extensions:
+  - rid: 443400138252877827
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 443400138252877827
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 443400138252877828
+        - rid: 443400138252877829
+        - rid: 443400138252877830
+        m_ConnectedFile: 
+    - rid: 443400138252877828
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 1
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 443400138252877829
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en-US
+        m_FieldName: English(en-us)
+        m_CommentFieldName: English (United States)(en-US) Comments
+        m_IncludeComments: 1
+    - rid: 443400138252877830
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: pt-BR
+        m_FieldName: "Portugu\xEAs(pt-br)"
+        m_CommentFieldName: Portuguese (Brazil)(pt-BR) Comments
+        m_IncludeComments: 1

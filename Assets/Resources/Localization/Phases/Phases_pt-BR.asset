@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Phases_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: af0630ccbb05103429116160dc0530b4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1
+    m_Localized: "Inicie a pr\xF3xima fase para obter as dicas e informa\xE7\xF5es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "Na imagem ao lado voc\xEA observa uma c\xE9lula eucarionte, com
+      as suas estruturas. O n\xFAcleo  \xE9 o centro de controle das atividades celulares,
+      tem formato arredondado, com v\xE1rios poros."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "No espa\xE7o ao lado voc\xEA deve formar o RNAm adicionando as
+      bases nitrogenadas complementares, observando as bases do DNA: Guanina com
+      Citosina, e Adenina com Timina ou Uracila."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "Preste ATEN\xC7\xC3O: A Uracila \xE9 inserida apenas no RNA e \xE9
+      complementar \xE0 Adenina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "Fa\xE7a a leitura do disco do centro para a periferia e encontre
+      o amino\xE1cido correspondente a trinca de bases do RNAm, por exemplo: AUG=Met."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "Leia atentamente o texto ao lado para entender melhor sobre o processamento
+      da prote\xEDna escolhida. Se atente \xE0 fun\xE7\xE3o dela, pois ser\xE1 importante
+      na pr\xF3xima miss\xE3o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: "Responda a quest\xE3o ao lado de acordo com a destina\xE7\xE3o
+      correta da prote\xEDna que voc\xEA escolheu, ou seja, indique se ela atua 
+      dentro da pr\xF3pria c\xE9lula, se \xE9 liberada na corrente sangu\xEDnea e
+      ir\xE1 atuar em \xF3rg\xE3os, ou em outras c\xE9lulas espec\xEDficas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "Se precisar de ajuda, clique no bot\xE3o com o nome da prote\xEDna
+      e fa\xE7a a associa\xE7\xE3o correta."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
