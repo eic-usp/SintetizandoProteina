@@ -95,6 +95,15 @@ MonoBehaviour:
       sua s\xEDntese e processamento e responda o quiz para finalizar a sua jornada!"
     m_Metadata:
       m_Items: []
+  - m_Id: 11
+    m_Localized: "Para o c\xF3don GCC, este \xE9 o caminho que voc\xEA deve observar
+      na tabela para sintetizar seu respectivo amino\xE1cido: Ala - (Alanina)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Ala - (Alanina)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

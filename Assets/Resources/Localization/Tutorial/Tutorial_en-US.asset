@@ -112,6 +112,15 @@ MonoBehaviour:
       and processing and answer the quiz to conclude your journey!
     m_Metadata:
       m_Items: []
+  - m_Id: 11
+    m_Localized: 'For the GCC codon, this is the pathway you should look at in the
+      table to synthesize its respective amino acid: Ala - (Alanine).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Ala - (Alanine)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

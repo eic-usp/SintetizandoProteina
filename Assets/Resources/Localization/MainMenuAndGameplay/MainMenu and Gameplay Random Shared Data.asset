@@ -87,6 +87,14 @@ MonoBehaviour:
     m_Key: id_mission_manager_header
     m_Metadata:
       m_Items: []
+  - m_Id: 18
+    m_Key: id_codon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19
+    m_Key: id_instructions
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

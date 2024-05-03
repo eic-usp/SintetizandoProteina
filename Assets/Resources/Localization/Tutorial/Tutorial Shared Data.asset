@@ -59,6 +59,14 @@ MonoBehaviour:
     m_Key: id_mission_5_instruction
     m_Metadata:
       m_Items: []
+  - m_Id: 11
+    m_Key: id_codon_tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Key: id_codon_tutorial_ala
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
