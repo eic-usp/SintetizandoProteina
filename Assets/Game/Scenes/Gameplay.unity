@@ -6609,6 +6609,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -24.999878
       objectReference: {fileID: 0}
+    - target: {fileID: 4582998860124075883, guid: 6d54d8a3187fafa418b9755ba5df9591, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4623283752517306349, guid: 6d54d8a3187fafa418b9755ba5df9591, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -6673,7 +6677,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8654045074194418227, guid: 6d54d8a3187fafa418b9755ba5df9591, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
