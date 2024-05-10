@@ -107,11 +107,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 20
-    m_Localized: Congratulation ! You did <color=#FCA065><u>
+    m_Localized: Congratulation ! You made <color=#FCA065><u>
     m_Metadata:
       m_Items: []
   - m_Id: 21
     m_Localized: </u></color> points!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22
+    m_Localized: menu
     m_Metadata:
       m_Items: []
   references:

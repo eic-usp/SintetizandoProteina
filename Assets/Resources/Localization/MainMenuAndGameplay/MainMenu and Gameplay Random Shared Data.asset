@@ -103,6 +103,10 @@ MonoBehaviour:
     m_Key: id_ending_congratulation_points
     m_Metadata:
       m_Items: []
+  - m_Id: 22
+    m_Key: id_menu
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

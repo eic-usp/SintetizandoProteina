@@ -9,7 +9,8 @@ namespace UI.Menu
     
         private void OnEnable()
         {
-            scoreText.text = $"Parabéns! Você fez <color=#FCA065><u>{ScoreManager.Instance.Score}</u></color> pontos!";
+            scoreText.text = 
+                $"{LocalizationManager.FindStringReference(LocalizationManager.MainMenuAndGameplayRandoms, "id_ending_congratulation").Value}{ScoreManager.Instance.Score}{LocalizationManager.FindStringReference(LocalizationManager.MainMenuAndGameplayRandoms, "id_ending_congratulation_points").Value}";
         }
         
         public void BackToMenu() => GameSceneManagement.Loader.Load(GameSceneManagement.Loader.Scene.UIBeg);
