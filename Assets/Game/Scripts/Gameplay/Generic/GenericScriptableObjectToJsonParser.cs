@@ -65,8 +65,15 @@ namespace Game.Scripts.Gameplay.Generic
             try
             {
                 // Write the string to the file
-                File.WriteAllText(path, GetJson(scriptable));
+                using (StreamWriter writer = new StreamWriter(path, false))
+                {
+                    // Get the JSON content from the ScriptableObject
+                    string jsonContent = GetJson(scriptable);
 
+                    // Write the JSON content to the file
+                    writer.WriteLine(jsonContent);
+                    writer.Close();
+                }
                 Debug.Log("File created successfully at: " + path);
             }
             catch (Exception ex)

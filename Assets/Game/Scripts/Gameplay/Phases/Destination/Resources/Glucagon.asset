@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f94e2ecf11f9654ebbca7afecd94671, type: 3}
   m_Name: Glucagon
   m_EditorClassIdentifier: 
-  nameFile: gluc
+  nameFile: QuizDataGlucagon
   fields:
   - nameField: questions
     typeContent: 0
