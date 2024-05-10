@@ -93,6 +93,13 @@ MonoBehaviour:
     - Locale-pt-BR
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3eccd17dcc4f93d4594b31d2a93b7b92
+    m_Address: Quiz_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 25031723ded86e946ace0782edc6a15b, type: 2}
   m_SchemaSet:

@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quiz_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 04f34d4c2f8a5e84b806288cb756afb8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1
+    m_Localized: After the synthesis and processing of glucagon, this hormone is
+      transported to which part of the body to perform its function?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: Blood flow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: Pancreas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: Liver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: Skin cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: The function of glucagon is to assist in the breakdown of glycogen
+      to increase the body's glucose levels. In which organ does glucagon act to
+      achieve this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: Pancreas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: Liver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: Skin granules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: Blood flow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: What happens when the glucose level decreases in the body?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: Glucagon exits the granules of the skin and heads to the pancreas
+      to release glucose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: Glucagon is released from the lysosomes and heads to the liver to
+      release glucose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Localized: Glucagon heads to the bloodstream and carries glucose molecules
+      into the cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Localized: Glucagon is released from the granules of the pancreas and, in the
+      liver, breaks down glycogen releasing glucose.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16
+    m_Localized: After the synthesis and processing of acid hydrolase, to which cellular
+      structure is this protein destined to perform its function?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17
+    m_Localized: Lysosomes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18
+    m_Localized: Golgi apparatus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19
+    m_Localized: Endoplasmic reticulum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20
+    m_Localized: Cytoplasm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21
+    m_Localized: Acid hydrolases are proteins that act in the degradation of microorganisms
+      that penetrate our body. After being synthesized, to which cells are they transported?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22
+    m_Localized: Bloodstream cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23
+    m_Localized: Pancreatic cells, where they will carry out the degradation of microorganisms
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24
+    m_Localized: Lysosomes, within the same cell where they were synthesized.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25
+    m_Localized: Skin cells, where they will phagocytize microorganisms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26
+    m_Localized: 'After the synthesis and processing of proinsulin, the hormone insulin
+      is secreted to:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27
+    m_Localized: Skin cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28
+    m_Localized: Blood flow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29
+    m_Localized: Liver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30
+    m_Localized: Lysosomes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31
+    m_Localized: Insulin's function is to decrease the levels of circulating glucose
+      that increase after meals. How is it transported to the different tissues of
+      the body?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32
+    m_Localized: Through the respiratory system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33
+    m_Localized: Through the urinary system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34
+    m_Localized: Through the endocrine system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35
+    m_Localized: Through the circulatory system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36
+    m_Localized: What happens when the glucose level increases in the body?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37
+    m_Localized: Insulin is released from the granules of the pancreas into the bloodstream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38
+    m_Localized: Glucagon is released from the granules of the pancreas and heads
+      to the bloodstream
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39
+    m_Localized: Insulin is released from the lysosomes to act on the cells of the
+      pancreas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40
+    m_Localized: Melanin is released from the granules and acts on the skin cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41
+    m_Localized: After the synthesis and processing of melanin, in which part of
+      the body will this protein perform its function?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42
+    m_Localized: Liver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43
+    m_Localized: Stomach
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44
+    m_Localized: Blood flow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45
+    m_Localized: Cells and structures of the skin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46
+    m_Localized: 'Melanin is a pigment produced by the action of the enzyme tyrosinase
+      on the amino acid tyrosine, which protects the body from solar radiation. To
+      perform its function, this pigment needs to be transported to specific tissues
+      of the body such as:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47
+    m_Localized: Only the skin cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48
+    m_Localized: Skin cells (epithelium) and hair follicles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49
+    m_Localized: Blood cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50
+    m_Localized: Nail cells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51
+    m_Localized: In which structure of the skin cells is melanin accumulated?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52
+    m_Localized: In the lysosomes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53
+    m_Localized: In the mitochondria.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54
+    m_Localized: In the melanocytes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55
+    m_Localized: In the ribosomes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56
+    m_Localized: Glucagon is another hormone produced by the pancreas in the form
+      of proglucagon in cells known as the Islets of Langerhans. When blood sugar
+      levels are low (hypoglycemia), proglucagon is converted into glucagon, which
+      is released into the bloodstream and will act on liver cells. Glucagon will
+      act on the liver by breaking down glycogen molecules (glucose polymer), stored
+      in this organ, to release glucose into circulation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57
+    m_Localized: Acid hydrolases are enzymes produced by phagocytes, which after
+      their synthesis and processing, are directed to the Golgi apparatus and stored
+      in vesicles in the cytoplasm. When cells undergo the process of phagocytosis
+      (engulfment of foreign molecules in the body, bacteria, viruses), the material
+      is stored in vesicles called phagosomes. The vesicles containing hydrolases
+      (lysosomes) + phagosomes fuse so that the foreign particles can be degraded.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58
+    m_Localized: Insulin is synthesized in the pancreas in the form of a precursor
+      called proinsulin and is stored in the cells of this organ. To become active,
+      it undergoes a breakdown ("processing") and is stored in secretory granules
+      of the pancreas. When blood glucose levels increase, proinsulin is converted,
+      with the help of enzymes, into active insulin, which is then released into
+      the bloodstream to perform its physiological function, namely, participating
+      in the process of transporting glucose into cells in different tissues of the
+      body.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59
+    m_Localized: Melanin is a pigment produced by cells called melanocytes, which
+      gives color to the skin, hair, and eyes. The amino acid tyrosine undergoes
+      a process of oxidation in these cells by an enzyme called tyrosinase, which
+      transforms it into melanin, resulting in skin pigmentation. The amount of melanin
+      we produce is genetically determined, which is why people have skin, hair,
+      and eyes of varying color intensities. It protects the DNA of our cells from
+      the effects of solar radiation, which is why we tan when exposed to sunlight,
+      meaning that the highest amount of melanin is produced on these occasions.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

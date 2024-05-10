@@ -1,0 +1,309 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quiz_pt-BR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt-BR
+  m_SharedData: {fileID: 11400000, guid: 04f34d4c2f8a5e84b806288cb756afb8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1
+    m_Localized: "Ap\xF3s a s\xEDntese e processamento do glucagon, esse horm\xF4nio
+      \xE9 transportado para qual parte do organismo para efetuar sua fun\xE7\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2
+    m_Localized: "Corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3
+    m_Localized: "P\xE2ncreas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4
+    m_Localized: "F\xEDgado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5
+    m_Localized: "C\xE9lulas da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6
+    m_Localized: "O glucagon tem como fun\xE7\xE3o auxiliar a quebra do glicog\xEAnio
+      para aumentar os n\xEDveis de glicose do corpo. Para que isso ocorra, em qual
+      \xF3rg\xE3o o glucagon ir\xE1 agir?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7
+    m_Localized: "P\xE2ncreas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8
+    m_Localized: "F\xEDgado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9
+    m_Localized: "Gr\xE2nulos da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10
+    m_Localized: "Corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11
+    m_Localized: "O que acontece quando o n\xEDvel de glicose diminui no organismo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12
+    m_Localized: "O glucagon sai dos gr\xE2nulos da pele e se dirige para o p\xE2ncreas
+      para liberar glicose"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13
+    m_Localized: "O glucagon \xE9 liberado dos lisossomos e se dirige para o f\xEDgado
+      para liberar a glicose"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14
+    m_Localized: "O glucagon se dirige \xE0 corrente sangu\xEDnea e leva as mol\xE9culas
+      de glicose para dentro das c\xE9lulas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15
+    m_Localized: "O glucagon \xE9 liberado dos gr\xE2nulos do p\xE2ncreas e, no f\xEDgado,
+      quebra o glicog\xEAnio liberando glicose"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16
+    m_Localized: "Ap\xF3s a s\xEDntese e processamento da hidrolase \xE1cida, essa
+      prote\xEDna \xE9 destinada a qual estrutura celular para exercer sua fun\xE7\xE3o?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17
+    m_Localized: Lisossomos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18
+    m_Localized: Complexo de Golgi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19
+    m_Localized: "Ret\xEDculo Endoplasm\xE1tico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20
+    m_Localized: Citoplasma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21
+    m_Localized: "As hidrolases \xE1cidas s\xE3o prote\xEDnas que atuam na degrada\xE7\xE3o
+      de microrganismos que penetram em nosso organismo. Ap\xF3s serem sintetizadas
+      para quais c\xE9lulas s\xE3o transportadas?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22
+    m_Localized: "C\xE9lulas da corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23
+    m_Localized: "C\xE9lulas do p\xE2ncreas, onde ir\xE3o efetuar a degrada\xE7\xE3o
+      dos microrganismos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24
+    m_Localized: "Lisossomos, dentro da pr\xF3pria c\xE9lula onde foi sintetizada"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25
+    m_Localized: "C\xE9lulas da pele, onde ir\xE3o fagocitar os microrganismos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26
+    m_Localized: "Ap\xF3s a s\xEDntese e processamento da proinsulina, o horm\xF4nio
+      insulina \xE9 excretado para:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27
+    m_Localized: "C\xE9lulas da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28
+    m_Localized: "Corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29
+    m_Localized: "F\xEDgado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30
+    m_Localized: Lisossomos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31
+    m_Localized: "A insulina tem como fun\xE7\xE3o diminuir os n\xEDveis de glicose
+      circulante que aumentam ap\xF3s as refei\xE7\xF5es. Como ela \xE9 transportada
+      para os diferentes tecidos do organismo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32
+    m_Localized: "Pelo sistema respirat\xF3rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33
+    m_Localized: "Pelo sistema urin\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34
+    m_Localized: "Pelo sistema end\xF3crino"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35
+    m_Localized: "Pelo sistema circulat\xF3rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36
+    m_Localized: "O que acontece quando o n\xEDvel de glicose aumenta no organismo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37
+    m_Localized: "A insulina \xE9 liberada dos gr\xE2nulos do p\xE2ncreas para a
+      corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38
+    m_Localized: "O glucagon \xE9 liberado dos gr\xE2nulos do p\xE2ncreas e se dirige
+      para a corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 39
+    m_Localized: "A insulina \xE9 liberada dos lisossomos para atuar nas c\xE9lulas
+      do p\xE2ncreas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40
+    m_Localized: "A melanina \xE9 liberada dos gr\xE2nulos e atua nas c\xE9lulas
+      da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41
+    m_Localized: "Ap\xF3s a s\xEDntese e processamento da melanina, essa prote\xEDna
+      ir\xE1 exercer sua fun\xE7\xE3o em qual parte do corpo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42
+    m_Localized: "F\xEDgado"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43
+    m_Localized: "Est\xF4mago"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 44
+    m_Localized: "Corrente sangu\xEDnea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45
+    m_Localized: "C\xE9lulas e estruturas da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46
+    m_Localized: "A melanina \xE9 um pigmento produzido pela a\xE7\xE3o da enzima
+      tirosinase sobre o amino\xE1cido tirosina, que protege o organismo das radia\xE7\xF5es
+      solares. Para que esse pigmento efetue sua fun\xE7\xE3o, ele precisa ser transportado
+      para tecidos espec\xEDficos do organismo como:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47
+    m_Localized: "Somente as c\xE9lulas da pele"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48
+    m_Localized: "C\xE9lulas da pele (epit\xE9lio) e fol\xEDculos pilosos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49
+    m_Localized: "C\xE9lulas do sangue"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50
+    m_Localized: "C\xE9lulas das unhas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51
+    m_Localized: "Em qual estrutura das c\xE9lulas da pele a melanina \xE9 acumulada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52
+    m_Localized: Nos lisossomos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53
+    m_Localized: "Nas mitoc\xF4ndrias"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54
+    m_Localized: "Nos melan\xF3citos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55
+    m_Localized: Nos ribossomos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 56
+    m_Localized: "O glucagon \xE9 outro horm\xF4nio produzido pelo  p\xE2ncreas na
+      forma de proglucagon em c\xE9lulas conhecidas como Ilhotas de Langerhans. Quando
+      os n\xEDveis de a\xE7\xFAcar no sangue est\xE3o baixos (hipoglicemia), o proglucagon
+      \xE9 convertido em glucagon que \xE9 liberado na corrente sangu\xEDnea e ir\xE1
+      atuar  em c\xE9lulas do f\xEDgado. O glucagon ir\xE1 atuar no f\xEDgado quebrando
+      as mol\xE9culas de glicog\xEAnio (pol\xEDmero de glicose), armazenadas neste
+      \xF3rg\xE3o, para libera\xE7\xE3o de glicose na circula\xE7\xE3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57
+    m_Localized: "As hidrolases \xE1cidas s\xE3o enzimas produzidas pelos fag\xF3citos,
+      que ap\xF3s sua s\xEDntese e processamento, s\xE3o  encaminhadas para o Complexo
+      de Golgi e ficam armazenadas em ves\xEDculas no citoplasma. Quando as c\xE9lulas
+      realizam o processo de fagocitose (englobamento de  mol\xE9culas estranhas 
+      ao organismo, bact\xE9rias, v\xEDrus), o material fica armazenado em ves\xEDculas
+      chamadas fagossomos As ves\xEDculas contendo hidrolases (lisossomos) + fagossomos
+      se fundem, para que as part\xEDculas estranhas sejam degradadas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58
+    m_Localized: "A insulina \xE9 sintetizada no p\xE2ncreas na forma de um precursor
+      chamado proinsulina e fica armazenada nas c\xE9lulas deste  \xF3rg\xE3o. Para
+      se tornar ativa ela sofre uma  quebra (\u201Cprocessamento\u201D),  e  fica
+      armazenada em  gr\xE2nulos de secre\xE7\xE3o do p\xE2ncreas. Quando h\xE1 o
+      aumento dos n\xEDveis de glicose no sangue  a proinsulina \xE9 convertida,
+      com o aux\xEDlio de enzimas, em insulina ativa, que ser\xE1 liberada  na corrente
+      sangu\xEDnea para exercer sua fun\xE7\xE3o fisiol\xF3gica, ou seja, participar
+      do processo de transporte de glicose para dentro das c\xE9lulas em diferentes
+      tecidos do organismo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59
+    m_Localized: "A melanina \xE9 um pigmento  produzido  por c\xE9lulas chamadas
+      melan\xF3citos e que d\xE1 cor \xE0 pele, cabelo, olhos.  O amino\xE1cido tirosina
+      sofre um processo de oxida\xE7\xE3o, nestas c\xE9lulas,  por uma enzima chamada
+      de tirosinase, que o transforma   em melanina, ocasionando a pigmenta\xE7\xE3o
+      da pele. A quantidade de melanina que produzimos \xE9 determinada geneticamente,
+      por isso as pessoas t\xEAm pele, cabelos e olhos de diferentes intensidade
+      de cor. Ela protege o DNA de nossas c\xE9lulas do efeito das radia\xE7\xF5es
+      solares, e \xE9 por isso  que ficamos bronzeados quando tomamos sol, ou seja,
+      a maior quantidade de melanina \xE9 produzida nestas ocasi\xF5es."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
