@@ -103,6 +103,14 @@ MonoBehaviour:
     m_Localized: "Instru\xE7\xF5es"
     m_Metadata:
       m_Items: []
+  - m_Id: 20
+    m_Localized: "Parab\xE9ns! Voc\xEA fez <color=#FCA065><u>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21
+    m_Localized: </u></color> pontos!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
