@@ -31,10 +31,8 @@ namespace UI.Protein.Info
 
         private void Start()
         {
-            descriptionProtein.StringReference = new LocalizedString(
-                LocalizationManager.BoxExtraProtein, 
-                toShow.sp.GetDescriptionProtein());
-            
+            LocalizationManager.SetStringReference(descriptionProtein, LocalizationManager.BoxExtraProtein,toShow.sp.GetDescriptionProtein());
+
             Instantiate(toShow.transformedProtein, positionOfTransformedProtein);
         }
 
@@ -62,14 +60,9 @@ namespace UI.Protein.Info
             
             lastExtra = index;
             boxTextExtraDescription.SetActive(true);
-
-            nameExtraData.StringReference = new LocalizedString(
-                LocalizationManager.BoxExtra, 
-                toShow.sp.GetNameExtra(key, index));
             
-            textDescriptionExtraData.StringReference = new LocalizedString(
-                LocalizationManager.BoxExtra, 
-                toShow.sp.GetDescriptionTextExtra(key, index));
+            LocalizationManager.SetStringReference(nameExtraData, LocalizationManager.BoxExtra,toShow.sp.GetNameExtra(key, index));
+            LocalizationManager.SetStringReference(textDescriptionExtraData, LocalizationManager.BoxExtra,toShow.sp.GetDescriptionTextExtra(key, index));
 
             scrollRectExtraData.verticalNormalizedPosition = 1f;
         }

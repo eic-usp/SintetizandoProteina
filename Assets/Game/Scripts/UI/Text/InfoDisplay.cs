@@ -45,7 +45,7 @@ namespace UI.Text
         {
             actualMessage.text = (actualMessageIndex + 1).ToString();
             //messageContent.text = messages[actualMessageIndex];
-            messageContentLocalized.StringReference = new LocalizedString(LocalizationManager.Phases, messages[actualMessageIndex]);
+            LocalizationManager.SetStringReference(messageContentLocalized, LocalizationManager.Phases,messages[actualMessageIndex]);
         }
 
         public void IncreaceMessage(int increace)

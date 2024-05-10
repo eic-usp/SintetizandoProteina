@@ -4,6 +4,7 @@ using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using System.Collections;
 using System.Threading;
+using UnityEngine.Localization.Components;
 using UnityEngine.Localization.Tables;
 
 public class LocalizationManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class LocalizationManager : MonoBehaviour
     public static readonly string BoxExtraProtein = "BoxExtraProteins";
     public static readonly string Mission = "Mission";
     public static readonly string Phases = "Phases";
+    public static readonly string Quiz = "Quiz";
 
     void Start()
     {
@@ -51,6 +53,10 @@ public class LocalizationManager : MonoBehaviour
         yield return null;
     }
 
+    public static void SetStringReference(LocalizeStringEvent stringEvent, string table, string key)
+    {
+        stringEvent.StringReference = new LocalizedString(table, key);
+    }
     public static StringTable GetTable(string tableName)
     {
         var table = LocalizationSettings.StringDatabase.GetTable(tableName);

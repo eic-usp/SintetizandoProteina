@@ -16,7 +16,7 @@ namespace UI.Menu
         public void Setup(string nameCredit, string contentCredit, Sprite imageCredit)
         {
             this.nameCredit.text = nameCredit;
-            contentString.StringReference = new LocalizedString(LocalizationManager.DefaultTable, contentCredit);
+            LocalizationManager.SetStringReference(contentString, LocalizationManager.DefaultTable,contentCredit);
 
             this.imageCredit.sprite = imageCredit;
         }

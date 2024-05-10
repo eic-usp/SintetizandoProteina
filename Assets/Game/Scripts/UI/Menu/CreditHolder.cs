@@ -11,7 +11,7 @@ namespace UI.Menu
 
         public void Setup(string groupName)
         {
-            contentString.StringReference = new LocalizedString(LocalizationManager.DefaultTable, groupName);
+            LocalizationManager.SetStringReference(contentString, LocalizationManager.DefaultTable,groupName);
         }
     }
 }

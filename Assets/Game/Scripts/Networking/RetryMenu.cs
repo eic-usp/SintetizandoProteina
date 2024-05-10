@@ -100,6 +100,6 @@ public class RetryMenu : MonoBehaviour
 
     private void SetMessage(string errorCode)
     {
-        errorMessage.StringReference = new LocalizedString(LocalizationManager.MainMenuAndGameplayRandoms, errorCode);
+        LocalizationManager.SetStringReference(errorMessage, LocalizationManager.MainMenuAndGameplayRandoms,errorCode);
     }
 }

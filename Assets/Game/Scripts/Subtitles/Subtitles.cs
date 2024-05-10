@@ -60,12 +60,12 @@ namespace Game.Scripts.Subtitles
 
         private void SetReferenceToPeek()
         {
-            subtitleText.StringReference = new LocalizedString(LocalizationManager.Subtitles, _block.Peek().Text.Trim(_charsToTrim));
+            LocalizationManager.SetStringReference(subtitleText, LocalizationManager.Subtitles,_block.Peek().Text.Trim(_charsToTrim));
         }
 
         private void SetEmptyText()
         {
-            subtitleText.StringReference = new LocalizedString(LocalizationManager.Subtitles, "id_empty_subtitle");
+            LocalizationManager.SetStringReference(subtitleText, LocalizationManager.Subtitles,"id_empty_subtitle");
         }
         
     }
