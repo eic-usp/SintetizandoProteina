@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using TMPro;
+using UnityEngine.Localization.Components;
 
 namespace Phases.Processing
 {
@@ -10,9 +11,10 @@ namespace Phases.Processing
         [Space] [Header("Processing Manager Variables")] [Space]
         [SerializeField] private Cell.CellAnimator cellReference; //Used for the single purpose of animation
         [SerializeField] private GameObject processingDescriptionObject; 
-        [SerializeField] private TextMeshProUGUI processingDescriptionText;
+        [SerializeField] private LocalizeStringEvent processingDescriptionTextLocalized;
         [SerializeField] private Button continueButton;
 
+        [SerializeField] private string localizationTableKey = "Quiz";
         private void Start()
         {
             Setup();
@@ -25,7 +27,10 @@ namespace Phases.Processing
         private void Setup()
         {
             var protein = FindObjectOfType<GeneralScripts.Player.PlayerInfo>().ProteinName;
-            processingDescriptionText.text = Resources.Load<TextAsset>("ProcessingDescription/" + protein).text;
+            //processingDescriptionText.text = Resources.Load<TextAsset>("ProcessingDescription/" + protein).text;
+
+            LocalizationManager.SetStringReference(processingDescriptionTextLocalized, localizationTableKey,
+                Resources.Load<TextAsset>("ProcessingDescription/" + protein).text);
         }
 
         private async void PlayAMNQueueTransformation()

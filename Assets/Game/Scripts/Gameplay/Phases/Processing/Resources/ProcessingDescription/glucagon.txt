@@ -1,1 +1,1 @@
-﻿O glucagon é outro hormônio produzido pelo  pâncreas na forma de proglucagon em células conhecidas como Ilhotas de Langerhans. Quando os níveis de açúcar no sangue estão baixos (hipoglicemia), o proglucagon é convertido em glucagon que é liberado na corrente sanguínea e irá atuar  em células do fígado. O glucagon irá atuar no fígado quebrando as moléculas de glicogênio (polímero de glicose), armazenadas neste órgão, para liberação de glicose na circulação.
+﻿id_glucagon_processing_information
