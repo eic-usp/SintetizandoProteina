@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using Newtonsoft.Json;
 using UnityEngine;
 
 using Field = Game.Scripts.Gameplay.Generic.GenericScriptableObjectToJson.Field;
@@ -32,7 +31,7 @@ namespace Game.Scripts.Gameplay.Generic
             
             if (checkName && !validName)
             {
-                throw new JsonException();
+                throw new InvalidDataException();
             }
             
             //Add name
