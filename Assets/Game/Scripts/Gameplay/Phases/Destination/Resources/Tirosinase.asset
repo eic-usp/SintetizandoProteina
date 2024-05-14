@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f94e2ecf11f9654ebbca7afecd94671, type: 3}
+  m_Name: Tirosinase
+  m_EditorClassIdentifier: 
+  nameFile: QuizDataTirosinas
+  fields:
+  - nameField: questions
+    typeContent: 0
+    content: 
+    extraData:
+    - nameField: 
+      typeContent: 0
+      content: 
+      extraData:
+      - nameField: question
+        typeContent: 0
+        content: id_melanin_question_1
+        extraData: []
+      - nameField: correctOption
+        typeContent: 1
+        content: 4
+        extraData: []
+      - nameField: options
+        typeContent: 0
+        content: 
+        extraData:
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_1
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_2
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_3
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_4
+          extraData: []
+    - nameField: 
+      typeContent: 0
+      content: 
+      extraData:
+      - nameField: question
+        typeContent: 0
+        content: id_melanin_question_2
+        extraData: []
+      - nameField: correctOption
+        typeContent: 1
+        content: 2
+        extraData: []
+      - nameField: options
+        typeContent: 0
+        content: 
+        extraData:
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_5
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_6
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_7
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_8
+          extraData: []
+    - nameField: 
+      typeContent: 0
+      content: 
+      extraData:
+      - nameField: question
+        typeContent: 0
+        content: id_melanin_question_3
+        extraData: []
+      - nameField: correctOption
+        typeContent: 1
+        content: 3
+        extraData: []
+      - nameField: options
+        typeContent: 0
+        content: 
+        extraData:
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_9
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_10
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_11
+          extraData: []
+        - nameField: 
+          typeContent: 0
+          content: id_melanin_anwser_12
+          extraData: []

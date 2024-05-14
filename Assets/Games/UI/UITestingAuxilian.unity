@@ -298,4 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformToJson:
   - {fileID: 11400000, guid: 0057f8839c67cb94bb337068b3adcd35, type: 2}
+  - {fileID: 11400000, guid: 052644aea187adb4f8a53e4709a6fad2, type: 2}
+  - {fileID: 11400000, guid: 26160d0443d9372488679b975ec7cce1, type: 2}
+  - {fileID: 11400000, guid: eb927111c63b2034cbb2a118ec689517, type: 2}
   path: Game\Scripts\Gameplay\Phases\Destination\Resources
