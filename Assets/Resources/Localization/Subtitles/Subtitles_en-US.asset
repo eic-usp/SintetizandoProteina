@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: Since you arrived late, your teacher made you run around the court.
+    m_Localized: Since you arrived late, your teacher made you run around the field.
     m_Metadata:
       m_Items: []
   - m_Id: 5
@@ -49,8 +49,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7
-    m_Localized: This happens when the concentration of this sugar in the bloodstream
-      decreases too much, leading to a state of hypoglycemia.
+    m_Localized: This happens when the sugar concentration  in the bloodstream decreases
+      much, entering a state of hypoglycemia.
     m_Metadata:
       m_Items: []
   - m_Id: 8
@@ -63,12 +63,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10
-    m_Localized: You were having a very strong flu and decided to go to the doctor.
+    m_Localized: You had a bad flu and decided to go to the doctor.
     m_Metadata:
       m_Items: []
   - m_Id: 11
-    m_Localized: He said that although there are many medicines for the flu, none
-      truly cure it.
+    m_Localized: He said there are many medicines for the flu, but none really cure
+      it.
     m_Metadata:
       m_Items: []
   - m_Id: 12
@@ -76,12 +76,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13
-    m_Localized: 'So you should follow these recommendations: Rest; Eat well and
-      stay hydrated.'
+    m_Localized: 'So you should follow these recommendations: take a rest; eat well
+      and stay hydrated.'
     m_Metadata:
       m_Items: []
   - m_Id: 14
-    m_Localized: Wait for your immune system to fight off the invading microorganisms.
+    m_Localized: Wait for your defense system to fight the infectious agent.
     m_Metadata:
       m_Items: []
   - m_Id: 15
@@ -90,15 +90,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 16
     m_Localized: Every time you have lunch at your grandmother's house, she makes
-      a beautiful macaroni dish...
+      a very good macaroni dish...
     m_Metadata:
       m_Items: []
   - m_Id: 17
-    m_Localized: and that wonderful dessert afterward.
+    m_Localized: and after a wonderful dessert
     m_Metadata:
       m_Items: []
   - m_Id: 18
-    m_Localized: You always eat so much that you leave there with a stuffed belly.
+    m_Localized: You always eat so much that you leave there "too full."
     m_Metadata:
       m_Items: []
   - m_Id: 19
@@ -116,13 +116,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22
-    m_Localized: 'Causing: headache, nausea, vomiting, dizziness, blurred vision,
-      mental confusion, and can even lead to fainting.'
+    m_Localized: 'Sunstroke causes: headache, nausea, vomiting, dizziness, blurred
+      vision, mental confusion, which can lead to fainting.'
     m_Metadata:
       m_Items: []
   - m_Id: 23
-    m_Localized: Avoid all of this by not exposing yourself to strong sunlight for
-      long periods. Using sunscreen prevents skin burns.
+    m_Localized: 'Avoid this: don''t stay exposed to the sun for a long time, use
+      sunscreen to avoid burning your skin.'
     m_Metadata:
       m_Items: []
   - m_Id: 24
@@ -131,7 +131,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 25
-    m_Localized: it acts as protection against solar radiation.
+    m_Localized: It also has the function of protecting our skin by filtering ultra
+      violet rays, which can damage it
     m_Metadata:
       m_Items: []
   - m_Id: 26
@@ -139,7 +140,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 27
-    m_Localized: and the lighter the skin, the lesser the amount of melanin produced.
+    m_Localized: the lighter the skin, the less melanin is produced,
     m_Metadata:
       m_Items: []
   - m_Id: 28
@@ -147,8 +148,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 29
-    m_Localized: Furthermore, prolonged exposure to the sun can lead to the development
-      of skin cancer.
+    m_Localized: Furthermore, frequent and long-term sun exposure can lead to the
+      development of skin cancer.
     m_Metadata:
       m_Items: []
   references:

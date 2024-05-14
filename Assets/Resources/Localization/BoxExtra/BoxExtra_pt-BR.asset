@@ -52,20 +52,19 @@ MonoBehaviour:
       as mol\xE9culas de prote\xEDnas s\xE3o formadas. Os ribossomos s\xE3o constitu\xEDdos
       de duas subunidades, uma maior e outra menor, onde o RNAm ir\xE1 se ligar,
       para dar in\xEDcio \xE0 tradu\xE7\xE3o, ou seja, ao processo de s\xEDntese
-      de uma prote\xEDnas. Cada sequ\xEAncia de tr\xEAs nucleot\xEDdeos (chamada
-      de c\xF3dons) do RNAm \xE9 traduzida, com a ajuda de uma outra mol\xE9cula
-      de RNA, chamada de RNA transportador (tRNA), sendo que cada amino\xE1cido term
-      seu tRNA (tRNA-AA). Por exemplo, um RNAm de 18 nucleot\xEDdeos com a seguinte
-      sequ\xEAncia de bases: AUG-CAG-UGG-UCA-GCA-UAA, correspondem aos amino\xE1cidos
-      metionina, arginina, triptofano, serina, alanina. O c\xF3don inicial AUG \xE9
-      o iniciador (e sempre ser\xE1 a metionina), enquanto  que os c\xF3dons UAA,
-      UAG, UGA s\xE3o os finalizadores, ou seja, o ribossomo ir\xE1 ler toda a mol\xE9cula
-      de RNAm, iniciando na sequ\xEAncia espec\xEDfica (AUG), at\xE9 o \xFAltimo,
-      que \xE9 a sequ\xEAncia de t\xE9rmino (FIM). A cada amino\xE1cido adicionado,
-      eles se ligam formando uma liga\xE7\xE3o pept\xEDdica (que liga um amino\xE1cido
-      ao outro), assim uma prote\xEDna tamb\xE9m \xE9 chamada de cadeia polipept\xEDdica.
-      Quando chegar no c\xF3don de FIM a cadeia polipept\xEDdica se desliga do ribossomo
-      e estar\xE1 terminada a tradu\xE7\xE3o."
+      de prote\xEDnas. Cada sequ\xEAncia de tr\xEAs nucleot\xEDdeos (chamada de c\xF3dons)
+      do RNAm \xE9 traduzida, com a ajuda de uma outra mol\xE9cula de RNA, chamada
+      de RNA transportador (tRNA), sendo que cada amino\xE1cido term seu tRNA (tRNA-AA).
+      Por exemplo, um RNAm de 18 nucleot\xEDdeos com a seguinte sequ\xEAncia de bases:
+      AUG-CAG-UGG-UCA-GCA-UAA, correspondem aos amino\xE1cidos metionina, arginina,
+      triptofano, serina, alanina. O c\xF3don inicial AUG \xE9 o iniciador (e sempre
+      ser\xE1 a metionina), enquanto  que os c\xF3dons UAA, UAG, UGA s\xE3o os finalizadores,
+      ou seja, o ribossomo ir\xE1 ler toda a mol\xE9cula de RNAm, iniciando na sequ\xEAncia
+      espec\xEDfica (AUG), at\xE9 o \xFAltimo, que \xE9 a sequ\xEAncia de t\xE9rmino
+      (FIM). A cada amino\xE1cido adicionado, eles se ligam formando uma liga\xE7\xE3o
+      pept\xEDdica (que liga um amino\xE1cido ao outro), assim uma prote\xEDna tamb\xE9m
+      \xE9 chamada de cadeia polipept\xEDdica. Quando chegar no c\xF3don de FIM a
+      cadeia polipept\xEDdica se desliga do ribossomo e estar\xE1 terminada a tradu\xE7\xE3o."
     m_Metadata:
       m_Items: []
   - m_Id: 2
@@ -119,7 +118,7 @@ MonoBehaviour:
     m_Localized: "Destina\xE7\xE3o"
     m_Metadata:
       m_Items: []
-  - m_Id: 17910455054336
+  - m_Id: 8
     m_Localized: Fases
     m_Metadata:
       m_Items: []

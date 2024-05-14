@@ -35,29 +35,30 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: "A taxa adequada de <color=#50D500><b>glicose</b></color> \xE9 restabelecida
-      a partir da libera\xE7\xE3o do <color=#50D500><b>horm\xF4nio glucagon</b></color>,
-      que age nas c\xE9lulas do f\xEDgado onde est\xE1 armazenado o glicog\xEAnio,
-      que \xE9 a fonte de reserva de glicose nos animais. O glucagon, que \xE9 produzido
-      no p\xE2ncreas na forma de uma prote\xEDna precursora, o <color=#50D500><b>proglucagon</b></color>,
+    m_Localized: "A quantidade adequada de <color=#50D500><b>glicose</b></color>
+      \xE9 restabelecida a partir da libera\xE7\xE3o do <color=#50D500><b>horm\xF4nio
+      glucagon</b></color>, que age nas c\xE9lulas do f\xEDgado onde est\xE1 armazenado
+      o glicog\xEAnio, que \xE9 a fonte de reserva de glicose nos animais. O glucagon, 
+      \xE9 produzido no p\xE2ncreas na forma de uma prote\xEDna precursora, o <color=#50D500><b>proglucagon</b></color>,
       fica armazenada em <color=#50D500><b>gr\xE2nulos</b></color> de certas c\xE9lulas
       do <color=#50D500><b>p\xE2ncreas</b></color>. Somente quando a taxa de a\xE7\xFAcar
-      do sangue baixa, proglucagon \xE9 convertido em glucagon, e este, secretado
+      do sangue baixa, o proglucagon \xE9 convertido em glucagon, e este, secretado
       para a corrente sangu\xEDnea, ir\xE1 agir nas c\xE9lulas do f\xEDgado disparando
       o mecanismo que transforma o glicog\xEAnio em glicose."
     m_Metadata:
       m_Items: []
   - m_Id: 5
     m_Localized: "Para normalizar a concentra\xE7\xE3o de a\xE7\xFAcar no seu sangue,
-      caso ela venha a cair, voc\xEA deve sintetizar uma mol\xE9cula de proglucagon
-      e armazen\xE1-la em um <color=#50D500><b>gr\xE2nulo de secre\xE7\xE3o</b></color>."
+      caso diminua, voc\xEA deve sintetizar uma mol\xE9cula de proglucagon e armazen\xE1-la
+      em um <color=#50D500><b>gr\xE2nulo de secre\xE7\xE3o</b></color>."
     m_Metadata:
       m_Items: []
   - m_Id: 6
     m_Localized: "O sistema imune \xE9 composto por v\xE1rias c\xE9lulas, dentre
       elas os <color=#50D500><b>macr\xF3fagos</b></color>, presentes no <color=#50D500><b>sangue</b></color>
-      e nos tecidos infectados. Particulas estranhas, como v\xEDrus e bact\xE9rias,
-      s\xE3o englobadas pelos macr\xF3fagos e ent\xE3o degradadas com enzimas <color=#50D500><b>hidrolases
+      e em diferentes tecidos de nosso organismo. Quando particulas estranhas, como
+      v\xEDrus, bact\xE9rias, fungos e outras, penetram no organismo, s\xE3o englobadas
+      pelos macr\xF3fagos e ent\xE3o degradadas pela a\xE7\xE3o das enzimas <color=#50D500><b>hidrolases
       \xE1cidas</b></color>, contidas em organelas celulares chamadas <color=#50D500><b>lisossomos</b></color>."
     m_Metadata:
       m_Items: []
@@ -97,7 +98,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 11
     m_Localized: "Para garantir a sa\xFAde da sua pele, evite o sol forte, use filtro
-      solar e sintetize uma mol\xE9cula de <color=#50D500><b>tirosinas</b></color>,
+      solar e sintetize uma mol\xE9cula de <color=#50D500><b>tirosinase</b></color>,
       enzima que catalisa uma das rea\xE7\xF5es de s\xEDntese de melanina."
     m_Metadata:
       m_Items: []

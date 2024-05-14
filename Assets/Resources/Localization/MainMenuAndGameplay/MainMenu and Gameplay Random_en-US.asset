@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22
-    m_Localized: menu
+    m_Localized: Menu
     m_Metadata:
       m_Items: []
   references:

@@ -84,7 +84,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14
-    m_Localized: Esperar que seu sistema de defesa combate os microrganismos invasores.
+    m_Localized: Esperar que seu sistema de defesa combate o agente infeccioso.
     m_Metadata:
       m_Items: []
   - m_Id: 15
@@ -126,8 +126,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23
-    m_Localized: "Evite tudo isso n\xE3o se expondo por longo tempo ao sol forte.
-      Usando filtro solar voc\xEA evita queimaduras na pele."
+    m_Localized: "Evite isso: n\xE3o fique exposto ao sol por longo tempo, use filtro
+      solar para evitar queimaduras na pele."
     m_Metadata:
       m_Items: []
   - m_Id: 24
@@ -136,7 +136,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 25
-    m_Localized: "funciona como uma prote\xE7\xE3o \xE0s radia\xE7\xF5es solares."
+    m_Localized: "tamb\xE9m tem a fun\xE7\xE3o de proteger nossa pele filtrando os
+      raios ultra violeta, que podem lesa-la."
     m_Metadata:
       m_Items: []
   - m_Id: 26
@@ -144,7 +145,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 27
-    m_Localized: "e quanto mais clara for a pele, menor quantidade de melanina \xE9
+    m_Localized: "quanto mais clara for a pele, menor quantidade de melanina \xE9
       produzida,"
     m_Metadata:
       m_Items: []
@@ -153,8 +154,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 29
-    m_Localized: "Al\xE9m disso, a exposi\xE7\xE3o ao sol por longos per\xEDodos
-      pode levar ao desenvolvimento de c\xE2ncer de pele."
+    m_Localized: "Al\xE9m disso, a exposi\xE7\xE3o ao sol com frequencia e longos
+      per\xEDodos pode levar ao desenvolvimento de c\xE2ncer de pele."
     m_Metadata:
       m_Items: []
   references:

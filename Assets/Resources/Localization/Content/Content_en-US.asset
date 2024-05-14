@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1
-    m_Localized: The mecanim
+    m_Localized: The mechanism
     m_Metadata:
       m_Items: []
   - m_Id: 2
@@ -35,20 +35,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4
-    m_Localized: The proper <color=#50D500><b>glucose</b></color> level is restored
-      through the release of the <color=#50D500><b>hormone glucagon</b></color>,
-      which acts on the liver cells where glycogen is stored, serving as the reserve
-      source of glucose in animals. Glucagon, produced in the pancreas in the form
-      of a precursor protein called <color=#50D500><b>proglucagon</b></color>, is
-      stored in <color=#50D500><b>granules</b></color> within certain cells int the
-      <color=#50D500>pancreas</b></color>. Only when blood sugar levels drop, proglucagon
-      is converted into glucagon, which is then secreted into the bloodstream, acting
-      on liver cells to trigger the mechanism that converts glycogen into glucose.
+    m_Localized: The adequate amount of <color=#50D500><b>glucose</b></color> is
+      reestablished through the release of the <color=#50D500><b>glucagon hormone</b></color>,
+      which it acts on liver cells where glycogen is stored, which is the reserve
+      source of glucose in animals. Glucagon is produced in the pancreas in the form
+      of a precursor protein, <color=#50D500><b>proglucagon</b></color>, and is stored
+      in <color=#50D500><b>granules</b ></color> of certain cells in the <color=#50D500><b>pancreas</b></color>.
+      Only when the blood sugar level drops, proglucagon is converted into glucagon,
+      and this, secreted into the bloodstream, will act on the liver cells, triggering
+      the mechanism that transforms glycogen into glucose.
     m_Metadata:
       m_Items: []
   - m_Id: 5
-    m_Localized: To normalize the concentration of sugar in your blood, in case it
-      drops, you should synthesize a molecule of proglucagon and store it in a <color=#50D500><b>secretory
+    m_Localized: To normalize the sugar concentration in your blood, if it decreases,
+      you must synthesize a proglucagon molecule and store it in a <color=#50D500><b>secretion
       granule</b></color>.
     m_Metadata:
       m_Items: []
@@ -61,9 +61,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7
-    m_Localized: To assist macrophages in combating the viruses causing your flu,
-      you should produce a molecule of an acidic hydrolase enzyme and deliver it
-      into a <color=#50D500><b>lysosome</b></color>."
+    m_Localized: The immune system is made up of several cells, including <color=#50D500><b>macrophages</b></color>,
+      present in <color=#50D500><b>blood</b></color > and in different tissues of
+      our body. When foreign particles, such as viruses, bacteria, fungi and others,
+      penetrate the body, they are engulfed by macrophages and then degraded by the
+      action of enzymes <color=#50D500><b>acid hydrolases</b></color>, contained
+      in cellular organelles called <color=#50D500><b>lysosomes</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 8
