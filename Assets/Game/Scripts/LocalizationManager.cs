@@ -18,8 +18,12 @@ public class LocalizationManager : MonoBehaviour
     public static readonly string Phases = "Phases";
     public static readonly string Quiz = "Quiz";
 
+    private static bool _initialized = false;
+
     void Start()
     {
+        if(_initialized) return;
+        
         StartCoroutine("LoadLocale");
     }
 
@@ -50,6 +54,7 @@ public class LocalizationManager : MonoBehaviour
 
         if(systemLocale != null) LocalizationSettings.SelectedLocale = systemLocale;
 
+        _initialized = true;
         yield return null;
     }
 
