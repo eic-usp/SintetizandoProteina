@@ -382,6 +382,14 @@ MonoBehaviour:
     m_Localized: Volume geral
     m_Metadata:
       m_Items: []
+  - m_Id: 91
+    m_Localized: Pausado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92
+    m_Localized: Voltar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
