@@ -107,6 +107,10 @@ MonoBehaviour:
     m_Key: id_menu
     m_Metadata:
       m_Items: []
+  - m_Id: 23
+    m_Key: id_insert_aminoacid_name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
