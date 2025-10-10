@@ -56,7 +56,7 @@ MonoBehaviour:
       do RNAm \xE9 traduzida, com a ajuda de uma outra mol\xE9cula de RNA, chamada
       de RNA transportador (tRNA), sendo que cada amino\xE1cido term seu tRNA (tRNA-AA).
       Por exemplo, um RNAm de 18 nucleot\xEDdeos com a seguinte sequ\xEAncia de bases:
-      AUG-CAG-UGG-UCA-GCA-UAA, correspondem aos amino\xE1cidos metionina, arginina,
+      AUG-CAG-UGG-UCA-GCA-UAA, correspondem aos amino\xE1cidos metionina, glutamina,
       triptofano, serina, alanina. O c\xF3don inicial AUG \xE9 o iniciador (e sempre
       ser\xE1 a metionina), enquanto  que os c\xF3dons UAA, UAG, UGA s\xE3o os finalizadores,
       ou seja, o ribossomo ir\xE1 ler toda a mol\xE9cula de RNAm, iniciando na sequ\xEAncia
@@ -75,18 +75,21 @@ MonoBehaviour:
       ou ainda metais, como ferro, cobre, formando as metaloprote\xEDnas. Podem ainda
       sofrer  modifica\xE7\xF5es estruturais na cadeia, para se tornarem ativas.
       A cadeia polipept\xEDdica formada \xE9 chamada de estrutura prim\xE1ria que
-      ainda ser\xE1 reorganizada em estruturas tridimensionais que se referem ao
-      seu enrolamento espacial, que \xE9 necess\xE1rio para exercerem suas atividades
-      biol\xF3gicas. As estruturas secund\xE1rias s\xE3o representadas pelas h\xE9lices
-      alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria \xE9 o arranjo
-      espacial que as estruturas secund\xE1rias adquirem quando se \u201Cenrolam\u201D
-      entre si. Nesta forma s\xE3o ativas e exercem suas fun\xE7\xF5es biol\xF3gicas
-      e s\xE3o chamadas de mon\xF4meros. Elas tamb\xE9m podem ser constitu\xEDdas
-      de dois ou mais mon\xF4meros, formando d\xEDmeros, tr\xEDmeros, tetr\xE2meros,
-      e outras formas polim\xE9ricas, que s\xE3o denominadas de estrutura quatern\xE1ria.
-      Estes processos s\xE3o realizados por diferentes enzimas e/ou complexos prot\xE9icos
-      presentes no citoplasma e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica
-      que a prote\xEDna ir\xE1 exercer."
+      ainda ser\xE1 reorganizada em estruturas tridimensionais, na maioria das prote\xEDnas,
+      que se referem ao seu enrolamento espacial, que \xE9 necess\xE1rio para exercerem
+      suas atividades biol\xF3gicas. As estruturas secund\xE1rias s\xE3o representadas
+      pelas h\xE9lices alfa, fitas e folhas beta e al\xE7as, e a estrutura terci\xE1ria
+      \xE9 o arranjo espacial que as estruturas secund\xE1rias adquirem quando se
+      \u201Cenrolam\u201D entre si. Nesta forma s\xE3o ativas e exercem suas fun\xE7\xF5es
+      biol\xF3gicas e s\xE3o chamadas de mon\xF4meros. Nos \xFAltimos anos, foram
+      descritas prote\xEDnas \"n\xE3o enoveladas\" que exercem importantes fun\xE7\xF5es
+      fisiol\xF3gicas, ou seja s\xE3o monom\xE9ricas e n\xE3o adquirem estrutura
+      secund\xE1ria. Elas tamb\xE9m podem ser constitu\xEDdas de dois ou mais mon\xF4meros,
+      formando d\xEDmeros, tr\xEDmeros, tetr\xE2meros, e outras formas polim\xE9ricas,
+      que s\xE3o denominadas de estrutura quatern\xE1ria. Estes processos s\xE3o
+      realizados por diferentes enzimas e/ou complexos prot\xE9icos presentes no
+      citoplasma e s\xE3o imprescind\xEDveis para a fun\xE7\xE3o fisiol\xF3gica que
+      a prote\xEDna ir\xE1 exercer."
     m_Metadata:
       m_Items: []
   - m_Id: 3

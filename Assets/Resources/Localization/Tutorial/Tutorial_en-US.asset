@@ -61,11 +61,10 @@ MonoBehaviour:
       there''s a bit of detail about the stage. The content is part of the mission
       text you''ve already seen, but it will always be available.
 
-      
 
-      In
-      the <color=green>left box</color>, you''ll find brief information on how to
-      play the game in case you forget. They''re short but very useful.'
+      In the
+      <color=green>left box</color>, you''ll find brief information on how to play
+      the game in case you forget. They''re short but very useful.'
     m_Metadata:
       m_Items: []
   - m_Id: 5

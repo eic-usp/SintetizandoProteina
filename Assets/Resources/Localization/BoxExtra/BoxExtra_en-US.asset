@@ -50,7 +50,7 @@ MonoBehaviour:
       the help of another RNA molecule called transfer RNA (tRNA), where each amino
       acid has its tRNA (tRNA-AA). For example, an mRNA of 18 nucleotides with the
       following base sequence: AUG-CAG-UGG-UCA-GCA-UAA corresponds to the amino acids
-      methionine, arginine, tryptophan, serine, alanine. The initial codon AUG is
+      methionine, glutamine, tryptophan, serine, alanine. The initial codon AUG is
       the initiator (always encoding methionine), while the codons UAA, UAG, UGA
       are the terminators, meaning the ribosome will read the entire mRNA molecule,
       starting at the specific sequence (AUG), until the last, which is the termination
@@ -72,9 +72,11 @@ MonoBehaviour:
       activities. Secondary structures are represented by alpha helices, beta sheets,
       and loops, and the tertiary structure is the spatial arrangement that secondary
       structures acquire when they "fold" together. In this form, they are active
-      and perform their biological functions, referred to as monomers. They can also
-      be composed of two or more monomers, forming dimers, trimers, tetramers, and
-      other polymeric forms, which are called quaternary structures. These processes
+      and perform their biological functions, referred to as monomers. In recent
+      years, "unfolded" proteins have been described that perform important physiological
+      functions, that is, they are monomeric but do not acquire secondary structure.They
+      can also be composed of two or more monomers, forming dimers, trimers, tetramers,
+      and other polymeric forms, which are called quaternary structures. These processes
       are carried out by different enzymes and/or protein complexes present in the
       cytoplasm and are essential for the physiological function that the protein
       will perform.
